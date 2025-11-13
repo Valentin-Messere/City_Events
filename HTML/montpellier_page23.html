@@ -1,0 +1,659 @@
+<!DOCTYPE html><html lang="fr"><head><script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+      else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+        var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+        if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e,tgt){
+        var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+tgt;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("9d946103-8843-4a4e-ab0b-8e61ea84e891","Qr7JnTUV")})();</script>
+
+<script> 
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(function (Didomi) { 
+        // Call other functions on the SDK
+
+        // Refresh de la page en cas de changement du consentement
+        window.didomiEventListeners = window.didomiEventListeners || [];
+        window.didomiEventListeners.push({
+            event: 'consent.changed',
+            listener: function (context) {
+                gp_maj();
+            }
+        });
+
+        // Google advertising products
+        Didomi.getObservableOnUserConsentStatusForVendor('google')
+        .filter(function (status) { return status !== undefined })
+        .subscribe(function (consentStatus) {
+            if (consentStatus === undefined || consentStatus === false) {
+                // on masque les encarts pubs vides
+                (function() {     
+                    var div_regies = document.getElementsByClassName('wrapper_gp_div');
+                    
+                    setTimeout(function() { // on fait un settimeout sinon le length n'est pas juste...                   
+                        for (let i = 0; i < div_regies.length; i++) {                  
+                            if (div_regies[i].innerHTML.indexOf('regie_') > -1) {                           
+                              div_regies[i].style.display="none";
+                            }
+                        }
+                        
+                    },400);
+                    
+                    
+                })();
+            }
+        }); 
+        
+     
+
+    });
+    </script> 
+<meta charset="UTF-8" />
+<title>Montpellier - L&#039;agenda des spectacles, manifestations, concerts - Page 23</title>
+<meta name="description" content="Montpellier - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 23" />
+<link rel="canonical" href="https://www.jds.fr/montpellier/agenda/?page=23" />
+<meta name="p:domain_verify" content="9efecdd4eddf0844d5703f41d2dc7ca7"/>
+<meta property="fb:app_id" content="638077278167784" />
+<meta property="fb:pages" content="50813882504">
+<meta property="og:title" content="Montpellier - L&#039;agenda des spectacles, manifestations, concerts - Page 23" />
+<meta property="og:description" content="Montpellier - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 23" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.jds.fr/montpellier/agenda/?page=23" />
+<meta property="og:site_name" content="jds.fr" />
+<meta property="og:image" content="https://www.jds.fr/images/header_logo_120.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="364" />
+<meta property="og:image:height" content="364" />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https:\/\/www.jds.fr\/","name":"Accueil"},{"@type":"ListItem","position":2,"item":"https:\/\/www.jds.fr\/montpellier\/","name":"Montpellier"},{"@type":"ListItem","position":3,"name":"Agenda"}]}</script>
+
+<meta name="robots" content="noindex,follow" />
+<link rel="prev" href="https://www.jds.fr/montpellier/agenda/?&amp;page=22" /><link rel="next" href="https://www.jds.fr/montpellier/agenda/?&amp;page=24" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+<link rel="stylesheet" href="/css/custom.css?v=131">
+<link rel="preload" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131"></noscript>
+<link rel="preload" href="/libs/lightbox2/css/lightbox.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/lightbox2/css/lightbox.min.css?v=131"></noscript>
+<link rel="preload" href="/css/slick-theme.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick-theme.css?v=131"></noscript>
+<link rel="preload" href="/css/slick.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick.css?v=131"></noscript>
+<link rel="preload" href="/libs/choices/styles/choices.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/choices/styles/choices.min.css?v=131"></noscript>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#e50b47">
+<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e50b47">
+<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><link rel="manifest" href="/manifest.json"></head><body class="version_a  "><script async src="https://www.googletagmanager.com/gtag/js?id=G-6WVELE5WG9"></script>
+<script type="didomi/javascript" data-vendor="c:googleana-4TXnJigR">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+        dataLayer.push(arguments);
+        if (arguments[0] === 'js') {
+            setTimeout(function() {
+            window.dispatchEvent(new Event('gtag_loaded'));
+        }, 1000);
+        }
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6WVELE5WG9', {
+          'cookie_expires': 33696000,
+          'transport_type': 'beacon',
+          'dimension1': '0','dimension2': '34','dimension3': '2','dimension4': '0','dimension5': '0','dimension6': '0','dimension7': '','dimension8': 'a','dimension9': '0',     
+    });
+</script><script src="/libs/jquery-3.7.1.min.js"></script><script defer src="/libs/bootstrap/js/popper.min.js"></script><script defer src="/libs/bootstrap/js/bootstrap.min.js"></script><script defer src="/libs/jquery/js/jquery.cookie.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.date.js"></script><script defer src="/libs/jquery/pickadate.js/lib/translations/fr_FR.js"></script><script src="/libs/vue.global.prod.js"></script><script src="/libs/axios.min.js"></script><script src="/ads-checker.js"></script><script defer src="/scripts/functions.js?v=131"></script><script>var gp_maj_done=false;
+var param_gp=[];param_gp['id_newsletter']='0';param_gp['type']='0';param_gp['sousrub']='0';param_gp['rub']='2';param_gp['rub_rub']='2';param_gp['page']='23';param_gp['mobile_version']='0';param_gp['detail_type']='';param_gp['detail_id']='0';param_gp['web_push_site']='';param_gp['web_push_id']='';param_gp['current_departement']='34';$(document).ready(function() {
+    if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) gp_maj();});</script><div class="gp_div_affiche" data-id="0" data-id-format="24"></div>
+<div id="global" class="p-0"><div id="header" class="bg-white header"><div class="d-flex justify-content-between align-items-center px-2rem header-inner-wrapper text-primary container"><div class="header-logo mb-1"><a class="d-block" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a></div><div class="header-city-inline-selector d-flex me-auto font-size-22 ms-4 align-items-center lh-1"><a href="https://www.jds.fr/montpellier/" class="cut-city-name">Montpellier</a><span class="ms-auto ms-md-0 d-block ps-2 cursor-pointer" onclick="toggleCityMenu();"><i class="bi bi-chevron-down"></i></span></div><div class="header-publish ms-md-auto me-md-5"><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=header&utm_campaign=link_publier_info" class="btn btn-outline-primary rounded-pill d-none d-md-inline shadow-sm"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><div class="header-menu font-size-36 cursor-pointer ps-3" onclick="toggleMenu()"><i class="bi bi-list"></i></div></div></div>
+<!-- NAVBAR -->
+<div id="header-navbar" class="bg-light-primary header-navbar navbar-v2">
+    <div class="px-2rem header-navbar-inner-wrapper container font-size-14">
+        <div class="navbar-v2-item d-flex">
+            <div class="flex-fill">
+                <span onclick="toggleSearchMenu();" class="bg-primary text-white d-block px-3"><span class="search-btn cursor-pointer"><span><i class="bi bi-search me-2"></i> Rechercher</span></span>
+            </div>
+            <div class="flex-fill"><a href="https://www.jds.fr/montpellier/agenda/agenda-du-jour/-aujourdhui_JPJ" class="" data-event-label="Aujourd'hui"><span><i class="cf icon-aujourdhui">&#xe80f;</i> Aujourd'hui</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/montpellier/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="" data-event-label="Spectacles"><span><i class="cf icon-spectacles">&#xe80c;</i> Spectacles</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/montpellier/agenda/musique-et-concerts-96_B" class="" data-event-label="Concerts"><span><i class="cf icon-concert">&#xe801;</i> Concerts</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="" data-event-label="Animations"><span><i class="cf icon-manifestations">&#xe807;</i> Animations</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/montpellier/agenda/foire-salon-puces-bourses-468_B" class="" data-event-label="Salons / Puces"><span><i class="cf icon-foires">&#xe805;</i> Salons / Puces</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/montpellier/agenda/sports-145_B" class="" data-event-label="Sports"><span><i class="cf icon-sport">&#xe810;</i> Sports</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/montpellier/agenda/expositions-471_B" class="" data-event-label="Expos"><span><i class="cf icon-expos">&#xe802;</i> Expos</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/montpellier/agenda/enfants-94_B" class="" data-event-label="Famille"><span><i class="cf icon-famille">&#xe813;</i> Famille</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/montpellier/agenda/soirees-469_B" class="" data-event-label="Soirées"><span><i class="cf icon-soirees">&#xe80b;</i> Soirées</span></a></div>        </div>
+    </div>
+</div>
+<div id="menu" class="menu bg-white px-2rem py-5 hidden"><div class="text-center"><button class="btn btn-primary btn-lg rounded-pill d-block w-100 menu-link" onclick="toggleSearchMenu();" data-event-label="open-search-menu"><i class="bi bi-search me-2"></i> Rechercher</button><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=menu&utm_campaign=link_publier_info" class="btn btn-outline-primary my-4 btn-lg rounded-pill d-block w-100" data-event-label="Espace pro"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/montpellier/agenda/agenda-du-jour/-aujourdhui_JPJ" class="text-dark hover-text-primary cursor-pointer" data-event-label="Aujourd'hui">Aujourd'hui à Montpellier</a></li><li><a href="https://www.jds.fr/montpellier/agenda/evenements/" class="text-dark hover-text-primary" data-event-label="Evénements">Evénements</a></li><li><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="text-dark hover-text-primary" data-event-label="Manifestations">Manifestations</a></li><li><a href="https://www.jds.fr/montpellier/agenda/foire-salon-puces-bourses-468_B" class="text-dark hover-text-primary" data-event-label="Foires & salons">Foires & salons</a></li><li><a href="https://www.jds.fr/montpellier/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="text-dark hover-text-primary" data-event-label="Spectacles">Spectacles</a></li><li><a href="https://www.jds.fr/montpellier/agenda/musique-et-concerts-96_B" class="text-dark hover-text-primary" data-event-label="Concerts">Concerts</a></li><li><a href="https://www.jds.fr/montpellier/agenda/sports-145_B" class="text-dark hover-text-primary" data-event-label="Sports">Sports</a></li><li><a href="https://www.jds.fr/montpellier/agenda/soirees-469_B" class="text-dark hover-text-primary" data-event-label="Soirées">Soirées</a></li><li><a href="https://www.jds.fr/montpellier/agenda/enfants-94_B" class="text-dark hover-text-primary" data-event-label="Sorties famille">Sorties famille</a></li><li><a href="https://www.jds.fr/montpellier/agenda/expositions-471_B" class="text-dark hover-text-primary" data-event-label="Expos">Expos</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/montpellier/magazine/" class="text-dark hover-text-primary" data-event-label="Actus">Actus à Montpellier</a></li><li><a href="https://www.jds.fr/montpellier/annuaire/" class="text-dark hover-text-primary" data-event-label="Annuaire">Annuaire tourisme & loisirs</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/newsletter-archives/toutes-les-newsletter-jds-fr" class="text-dark hover-text-primary" data-event-label="Newsletters">Newsletter des sorties</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/blog/" class="text-dark hover-text-primary" data-event-label="Annonceurs">Annonceurs</a></li></ul></div><div id="header-city-dropdown" class="header-city-dropdown bg-secondary py-2 text-white px-2rem font-size-16 hidden"><div class="container"><div class="py-2 cursor-pointer text-uppercase" onclick="$('#header-city-dropdown-modal').modal('show'); $('#ville-selector-modal').focus(); $('input[name=&quot;ville-selector-mode&quot;]').val('default')"><i class="bi bi-building-add me-1"></i> Une autre ville</div><div class="py-1"><a href="https://www.jds.fr/bordeaux/" class="text-white text-uppercase">Bordeaux</a></div><div class="py-1"><a href="https://www.jds.fr/colmar/" class="text-white text-uppercase">Colmar</a></div><div class="py-1"><a href="https://www.jds.fr/dijon/" class="text-white text-uppercase">Dijon</a></div><div class="py-1"><a href="https://www.jds.fr/lille/" class="text-white text-uppercase">Lille</a></div><div class="py-1"><a href="https://www.jds.fr/lyon/" class="text-white text-uppercase">Lyon</a></div><div class="py-1"><a href="https://www.jds.fr/marseille/" class="text-white text-uppercase">Marseille</a></div><div class="py-1"><a href="https://www.jds.fr/metz/" class="text-white text-uppercase">Metz</a></div><div class="py-1"><a href="https://www.jds.fr/montpellier/" class="text-white text-uppercase">Montpellier</a></div><div class="py-1"><a href="https://www.jds.fr/mulhouse/" class="text-white text-uppercase">Mulhouse</a></div><div class="py-1"><a href="https://www.jds.fr/nancy/" class="text-white text-uppercase">Nancy</a></div><div class="py-1"><a href="https://www.jds.fr/nantes/" class="text-white text-uppercase">Nantes</a></div><div class="py-1"><a href="https://www.jds.fr/nice/" class="text-white text-uppercase">Nice</a></div><div class="py-1"><a href="https://www.jds.fr/paris/" class="text-white text-uppercase">Paris</a></div><div class="py-1"><a href="https://www.jds.fr/reims/" class="text-white text-uppercase">Reims</a></div><div class="py-1"><a href="https://www.jds.fr/rennes/" class="text-white text-uppercase">Rennes</a></div><div class="py-1"><a href="https://www.jds.fr/strasbourg/" class="text-white text-uppercase">Strasbourg</a></div><div class="py-1"><a href="https://www.jds.fr/toulouse/" class="text-white text-uppercase">Toulouse</a></div><div class="mt-5 py-1 cursor-pointer" onclick="toggleCityMenu()"><u><i class="bi bi-x-circle me-1"></i> Fermer le menu</u></div></div></div><div id="global-container"><div id="global-container-inner-wrapper" class="container"><!--[if lte IE 9]>
+<div class="alert alert-warning" role="alert">
+<p class="mb-0">Vous utilisez une très ancienne version de navigateur Internet, ce qui impacte négativement votre expérience de navigation sur le site du JDS et sur Internet en général. Nous vous recommandons de mettre à jour votre navigateur ou d'en installer un autre en <a href="https://browsehappy.com/?locale=fr" target="_blank">cliquant ici</a>.</p>
+</div>
+<![endif]--><div class="text-center mb-5 mx-auto leaderboard"><div class="wrapper_gp_div nobg"><div class="regie_2">
+<!-- Leaderboard 1000 x 300 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:1000px;height:300px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="4079211116"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="3348" data-id-format="2"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3348', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '2', 'non_interaction': true }); } });</script>
+</div>
+</div></div><div id="content_container" class="d-md-flex justify-content-between"><div id="content_left"><div id="chemin" class="ariane mb-3"><a href="https://www.jds.fr/">Accueil</a><a href="https://www.jds.fr/montpellier/">Montpellier</a></div><div class="header-ville no-form is_page_ville ville_34 agglo_1132 "><h1>Montpellier&nbsp;: Agenda et événements</h1><button onclick="toggleSearchMenu()" class="btn btn-primary btn-lg mx-auto d-block rounded-pill shadow-lg my-4" data-position="page-resultats-modifier-recherche-top"><i class="bi bi-search me-2"></i> Rechercher</button></div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/montpellier/agenda/?&amp;page=22"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/montpellier/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/montpellier/agenda/?&amp;page=22">22</a><span class="page d-inline-block mx-1 active mx-1">23</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/montpellier/agenda/?&amp;page=24">24</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/montpellier/agenda/?&amp;page=49">49</a></div>
+<a class="lien_next" href="https://www.jds.fr/montpellier/agenda/?&amp;page=24"><i class="bi bi-chevron-right"></i></a></div>
+<div class="mt-5"><ul class="mt-3 list-unstyled list-articles-v2">
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1129551" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/musique-et-concerts-96_B" class="lh-sm">Concerts à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/concerts/candlelight-queen-vs-abba-1129551_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Candlelight&nbsp;: Queen vs ABBA</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><a href="https://www.jds.fr/montpellier/salle-de-concert/maison-des-choeurs-16916_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Maison des Choeurs - Montpellier</a><span class="d-block description font-size-14 lh-sm">Candlelight, c'est une expérience musicale magique dans de magnifiques lieux éclairés à la bougie. Achète tes billets dès maintenant pour ce concert Candlelight&nbsp;: Queen [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://pdt.tradedoubler.com/click?a(3419081)p(354825)product(103801-404260)ttid(3)url(https%3A%2F%2Ffeverup.com%2Fm%2F404260)" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/concerts/candlelight-queen-vs-abba-1129551_A"><img loading="lazy" src="https://www.jds.fr/medias/image/candlelight-queen-vs-abba-695812-180-180.webp" width="180" height="180" alt="Candlelight : Queen vs ABBA" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="989558" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/concerts/chanson-francaise/m-pokora-adrenaline-tour-989558_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">M.pokora - Adrenaline Tour</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><a href="https://www.jds.fr/montpellier/perols/salle-de-concert/sud-de-france-arena-15017_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Sud de France Arena - Pérols</a><span class="d-block description font-size-14 lh-sm">M.pokora - Adrenaline Tour en concert à Montpellier (Sud de France Arena Pérols), le 5 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=39482356777&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/concerts/chanson-francaise/m-pokora-adrenaline-tour-989558_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F4b%2Fcd%2Fm-pokoroa-tickets_443601_3587197_222x222.jpg&feedId=23455&k=636acee880f8a1bd4343cbcdca435e9b1886dd57" width="180" height="180" alt="M.pokora - Adrenaline Tour" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="953318" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/ceremonie-d-hommage-aux-morts-en-algerie-maroc-et-tunisie-953318_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Cérémonie D’hommage Aux Morts En Algérie, Maroc Et Tunisie</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Palavas-les-Flots</span><span class="d-block description font-size-14 lh-sm">
+11h
+Cérémonie d’Hommage aux morts en Algérie, Maroc et Tunisie
+Monument aux Morts, Place du Docteur Clément
+Union Nationale des Combattants (UNC)&nbsp;: 06 61 64 11 31
+</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/ceremonie-d-hommage-aux-morts-en-algerie-maroc-et-tunisie-953318_A"><img loading="lazy" src="https://www.jds.fr/medias/image/ceremonie-d-hommage-aux-morts-en-algerie-maroc-et-601177-180-180.webp" width="180" height="180" alt="Cérémonie D’hommage Aux Morts En Algérie, Maroc Et Tunisie" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1226439" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/theatre-23_B" class="lh-sm">Théâtre à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/spectacles/theatre/et-si-c-etait-elle-1226439_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Et si c'était elle&nbsp;? </span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 05/12/2025 au 07/12/2025</span><a href="https://www.jds.fr/montpellier/theatres-programmes/theatre-beaux-arts-tabard-19988_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre Beaux Arts Tabard - Montpellier</a><span class="d-block description font-size-14 lh-sm">Dur&eacute;e&nbsp;: 1h15- A partir de 10 ans&nbsp;
+Com&eacute;die Romantique
+L'histoire vraie d'une rencontre virtuelle pas comme les autres. Franck est d&eacute;sinvolte, [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/spectacles/theatre/et-si-c-etait-elle-1226439_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-72046500-1761144875-754383-180-180.webp" width="180" height="180" alt="Et si c&#039;était elle ? " class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1244466" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/lecture-dessinee-la-dourbie-exploration-sensible-d-une-riviere-1244466_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Lecture Dessinée: La Dourbie, Exploration Sensible D'Une Rivière.</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Nébian</span><span class="d-block description font-size-14 lh-sm">Au printemps 2023, une centaine d’explorateurs se mettait en marche pour la seconde randonnée artistique et patrimoniale à la rencontre de la Dourbie. La Dourbie&nbsp;? C’est [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/lecture-dessinee-la-dourbie-exploration-sensible-d-une-riviere-1244466_A"><img loading="lazy" src="https://www.jds.fr/medias/image/manifestations-image-d-illustration-ia-canva-453562-180-180.webp" width="180" height="180" alt="Lecture Dessinée: La Dourbie, Exploration Sensible D&#039;Une Rivière." class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1231221" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/les-hivernales-de-juvignac-1231221_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Les Hivernales De Juvignac</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Juvignac</span><span class="d-block description font-size-14 lh-sm">Les Hivernales réinvestissent le parvis de l’Hôtel de Ville pour célébrer la magie de Noël en famille&nbsp;!
+Dès 16 h 30, à la sortie de l’école, la salle des mariages [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/les-hivernales-de-juvignac-1231221_A"><img loading="lazy" src="https://www.jds.fr/medias/image/manifestations-image-d-illustration-ia-canva-453562-180-180.webp" width="180" height="180" alt="Les Hivernales De Juvignac" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1239703" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/repas-epicurien-au-chateau-lancyre-quand-le-vin-s-invite-a-table-1239703_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Repas épicurien Au Château Lancyre&nbsp;: Quand Le Vin S'Invite à Table</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 05/12/2025 au 06/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Valflaunès</span><span class="d-block description font-size-14 lh-sm">Deux soirées placées sous le signe du goût, du partage et de la convivialité.
+Chaque plat, chaque accord vous seront contés par Philippe Clerc, sommelier de l’Institut [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/repas-epicurien-au-chateau-lancyre-quand-le-vin-s-invite-a-table-1239703_A"><img loading="lazy" src="https://www.jds.fr/medias/image/repas-epicurien-au-chateau-lancyre-quand-le-vin-s-763319-180-180.webp" width="180" height="180" alt="Repas épicurien Au Château Lancyre : Quand Le Vin S&#039;Invite à Table" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1202231" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/soiree-chez-o-dit-vin-1202231_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Soirée Chez ô Dit Vin</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Clermont-l'Hérault</span><span class="d-block description font-size-14 lh-sm">Vous avez aimé l’ambiance gipsy et entraînante du groupe Génération Gipsy&nbsp;? Ils reviennent chez votre caviste pour ramener un peu de chaleur à l’approche de [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/soiree-chez-o-dit-vin-1202231_A"><img loading="lazy" src="https://www.jds.fr/medias/image/soiree-chez-o-dit-vin-738519-180-180.webp" width="180" height="180" alt="Soirée Chez ô Dit Vin" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1220345" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/spectacle-duo-1220345_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Spectacle&nbsp;: Duo</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Mèze</span><span class="d-block description font-size-14 lh-sm">Création de la Cie Roberte & Robert et de la Cie La Bulle Bleue, présentée dans le cadre de la&nbsp;« Journée internationale du handicap&nbsp;». Tout public, 14 ans et +.
+« [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/spectacle-duo-1220345_A"><img loading="lazy" src="https://www.jds.fr/medias/image/spectacle-duo-750050-180-180.webp" width="180" height="180" alt="Spectacle : Duo" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1158656" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/spectacle-grand-mere-perd-la-tete-1158656_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Spectacle&nbsp;: Grand Mère Perd La Tête</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Balaruc-les-Bains</span><span class="d-block description font-size-14 lh-sm"></span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/spectacle-grand-mere-perd-la-tete-1158656_A"><img loading="lazy" src="https://www.jds.fr/medias/image/spectacle-grand-mere-perd-la-tete-712963-180-180.webp" width="180" height="180" alt="Spectacle : Grand Mère Perd La Tête" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1057704" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/upshot-scene-en-grand-pic-saint-loup-1057704_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Upshot - Scène En Grand Pic Saint-Loup</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Saint-Gély-du-Fesc</span><span class="d-block description font-size-14 lh-sm">Avec UPSHOT, la Cie Relevant explore, par une danse intense et incarnée, la tension entre individualité et appartenance au groupe. Les corps des danseurs traduisent [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/upshot-scene-en-grand-pic-saint-loup-1057704_A"><img loading="lazy" src="https://www.jds.fr/medias/image/upshot-scene-en-grand-pic-saint-loup-658146-180-180.webp" width="180" height="180" alt="Upshot - Scène En Grand Pic Saint-Loup" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="989476" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/concerts/chanson-francaise/julien-dore-tournee-989476_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Julien Doré - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><a href="https://www.jds.fr/montpellier/perols/salle-de-concert/sud-de-france-arena-15017_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Sud de France Arena - Pérols</a><span class="d-block description font-size-14 lh-sm">Julien Doré - Tournée en concert à Montpellier (Sud de France Arena Pérols), le 6 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=38828443555&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/concerts/chanson-francaise/julien-dore-tournee-989476_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F39%2Fb5%2Fjulien-dor--tickets_218078_1964206_222x222.jpg&feedId=23455&k=c81738c5759bfd569cf4ce3fd496e4877885ee3b" width="180" height="180" alt="Julien Doré - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="719203" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/humour-comedie-22_B" class="lh-sm">Humour à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/spectacles/humour/dany-boon-clown-n-est-pas-un-metier-tournee-719203_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Dany Boon - Clown n’est pas un métier&nbsp;!! - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><a href="https://www.jds.fr/montpellier/salles-spectacle/le-corum-15020_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Corum - Montpellier</a><span class="d-block description font-size-14 lh-sm">Dany Boon - Clown n’est pas un métier&nbsp;!! - Tournée, un spectacle à voir à Montpellier (Le Corum ), le 6 décembre 2025. Toutes les informations pratiques (tarifs, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=39288198903&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/spectacles/humour/dany-boon-clown-n-est-pas-un-metier-tournee-719203_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F3c%2Fc4%2Fdany-boon-clown-n-est-pas-un-m-tier----tickets_308707_2597106_222x222.jpg&feedId=23455&k=2214f6dd93bea87eedc137821087197643fd8c99" width="180" height="180" alt="Dany Boon - Clown n’est pas un métier !! - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="791305" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/electro-335_B" class="lh-sm">Electro à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/concerts/electro/tetra-hydro-k-791305_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Tetra Hydro&nbsp;K</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><a href="https://www.jds.fr/montpellier/salle-de-concert/rockstore-15008_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Rockstore - Montpellier</a><span class="d-block description font-size-14 lh-sm">Tetra Hydro K en concert à Montpellier (Rockstore ), le 6 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert sont à retrouver [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=40185606724&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/concerts/electro/tetra-hydro-k-791305_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Ffa%2F5d%2Fcgtet-tickets_337394_2891104_222x222.jpg&feedId=23455&k=97a274b4fd85c2a912a735f3115579fab93ceca5" width="180" height="180" alt="Tetra Hydro K" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1154511" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/humour-comedie-22_B" class="lh-sm">Humour à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/spectacles/humour/tom-baldetti-tome-1-tournee-1154511_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Tom Baldetti - Tome 1 - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><a href="https://www.jds.fr/montpellier/palavas-les-flots/salle-de-concert/salle-bleue-15027_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Salle Bleue - Palavas-les-Flots</a><span class="d-block description font-size-14 lh-sm">Tom Baldetti - Tome 1 - Tournée, un spectacle à voir à Montpellier (Salle Bleue Palavas-les-Flots), le 6 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42330562377&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/spectacles/humour/tom-baldetti-tome-1-tournee-1154511_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Ff6%2F45%2Ftom-baldetti-tickets_355822_3030768_222x222.jpg&feedId=23455&k=94f88ccb1f7875ec8fe67b93171732e593bc03dc" width="180" height="180" alt="Tom Baldetti - Tome 1 - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1249168" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/rock-111_B" class="lh-sm">Rock / metal à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/concerts/rock/noel-gospel-1249168_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Noël Gospel</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><a href="https://www.jds.fr/montpellier/patrimoine-religieux/eglise-don-bosco-20078_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Eglise Don Bosco - Montpellier</a><span class="d-block description font-size-14 lh-sm">
+
+Le Gospel University Choir investit l'Église Don Bosco de Montpellier le samedi 6 décembre 2025 à 21h pour un concert de Noël Gospel exceptionnel. Dirigé par Martin Koums, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43138135224&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/concerts/rock/noel-gospel-1249168_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Ffa%2F80%2Fnoel-gospel-montpellier-tickets_466374_3741647_222x222.jpg&feedId=23455&k=014f56de18bd19300c117afb2fddbc00bd0ca391" width="180" height="180" alt="Noël Gospel" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="815702" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/hip-hop-rap-190_B" class="lh-sm">Rap à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/concerts/rap/svinkels-tournee-815702_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Svinkels - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><a href="https://www.jds.fr/montpellier/saint-jean-de-vedas/salle-de-concert/salle-victoire-2-15159_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Salle Victoire 2 - Saint-Jean-de-Védas</a><span class="d-block description font-size-14 lh-sm">Svinkels - Tournée en concert à Montpellier (Salle Victoire 2 Saint-Jean-de-Védas), le 6 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=40329359234&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/concerts/rap/svinkels-tournee-815702_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fde%2Fb2%2Fsvinkels-tickets_275543_2446304_222x222.jpg&feedId=23455&k=6b38a60ce2d40708ec49bae04cd028509453ae8e" width="180" height="180" alt="Svinkels - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1224438" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/atelier-fermentation-oracines-au-restaurant-souka-1224438_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Atelier Fermentation – ôracines Au Restaurant Souka</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Aniane</span><span class="d-block description font-size-14 lh-sm">Sublimez votre table de Noël avec vos préparations fermentées&nbsp;!
+Découvrez la fermentation autour de préparations festives qui rendront vos repas de fête sains, originaux [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/atelier-fermentation-oracines-au-restaurant-souka-1224438_A"><img loading="lazy" src="https://www.jds.fr/medias/image/atelier-fermentation-oracines-au-restaurant-souka-752219-180-180.webp" width="180" height="180" alt="Atelier Fermentation – ôracines Au Restaurant Souka" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1247045" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/braderie-de-noel-du-secours-populaire-1247045_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Braderie De Noël Du Secours Populaire</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Clermont-l'Hérault</span><span class="d-block description font-size-14 lh-sm">Venez participer à la Braderie de Noël organisée par le Secours populaire.
+Grand choix d’articles neufs et d’occasion.</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/braderie-de-noel-du-secours-populaire-1247045_A"><img loading="lazy" src="https://www.jds.fr/medias/image/manifestations-image-d-illustration-ia-canva-453562-180-180.webp" width="180" height="180" alt="Braderie De Noël Du Secours Populaire" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1209263" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/chateau-de-malmont-marches-de-noel-1209263_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Chateau De Malmont Marches De Noel</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 06/12/2025 au 14/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Clermont-l'Hérault</span><span class="d-block description font-size-14 lh-sm">
+Deux week-ends magiques à vivre en famille&nbsp;!
+
+60 exposants artisans vous attendent pour découvrir des créations locales, des gourmandises, des décorations et des idées [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/chateau-de-malmont-marches-de-noel-1209263_A"><img loading="lazy" src="https://www.jds.fr/medias/image/chateau-de-malmont-marches-de-noel-742948-180-180.webp" width="180" height="180" alt="Chateau De Malmont Marches De Noel" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1209258" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/concert-bekar-1209258_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Concert&nbsp;: Bekar</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Frontignan</span><span class="d-block description font-size-14 lh-sm">
+Plongez dans l’univers musical vibrant de BEKAR, où chant, violon, batterie, basse, claviers et piano fusionnent pour créer un son unique, entre chanson et groove. Les [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/concert-bekar-1209258_A"><img loading="lazy" src="https://www.jds.fr/medias/image/concert-bekar-742945-180-180.webp" width="180" height="180" alt="Concert : Bekar" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1242989" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/concets-de-noel-1242989_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Concets De Noël</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Gignac</span><span class="d-block description font-size-14 lh-sm">Laissez-vous emporter par la magie des fêtes à travers des chants et des mélodies de Noël, interprétés dans une ambiance chaleureuse et féerique.
+
+Concert de Noël de [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/concets-de-noel-1242989_A"><img loading="lazy" src="https://www.jds.fr/medias/image/concets-de-noel-765787-180-180.webp" width="180" height="180" alt="Concets De Noël" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1168212" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/conference-sagesse-et-emotions-du-tumulte-a-la-lucidite-1168212_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Conférence Sagesse Et émotions&nbsp;: Du Tumulte à La Lucidité</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Montpellier</span><span class="d-block description font-size-14 lh-sm">Eric commencera par exposer la vision de grands philosophes sur cette thématique de la sagesse (plan de la conférence partie philosophique). 
+
+Puis, Gilles nous enseignera [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/conference-sagesse-et-emotions-du-tumulte-a-la-lucidite-1168212_A"><img loading="lazy" src="https://www.jds.fr/medias/image/manifestations-image-d-illustration-ia-canva-453562-180-180.webp" width="180" height="180" alt="Conférence Sagesse Et émotions : Du Tumulte à La Lucidité" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1126525" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/fete-des-santons-1126525_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Fête Des Santons</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 06/12/2025 au 07/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Saint-Jean-de-Cuculles</span><span class="d-block description font-size-14 lh-sm">Chaque année, le village célèbre les santons, petites figurines provençales représentant la vie quotidienne et la crèche. Marché d’artisans, démonstrations et animations [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/fete-des-santons-1126525_A"><img loading="lazy" src="https://www.jds.fr/medias/image/fete-des-santons-694127-180-180.webp" width="180" height="180" alt="Fête Des Santons" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1204131" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/montpellier/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Montpellier</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/montpellier/manifestations/l-accueil-fait-son-marche-de-noel-1204131_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">L'Accueil Fait Son Marché De Noël</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Ganges</span><span class="d-block description font-size-14 lh-sm">
+
+    
+        Artisans et exposants locaux
+        Père Noël
+        Animation musicale
+        Partenariat avec La Bougeotte pour la restauration rapide sur place
+    
+
+</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/montpellier/manifestations/l-accueil-fait-son-marche-de-noel-1204131_A"><img loading="lazy" src="https://www.jds.fr/medias/image/l-accueil-fait-son-marche-de-noel-739444-180-180.webp" width="180" height="180" alt="L&#039;Accueil Fait Son Marché De Noël" class="border" /></a></div></div></li>
+</ul>
+</div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/montpellier/agenda/?&amp;page=22"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/montpellier/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/montpellier/agenda/?&amp;page=22">22</a><span class="page d-inline-block mx-1 active mx-1">23</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/montpellier/agenda/?&amp;page=24">24</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/montpellier/agenda/?&amp;page=49">49</a></div>
+<a class="lien_next" href="https://www.jds.fr/montpellier/agenda/?&amp;page=24"><i class="bi bi-chevron-right"></i></a></div>
+<div class="gp_div_affiche" data-id="0" data-id-format="69"></div>
+</div><div id="content_right" class=""><hr class="d-md-none my-5"><div class="wrapper_gp_div mb-4"><div class="regie_18"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 - HAUT -->
+<ins id="pub_1635" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="7598382131"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1635" data-id-format="18"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1635', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '18', 'non_interaction': true }); } });</script>
+</div>
+</div><div class="encart-newsletter d-none d-md-block p-4 bg-light my-5"><p class="mt-0 mb-3 h2">Newsletter JDS Montpellier</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p><form id="form_newsletter_6915e9e934fbb" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="6916016c64766" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915e9e934fbb_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" selected>34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915e9e934fbb_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915e9e934fbb_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915e9e934fbb_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915e9e934fbb_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915e9e934fbb input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915e9e934fbb_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915e9e934fbb input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915e9e934fbb_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915e9e934fbb input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915e9e934fbb_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915e9e934fbb_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915e9e934fbb input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915e9e934fbb',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915e9e934fbb").serialize();
+        $('form#form_newsletter_6915e9e934fbb .submit_2').attr('disabled','');
+        $('#form_newsletter_6915e9e934fbb .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915e9e934fbb .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915e9e934fbb .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter sidebar',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915e9e934fbb .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915e9e934fbb .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script></div><div class="wrapper_gp_div mb-2 sticky"><div class="regie_29"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 BAS -->
+<ins id="pub_1636" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="9513867524"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1636" data-id-format="29"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1636', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '29', 'non_interaction': true }); } });</script>
+</div>
+</div></div></div></div></div><footer id="footer" class="mt-5 px-3">    
+    <div class="container">     
+    <div class="row">
+        
+        <div class="col-md-6 col-lg-4 order-md-6 offset-lg-1">
+            <div id="footer_newsletter" class="p-4 bg-light full-width-sm mb-5">                                  
+                <p class="mt-0 mb-3 h2">Newsletter JDS Montpellier</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p>                         
+                <form id="form_newsletter_6915e9e935041" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="6916016c64766" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915e9e935041_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" selected>34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915e9e935041_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915e9e935041_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915e9e935041_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915e9e935041_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915e9e935041 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915e9e935041_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915e9e935041 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915e9e935041_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915e9e935041 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915e9e935041_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915e9e935041_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915e9e935041 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915e9e935041',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915e9e935041").serialize();
+        $('form#form_newsletter_6915e9e935041 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915e9e935041 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915e9e935041 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915e9e935041 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter footer',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915e9e935041 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915e9e935041 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script>         
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 order-md-first">
+            <a class="logo d-block mx-auto mx-lg-0" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a>
+
+            
+            <p class="my-4 fw-bold text-center text-md-start">Le JDS Montpellier, c’est des sorties (concerts, humour…) et des bons plans en tous genres (resto, shopping, événements locaux…) au plus près de chez vous.</p>
+            
+                
+                
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <span class="font-size-14">Téléchargez l'appli JDS : </span>
+                <a href="https://market.android.com/details?id=fr.jds.app" class="mx-1" target="_blank"><i class="bi bi-android2"></i></a><a href="https://itunes.apple.com/fr/app/jds-les-sorties-en-alsace/id467323730?mt=8" class="mx-1" target="_blank"><i class="bi bi-apple"></i></a>   
+                </p>
+                
+            <hr class="my-5 d-md-none">
+        </div>
+        <div class="col-md-12 col-lg-3 order-md-11 offset-lg-1">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Organisateurs</p>
+                    <p class="fw-bold">Publiez votre événement sur le site jds.fr</p>                
+                    <ul class="text-gray-700 mt-2">
+                        <li>Publiez gratuitement votre événement dans l’agenda via notre <a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=footer&utm_campaign=link_publier_info_text">espace organisateur</a></li>
+                        <li>Bénéficiez d'une visibilité auprès de nos 3&nbsp;000&nbsp;000 visiteurs mensuels !</li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://pro.jds.fr" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je publie mon événement</a></p>
+
+                    <hr class="my-5 d-md-none d-lg-block">
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Annonceurs</p>
+                    <p class="fw-bold">Discutons ensemble de votre communication</p>          
+                    <ul class="text-gray-700 mt-2">
+                        <li>Promouvoir au mieux votre événement ou votre offre</li>
+                        <li>3&nbsp;000&nbsp;000 visiteurs mensuels <a href="https://www.jds.fr/magazine/actu-magazine/audience-jds-169974_A">(tout savoir sur l'audience du JDS)</a></li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://www.jds.fr/blog/" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je découvre les solutions</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 order-md-12">
+            <hr class="my-5">
+
+            <ul class="list-unstyled font-size-14 d-lg-flex justify-content-between">
+            <li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/journal-des-spectacles-magazine-mulhouse-colmar-haut-rhin-alsace-837_A">Qui sommes-nous ?</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/mentions-legales/">Infos légales / Affiliation</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/cookies/">Cookies</a></li><li class="mb-1 me-2"><a href="javascript:Didomi.preferences.show()">Modifier mes choix de cookies</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/comment-vous-desabonner-des-notifications-jds-340946_A">Se désabonner des notifications</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/contact/">Nous contacter</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/offres-emploi-mulhouse-alsace/">Emploi : nous rejoindre</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/">Blog</a></li>  
+            </ul>
+
+            <p class="font-size-14">Copyright 2008-2025 jds.fr</p>
+        </div>
+    </div> <!-- fin row -->        
+    </div> <!-- fin container -->
+</footer><div id="search-form-menu-container" class="search-form-menu-container shadow-lg bg-light hidden text-center py-3 py-lg-5">
+    <div class="container px-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-bold font-size-26">Rechercher</span>
+            <span class="cursor-pointer d-block search-form-menu-close text-primary" onclick="toggleSearchMenu();"><i class="bi bi-x-circle me-1"></i> Fermer</span>
+        </div>
+        <div
+            id="search-app"
+            data-endpoint="/ajax/search.php"
+            data-placeholder-text="ex. : concert demain à ..."
+            data-index-event="jds_event"
+            data-index-city="jds_city"
+            data-index-venue="jds_venue"
+            data-index-article="jds_article"
+            data-index-artist="jds_artist"
+            data-current-city-id="1132" data-current-city-name="Montpellier"         ></div>
+    </div>
+</div>
+
+<div id="header-city-dropdown-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <p class="modal-title m-0">Choisissez une ville spécifique</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="ville-selector-mode" value="default" id="ville-selector-mode" />
+                <input type="text" class="form-control form-control-lg shadow-lg rounded-3" id="ville-selector-modal" placeholder="Entrez le nom de votre ville">
+                <div id="ville-selector-container-modal"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer>
+$(document).ready(function() {
+    $('#ville-selector-modal').keyup(function() {
+        if($(this).val().length==0) { $("#ville-selector-container-modal").html(""); return; }
+        if($(this).val().length<2) { return; }
+
+        $.post("/ajax/recherche_ville_fonction.php", { term: $(this).val(), mode:$('input[name="ville-selector-mode"]').val() })
+        .done(function(data) {
+
+            $("#ville-selector-container-modal").html('<p class="mt-4">Cliquez sur votre ville :</p><ul class="list-unstyled font-size-16"></ul>');
+            obj=JSON.parse(data);
+            obj.forEach(function(item){
+            $("#ville-selector-container-modal").find("ul").append('<li class="p-3 border-bottom"><a href="'+item.url+'" class="text-dark"><i class="bi bi-geo-fill text-primary me-1"></i> '+item.label+'</a></li>');
+        });
+        });
+    }); 
+});
+</script>
+
+</div><script defer src="/libs/jquery/magnific-popup/jquery.magnific-popup.min.js?v=131"></script><script defer src="/scripts/slick.min.js?v=131"></script><script defer src="/libs/choices/scripts/choices.js?v=131"></script><script defer src="/libs/lightbox2/js/lightbox.min.js?v=131"></script><script defer src="/scripts/functions_footer.js?v=131"></script><script>const { createApp, ref, computed, watch, onMounted, onBeforeUnmount, nextTick, reactive } = Vue;</script><script src="/scripts/search.app.js?v=131"></script><script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-messaging-compat.js"></script>
+<script>
+const firebaseConfig = {
+    apiKey: "AIzaSyBjBC01qlzGVLYWWE8D0rrOzL2cSfIf7MQ",
+    authDomain: "journal-des-spectacles-dd5d0.firebaseapp.com",
+    databaseURL: "https://journal-des-spectacles-dd5d0.firebaseio.com",
+    projectId: "journal-des-spectacles-dd5d0",
+    storageBucket: "journal-des-spectacles-dd5d0.appspot.com",
+    messagingSenderId: "37707045198",
+    appId: "1:37707045198:web:e58879e2e7f9adf0"
+  };
+const vapidKey = "BB2gRQtko-8CqzZbrzzlGBwMim_ThaPkNdzqi780Y7ku5VmG_E_DwFJnrJXB7_pNJKn9UTbIchVKfijBHNteuu8";
+  
+firebase.initializeApp(firebaseConfig);
+const messaging = firebase.messaging();
+
+var browserName = (function (agent) {        
+    switch (true) {
+        case agent.indexOf("edge") > -1: return "Edge"; // ms
+        case agent.indexOf("edg/") > -1: return "Edge"; // (chromium based)
+        case agent.indexOf("chrome") > -1 && !!window.chrome: return "Chrome";
+        case agent.indexOf("firefox") > -1: return "Firefox";
+        case agent.indexOf("safari") > -1: return "Safari";
+        default: return "other";
+    }
+})(window.navigator.userAgent.toLowerCase());
+    
+function fcm_resetUI() { 
+    if(!isTokenSentToServer()) {
+        if(window.navigator.userAgent.toLowerCase().indexOf('iphone')!==-1) { return; } // fix bug safari iphone    
+        if(browserName=='Chrome') { $('#web_push_dialog').addClass('chrome'); }
+        if(browserName=='Edge') { $('#web_push_dialog').addClass('edge'); }
+        if(browserName=='Firefox') { $('#web_push_dialog').addClass('firefox'); }
+        if(Notification.permission=='default') {
+            if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+        }
+        else if(Notification.permission=='granted') {
+            messaging.getToken({ vapidKey:vapidKey }).then((currentToken) => {   
+                                if (currentToken) {
+                    sendTokenToServer(currentToken);
+                } else {
+                  setTokenSentToServer(false);
+                  if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+                }
+            }).catch((err) => {
+                
+                setTokenSentToServer(false);
+            });
+        }    
+    }
+}
+//window.fcm_resetUI = fcm_resetUI;
+function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+        setTokenSentToServer(true);
+        $.post( "/ajax/firebase_register_v2.php",  { token: currentToken, dpt:'34' });      
+        if(typeof gtag=="function") {
+            gtag("event", "subscription", {
+                "event_category" : "Firebase",
+                "event_label" : "Web push",
+                "non_interaction": true
+            });            
+        }
+    } 
+}
+function isTokenSentToServer() {
+    var web_push_cookie = $.cookie('web_push');       
+    if(typeof web_push_cookie === 'undefined' || web_push_cookie===false) return false;
+    return true;
+}
+function setTokenSentToServer(sent) {
+    if(sent) $.cookie('web_push',true, {path: '/',domain:'.jds.fr'}); 
+    else $.cookie('web_push',false, {path: '/',domain:'.jds.fr'}); 
+}
+function requestPushDialog() {
+    $.magnificPopup.open({
+        items: {
+            src: '#web_push_dialog', // can be a HTML string, jQuery object, or CSS selector
+            type: 'inline'
+          },
+        alignTop : true,
+        showCloseBtn : true,
+        //closeOnBgClick: ((browserName!='Firefox' &&  && !$('#web_push_dialog').hasClass('mobile'))?false:true),
+        callbacks: {
+            open: function() {                 
+                $('.mfp-bg').css('position','fixed');      
+                if(browserName!='Firefox') {
+                    if(!$('#web_push_dialog').hasClass('mobile')) {
+                        $('.mfp-bg').css('opacity',.0).css('width','auto').css('height','auto');
+                        $('html').css('overflow','auto');  
+                        $('.mfp-wrap').css('width','auto').css('height','auto');
+                    }
+                    else {
+                        $('html').css('overflow','hidden');  
+                    }
+                }
+                else {
+                    $('.mfp-bg').css('opacity',.75).css('background','#fff');
+                }
+
+            },
+            close: function() {
+                $('html').css('overflow','auto'); 
+            }
+        }    
+    }); 
+    if(browserName!='Firefox') { requestPermission(); } // sur firefox, l'ouverture de permission automatique ne marche pas alors on remet les boutons
+}
+function requestPermission() {   
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+            fcm_resetUI();
+            $.magnificPopup.close();
+      } else {
+            $.magnificPopup.close();
+      }
+    });
+}
+$(document).on('click','#web_push_dialog button',function() {
+    //firefox
+    if($(this).hasClass('accept')) requestPermission();
+    if($(this).hasClass('deny')) setTokenSentToServer(true);    
+    
+    $.magnificPopup.close();       
+});
+</script>
+
+<div id="web_push_dialog" class="mfp-hide desktop">
+    <div class="popup-content p-3">
+        <img class="logo-mobile" loading="lazy" src="/images/new/logo-jds.svg?v=131" width="40" height="40" alt="jds.fr">
+        <p class="popup-title mb-3"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+        <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+        <p class="text-gray-600 font-size-14 mb-0">Autoriser les notifications pour continuer.</p>
+        <hr class="hide-mobile">
+        <div class="p-3 hide-mobile text-center bg-primary"><img loading="lazy" src="/images/new/logo-jds-white.svg?v=131" width="100" height="100" alt="jds.fr"></div>
+        <div class="arrow text-gray-800"><i class="bi bi-arrow-down-circle-fill"></i></div>
+    </div>
+    <div class="popup-content-firefox p-3">
+        <div class="row">
+            <div class="col-md-3 pr-0 col-3"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" class="popup-logo"></div>
+            <div class="col-md-9 col-9">
+              <p class="popup-title"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+              <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+              <p class="text-gray-600 font-size-14 mb-3">Une seconde fenêtre va s'ouvrir vous invitant à autoriser les notifications</p>
+              <div class="popup-footer text-right"><button class="btn btn-outline-primary rounded-pill btn-sm me-3 deny">Refuser</button><button class="btn btn-primary rounded-pill btn-sm me-3 accept">Autoriser</button></div>
+            </div>
+        </div>
+    </div>
+</div><script type="didomi/javascript" data-purposes="select_basic_ads" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4984827051088801"
+     crossorigin="anonymous"></script></body></html>

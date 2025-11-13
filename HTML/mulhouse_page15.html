@@ -1,0 +1,645 @@
+<!DOCTYPE html><html lang="fr"><head><script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+      else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+        var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+        if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e,tgt){
+        var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+tgt;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("9d946103-8843-4a4e-ab0b-8e61ea84e891","Qr7JnTUV")})();</script>
+
+<script> 
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(function (Didomi) { 
+        // Call other functions on the SDK
+
+        // Refresh de la page en cas de changement du consentement
+        window.didomiEventListeners = window.didomiEventListeners || [];
+        window.didomiEventListeners.push({
+            event: 'consent.changed',
+            listener: function (context) {
+                gp_maj();
+            }
+        });
+
+        // Google advertising products
+        Didomi.getObservableOnUserConsentStatusForVendor('google')
+        .filter(function (status) { return status !== undefined })
+        .subscribe(function (consentStatus) {
+            if (consentStatus === undefined || consentStatus === false) {
+                // on masque les encarts pubs vides
+                (function() {     
+                    var div_regies = document.getElementsByClassName('wrapper_gp_div');
+                    
+                    setTimeout(function() { // on fait un settimeout sinon le length n'est pas juste...                   
+                        for (let i = 0; i < div_regies.length; i++) {                  
+                            if (div_regies[i].innerHTML.indexOf('regie_') > -1) {                           
+                              div_regies[i].style.display="none";
+                            }
+                        }
+                        
+                    },400);
+                    
+                    
+                })();
+            }
+        }); 
+        
+     
+
+    });
+    </script> 
+<meta charset="UTF-8" />
+<title>Mulhouse - L&#039;agenda des spectacles, manifestations, concerts - Page 15</title>
+<meta name="description" content="Mulhouse - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 15" />
+<link rel="canonical" href="https://www.jds.fr/mulhouse/agenda/?page=15" />
+<meta name="p:domain_verify" content="9efecdd4eddf0844d5703f41d2dc7ca7"/>
+<meta property="fb:app_id" content="638077278167784" />
+<meta property="fb:pages" content="50813882504">
+<meta property="og:title" content="Mulhouse - L&#039;agenda des spectacles, manifestations, concerts - Page 15" />
+<meta property="og:description" content="Mulhouse - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 15" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.jds.fr/mulhouse/agenda/?page=15" />
+<meta property="og:site_name" content="jds.fr" />
+<meta property="og:image" content="https://www.jds.fr/images/header_logo_120.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="364" />
+<meta property="og:image:height" content="364" />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https:\/\/www.jds.fr\/","name":"Accueil"},{"@type":"ListItem","position":2,"item":"https:\/\/www.jds.fr\/mulhouse\/","name":"Mulhouse"},{"@type":"ListItem","position":3,"name":"Agenda"}]}</script>
+
+<meta name="robots" content="noindex,follow" />
+<link rel="prev" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=14" /><link rel="next" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=16" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+<link rel="stylesheet" href="/css/custom.css?v=131">
+<link rel="preload" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131"></noscript>
+<link rel="preload" href="/libs/lightbox2/css/lightbox.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/lightbox2/css/lightbox.min.css?v=131"></noscript>
+<link rel="preload" href="/css/slick-theme.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick-theme.css?v=131"></noscript>
+<link rel="preload" href="/css/slick.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick.css?v=131"></noscript>
+<link rel="preload" href="/libs/choices/styles/choices.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/choices/styles/choices.min.css?v=131"></noscript>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#e50b47">
+<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e50b47">
+<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><link rel="manifest" href="/manifest.json"></head><body class="version_a  "><script async src="https://www.googletagmanager.com/gtag/js?id=G-6WVELE5WG9"></script>
+<script type="didomi/javascript" data-vendor="c:googleana-4TXnJigR">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+        dataLayer.push(arguments);
+        if (arguments[0] === 'js') {
+            setTimeout(function() {
+            window.dispatchEvent(new Event('gtag_loaded'));
+        }, 1000);
+        }
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6WVELE5WG9', {
+          'cookie_expires': 33696000,
+          'transport_type': 'beacon',
+          'dimension1': '0','dimension2': '68','dimension3': '2','dimension4': '0','dimension5': '0','dimension6': '0','dimension7': '','dimension8': 'a','dimension9': '0',     
+    });
+</script><script src="/libs/jquery-3.7.1.min.js"></script><script defer src="/libs/bootstrap/js/popper.min.js"></script><script defer src="/libs/bootstrap/js/bootstrap.min.js"></script><script defer src="/libs/jquery/js/jquery.cookie.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.date.js"></script><script defer src="/libs/jquery/pickadate.js/lib/translations/fr_FR.js"></script><script src="/libs/vue.global.prod.js"></script><script src="/libs/axios.min.js"></script><script src="/ads-checker.js"></script><script defer src="/scripts/functions.js?v=131"></script><script>var gp_maj_done=false;
+var param_gp=[];param_gp['id_newsletter']='0';param_gp['type']='0';param_gp['sousrub']='0';param_gp['rub']='2';param_gp['rub_rub']='2';param_gp['page']='15';param_gp['mobile_version']='0';param_gp['detail_type']='';param_gp['detail_id']='0';param_gp['web_push_site']='';param_gp['web_push_id']='';param_gp['current_departement']='68';$(document).ready(function() {
+    if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) gp_maj();});</script><div class="gp_div_affiche" data-id="0" data-id-format="24"></div>
+<div id="global" class="p-0"><div id="header" class="bg-white header"><div class="d-flex justify-content-between align-items-center px-2rem header-inner-wrapper text-primary container"><div class="header-logo mb-1"><a class="d-block" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a></div><div class="header-city-inline-selector d-flex me-auto font-size-22 ms-4 align-items-center lh-1"><a href="https://www.jds.fr/mulhouse/" class="">Mulhouse</a><span class="ms-auto ms-md-0 d-block ps-2 cursor-pointer" onclick="toggleCityMenu();"><i class="bi bi-chevron-down"></i></span></div><div class="header-publish ms-md-auto me-md-5"><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=header&utm_campaign=link_publier_info" class="btn btn-outline-primary rounded-pill d-none d-md-inline shadow-sm"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><div class="header-menu font-size-36 cursor-pointer ps-3" onclick="toggleMenu()"><i class="bi bi-list"></i></div></div></div>
+<!-- NAVBAR -->
+<div id="header-navbar" class="bg-light-primary header-navbar navbar-v2">
+    <div class="px-2rem header-navbar-inner-wrapper container font-size-14">
+        <div class="navbar-v2-item d-flex">
+            <div class="flex-fill">
+                <span onclick="toggleSearchMenu();" class="bg-primary text-white d-block px-3"><span class="search-btn cursor-pointer"><span><i class="bi bi-search me-2"></i> Rechercher</span></span>
+            </div>
+            <div class="flex-fill"><a href="https://www.jds.fr/mulhouse/agenda/agenda-du-jour/-aujourdhui_JPJ" class="" data-event-label="Aujourd'hui"><span><i class="cf icon-aujourdhui">&#xe80f;</i> Aujourd'hui</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/mulhouse/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="" data-event-label="Spectacles"><span><i class="cf icon-spectacles">&#xe80c;</i> Spectacles</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/mulhouse/agenda/musique-et-concerts-96_B" class="" data-event-label="Concerts"><span><i class="cf icon-concert">&#xe801;</i> Concerts</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/mulhouse/agenda/manifestations-fetes-festivals-137_B" class="" data-event-label="Animations"><span><i class="cf icon-manifestations">&#xe807;</i> Animations</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/mulhouse/agenda/foire-salon-puces-bourses-468_B" class="" data-event-label="Salons / Puces"><span><i class="cf icon-foires">&#xe805;</i> Salons / Puces</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/mulhouse/agenda/sports-145_B" class="" data-event-label="Sports"><span><i class="cf icon-sport">&#xe810;</i> Sports</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/mulhouse/agenda/expositions-471_B" class="" data-event-label="Expos"><span><i class="cf icon-expos">&#xe802;</i> Expos</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/mulhouse/agenda/enfants-94_B" class="" data-event-label="Famille"><span><i class="cf icon-famille">&#xe813;</i> Famille</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/mulhouse/agenda/soirees-469_B" class="" data-event-label="Soirées"><span><i class="cf icon-soirees">&#xe80b;</i> Soirées</span></a></div>        </div>
+    </div>
+</div>
+<div id="menu" class="menu bg-white px-2rem py-5 hidden"><div class="text-center"><button class="btn btn-primary btn-lg rounded-pill d-block w-100 menu-link" onclick="toggleSearchMenu();" data-event-label="open-search-menu"><i class="bi bi-search me-2"></i> Rechercher</button><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=menu&utm_campaign=link_publier_info" class="btn btn-outline-primary my-4 btn-lg rounded-pill d-block w-100" data-event-label="Espace pro"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/mulhouse/agenda/agenda-du-jour/-aujourdhui_JPJ" class="text-dark hover-text-primary cursor-pointer" data-event-label="Aujourd'hui">Aujourd'hui à Mulhouse</a></li><li><a href="https://www.jds.fr/mulhouse/agenda/evenements/" class="text-dark hover-text-primary" data-event-label="Evénements">Evénements</a></li><li><a href="https://www.jds.fr/mulhouse/agenda/manifestations-fetes-festivals-137_B" class="text-dark hover-text-primary" data-event-label="Manifestations">Manifestations</a></li><li><a href="https://www.jds.fr/mulhouse/agenda/foire-salon-puces-bourses-468_B" class="text-dark hover-text-primary" data-event-label="Foires & salons">Foires & salons</a></li><li><a href="https://www.jds.fr/mulhouse/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="text-dark hover-text-primary" data-event-label="Spectacles">Spectacles</a></li><li><a href="https://www.jds.fr/mulhouse/agenda/musique-et-concerts-96_B" class="text-dark hover-text-primary" data-event-label="Concerts">Concerts</a></li><li><a href="https://www.jds.fr/mulhouse/agenda/sports-145_B" class="text-dark hover-text-primary" data-event-label="Sports">Sports</a></li><li><a href="https://www.jds.fr/mulhouse/agenda/soirees-469_B" class="text-dark hover-text-primary" data-event-label="Soirées">Soirées</a></li><li><a href="https://www.jds.fr/mulhouse/agenda/enfants-94_B" class="text-dark hover-text-primary" data-event-label="Sorties famille">Sorties famille</a></li><li><a href="https://www.jds.fr/mulhouse/agenda/expositions-471_B" class="text-dark hover-text-primary" data-event-label="Expos">Expos</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/mulhouse/magazine/" class="text-dark hover-text-primary" data-event-label="Actus">Actus à Mulhouse</a></li><li><a href="https://www.jds.fr/mulhouse/annuaire/" class="text-dark hover-text-primary" data-event-label="Annuaire">Annuaire tourisme & loisirs</a></li><li><a href="https://www.jds.fr/restaurants-308_T" class="text-dark hover-text-primary" data-event-label="Restaurants">Restaurants</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/jeux/" class="text-dark hover-text-primary" data-event-label="Jeux">Jeux concours</a></li><li><a href="https://www.jds.fr/newsletter-archives/toutes-les-newsletter-jds-fr" class="text-dark hover-text-primary" data-event-label="Newsletters">Newsletter des sorties</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/blog/" class="text-dark hover-text-primary" data-event-label="Annonceurs">Annonceurs</a></li></ul></div><div id="header-city-dropdown" class="header-city-dropdown bg-secondary py-2 text-white px-2rem font-size-16 hidden"><div class="container"><div class="py-2 cursor-pointer text-uppercase" onclick="$('#header-city-dropdown-modal').modal('show'); $('#ville-selector-modal').focus(); $('input[name=&quot;ville-selector-mode&quot;]').val('default')"><i class="bi bi-building-add me-1"></i> Une autre ville</div><div class="py-1"><a href="https://www.jds.fr/bordeaux/" class="text-white text-uppercase">Bordeaux</a></div><div class="py-1"><a href="https://www.jds.fr/colmar/" class="text-white text-uppercase">Colmar</a></div><div class="py-1"><a href="https://www.jds.fr/dijon/" class="text-white text-uppercase">Dijon</a></div><div class="py-1"><a href="https://www.jds.fr/lille/" class="text-white text-uppercase">Lille</a></div><div class="py-1"><a href="https://www.jds.fr/lyon/" class="text-white text-uppercase">Lyon</a></div><div class="py-1"><a href="https://www.jds.fr/marseille/" class="text-white text-uppercase">Marseille</a></div><div class="py-1"><a href="https://www.jds.fr/metz/" class="text-white text-uppercase">Metz</a></div><div class="py-1"><a href="https://www.jds.fr/montpellier/" class="text-white text-uppercase">Montpellier</a></div><div class="py-1"><a href="https://www.jds.fr/mulhouse/" class="text-white text-uppercase">Mulhouse</a></div><div class="py-1"><a href="https://www.jds.fr/nancy/" class="text-white text-uppercase">Nancy</a></div><div class="py-1"><a href="https://www.jds.fr/nantes/" class="text-white text-uppercase">Nantes</a></div><div class="py-1"><a href="https://www.jds.fr/nice/" class="text-white text-uppercase">Nice</a></div><div class="py-1"><a href="https://www.jds.fr/paris/" class="text-white text-uppercase">Paris</a></div><div class="py-1"><a href="https://www.jds.fr/reims/" class="text-white text-uppercase">Reims</a></div><div class="py-1"><a href="https://www.jds.fr/rennes/" class="text-white text-uppercase">Rennes</a></div><div class="py-1"><a href="https://www.jds.fr/strasbourg/" class="text-white text-uppercase">Strasbourg</a></div><div class="py-1"><a href="https://www.jds.fr/toulouse/" class="text-white text-uppercase">Toulouse</a></div><div class="mt-5 py-1 cursor-pointer" onclick="toggleCityMenu()"><u><i class="bi bi-x-circle me-1"></i> Fermer le menu</u></div></div></div><div id="global-container"><div id="global-container-inner-wrapper" class="container"><!--[if lte IE 9]>
+<div class="alert alert-warning" role="alert">
+<p class="mb-0">Vous utilisez une très ancienne version de navigateur Internet, ce qui impacte négativement votre expérience de navigation sur le site du JDS et sur Internet en général. Nous vous recommandons de mettre à jour votre navigateur ou d'en installer un autre en <a href="https://browsehappy.com/?locale=fr" target="_blank">cliquant ici</a>.</p>
+</div>
+<![endif]--><div class="text-center mb-5 mx-auto leaderboard"><div class="wrapper_gp_div nobg"><div class="regie_2">
+<!-- Leaderboard 1000 x 300 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:1000px;height:300px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="4079211116"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="3348" data-id-format="2"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3348', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '2', 'non_interaction': true }); } });</script>
+</div>
+</div></div><div id="content_container" class="d-md-flex justify-content-between"><div id="content_left"><div id="chemin" class="ariane mb-3"><a href="https://www.jds.fr/">Accueil</a><a href="https://www.jds.fr/mulhouse/">Mulhouse</a></div><div class="header-ville no-form is_page_ville ville_68 agglo_3 "><h1>Mulhouse&nbsp;: Agenda et événements</h1><button onclick="toggleSearchMenu()" class="btn btn-primary btn-lg mx-auto d-block rounded-pill shadow-lg my-4" data-position="page-resultats-modifier-recherche-top"><i class="bi bi-search me-2"></i> Rechercher</button></div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=14"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/mulhouse/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=14">14</a><span class="page d-inline-block mx-1 active mx-1">15</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=16">16</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=35">35</a></div>
+<a class="lien_next" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=16"><i class="bi bi-chevron-right"></i></a></div>
+<div class="mt-5"><ul class="mt-3 list-unstyled list-articles-v2">
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1194744" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/theatre-23_B" class="lh-sm">Théâtre à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/spectacles/theatre/l-art-d-avoir-toujours-raison-1194744_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">L'Art d'avoir toujours raison</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 02/12/2025</span><a href="https://www.jds.fr/mulhouse/thann/salles-spectacle/cinema-relais-culturel-thann-147_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Relais Culturel Intercommunal - Thann</a><span class="d-block description font-size-14 lh-sm">L'Art d'avoir toujours raison | Th&eacute;&acirc;tre | Mardi 2 D&eacute;c. &ndash; 20h00 | Relais Culturel intercommunal - Thann &bull; D&egrave;s 16 ans, Tout public &bull; 1h15 [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/spectacles/theatre/l-art-d-avoir-toujours-raison-1194744_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-91618100-1759139427-733593-180-180.webp" width="180" height="180" alt="L&#039;Art d&#039;avoir toujours raison" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="673548" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/concerts/chanson-francaise/piaf-le-spectacle-673548_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Piaf&nbsp;! le Spectacle</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 02/12/2025</span><a href="https://www.jds.fr/mulhouse/sausheim/salle-de-concert/espace-dollfus-et-noack-sausheim-2652_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> ED&N - Espace Dollfus & Noack - Sausheim</a><span class="d-block description font-size-14 lh-sm">Piaf&nbsp;! le Spectacle en concert à Mulhouse (ED&N - Espace Dollfus & Noack Sausheim), le 2 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=38948565332&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/concerts/chanson-francaise/piaf-le-spectacle-673548_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F3b%2F1e%2Fpiaf-tickets_406646_3361128_222x222.jpg&feedId=23455&k=bd7ccf4f0abdafeb037ed22d1dde14b99b7ad1de" width="180" height="180" alt="Piaf ! le Spectacle" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1248977" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/matchs-sportifs-466_B" class="lh-sm">Matchs à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/sports/matchs/volley-mulhouse-alsace-ok-ub-le-vma-lance-sa-campagne-europeenne-a-domicile-1248977_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Volley Mulhouse Alsace – ŽOK Ub&nbsp;: vivez le match retour de la Coupe d'Europe à domicile</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 02/12/2025</span><a href="https://www.jds.fr/mulhouse/salle-sport-clubs/palais-des-sports-mulhouse-66_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Palais des Sports - Mulhouse</a><span class="d-block description font-size-14 lh-sm">
+Le Volley Mulhouse Alsace entre dans le vif de la Coupe d&rsquo;Europe 2025 avec un match retour tr&egrave;s attendu face au ŽOK Ub, le mardi 2 d&eacute;cembre 2025 au Palais [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/sports/matchs/volley-mulhouse-alsace-ok-ub-le-vma-lance-sa-campagne-europeenne-a-domicile-1248977_A"><img loading="lazy" src="https://www.jds.fr/medias/image/volley-mulhouse-alsace-ok-ub-vivez-le-match-retour-769922-180-180.webp" width="180" height="180" alt="Volley Mulhouse Alsace – ŽOK Ub : vivez le match retour de la Coupe d&#039;Europe à domicile" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1243591" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/ateliers/apprentissage-du-francais-sur-tablette-numerique-a-la-bibliotheque-des-coteaux-1243591_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Apprentissage du français sur tablette numérique à la bibliothèque des Coteaux</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 02/12/2025</span><a href="https://www.jds.fr/mulhouse/bibliotheque-et-mediatheque/bibliotheque-des-coteaux-mulhouse-392_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Bibliothèque des Coteaux à Mulhouse</a><span class="d-block description font-size-14 lh-sm">Apprentissage du fran&ccedil;ais sur tablette num&eacute;rique, destin&eacute; au public FLE.</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/ateliers/apprentissage-du-francais-sur-tablette-numerique-a-la-bibliotheque-des-coteaux-1243591_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-56255300-1757321753-766040-180-180.webp" width="180" height="180" alt="Apprentissage du français sur tablette numérique à la bibliothèque des Coteaux" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1242313" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/cine-concert-200_B" class="lh-sm">Cinéma à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/spectacles/cinema/ballet-rediffusion-1242313_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Ballet/Rediffusion</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 02/12/2025</span><a href="https://www.jds.fr/mulhouse/altkirch/cinema-sorties-films-horaires/cinema-palace-lumiere-altkirch-432_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Cinéma Palace Lumière - Altkirch</a><span class="d-block description font-size-14 lh-sm">Lise, fille unique de la veuve Simone, est amoureuse du jeune fermier Colas, mais sa m&egrave;re nourrit des projets beaucoup plus ambitieux pour elle. Simone esp&egrave;re la [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/spectacles/cinema/ballet-rediffusion-1242313_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-08757000-1762366338-765377-180-180.webp" width="180" height="180" alt="Ballet/Rediffusion" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1223041" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/conferences-472_B" class="lh-sm">Conférences à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/conferences/l-enfant-different-1223041_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">L'enfant différent</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 02/12/2025</span><a href="https://www.jds.fr/mulhouse/riedisheim/centre-socio-culturel/centre-culturel-et-des-loisirs-riedisheim-60_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> L'Aronde - Riedisheim</a><span class="d-block description font-size-14 lh-sm">&nbsp;Cette ann&eacute;e, dans le cadre de la Journ&eacute;e internationale du handicap, le conseil handicap de la ville de Riedisheim, vous invite &agrave; une soir&eacute;e [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/conferences/l-enfant-different-1223041_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-68474500-1760777763-753566-180-180.webp" width="180" height="180" alt="L&#039;enfant différent" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1096121" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/cirque-36_B" class="lh-sm">Cirque à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/spectacles/cirque/ye-l-eau-1096121_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Yé&nbsp;! (L'eau&nbsp;!)</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 03/12/2025 au 06/12/2025</span><a href="https://www.jds.fr/mulhouse/salles-spectacle/la-filature-mulhouse-theatre-programme-horaire-36_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Filature - Mulhouse</a><span class="d-block description font-size-14 lh-sm">avec les circassien&middot;nes du collectif Circus Baobab. . Y&eacute;&nbsp;! (L&rsquo;Eau&nbsp;!) est une bouteille acrobatiquement jet&eacute;e &agrave; la mer par les [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/spectacles/cirque/ye-l-eau-1096121_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-63423500-1752746979-677523-180-180.webp" width="180" height="180" alt="Yé ! (L&#039;eau !)" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1173031" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/ateliers/atelier-parents-enfants-3-5-ans-1173031_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Atelier parents-enfants 3-5 ans</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 03/12/2025</span><a href="https://www.jds.fr/mulhouse/lutterbach/decouverte-de-la-nature/le-moulin-de-lutterbach-369_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Moulin Nature - Lutterbach</a><span class="d-block description font-size-14 lh-sm">Partagez des instants complices avec votre enfant&nbsp;! Venez exp&eacute;rimenter des moments dehors, au contact des &eacute;l&eacute;ments de la nature sur notre terrain.. Au [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/ateliers/atelier-parents-enfants-3-5-ans-1173031_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-73945300-1758010984-720521-180-180.webp" width="180" height="180" alt="Atelier parents-enfants 3-5 ans" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="741001" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/le-fourgon-postal-du-pere-noel-741001_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Le fourgon postal du Père Noël</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 03/12/2025 au 10/12/2025</span><a href="https://www.jds.fr/mulhouse/musee/cite-du-train-mulhouse-musee-chemin-de-fer-38_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Cité du Train - Patrimoine SNCF - Mulhouse</a><span class="d-block description font-size-14 lh-sm">La magie de No&euml;l illumine la Cit&eacute; du Train&nbsp;!
+Le Fourgon Postal du P&egrave;re No&euml;l reprend du service les mercredis 3 et 10 d&eacute;cembre 2025 pour une [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/le-fourgon-postal-du-pere-noel-741001_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-89557000-1762262777-764248-180-180.webp" width="180" height="180" alt="Le fourgon postal du Père Noël" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1173033" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/conferences-472_B" class="lh-sm">Conférences à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/conferences/cine-debat-justice-climatique-la-lutte-pour-le-futur-entre-dans-les-tribunaux-1173033_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Ciné-débat&nbsp;: justice climatique, la lutte pour le futur entre dans les tribunaux</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 04/12/2025</span><a href="https://www.jds.fr/mulhouse/cinema-sorties-films-horaires/cinema-bel-air-mulhouse-film-horaire-109_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Cinéma Bel Air - Mulhouse</a><span class="d-block description font-size-14 lh-sm">Le 04 d&eacute;cembre &agrave; 20h au cin&eacute;ma Bel Air.
+Tarif d&eacute;fini par le cin&eacute;ma Bel Air.</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/conferences/cine-debat-justice-climatique-la-lutte-pour-le-futur-entre-dans-les-tribunaux-1173033_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-38606500-1758011155-720523-180-180.webp" width="180" height="180" alt="Ciné-débat : justice climatique, la lutte pour le futur entre dans les tribunaux" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1243754" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/musique-classique-89_B" class="lh-sm">Musique classique à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/concerts/musique-classique/concert-millefeuille-1243754_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Concert&nbsp;: Millefeuille</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 04/12/2025</span><a href="https://www.jds.fr/mulhouse/ensisheim/bibliotheque-et-mediatheque/mediatheque-espace-liberte-14633_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Médiathèque Espace Liberté - Ensisheim</a><span class="d-block description font-size-14 lh-sm">Ces fameux &ldquo;grounds&rdquo;, les standards du XVIe si&egrave;cle, sont propices &agrave; mille compositions et improvisations. De Monteverdi aux Jackson Five, une passacaille [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/concerts/musique-classique/concert-millefeuille-1243754_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-18633000-1762441950-766309-180-180.webp" width="180" height="180" alt="Concert : Millefeuille" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="739497" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/marches-de-noel-300_B" class="lh-sm">Marché de Noël à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/marche-de-noel/marche-de-noel-739497_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Marché de Noël </span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 04/12/2025 au 20/12/2025</span><a href="https://www.jds.fr/mulhouse/restaurant-cuisine-francaise/restaurant-le-sinclair-2326_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Restaurant le Sinclair - Mulhouse</a><span class="d-block description font-size-14 lh-sm">Les jeunes et les professionnels du DIME Sinclair, &eacute;paul&eacute;s par l&rsquo;atelier Bois de l&rsquo;ESAT Sinclair, vous accueillent dans la cour int&eacute;rieure du [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/marche-de-noel/marche-de-noel-739497_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-29277300-1758785860-766046-180-180.webp" width="180" height="180" alt="Marché de Noël " class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1242364" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/theatre-23_B" class="lh-sm">Théâtre à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/spectacles/theatre/tant-qu-il-y-aura-du-vent-1242364_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Tant qu'il y Aura du Vent</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 04/12/2025 au 05/12/2025</span><a href="https://www.jds.fr/mulhouse/salles-spectacle/afsco-matisse-1839_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> AFSCO Espace Matisse - Mulhouse</a><span class="d-block description font-size-14 lh-sm">Plus personne ne sait vraiment quand les choses ont commenc&eacute;, certains se demandent m&ecirc;me si cela n&rsquo;a pas toujours &eacute;t&eacute; comme cela&hellip;Des [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/spectacles/theatre/tant-qu-il-y-aura-du-vent-1242364_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-00345400-1762376742-765404-180-180.webp" width="180" height="180" alt="Tant qu&#039;il y Aura du Vent" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1240690" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/ateliers/atelier-creatif-special-noel-a-la-bibliotheque-du-drouot-1240690_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Atelier créatif spécial Noël à la bibliothèque du Drouot</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 04/12/2025</span><a href="https://www.jds.fr/mulhouse/bibliotheque-et-mediatheque/biliotheque-drouot-mulhouse-cercle-1341_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Bibliothèque du Drouot à Mulhouse</a><span class="d-block description font-size-14 lh-sm">Atelier accessible aux d&eacute;butants comme aux passionn&eacute;s.. . D&egrave;s 7 ans. . Dur&eacute;e&nbsp;: 2h. . Sur inscription au 03 69 77 77 27 ou par mail [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/ateliers/atelier-creatif-special-noel-a-la-bibliotheque-du-drouot-1240690_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-39588400-1762251530-764111-180-180.webp" width="180" height="180" alt="Atelier créatif spécial Noël à la bibliothèque du Drouot" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1240709" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/ateliers/atelier-creatif-special-noel-a-la-bibliotheque-salvator-1240709_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Atelier créatif spécial Noël à la bibliothèque Salvator</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 04/12/2025 au 18/12/2025</span><a href="https://www.jds.fr/mulhouse/bibliotheque-et-mediatheque/bibliotheque-salvator-de-mulhouse-1437_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Bibliothèque Salvator de Mulhouse</a><span class="d-block description font-size-14 lh-sm">Donnez une seconde vie &agrave; des livres sortis des collections de la biblioth&egrave;que les transformant en de beaux objets de d&eacute;coration.. . &Acirc;ge&nbsp;: Adulte. . [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/ateliers/atelier-creatif-special-noel-a-la-bibliotheque-salvator-1240709_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-60186100-1762253874-766054-180-180.webp" width="180" height="180" alt="Atelier créatif spécial Noël à la bibliothèque Salvator" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1249137" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/soirees-469_B" class="lh-sm">Soirées à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/soirees/diner-avec-les-grandes-maisons-d-alsace-1249137_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Diner avec les Grandes Maisons d'Alsace</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 04/12/2025</span><a href="https://www.jds.fr/mulhouse/dannemarie/restaurant-cuisine-francaise/restaurant-au-bonheur-des-ogres-dannemarie-15782_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Restaurant au bonheur des Ogres Dannemarie</a><span class="d-block description font-size-14 lh-sm">&laquo; Diner avec les Grandes Maisons d&rsquo;Alsace &raquo; &hellip; un concept unique &nbsp;&hellip;&nbsp;. 1 diner - 8 vins et 4 viticulteurs qui partagent votre [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/soirees/diner-avec-les-grandes-maisons-d-alsace-1249137_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-57538600-1762965713-770150-180-180.webp" width="180" height="180" alt="Diner avec les Grandes Maisons d&#039;Alsace" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1124799" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/cine-concert-200_B" class="lh-sm">Cinéma à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/spectacles/cinema/noe-classiques-edouard-aux-mains-d-argent-1124799_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Noé Classiques/ Edouard Aux Mains D'Argent</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 04/12/2025</span><a href="https://www.jds.fr/mulhouse/altkirch/cinema-sorties-films-horaires/cinema-palace-lumiere-altkirch-432_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Cinéma Palace Lumière - Altkirch</a><span class="d-block description font-size-14 lh-sm">&nbsp;NO&Eacute; CLASSIQUES pr&eacute;sente&nbsp;"Edward Aux Mains D'Argent"
+Jeudi 4 d&eacute;cembre &agrave; 20h30. En VOSTF
+Edward Scissorhands n'est pas un gar&ccedil;on [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/spectacles/cinema/noe-classiques-edouard-aux-mains-d-argent-1124799_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-70829700-1762366209-765378-180-180.webp" width="180" height="180" alt="Noé Classiques/ Edouard Aux Mains D&#039;Argent" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="87917" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/musique-et-concerts-96_B" class="lh-sm">Concerts à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/concerts/jouer-pour-un-jouet-87917_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Jouer pour un jouet</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 05/12/2025 au 06/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Mulhouse</span><span class="d-block description font-size-14 lh-sm">Le Conservatoire de Mulhouse renouvelle son grand rendez-vous solidaire&nbsp;: l&rsquo;op&eacute;ration &laquo; Jouer pour un jouet &raquo; revient pour sa 23e &eacute;dition les 5 [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/concerts/jouer-pour-un-jouet-87917_A"><img loading="lazy" src="https://www.jds.fr/medias/image/jouer-pour-un-jouet-770502-180-180.webp" width="180" height="180" alt="Jouer pour un jouet" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1086794" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/theatre-23_B" class="lh-sm">Théâtre à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/spectacles/theatre/l-inouie-nuit-de-moune-1086794_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">L'Inouïe nuit de Moune</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 05/12/2025 au 07/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Illzach</span><span class="d-block description font-size-14 lh-sm">Th&eacute;&acirc;tre . Dur&eacute;e&nbsp;: 50 min . D&egrave;s 6 ans
+Dans l&rsquo;intimit&eacute; d&rsquo;une chambre d&rsquo;enfant, une adolescente tente d&rsquo;endormir sa [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/spectacles/theatre/l-inouie-nuit-de-moune-1086794_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-60859700-1752158493-672924-180-180.webp" width="180" height="180" alt="L&#039;Inouïe nuit de Moune" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="989707" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/spectacle-comedie-musical-33_B" class="lh-sm">Spectacle musical à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/spectacles/spectacle-musical/les-fantasticks-989707_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Les Fantasticks</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><a href="https://www.jds.fr/mulhouse/theatres-programmes/theatre-de-la-sinne-mulhouse-35_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre de la Sinne - Mulhouse</a><span class="d-block description font-size-14 lh-sm">Un conseil &agrave; tous les parents&nbsp;: interdisez &agrave; vos enfants ce que vous voulez qu&rsquo;ils fassent&nbsp;; vous serez alors certains qu&rsquo;ils le feront&nbsp;! [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/spectacles/spectacle-musical/les-fantasticks-989707_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-88789600-1747748524-620629-180-180.webp" width="180" height="180" alt="Les Fantasticks" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="94035" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/marches-de-noel-300_B" class="lh-sm">Marché de Noël à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/marche-de-noel/marche-de-noel-illzach-94035_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Marché de Noël à Illzach 2025</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 05/12/2025 au 07/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Illzach</span><span class="d-block description font-size-14 lh-sm">Le March&eacute; de No&euml;l &agrave; Illzach attend petits et grands pour c&eacute;l&eacute;brer de mani&egrave;re festive cette p&eacute;riode de l'ann&eacute;e&nbsp;: au [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/marche-de-noel/marche-de-noel-illzach-94035_A"><img loading="lazy" src="https://www.jds.fr/medias/image/marche-de-noel-a-illzach-3-477577-180-180.webp" width="180" height="180" alt="Marché de Noël à Illzach 2025" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1242074" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/marches-de-noel-300_B" class="lh-sm">Marché de Noël à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/marche-de-noel/marche-de-noel-1242074_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Marché de Noël </span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 05/12/2025 au 07/12/2025</span><a href="https://www.jds.fr/mulhouse/bollwiller/eglise/eglise-saint-charles-9592_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Eglise Saint-Charles - Bollwiller</a><span class="d-block description font-size-14 lh-sm">March&eacute; de No&euml;l traditionnel&nbsp;, ou vous ne trouverez que des artisans qui font eux m&ecirc;me&nbsp;.Vendredi et samedi, &nbsp;jour du Saint Nicolas honor&eacute; par [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/marche-de-noel/marche-de-noel-1242074_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-63002700-1762332028-765063-180-180.webp" width="180" height="180" alt="Marché de Noël " class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="361436" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/marches-de-noel-300_B" class="lh-sm">Marché de Noël à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/marche-de-noel/marche-de-noel-361436_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Marché de Noël</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 05/12/2025 au 07/12/2025</span><a href="https://www.jds.fr/mulhouse/saint-amarin/mairies/mairie-de-saint-amarin-2586_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Mairie de Saint-Amarin</a><span class="d-block description font-size-14 lh-sm">No&euml;l &agrave; Saint-Amarin, ce ne sont pas moins de 45 exposants qui vous accueillent&nbsp;!
+Vous &ecirc;tes invit&eacute;s &agrave; d&eacute;couvrir des cabanons de [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/marche-de-noel/marche-de-noel-361436_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-12280500-1762258464-764243-180-180.webp" width="180" height="180" alt="Marché de Noël" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1224159" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/concert-de-l-avent-et-de-noel-270_B" class="lh-sm">Concerts de Noël à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/concerts/concerts-de-noel/concerts-de-noel-1224159_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Concerts de Noël</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><a href="https://www.jds.fr/mulhouse/zimmersheim/eglise/eglise-paroissiale-de-l-assomption-2901_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Eglise Paroissiale de L'Assomption - Zimmersheim</a><span class="d-block description font-size-14 lh-sm">Cr&eacute;&eacute;e en 1981 &agrave; Zimmersheim par Fr&eacute;d&eacute;ric Fuchs, &laquo; l&rsquo;Ensemble Vocal La Pastourelle &raquo; a &eacute;t&eacute; dirig&eacute; [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/concerts/concerts-de-noel/concerts-de-noel-1224159_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-29430900-1760862039-761089-180-180.webp" width="180" height="180" alt="Concerts de Noël" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1195589" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/mulhouse/agenda/marches-de-noel-300_B" class="lh-sm">Marché de Noël à Mulhouse</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/mulhouse/manifestations/marche-de-noel/marche-de-la-st-nicolas-1195589_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Marché de la St Nicolas</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Illfurth</span><span class="d-block description font-size-14 lh-sm">Nous avons le plaisir de vous inviter &agrave; la 4&egrave;me &eacute;dition du March&eacute; de la Saint-Nicolas, qui se tiendra le vendredi 5 d&eacute;cembre &agrave; partir de [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/mulhouse/manifestations/marche-de-noel/marche-de-la-st-nicolas-1195589_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-39146600-1759231217-734330-180-180.webp" width="180" height="180" alt="Marché de la St Nicolas" class="border" /></a></div></div></li>
+</ul>
+</div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=14"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/mulhouse/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=14">14</a><span class="page d-inline-block mx-1 active mx-1">15</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=16">16</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=35">35</a></div>
+<a class="lien_next" href="https://www.jds.fr/mulhouse/agenda/?&amp;page=16"><i class="bi bi-chevron-right"></i></a></div>
+</div><div id="content_right" class=""><hr class="d-md-none my-5"><div class="wrapper_gp_div mb-4"><div class="direct_18"><a class="gp_div_clic_event" data-id="3966" rel="nofollow" href="https://www.jds.fr/scripts/gp_div_clic.php?redirection&id=3966&format=18"  target="_blank"><img loading="lazy" src="https://medias.jds.fr/medias/direct/3966/ArtisansDuSon_PO_Banniere_JDS_300x600.gif" alt="Publicité" border="0" width="300" /></a><div class="gp_div_affiche" data-id="3966" data-id-format="18"></div>
+<script>window.addEventListener('gtag_loaded', function() {  if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3966', 'non_interaction': true }); } });</script>
+<script>window.addEventListener('gtag_loaded', function() {  if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '18', 'non_interaction': true }); } });</script>
+</div>
+</div><div class="encart-newsletter d-none d-md-block p-4 bg-light my-5"><p class="mt-0 mb-3 h2">Newsletter JDS Mulhouse</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p><form id="form_newsletter_6915eac74c1a3" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="6916038cd78a2" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915eac74c1a3_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" selected>68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915eac74c1a3_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915eac74c1a3_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915eac74c1a3_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915eac74c1a3_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915eac74c1a3 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915eac74c1a3_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915eac74c1a3 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915eac74c1a3_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915eac74c1a3 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915eac74c1a3_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915eac74c1a3_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915eac74c1a3 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915eac74c1a3',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915eac74c1a3").serialize();
+        $('form#form_newsletter_6915eac74c1a3 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915eac74c1a3 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915eac74c1a3 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915eac74c1a3 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter sidebar',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915eac74c1a3 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915eac74c1a3 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script></div><div class="pdf my-5"><div class="fw-bold font-size-28 mt-0 mb-3">Le magazine JDS</div>
+            <p><a class="btn btn-primary rounded-pill btn-lg shadow-lg d-block" href="https://medias.jds.fr/pdf/390/Spectacles-390-68.pdf">Lire le JDS Novembre 2025</a></p>
+            <div class="row mt-4">
+                <div class="col-7">     
+                    <ul>
+                        <li><a href="https://www.jds.fr/points-de-distribution-jds/">Où trouver le magazine JDS ?</a></li>
+                        <li><a href="https://www.jds.fr/spectacles-68/magazine-spectacles-mulhouse-colmar-haut-rhin">Toutes les éditions</a></li><li><a href="https://www.jds.fr/supplement-formation/">Tous les suppléments formation</a></li></ul>
+                </div>
+                
+                <div class="col-5">
+                    <a class="image" href="https://medias.jds.fr/pdf/390/Spectacles-390-68.pdf"><img class="border" loading="lazy" src="https://www.jds.fr/medias/image/couverture-spectacle-755405-110-0.webp" alt="couverture magazine JDS 390" width="110" /></a></div>
+            </div></div><div class="wrapper_gp_div mb-2 sticky"><div class="regie_29"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 BAS -->
+<ins id="pub_1636" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="9513867524"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1636" data-id-format="29"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1636', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '29', 'non_interaction': true }); } });</script>
+</div>
+</div></div></div></div></div><footer id="footer" class="mt-5 px-3">    
+    <div class="container">     
+    <div class="row">
+        
+        <div class="col-md-6 col-lg-4 order-md-6 offset-lg-1">
+            <div id="footer_newsletter" class="p-4 bg-light full-width-sm mb-5">                                  
+                <p class="mt-0 mb-3 h2">Newsletter JDS Mulhouse</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p>                         
+                <form id="form_newsletter_6915eac74c224" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="6916038cd78a2" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915eac74c224_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" selected>68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915eac74c224_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915eac74c224_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915eac74c224_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915eac74c224_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915eac74c224 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915eac74c224_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915eac74c224 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915eac74c224_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915eac74c224 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915eac74c224_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915eac74c224_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915eac74c224 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915eac74c224',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915eac74c224").serialize();
+        $('form#form_newsletter_6915eac74c224 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915eac74c224 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915eac74c224 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915eac74c224 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter footer',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915eac74c224 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915eac74c224 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script>         
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 order-md-first">
+            <a class="logo d-block mx-auto mx-lg-0" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a>
+
+            
+            <p class="my-4 fw-bold text-center text-md-start">Le JDS Mulhouse, c’est des sorties (concerts, humour…) et des bons plans en tous genres (resto, shopping, événements locaux…) au plus près de chez vous.</p>
+            
+                
+                
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <a href="https://www.facebook.com/jds.fr/" class="mx-1" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/jds_actu/" class="mx-1" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@jdsmulhouse" class="mx-1" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.youtube.com/channel/UCEcNj-n3vLsQ2IUrD8FL-5g" class="mx-1" target="_blank"><i class="bi bi-youtube"></i></a>
+                    <a href="https://fr.linkedin.com/company/media-jds" class="mx-1" target="_blank"><i class="bi bi-linkedin"></i></a>       
+                </p>
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <span class="font-size-14">Téléchargez l'appli JDS : </span>
+                <a href="https://market.android.com/details?id=fr.jds.app" class="mx-1" target="_blank"><i class="bi bi-android2"></i></a><a href="https://itunes.apple.com/fr/app/jds-les-sorties-en-alsace/id467323730?mt=8" class="mx-1" target="_blank"><i class="bi bi-apple"></i></a>   
+                </p>
+                
+            <hr class="my-5 d-md-none">
+        </div>
+        <div class="col-md-12 col-lg-3 order-md-11 offset-lg-1">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Organisateurs</p>
+                    <p class="fw-bold">Publiez votre événement sur le site jds.fr</p>                
+                    <ul class="text-gray-700 mt-2">
+                        <li>Publiez gratuitement votre événement dans l’agenda via notre <a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=footer&utm_campaign=link_publier_info_text">espace organisateur</a></li>
+                        <li>Bénéficiez d'une visibilité auprès de nos 3&nbsp;000&nbsp;000 visiteurs mensuels !</li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://pro.jds.fr" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je publie mon événement</a></p>
+
+                    <hr class="my-5 d-md-none d-lg-block">
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Annonceurs</p>
+                    <p class="fw-bold">Discutons ensemble de votre communication</p>          
+                    <ul class="text-gray-700 mt-2">
+                        <li>Promouvoir au mieux votre événement ou votre offre</li>
+                        <li>3&nbsp;000&nbsp;000 visiteurs mensuels <a href="https://www.jds.fr/magazine/actu-magazine/audience-jds-169974_A">(tout savoir sur l'audience du JDS)</a></li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://www.jds.fr/blog/" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je découvre les solutions</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 order-md-12">
+            <hr class="my-5">
+
+            <ul class="list-unstyled font-size-14 d-lg-flex justify-content-between">
+            <li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/journal-des-spectacles-magazine-mulhouse-colmar-haut-rhin-alsace-837_A">Qui sommes-nous ?</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/mentions-legales/">Infos légales / Affiliation</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/cookies/">Cookies</a></li><li class="mb-1 me-2"><a href="javascript:Didomi.preferences.show()">Modifier mes choix de cookies</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/comment-vous-desabonner-des-notifications-jds-340946_A">Se désabonner des notifications</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/contact/">Nous contacter</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/offres-emploi-mulhouse-alsace/">Emploi : nous rejoindre</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/">Blog</a></li>  
+            </ul>
+
+            <p class="font-size-14">Copyright 2008-2025 jds.fr</p>
+        </div>
+    </div> <!-- fin row -->        
+    </div> <!-- fin container -->
+</footer><div id="search-form-menu-container" class="search-form-menu-container shadow-lg bg-light hidden text-center py-3 py-lg-5">
+    <div class="container px-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-bold font-size-26">Rechercher</span>
+            <span class="cursor-pointer d-block search-form-menu-close text-primary" onclick="toggleSearchMenu();"><i class="bi bi-x-circle me-1"></i> Fermer</span>
+        </div>
+        <div
+            id="search-app"
+            data-endpoint="/ajax/search.php"
+            data-placeholder-text="ex. : concert demain à ..."
+            data-index-event="jds_event"
+            data-index-city="jds_city"
+            data-index-venue="jds_venue"
+            data-index-article="jds_article"
+            data-index-artist="jds_artist"
+            data-current-city-id="3" data-current-city-name="Mulhouse"         ></div>
+    </div>
+</div>
+
+<div id="header-city-dropdown-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <p class="modal-title m-0">Choisissez une ville spécifique</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="ville-selector-mode" value="default" id="ville-selector-mode" />
+                <input type="text" class="form-control form-control-lg shadow-lg rounded-3" id="ville-selector-modal" placeholder="Entrez le nom de votre ville">
+                <div id="ville-selector-container-modal"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer>
+$(document).ready(function() {
+    $('#ville-selector-modal').keyup(function() {
+        if($(this).val().length==0) { $("#ville-selector-container-modal").html(""); return; }
+        if($(this).val().length<2) { return; }
+
+        $.post("/ajax/recherche_ville_fonction.php", { term: $(this).val(), mode:$('input[name="ville-selector-mode"]').val() })
+        .done(function(data) {
+
+            $("#ville-selector-container-modal").html('<p class="mt-4">Cliquez sur votre ville :</p><ul class="list-unstyled font-size-16"></ul>');
+            obj=JSON.parse(data);
+            obj.forEach(function(item){
+            $("#ville-selector-container-modal").find("ul").append('<li class="p-3 border-bottom"><a href="'+item.url+'" class="text-dark"><i class="bi bi-geo-fill text-primary me-1"></i> '+item.label+'</a></li>');
+        });
+        });
+    }); 
+});
+</script>
+
+</div><script defer src="/libs/jquery/magnific-popup/jquery.magnific-popup.min.js?v=131"></script><script defer src="/scripts/slick.min.js?v=131"></script><script defer src="/libs/choices/scripts/choices.js?v=131"></script><script defer src="/libs/lightbox2/js/lightbox.min.js?v=131"></script><script defer src="/scripts/functions_footer.js?v=131"></script><script>const { createApp, ref, computed, watch, onMounted, onBeforeUnmount, nextTick, reactive } = Vue;</script><script src="/scripts/search.app.js?v=131"></script><script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-messaging-compat.js"></script>
+<script>
+const firebaseConfig = {
+    apiKey: "AIzaSyBjBC01qlzGVLYWWE8D0rrOzL2cSfIf7MQ",
+    authDomain: "journal-des-spectacles-dd5d0.firebaseapp.com",
+    databaseURL: "https://journal-des-spectacles-dd5d0.firebaseio.com",
+    projectId: "journal-des-spectacles-dd5d0",
+    storageBucket: "journal-des-spectacles-dd5d0.appspot.com",
+    messagingSenderId: "37707045198",
+    appId: "1:37707045198:web:e58879e2e7f9adf0"
+  };
+const vapidKey = "BB2gRQtko-8CqzZbrzzlGBwMim_ThaPkNdzqi780Y7ku5VmG_E_DwFJnrJXB7_pNJKn9UTbIchVKfijBHNteuu8";
+  
+firebase.initializeApp(firebaseConfig);
+const messaging = firebase.messaging();
+
+var browserName = (function (agent) {        
+    switch (true) {
+        case agent.indexOf("edge") > -1: return "Edge"; // ms
+        case agent.indexOf("edg/") > -1: return "Edge"; // (chromium based)
+        case agent.indexOf("chrome") > -1 && !!window.chrome: return "Chrome";
+        case agent.indexOf("firefox") > -1: return "Firefox";
+        case agent.indexOf("safari") > -1: return "Safari";
+        default: return "other";
+    }
+})(window.navigator.userAgent.toLowerCase());
+    
+function fcm_resetUI() { 
+    if(!isTokenSentToServer()) {
+        if(window.navigator.userAgent.toLowerCase().indexOf('iphone')!==-1) { return; } // fix bug safari iphone    
+        if(browserName=='Chrome') { $('#web_push_dialog').addClass('chrome'); }
+        if(browserName=='Edge') { $('#web_push_dialog').addClass('edge'); }
+        if(browserName=='Firefox') { $('#web_push_dialog').addClass('firefox'); }
+        if(Notification.permission=='default') {
+            if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+        }
+        else if(Notification.permission=='granted') {
+            messaging.getToken({ vapidKey:vapidKey }).then((currentToken) => {   
+                                if (currentToken) {
+                    sendTokenToServer(currentToken);
+                } else {
+                  setTokenSentToServer(false);
+                  if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+                }
+            }).catch((err) => {
+                
+                setTokenSentToServer(false);
+            });
+        }    
+    }
+}
+//window.fcm_resetUI = fcm_resetUI;
+function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+        setTokenSentToServer(true);
+        $.post( "/ajax/firebase_register_v2.php",  { token: currentToken, dpt:'68' });      
+        if(typeof gtag=="function") {
+            gtag("event", "subscription", {
+                "event_category" : "Firebase",
+                "event_label" : "Web push",
+                "non_interaction": true
+            });            
+        }
+    } 
+}
+function isTokenSentToServer() {
+    var web_push_cookie = $.cookie('web_push');       
+    if(typeof web_push_cookie === 'undefined' || web_push_cookie===false) return false;
+    return true;
+}
+function setTokenSentToServer(sent) {
+    if(sent) $.cookie('web_push',true, {path: '/',domain:'.jds.fr'}); 
+    else $.cookie('web_push',false, {path: '/',domain:'.jds.fr'}); 
+}
+function requestPushDialog() {
+    $.magnificPopup.open({
+        items: {
+            src: '#web_push_dialog', // can be a HTML string, jQuery object, or CSS selector
+            type: 'inline'
+          },
+        alignTop : true,
+        showCloseBtn : true,
+        //closeOnBgClick: ((browserName!='Firefox' &&  && !$('#web_push_dialog').hasClass('mobile'))?false:true),
+        callbacks: {
+            open: function() {                 
+                $('.mfp-bg').css('position','fixed');      
+                if(browserName!='Firefox') {
+                    if(!$('#web_push_dialog').hasClass('mobile')) {
+                        $('.mfp-bg').css('opacity',.0).css('width','auto').css('height','auto');
+                        $('html').css('overflow','auto');  
+                        $('.mfp-wrap').css('width','auto').css('height','auto');
+                    }
+                    else {
+                        $('html').css('overflow','hidden');  
+                    }
+                }
+                else {
+                    $('.mfp-bg').css('opacity',.75).css('background','#fff');
+                }
+
+            },
+            close: function() {
+                $('html').css('overflow','auto'); 
+            }
+        }    
+    }); 
+    if(browserName!='Firefox') { requestPermission(); } // sur firefox, l'ouverture de permission automatique ne marche pas alors on remet les boutons
+}
+function requestPermission() {   
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+            fcm_resetUI();
+            $.magnificPopup.close();
+      } else {
+            $.magnificPopup.close();
+      }
+    });
+}
+$(document).on('click','#web_push_dialog button',function() {
+    //firefox
+    if($(this).hasClass('accept')) requestPermission();
+    if($(this).hasClass('deny')) setTokenSentToServer(true);    
+    
+    $.magnificPopup.close();       
+});
+</script>
+
+<div id="web_push_dialog" class="mfp-hide desktop">
+    <div class="popup-content p-3">
+        <img class="logo-mobile" loading="lazy" src="/images/new/logo-jds.svg?v=131" width="40" height="40" alt="jds.fr">
+        <p class="popup-title mb-3"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+        <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+        <p class="text-gray-600 font-size-14 mb-0">Autoriser les notifications pour continuer.</p>
+        <hr class="hide-mobile">
+        <div class="p-3 hide-mobile text-center bg-primary"><img loading="lazy" src="/images/new/logo-jds-white.svg?v=131" width="100" height="100" alt="jds.fr"></div>
+        <div class="arrow text-gray-800"><i class="bi bi-arrow-down-circle-fill"></i></div>
+    </div>
+    <div class="popup-content-firefox p-3">
+        <div class="row">
+            <div class="col-md-3 pr-0 col-3"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" class="popup-logo"></div>
+            <div class="col-md-9 col-9">
+              <p class="popup-title"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+              <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+              <p class="text-gray-600 font-size-14 mb-3">Une seconde fenêtre va s'ouvrir vous invitant à autoriser les notifications</p>
+              <div class="popup-footer text-right"><button class="btn btn-outline-primary rounded-pill btn-sm me-3 deny">Refuser</button><button class="btn btn-primary rounded-pill btn-sm me-3 accept">Autoriser</button></div>
+            </div>
+        </div>
+    </div>
+</div><script type="didomi/javascript" data-purposes="select_basic_ads" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4984827051088801"
+     crossorigin="anonymous"></script></body></html>

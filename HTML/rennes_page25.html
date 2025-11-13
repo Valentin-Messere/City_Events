@@ -1,0 +1,649 @@
+<!DOCTYPE html><html lang="fr"><head><script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+      else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+        var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+        if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e,tgt){
+        var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+tgt;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("9d946103-8843-4a4e-ab0b-8e61ea84e891","Qr7JnTUV")})();</script>
+
+<script> 
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(function (Didomi) { 
+        // Call other functions on the SDK
+
+        // Refresh de la page en cas de changement du consentement
+        window.didomiEventListeners = window.didomiEventListeners || [];
+        window.didomiEventListeners.push({
+            event: 'consent.changed',
+            listener: function (context) {
+                gp_maj();
+            }
+        });
+
+        // Google advertising products
+        Didomi.getObservableOnUserConsentStatusForVendor('google')
+        .filter(function (status) { return status !== undefined })
+        .subscribe(function (consentStatus) {
+            if (consentStatus === undefined || consentStatus === false) {
+                // on masque les encarts pubs vides
+                (function() {     
+                    var div_regies = document.getElementsByClassName('wrapper_gp_div');
+                    
+                    setTimeout(function() { // on fait un settimeout sinon le length n'est pas juste...                   
+                        for (let i = 0; i < div_regies.length; i++) {                  
+                            if (div_regies[i].innerHTML.indexOf('regie_') > -1) {                           
+                              div_regies[i].style.display="none";
+                            }
+                        }
+                        
+                    },400);
+                    
+                    
+                })();
+            }
+        }); 
+        
+     
+
+    });
+    </script> 
+<meta charset="UTF-8" />
+<title>Rennes - L&#039;agenda des spectacles, manifestations, concerts - Page 25</title>
+<meta name="description" content="Rennes - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 25" />
+<link rel="canonical" href="https://www.jds.fr/rennes/agenda/?page=25" />
+<meta name="p:domain_verify" content="9efecdd4eddf0844d5703f41d2dc7ca7"/>
+<meta property="fb:app_id" content="638077278167784" />
+<meta property="fb:pages" content="50813882504">
+<meta property="og:title" content="Rennes - L&#039;agenda des spectacles, manifestations, concerts - Page 25" />
+<meta property="og:description" content="Rennes - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 25" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.jds.fr/rennes/agenda/?page=25" />
+<meta property="og:site_name" content="jds.fr" />
+<meta property="og:image" content="https://www.jds.fr/images/header_logo_120.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="364" />
+<meta property="og:image:height" content="364" />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https:\/\/www.jds.fr\/","name":"Accueil"},{"@type":"ListItem","position":2,"item":"https:\/\/www.jds.fr\/rennes\/","name":"Rennes"},{"@type":"ListItem","position":3,"name":"Agenda"}]}</script>
+
+<meta name="robots" content="noindex,follow" />
+<link rel="prev" href="https://www.jds.fr/rennes/agenda/?&amp;page=24" /><link rel="next" href="https://www.jds.fr/rennes/agenda/?&amp;page=26" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+<link rel="stylesheet" href="/css/custom.css?v=131">
+<link rel="preload" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131"></noscript>
+<link rel="preload" href="/libs/lightbox2/css/lightbox.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/lightbox2/css/lightbox.min.css?v=131"></noscript>
+<link rel="preload" href="/css/slick-theme.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick-theme.css?v=131"></noscript>
+<link rel="preload" href="/css/slick.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick.css?v=131"></noscript>
+<link rel="preload" href="/libs/choices/styles/choices.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/choices/styles/choices.min.css?v=131"></noscript>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#e50b47">
+<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e50b47">
+<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><link rel="manifest" href="/manifest.json"></head><body class="version_a  "><script async src="https://www.googletagmanager.com/gtag/js?id=G-6WVELE5WG9"></script>
+<script type="didomi/javascript" data-vendor="c:googleana-4TXnJigR">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+        dataLayer.push(arguments);
+        if (arguments[0] === 'js') {
+            setTimeout(function() {
+            window.dispatchEvent(new Event('gtag_loaded'));
+        }, 1000);
+        }
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6WVELE5WG9', {
+          'cookie_expires': 33696000,
+          'transport_type': 'beacon',
+          'dimension1': '0','dimension2': '35','dimension3': '2','dimension4': '0','dimension5': '0','dimension6': '0','dimension7': '','dimension8': 'a','dimension9': '0',     
+    });
+</script><script src="/libs/jquery-3.7.1.min.js"></script><script defer src="/libs/bootstrap/js/popper.min.js"></script><script defer src="/libs/bootstrap/js/bootstrap.min.js"></script><script defer src="/libs/jquery/js/jquery.cookie.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.date.js"></script><script defer src="/libs/jquery/pickadate.js/lib/translations/fr_FR.js"></script><script src="/libs/vue.global.prod.js"></script><script src="/libs/axios.min.js"></script><script src="/ads-checker.js"></script><script defer src="/scripts/functions.js?v=131"></script><script>var gp_maj_done=false;
+var param_gp=[];param_gp['id_newsletter']='0';param_gp['type']='0';param_gp['sousrub']='0';param_gp['rub']='2';param_gp['rub_rub']='2';param_gp['page']='25';param_gp['mobile_version']='0';param_gp['detail_type']='';param_gp['detail_id']='0';param_gp['web_push_site']='';param_gp['web_push_id']='';param_gp['current_departement']='35';$(document).ready(function() {
+    if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) gp_maj();});</script><div class="gp_div_affiche" data-id="0" data-id-format="24"></div>
+<div id="global" class="p-0"><div id="header" class="bg-white header"><div class="d-flex justify-content-between align-items-center px-2rem header-inner-wrapper text-primary container"><div class="header-logo mb-1"><a class="d-block" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a></div><div class="header-city-inline-selector d-flex me-auto font-size-22 ms-4 align-items-center lh-1"><a href="https://www.jds.fr/rennes/" class="">Rennes</a><span class="ms-auto ms-md-0 d-block ps-2 cursor-pointer" onclick="toggleCityMenu();"><i class="bi bi-chevron-down"></i></span></div><div class="header-publish ms-md-auto me-md-5"><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=header&utm_campaign=link_publier_info" class="btn btn-outline-primary rounded-pill d-none d-md-inline shadow-sm"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><div class="header-menu font-size-36 cursor-pointer ps-3" onclick="toggleMenu()"><i class="bi bi-list"></i></div></div></div>
+<!-- NAVBAR -->
+<div id="header-navbar" class="bg-light-primary header-navbar navbar-v2">
+    <div class="px-2rem header-navbar-inner-wrapper container font-size-14">
+        <div class="navbar-v2-item d-flex">
+            <div class="flex-fill">
+                <span onclick="toggleSearchMenu();" class="bg-primary text-white d-block px-3"><span class="search-btn cursor-pointer"><span><i class="bi bi-search me-2"></i> Rechercher</span></span>
+            </div>
+            <div class="flex-fill"><a href="https://www.jds.fr/rennes/agenda/agenda-du-jour/-aujourdhui_JPJ" class="" data-event-label="Aujourd'hui"><span><i class="cf icon-aujourdhui">&#xe80f;</i> Aujourd'hui</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/rennes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="" data-event-label="Spectacles"><span><i class="cf icon-spectacles">&#xe80c;</i> Spectacles</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/rennes/agenda/musique-et-concerts-96_B" class="" data-event-label="Concerts"><span><i class="cf icon-concert">&#xe801;</i> Concerts</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/rennes/agenda/manifestations-fetes-festivals-137_B" class="" data-event-label="Animations"><span><i class="cf icon-manifestations">&#xe807;</i> Animations</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/rennes/agenda/foire-salon-puces-bourses-468_B" class="" data-event-label="Salons / Puces"><span><i class="cf icon-foires">&#xe805;</i> Salons / Puces</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/rennes/agenda/sports-145_B" class="" data-event-label="Sports"><span><i class="cf icon-sport">&#xe810;</i> Sports</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/rennes/agenda/expositions-471_B" class="" data-event-label="Expos"><span><i class="cf icon-expos">&#xe802;</i> Expos</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/rennes/agenda/enfants-94_B" class="" data-event-label="Famille"><span><i class="cf icon-famille">&#xe813;</i> Famille</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/rennes/agenda/soirees-469_B" class="" data-event-label="Soirées"><span><i class="cf icon-soirees">&#xe80b;</i> Soirées</span></a></div>        </div>
+    </div>
+</div>
+<div id="menu" class="menu bg-white px-2rem py-5 hidden"><div class="text-center"><button class="btn btn-primary btn-lg rounded-pill d-block w-100 menu-link" onclick="toggleSearchMenu();" data-event-label="open-search-menu"><i class="bi bi-search me-2"></i> Rechercher</button><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=menu&utm_campaign=link_publier_info" class="btn btn-outline-primary my-4 btn-lg rounded-pill d-block w-100" data-event-label="Espace pro"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/rennes/agenda/agenda-du-jour/-aujourdhui_JPJ" class="text-dark hover-text-primary cursor-pointer" data-event-label="Aujourd'hui">Aujourd'hui à Rennes</a></li><li><a href="https://www.jds.fr/rennes/agenda/evenements/" class="text-dark hover-text-primary" data-event-label="Evénements">Evénements</a></li><li><a href="https://www.jds.fr/rennes/agenda/manifestations-fetes-festivals-137_B" class="text-dark hover-text-primary" data-event-label="Manifestations">Manifestations</a></li><li><a href="https://www.jds.fr/rennes/agenda/foire-salon-puces-bourses-468_B" class="text-dark hover-text-primary" data-event-label="Foires & salons">Foires & salons</a></li><li><a href="https://www.jds.fr/rennes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="text-dark hover-text-primary" data-event-label="Spectacles">Spectacles</a></li><li><a href="https://www.jds.fr/rennes/agenda/musique-et-concerts-96_B" class="text-dark hover-text-primary" data-event-label="Concerts">Concerts</a></li><li><a href="https://www.jds.fr/rennes/agenda/sports-145_B" class="text-dark hover-text-primary" data-event-label="Sports">Sports</a></li><li><a href="https://www.jds.fr/rennes/agenda/soirees-469_B" class="text-dark hover-text-primary" data-event-label="Soirées">Soirées</a></li><li><a href="https://www.jds.fr/rennes/agenda/enfants-94_B" class="text-dark hover-text-primary" data-event-label="Sorties famille">Sorties famille</a></li><li><a href="https://www.jds.fr/rennes/agenda/expositions-471_B" class="text-dark hover-text-primary" data-event-label="Expos">Expos</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/rennes/magazine/" class="text-dark hover-text-primary" data-event-label="Actus">Actus à Rennes</a></li><li><a href="https://www.jds.fr/rennes/annuaire/" class="text-dark hover-text-primary" data-event-label="Annuaire">Annuaire tourisme & loisirs</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/newsletter-archives/toutes-les-newsletter-jds-fr" class="text-dark hover-text-primary" data-event-label="Newsletters">Newsletter des sorties</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/blog/" class="text-dark hover-text-primary" data-event-label="Annonceurs">Annonceurs</a></li></ul></div><div id="header-city-dropdown" class="header-city-dropdown bg-secondary py-2 text-white px-2rem font-size-16 hidden"><div class="container"><div class="py-2 cursor-pointer text-uppercase" onclick="$('#header-city-dropdown-modal').modal('show'); $('#ville-selector-modal').focus(); $('input[name=&quot;ville-selector-mode&quot;]').val('default')"><i class="bi bi-building-add me-1"></i> Une autre ville</div><div class="py-1"><a href="https://www.jds.fr/bordeaux/" class="text-white text-uppercase">Bordeaux</a></div><div class="py-1"><a href="https://www.jds.fr/colmar/" class="text-white text-uppercase">Colmar</a></div><div class="py-1"><a href="https://www.jds.fr/dijon/" class="text-white text-uppercase">Dijon</a></div><div class="py-1"><a href="https://www.jds.fr/lille/" class="text-white text-uppercase">Lille</a></div><div class="py-1"><a href="https://www.jds.fr/lyon/" class="text-white text-uppercase">Lyon</a></div><div class="py-1"><a href="https://www.jds.fr/marseille/" class="text-white text-uppercase">Marseille</a></div><div class="py-1"><a href="https://www.jds.fr/metz/" class="text-white text-uppercase">Metz</a></div><div class="py-1"><a href="https://www.jds.fr/montpellier/" class="text-white text-uppercase">Montpellier</a></div><div class="py-1"><a href="https://www.jds.fr/mulhouse/" class="text-white text-uppercase">Mulhouse</a></div><div class="py-1"><a href="https://www.jds.fr/nancy/" class="text-white text-uppercase">Nancy</a></div><div class="py-1"><a href="https://www.jds.fr/nantes/" class="text-white text-uppercase">Nantes</a></div><div class="py-1"><a href="https://www.jds.fr/nice/" class="text-white text-uppercase">Nice</a></div><div class="py-1"><a href="https://www.jds.fr/paris/" class="text-white text-uppercase">Paris</a></div><div class="py-1"><a href="https://www.jds.fr/reims/" class="text-white text-uppercase">Reims</a></div><div class="py-1"><a href="https://www.jds.fr/rennes/" class="text-white text-uppercase">Rennes</a></div><div class="py-1"><a href="https://www.jds.fr/strasbourg/" class="text-white text-uppercase">Strasbourg</a></div><div class="py-1"><a href="https://www.jds.fr/toulouse/" class="text-white text-uppercase">Toulouse</a></div><div class="mt-5 py-1 cursor-pointer" onclick="toggleCityMenu()"><u><i class="bi bi-x-circle me-1"></i> Fermer le menu</u></div></div></div><div id="global-container"><div id="global-container-inner-wrapper" class="container"><!--[if lte IE 9]>
+<div class="alert alert-warning" role="alert">
+<p class="mb-0">Vous utilisez une très ancienne version de navigateur Internet, ce qui impacte négativement votre expérience de navigation sur le site du JDS et sur Internet en général. Nous vous recommandons de mettre à jour votre navigateur ou d'en installer un autre en <a href="https://browsehappy.com/?locale=fr" target="_blank">cliquant ici</a>.</p>
+</div>
+<![endif]--><div class="text-center mb-5 mx-auto leaderboard"><div class="wrapper_gp_div nobg"><div class="regie_2">
+<!-- Leaderboard 1000 x 300 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:1000px;height:300px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="4079211116"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="3348" data-id-format="2"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3348', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '2', 'non_interaction': true }); } });</script>
+</div>
+</div></div><div id="content_container" class="d-md-flex justify-content-between"><div id="content_left"><div id="chemin" class="ariane mb-3"><a href="https://www.jds.fr/">Accueil</a><a href="https://www.jds.fr/rennes/">Rennes</a></div><div class="header-ville no-form is_page_ville ville_35 agglo_18222 "><h1>Rennes&nbsp;: Agenda et événements</h1><button onclick="toggleSearchMenu()" class="btn btn-primary btn-lg mx-auto d-block rounded-pill shadow-lg my-4" data-position="page-resultats-modifier-recherche-top"><i class="bi bi-search me-2"></i> Rechercher</button></div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/rennes/agenda/?&amp;page=24"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/rennes/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/rennes/agenda/?&amp;page=24">24</a><span class="page d-inline-block mx-1 active mx-1">25</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/rennes/agenda/?&amp;page=26">26</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/rennes/agenda/?&amp;page=31">31</a></div>
+<a class="lien_next" href="https://www.jds.fr/rennes/agenda/?&amp;page=26"><i class="bi bi-chevron-right"></i></a></div>
+<div class="mt-5"><ul class="mt-3 list-unstyled list-articles-v2">
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1243369" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/chanson-francaise/la-rue-ketanou-tournee-1243369_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">La Rue Kétanou (tournée)</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 22/04/2026</span><a href="https://www.jds.fr/rennes/salle-de-concert/le-mem-15064_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le MeM - Rennes</a><span class="d-block description font-size-14 lh-sm">
+
+La Rue Ketanou investit la scène du MeM à Rennes le mercredi 22 avril 2026 à 20h pour un concert exceptionnel. Après leur tournée commune avec Les Ogres de Barback, les [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43078762257&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/chanson-francaise/la-rue-ketanou-tournee-1243369_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F15%2Fec%2Fla-rue-k-tanou---malaka-tickets_463975_3722847_222x222.jpg&feedId=23455&k=8d452dd3d2f0a30726b93d12e077154ea62d2edc" width="180" height="180" alt="La Rue Kétanou (tournée)" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="938437" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/danse-35_B" class="lh-sm">Danse à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/spectacles/danse/le-lac-des-cygnes-ballet-et-orchestre-tournee-2026-938437_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Le Lac des Cygnes - Ballet & Orchestre - Tournée 2026</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 22/04/2026</span><a href="https://www.jds.fr/rennes/salles-spectacle/le-liberte-15057_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Liberté - Rennes</a><span class="d-block description font-size-14 lh-sm">Le Lac des Cygnes - Ballet & Orchestre - Tournée 2026, un spectacle à voir à Rennes (Le Liberté ), le 22 avril 2026. Toutes les informations pratiques (tarifs, billetterie, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41046154646&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/spectacles/danse/le-lac-des-cygnes-ballet-et-orchestre-tournee-2026-938437_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F8a%2F5e%2Fle-lac-des-cygnes---ballet---orchestre---paris---tourn-e-2026-tickets_435835_3541190_222x222.jpg&feedId=23455&k=2bb86cf98d8479ea4b1eecf983695e39afdfa309" width="180" height="180" alt="Le Lac des Cygnes - Ballet &amp; Orchestre - Tournée 2026" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1242317" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/pop-folk-479_B" class="lh-sm">Pop / folk à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/pop-folk/beubeu-1242317_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Beubeu</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 22/04/2026</span><a href="https://www.jds.fr/rennes/association-culturelle-et-de-loisirs/le-4-bis-360-17995_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le 4 Bis - 360 - Rennes</a><span class="d-block description font-size-14 lh-sm">
+
+Beubeu investira la scène du 4 Bis - 360 à Rennes le mercredi 22 avril 2026 à 20h pour un spectacle déjanté mêlant pop, tendresse et humour. L'artiste présentera son [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43081111165&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/pop-folk/beubeu-1242317_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F24%2Fc7%2Fbeubeu-tickets_454991_3663462_222x222.jpg&feedId=23455&k=3756228b2f24783d9579e0b694848d26a1326f72" width="180" height="180" alt="Beubeu" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="933704" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/chanson-francaise/charlotte-cardin-tournee-933704_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Charlotte Cardin - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 23/04/2026</span><a href="https://www.jds.fr/rennes/salles-spectacle/le-liberte-15057_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Liberté - Rennes</a><span class="d-block description font-size-14 lh-sm">Charlotte Cardin - Tournée en concert à Rennes (Le Liberté ), le 23 avril 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert sont à [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=40988109936&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/chanson-francaise/charlotte-cardin-tournee-933704_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F75%2Fc2%2Fcharlotte-cardin-tournee-2026-tickets_379983_3191216_222x222.jpg&feedId=23455&k=bb4a27487cc4cdebdd4e60b99ad8d6c71942be70" width="180" height="180" alt="Charlotte Cardin - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="762581" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/theatre-23_B" class="lh-sm">Théâtre à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/spectacles/theatre/clement-viktorovitch-l-art-de-ne-pas-dire-tournee-762581_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Clément Viktorovitch - l'Art de Ne Pas Dire - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 23/04/2026</span><a href="https://www.jds.fr/rennes/saint-gregoire/salles-spectacle/l-emc2-15068_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> L’EMC2 - Saint-Grégoire</a><span class="d-block description font-size-14 lh-sm">Clément Viktorovitch - l'Art de Ne Pas Dire - Tournée, un spectacle à voir à Rennes (L’EMC2 Saint-Grégoire), le 23 avril 2026. Toutes les informations pratiques (tarifs, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=39891289247&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/spectacles/theatre/clement-viktorovitch-l-art-de-ne-pas-dire-tournee-762581_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F28%2F3c%2Fl-art-de-ne-pas-dire-tickets_222804_2007109_222x222.jpg&feedId=23455&k=e0c66b6c8331302320a0426a3f9acfcedcf73c35" width="180" height="180" alt="Clément Viktorovitch - l&#039;Art de Ne Pas Dire - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1247942" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/hip-hop-rap-190_B" class="lh-sm">Rap à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/rap/bekar-tournee-1247942_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Bekar - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 24/04/2026</span><a href="https://www.jds.fr/rennes/salle-de-concert/le-mem-15064_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le MeM - Rennes</a><span class="d-block description font-size-14 lh-sm">
+
+Le rappeur Bekar se produira en concert au MeM de Rennes le vendredi 24 avril 2026 à 20h30. Cette date unique dans la capitale bretonne permettra au public de découvrir [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43121204499&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/rap/bekar-tournee-1247942_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fec%2Fb4%2Fbekar-tickets_385154_3224776_222x222.jpg&feedId=23455&k=b87746e8ff180be08bc9181b3881ad9891ef0186" width="180" height="180" alt="Bekar - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="363308" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/humour-comedie-22_B" class="lh-sm">Humour à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/spectacles/humour/nora-hamzawi-tournee-363308_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Nora Hamzawi - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 24/04/2026</span><a href="https://www.jds.fr/rennes/salles-spectacle/le-liberte-15057_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Liberté - Rennes</a><span class="d-block description font-size-14 lh-sm">Nora Hamzawi - Tournée, un spectacle à voir à Rennes (Le Liberté ), le 24 avril 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce spectacle [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=40148990930&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/spectacles/humour/nora-hamzawi-tournee-363308_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F9d%2Fcb%2Fnora-hamzawi-nouveau-spectacle-tickets_217131_1955704_222x222.jpg&feedId=23455&k=cf7fdaf599f1a9f32e5c9b9c62c12b0d76c433b4" width="180" height="180" alt="Nora Hamzawi - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1145777" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/humour-comedie-22_B" class="lh-sm">Humour à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/spectacles/humour/manon-bril-300-000-ans-tournee-1145777_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Manon Bril - 300 000 Ans (tournée)</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 25/04/2026</span><a href="https://www.jds.fr/rennes/pace/salle-de-concert/le-ponant-15915_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Ponant - Pacé</a><span class="d-block description font-size-14 lh-sm">Manon Bril - 300 000 Ans (tournée), un spectacle à voir à Rennes (Le Ponant Pacé), le 25 avril 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42261665433&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/spectacles/humour/manon-bril-300-000-ans-tournee-1145777_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F38%2F27%2Fmanon-bril-tickets_411896_3412138_222x222.jpg&feedId=23455&k=35261ee419615ca25dd17ba37b165a8114e94187" width="180" height="180" alt="Manon Bril - 300 000 Ans (tournée)" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1206449" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/hip-hop-rap-190_B" class="lh-sm">Rap à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/rap/sniper-1206449_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Sniper</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 25/04/2026</span><a href="https://www.jds.fr/rennes/salle-de-concert/le-mem-15064_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le MeM - Rennes</a><span class="d-block description font-size-14 lh-sm">
+
+Le groupe de rap français Sniper se produira en concert au MeM de Rennes le samedi 25 avril 2026 à 20h30. Cette date unique en Ille-et-Vilaine permettra au public rennais de [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42720404734&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/rap/sniper-1206449_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fc7%2F75%2Fsniper-tickets_394927_3299542_222x222.jpg&feedId=23455&k=5177c8bda77617101ff9562d89451fe945588371" width="180" height="180" alt="Sniper" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1206476" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/chanson-francaise/charles-dore-tournee-1206476_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Charles Doré - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 25/04/2026</span><a href="https://www.jds.fr/rennes/association-culturelle-et-de-loisirs/le-4-bis-360-17995_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le 4 Bis - 360 - Rennes</a><span class="d-block description font-size-14 lh-sm">
+
+Charles Doré poursuit sa tournée 2026 avec un passage attendu à Rennes. L'artiste breton, révélé par la Star Academy, se produira au 4 Bis le samedi 25 avril 2026 à 20h30. [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42720404506&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/chanson-francaise/charles-dore-tournee-1206476_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Ff3%2F73%2Fcharles-dore-tournee-2026-tickets_450291_3630107_222x222.jpg&feedId=23455&k=ff709543cde6d50df94015af5c3a07d5821a873e" width="180" height="180" alt="Charles Doré - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="576994" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/manifestations/ateliers/formation-animateur-de-yoga-du-rire-a-rennes-2j-576994_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Formation Animateur de Yoga du Rire à Rennes 2j</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 25/04/2026 au 26/04/2026</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Rennes</span><span class="d-block description font-size-14 lh-sm">Stage officiel pour devenir animateur-trice de yoga du rire, ouvert &agrave; tous, d&eacute;butant&middot;e&middot;s bienvenu&middot;e&middot;s.
+D&eacute;couvrez des outils pour [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/manifestations/ateliers/formation-animateur-de-yoga-du-rire-a-rennes-2j-576994_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-32037600-1721209737-622373-180-180.webp" width="180" height="180" alt="Formation Animateur de Yoga du Rire à Rennes 2j" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1219601" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/chanson-francaise/star-academy-tournee-1219601_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Star Academy - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 26/04/2026</span><a href="https://www.jds.fr/rennes/salles-spectacle/le-liberte-15057_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Liberté - Rennes</a><span class="d-block description font-size-14 lh-sm">
+
+Les artistes de La Star Academy font escale à Rennes pour un concert exceptionnel au Liberté le dimanche 26 avril 2026 à 20h. Cette nouvelle édition du Star Academy Tour 2026 [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42830442042&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/chanson-francaise/star-academy-tournee-1219601_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F41%2F02%2Fstar-academy-tour-2026-tickets_454199_3656585_222x222.jpg&feedId=23455&k=ed8d28ccc1762fc80813f7c2a4ab38df04e4487f" width="180" height="180" alt="Star Academy - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1053713" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/spectacles/richard-iii-le-carre-sevigne-1053713_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Richard Iii - le Carré Sévigné</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 29/04/2026</span><a href="https://www.jds.fr/rennes/cesson-sevigne/salle-de-concert/le-carre-sevigne-16723_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Carre Sevigne - Cesson-Sévigné</a><span class="d-block description font-size-14 lh-sm">Richard Iii - le Carré Sévigné, un spectacle à voir à Rennes (Le Carre Sevigne Cesson-Sévigné), le 29 avril 2026. Toutes les informations pratiques (tarifs, billetterie, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41666404200&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/spectacles/richard-iii-le-carre-sevigne-1053713_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F8f%2F87%2Frichard-iii-tickets_406979_3363473_222x222.jpg&feedId=23455&k=3e9527e342072b7d0bf1e827f02a7523e20df307" width="180" height="180" alt="Richard Iii - le Carré Sévigné" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1014074" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/chanson-francaise/stars-80-forever-1014074_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Stars 80 - Forever</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 29/04/2026</span><a href="https://www.jds.fr/rennes/salles-spectacle/le-liberte-15057_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Liberté - Rennes</a><span class="d-block description font-size-14 lh-sm">Stars 80 - Forever en concert à Rennes (Le Liberté ), le 29 avril 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert sont à retrouver [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41502731543&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/chanson-francaise/stars-80-forever-1014074_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F7c%2Ff1%2Fstar-80-tickets_398933_3313214_222x222.jpg&feedId=23455&k=89cabff22b953d5e803c98d2e98c2090b8b5afc3" width="180" height="180" alt="Stars 80 - Forever" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1076332" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/rock-111_B" class="lh-sm">Rock / metal à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/rock/wishbone-ash-the-wishlist-tour-1076332_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Wishbone Ash -  The Wishlist Tour</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 29/04/2026</span><a href="https://www.jds.fr/rennes/salle-de-concert-et-de-spectacle/l-etage-16880_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> L'Etage - Rennes</a><span class="d-block description font-size-14 lh-sm">Wishbone Ash -  The Wishlist Tour en concert à Rennes (L'Etage ), le 29 avril 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert sont à [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41750864472&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/rock/wishbone-ash-the-wishlist-tour-1076332_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F18%2F4c%2Fwishbone-ash-tickets_441288_3580599_222x222.jpg&feedId=23455&k=4758c339b274855c088638e13a4789d5dbede807" width="180" height="180" alt="Wishbone Ash -  The Wishlist Tour" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1020560" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/humour-comedie-22_B" class="lh-sm">Humour à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/spectacles/humour/les-chevaliers-du-fiel-vacances-a-dubai-tournee-1020560_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Les Chevaliers du Fiel - Vacances à Dubaï (tournée)</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 30/04/2026</span><a href="https://www.jds.fr/rennes/salles-spectacle/le-liberte-15057_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Liberté - Rennes</a><span class="d-block description font-size-14 lh-sm">Les Chevaliers du Fiel - Vacances à Dubaï (tournée), un spectacle à voir à Rennes (Le Liberté ), le 30 avril 2026. Toutes les informations pratiques (tarifs, billetterie, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41525897963&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/spectacles/humour/les-chevaliers-du-fiel-vacances-a-dubai-tournee-1020560_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F96%2F2c%2Fles-chevaliers-du-fiel---vacances---duba--tickets_380957_3196078_222x222.jpg&feedId=23455&k=c5174ce43e3c2bca596005cc5fc7fe6cd5321b14" width="180" height="180" alt="Les Chevaliers du Fiel - Vacances à Dubaï (tournée)" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1068964" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/chanson-francaise/trois-cafes-gourmands-tournee-1068964_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Trois Cafés Gourmands - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 30/04/2026</span><a href="https://www.jds.fr/rennes/pace/salle-de-concert/le-ponant-15915_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Ponant - Pacé</a><span class="d-block description font-size-14 lh-sm">Trois Cafés Gourmands - Tournée en concert à Rennes (Le Ponant Pacé), le 30 avril 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41737293570&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/chanson-francaise/trois-cafes-gourmands-tournee-1068964_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F76%2Fe3%2Ftrois-cafes-gourmands-tournee-2025-tickets_336537_2885664_222x222.jpg&feedId=23455&k=59067aa4b9c894d5390d1e8ebd8daa8acbb4a0b1" width="180" height="180" alt="Trois Cafés Gourmands - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1226343" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/chanson-francaise/trois-cafes-gourmands-3-cafes-gourmands-1226343_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Trois Cafes Gourmands - 3 Cafes Gourmands</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 30/04/2026</span><a href="https://www.jds.fr/rennes/salle-de-concert-et-de-spectacle/l-etage-16880_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> L'Etage - Rennes</a><span class="d-block description font-size-14 lh-sm">O Spectacles, en accord avec Bleu Citron Développement, présente&nbsp;: Trois Cafés Gourmands
+2024 marque le grand retour de Trois Cafés Gourmands, le célèbre groupe [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://ticketmaster-fr.tm7516.net/c/3318096/427761/7516?u=https%3A%2F%2Fwww.ticketmaster.fr%2Ffr%2Fmanifestation%2Ftrois-cafes-gourmands-billet%2Fidmanif%2F609372%2Fidtier%2F18864121&utm_medium=affiliate" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/chanson-francaise/trois-cafes-gourmands-3-cafes-gourmands-1226343_A"><img loading="lazy" src="https://www.jds.fr/medias/image/trois-cafes-gourmands-3-cafes-gourmands-754270-180-180.webp" width="180" height="180" alt="Trois Cafes Gourmands - 3 Cafes Gourmands" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1053709" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/chanson-francaise/babx-1053709_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Babx</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/05/2026</span><a href="https://www.jds.fr/rennes/cesson-sevigne/salle-de-concert/le-carre-sevigne-16723_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Carre Sevigne - Cesson-Sévigné</a><span class="d-block description font-size-14 lh-sm">Babx en concert à Rennes (Le Carre Sevigne Cesson-Sévigné), le 5 mai 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert sont à [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41666404249&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/chanson-francaise/babx-1053709_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fcd%2F50%2Fbabx-tickets_401879_3348751_222x222.jpg&feedId=23455&k=ff265753fcffb73891b61bbf0dd650221f79f038" width="180" height="180" alt="Babx" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1109690" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/spectacles/vie-saison-culturelle-montfort-sur-meu-1109690_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">"Vie" - Saison Culturelle Montfort-sur-Meu</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/05/2026</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Montfort-sur-Meu</span><span class="d-block description font-size-14 lh-sm">
+Le mercredi 6 mai à 14h30, dans le cadre de la saison culturelle de Montfort-sur-Meu, Filomène et Compagnie vous proposent la pièce de théâtre visuelle "Vie" à la salle Le [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://ticketmaster-fr.tm7516.net/c/3318096/427761/7516?u=https%3A%2F%2Fwww.ticketmaster.fr%2Ffr%2Fmanifestation%2Fvie-billet%2Fidmanif%2F634148%2Fidtier%2F18864121&utm_medium=affiliate" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/spectacles/vie-saison-culturelle-montfort-sur-meu-1109690_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="Vie - Saison Culturelle Montfort-sur-Meu" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1035165" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/musique-classique-89_B" class="lh-sm">Musique classique à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/musique-classique/onb-tango-ravel-1035165_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Onb-Tango Ravel</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 07/05/2026</span><a href="https://www.jds.fr/rennes/saint-gilles/centres-de-loisirs-et-de-culture/le-sabot-d-or-16815_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Sabot d'or - Saint-Gilles</a><span class="d-block description font-size-14 lh-sm">Onb-Tango Ravel en concert à Rennes (Le Sabot d'or Saint-Gilles), le 7 mai 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert sont à [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41586449449&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/musique-classique/onb-tango-ravel-1035165_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F1c%2F81%2Fonb-tango-ravel-tickets_403408_3340693_222x222.jpg&feedId=23455&k=2ef2585ce8b22008009e2ea4afbcfb62b7ea6724" width="180" height="180" alt="Onb-Tango Ravel" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1236064" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/musique-et-concerts-96_B" class="lh-sm">Concerts à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/tinariwen-the-hoggar-tour-1236064_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Tinariwen - The Hoggar Tour</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 11/05/2026</span><a href="https://www.jds.fr/rennes/salle-de-concert/le-mem-15064_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le MeM - Rennes</a><span class="d-block description font-size-14 lh-sm">
+
+Les maîtres du blues du désert Tinariwen investiront la scène du MeM à Rennes le lundi 11 mai 2026 à 20h dans le cadre de leur Hoggar Tour. Ce concert exceptionnel permettra [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43035770232&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/tinariwen-the-hoggar-tour-1236064_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F41%2F25%2Ftinariwen---the-hoggar-tour-tickets_458139_3686557_222x222.jpg&feedId=23455&k=ba2a10491b4b75609a3096d67efbc568d6c841a1" width="180" height="180" alt="Tinariwen - The Hoggar Tour" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1124482" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/spectacles/parcours-musical-et-danse-1124482_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Parcours musical et dansé</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 12/05/2026</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Châteaugiron</span><span class="d-block description font-size-14 lh-sm">
+COLLECTIF IMPRÉVU.E.S [Artistes associés à L’intervalle]
+DANSE / MUSIQUE
+Le Collectif Imprévu.e.s réunit des artistes issus de disciplines variées qui explorent et jouent [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/spectacles/parcours-musical-et-danse-1124482_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="Parcours musical et dansé" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1129031" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/reggae-108_B" class="lh-sm">Reggae à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/concerts/reggae/ousanousava-pace-1129031_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">ousanousava - pacé</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/05/2026</span><a href="https://www.jds.fr/rennes/pace/salle-de-concert/le-ponant-15915_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Ponant - Pacé</a><span class="d-block description font-size-14 lh-sm">OUSANOUSAVA est une formation musicale incontournable de l'&icirc;le de La R&eacute;union.
+Le groupe a commenc&eacute; &agrave; se faire conna&icirc;tre dans les ann&eacute;es [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://ticketmaster-fr.tm7516.net/c/3318096/427761/7516?u=https%3A%2F%2Fwww.ticketmaster.fr%2Ffr%2Fmanifestation%2Fousanousava-billet%2Fidmanif%2F632262%2Fidtier%2F18864121&utm_medium=affiliate" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/concerts/reggae/ousanousava-pace-1129031_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-16593500-1755534693-695594-180-180.webp" width="180" height="180" alt="ousanousava - pacé" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1178823" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/rennes/agenda/humour-comedie-22_B" class="lh-sm">Humour à Rennes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/rennes/spectacles/humour/malik-bentalha-nouveau-monde-tournee-1178823_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Malik Bentalha - Nouveau Monde - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 14/05/2026</span><a href="https://www.jds.fr/rennes/salles-spectacle/le-liberte-15057_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Liberté - Rennes</a><span class="d-block description font-size-14 lh-sm">Malik Bentalha - Nouveau Monde - Tournée, un spectacle à voir à Rennes (Le Liberté ), le 14 mai 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42485749238&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/rennes/spectacles/humour/malik-bentalha-nouveau-monde-tournee-1178823_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F51%2Ff6%2Fmalik-bentalha-tickets_437830_3553010_222x222.jpg&feedId=23455&k=5b18f503c38719991be3e5e4c4132bf290335c3a" width="180" height="180" alt="Malik Bentalha - Nouveau Monde - Tournée" /></a></div></div></li>
+</ul>
+</div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/rennes/agenda/?&amp;page=24"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/rennes/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/rennes/agenda/?&amp;page=24">24</a><span class="page d-inline-block mx-1 active mx-1">25</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/rennes/agenda/?&amp;page=26">26</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/rennes/agenda/?&amp;page=31">31</a></div>
+<a class="lien_next" href="https://www.jds.fr/rennes/agenda/?&amp;page=26"><i class="bi bi-chevron-right"></i></a></div>
+<div class="gp_div_affiche" data-id="0" data-id-format="69"></div>
+</div><div id="content_right" class=""><hr class="d-md-none my-5"><div class="wrapper_gp_div mb-4"><div class="regie_18"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 - HAUT -->
+<ins id="pub_1635" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="7598382131"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1635" data-id-format="18"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1635', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '18', 'non_interaction': true }); } });</script>
+</div>
+</div><div class="encart-newsletter d-none d-md-block p-4 bg-light my-5"><p class="mt-0 mb-3 h2">Newsletter JDS Rennes</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p><form id="form_newsletter_6915e9d185291" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="691601c0e4ae2" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915e9d185291_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" selected>35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915e9d185291_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915e9d185291_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915e9d185291_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915e9d185291_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915e9d185291 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915e9d185291_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915e9d185291 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915e9d185291_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915e9d185291 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915e9d185291_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915e9d185291_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915e9d185291 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915e9d185291',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915e9d185291").serialize();
+        $('form#form_newsletter_6915e9d185291 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915e9d185291 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915e9d185291 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915e9d185291 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter sidebar',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915e9d185291 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915e9d185291 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script></div><div class="wrapper_gp_div mb-2 sticky"><div class="regie_29"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 BAS -->
+<ins id="pub_1636" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="9513867524"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1636" data-id-format="29"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1636', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '29', 'non_interaction': true }); } });</script>
+</div>
+</div></div></div></div></div><footer id="footer" class="mt-5 px-3">    
+    <div class="container">     
+    <div class="row">
+        
+        <div class="col-md-6 col-lg-4 order-md-6 offset-lg-1">
+            <div id="footer_newsletter" class="p-4 bg-light full-width-sm mb-5">                                  
+                <p class="mt-0 mb-3 h2">Newsletter JDS Rennes</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p>                         
+                <form id="form_newsletter_6915e9d18530f" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="691601c0e4ae2" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915e9d18530f_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" selected>35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915e9d18530f_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915e9d18530f_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915e9d18530f_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915e9d18530f_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915e9d18530f input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915e9d18530f_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915e9d18530f input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915e9d18530f_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915e9d18530f input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915e9d18530f_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915e9d18530f_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915e9d18530f input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915e9d18530f',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915e9d18530f").serialize();
+        $('form#form_newsletter_6915e9d18530f .submit_2').attr('disabled','');
+        $('#form_newsletter_6915e9d18530f .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915e9d18530f .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915e9d18530f .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter footer',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915e9d18530f .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915e9d18530f .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script>         
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 order-md-first">
+            <a class="logo d-block mx-auto mx-lg-0" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a>
+
+            
+            <p class="my-4 fw-bold text-center text-md-start">Le JDS Rennes, c’est des sorties (concerts, humour…) et des bons plans en tous genres (resto, shopping, événements locaux…) au plus près de chez vous.</p>
+            
+                
+                
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <span class="font-size-14">Téléchargez l'appli JDS : </span>
+                <a href="https://market.android.com/details?id=fr.jds.app" class="mx-1" target="_blank"><i class="bi bi-android2"></i></a><a href="https://itunes.apple.com/fr/app/jds-les-sorties-en-alsace/id467323730?mt=8" class="mx-1" target="_blank"><i class="bi bi-apple"></i></a>   
+                </p>
+                
+            <hr class="my-5 d-md-none">
+        </div>
+        <div class="col-md-12 col-lg-3 order-md-11 offset-lg-1">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Organisateurs</p>
+                    <p class="fw-bold">Publiez votre événement sur le site jds.fr</p>                
+                    <ul class="text-gray-700 mt-2">
+                        <li>Publiez gratuitement votre événement dans l’agenda via notre <a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=footer&utm_campaign=link_publier_info_text">espace organisateur</a></li>
+                        <li>Bénéficiez d'une visibilité auprès de nos 3&nbsp;000&nbsp;000 visiteurs mensuels !</li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://pro.jds.fr" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je publie mon événement</a></p>
+
+                    <hr class="my-5 d-md-none d-lg-block">
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Annonceurs</p>
+                    <p class="fw-bold">Discutons ensemble de votre communication</p>          
+                    <ul class="text-gray-700 mt-2">
+                        <li>Promouvoir au mieux votre événement ou votre offre</li>
+                        <li>3&nbsp;000&nbsp;000 visiteurs mensuels <a href="https://www.jds.fr/magazine/actu-magazine/audience-jds-169974_A">(tout savoir sur l'audience du JDS)</a></li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://www.jds.fr/blog/" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je découvre les solutions</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 order-md-12">
+            <hr class="my-5">
+
+            <ul class="list-unstyled font-size-14 d-lg-flex justify-content-between">
+            <li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/journal-des-spectacles-magazine-mulhouse-colmar-haut-rhin-alsace-837_A">Qui sommes-nous ?</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/mentions-legales/">Infos légales / Affiliation</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/cookies/">Cookies</a></li><li class="mb-1 me-2"><a href="javascript:Didomi.preferences.show()">Modifier mes choix de cookies</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/comment-vous-desabonner-des-notifications-jds-340946_A">Se désabonner des notifications</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/contact/">Nous contacter</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/offres-emploi-mulhouse-alsace/">Emploi : nous rejoindre</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/">Blog</a></li>  
+            </ul>
+
+            <p class="font-size-14">Copyright 2008-2025 jds.fr</p>
+        </div>
+    </div> <!-- fin row -->        
+    </div> <!-- fin container -->
+</footer><div id="search-form-menu-container" class="search-form-menu-container shadow-lg bg-light hidden text-center py-3 py-lg-5">
+    <div class="container px-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-bold font-size-26">Rechercher</span>
+            <span class="cursor-pointer d-block search-form-menu-close text-primary" onclick="toggleSearchMenu();"><i class="bi bi-x-circle me-1"></i> Fermer</span>
+        </div>
+        <div
+            id="search-app"
+            data-endpoint="/ajax/search.php"
+            data-placeholder-text="ex. : concert demain à ..."
+            data-index-event="jds_event"
+            data-index-city="jds_city"
+            data-index-venue="jds_venue"
+            data-index-article="jds_article"
+            data-index-artist="jds_artist"
+            data-current-city-id="18222" data-current-city-name="Rennes"         ></div>
+    </div>
+</div>
+
+<div id="header-city-dropdown-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <p class="modal-title m-0">Choisissez une ville spécifique</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="ville-selector-mode" value="default" id="ville-selector-mode" />
+                <input type="text" class="form-control form-control-lg shadow-lg rounded-3" id="ville-selector-modal" placeholder="Entrez le nom de votre ville">
+                <div id="ville-selector-container-modal"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer>
+$(document).ready(function() {
+    $('#ville-selector-modal').keyup(function() {
+        if($(this).val().length==0) { $("#ville-selector-container-modal").html(""); return; }
+        if($(this).val().length<2) { return; }
+
+        $.post("/ajax/recherche_ville_fonction.php", { term: $(this).val(), mode:$('input[name="ville-selector-mode"]').val() })
+        .done(function(data) {
+
+            $("#ville-selector-container-modal").html('<p class="mt-4">Cliquez sur votre ville :</p><ul class="list-unstyled font-size-16"></ul>');
+            obj=JSON.parse(data);
+            obj.forEach(function(item){
+            $("#ville-selector-container-modal").find("ul").append('<li class="p-3 border-bottom"><a href="'+item.url+'" class="text-dark"><i class="bi bi-geo-fill text-primary me-1"></i> '+item.label+'</a></li>');
+        });
+        });
+    }); 
+});
+</script>
+
+</div><script defer src="/libs/jquery/magnific-popup/jquery.magnific-popup.min.js?v=131"></script><script defer src="/scripts/slick.min.js?v=131"></script><script defer src="/libs/choices/scripts/choices.js?v=131"></script><script defer src="/libs/lightbox2/js/lightbox.min.js?v=131"></script><script defer src="/scripts/functions_footer.js?v=131"></script><script>const { createApp, ref, computed, watch, onMounted, onBeforeUnmount, nextTick, reactive } = Vue;</script><script src="/scripts/search.app.js?v=131"></script><script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-messaging-compat.js"></script>
+<script>
+const firebaseConfig = {
+    apiKey: "AIzaSyBjBC01qlzGVLYWWE8D0rrOzL2cSfIf7MQ",
+    authDomain: "journal-des-spectacles-dd5d0.firebaseapp.com",
+    databaseURL: "https://journal-des-spectacles-dd5d0.firebaseio.com",
+    projectId: "journal-des-spectacles-dd5d0",
+    storageBucket: "journal-des-spectacles-dd5d0.appspot.com",
+    messagingSenderId: "37707045198",
+    appId: "1:37707045198:web:e58879e2e7f9adf0"
+  };
+const vapidKey = "BB2gRQtko-8CqzZbrzzlGBwMim_ThaPkNdzqi780Y7ku5VmG_E_DwFJnrJXB7_pNJKn9UTbIchVKfijBHNteuu8";
+  
+firebase.initializeApp(firebaseConfig);
+const messaging = firebase.messaging();
+
+var browserName = (function (agent) {        
+    switch (true) {
+        case agent.indexOf("edge") > -1: return "Edge"; // ms
+        case agent.indexOf("edg/") > -1: return "Edge"; // (chromium based)
+        case agent.indexOf("chrome") > -1 && !!window.chrome: return "Chrome";
+        case agent.indexOf("firefox") > -1: return "Firefox";
+        case agent.indexOf("safari") > -1: return "Safari";
+        default: return "other";
+    }
+})(window.navigator.userAgent.toLowerCase());
+    
+function fcm_resetUI() { 
+    if(!isTokenSentToServer()) {
+        if(window.navigator.userAgent.toLowerCase().indexOf('iphone')!==-1) { return; } // fix bug safari iphone    
+        if(browserName=='Chrome') { $('#web_push_dialog').addClass('chrome'); }
+        if(browserName=='Edge') { $('#web_push_dialog').addClass('edge'); }
+        if(browserName=='Firefox') { $('#web_push_dialog').addClass('firefox'); }
+        if(Notification.permission=='default') {
+            if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+        }
+        else if(Notification.permission=='granted') {
+            messaging.getToken({ vapidKey:vapidKey }).then((currentToken) => {   
+                                if (currentToken) {
+                    sendTokenToServer(currentToken);
+                } else {
+                  setTokenSentToServer(false);
+                  if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+                }
+            }).catch((err) => {
+                
+                setTokenSentToServer(false);
+            });
+        }    
+    }
+}
+//window.fcm_resetUI = fcm_resetUI;
+function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+        setTokenSentToServer(true);
+        $.post( "/ajax/firebase_register_v2.php",  { token: currentToken, dpt:'35' });      
+        if(typeof gtag=="function") {
+            gtag("event", "subscription", {
+                "event_category" : "Firebase",
+                "event_label" : "Web push",
+                "non_interaction": true
+            });            
+        }
+    } 
+}
+function isTokenSentToServer() {
+    var web_push_cookie = $.cookie('web_push');       
+    if(typeof web_push_cookie === 'undefined' || web_push_cookie===false) return false;
+    return true;
+}
+function setTokenSentToServer(sent) {
+    if(sent) $.cookie('web_push',true, {path: '/',domain:'.jds.fr'}); 
+    else $.cookie('web_push',false, {path: '/',domain:'.jds.fr'}); 
+}
+function requestPushDialog() {
+    $.magnificPopup.open({
+        items: {
+            src: '#web_push_dialog', // can be a HTML string, jQuery object, or CSS selector
+            type: 'inline'
+          },
+        alignTop : true,
+        showCloseBtn : true,
+        //closeOnBgClick: ((browserName!='Firefox' &&  && !$('#web_push_dialog').hasClass('mobile'))?false:true),
+        callbacks: {
+            open: function() {                 
+                $('.mfp-bg').css('position','fixed');      
+                if(browserName!='Firefox') {
+                    if(!$('#web_push_dialog').hasClass('mobile')) {
+                        $('.mfp-bg').css('opacity',.0).css('width','auto').css('height','auto');
+                        $('html').css('overflow','auto');  
+                        $('.mfp-wrap').css('width','auto').css('height','auto');
+                    }
+                    else {
+                        $('html').css('overflow','hidden');  
+                    }
+                }
+                else {
+                    $('.mfp-bg').css('opacity',.75).css('background','#fff');
+                }
+
+            },
+            close: function() {
+                $('html').css('overflow','auto'); 
+            }
+        }    
+    }); 
+    if(browserName!='Firefox') { requestPermission(); } // sur firefox, l'ouverture de permission automatique ne marche pas alors on remet les boutons
+}
+function requestPermission() {   
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+            fcm_resetUI();
+            $.magnificPopup.close();
+      } else {
+            $.magnificPopup.close();
+      }
+    });
+}
+$(document).on('click','#web_push_dialog button',function() {
+    //firefox
+    if($(this).hasClass('accept')) requestPermission();
+    if($(this).hasClass('deny')) setTokenSentToServer(true);    
+    
+    $.magnificPopup.close();       
+});
+</script>
+
+<div id="web_push_dialog" class="mfp-hide desktop">
+    <div class="popup-content p-3">
+        <img class="logo-mobile" loading="lazy" src="/images/new/logo-jds.svg?v=131" width="40" height="40" alt="jds.fr">
+        <p class="popup-title mb-3"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+        <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+        <p class="text-gray-600 font-size-14 mb-0">Autoriser les notifications pour continuer.</p>
+        <hr class="hide-mobile">
+        <div class="p-3 hide-mobile text-center bg-primary"><img loading="lazy" src="/images/new/logo-jds-white.svg?v=131" width="100" height="100" alt="jds.fr"></div>
+        <div class="arrow text-gray-800"><i class="bi bi-arrow-down-circle-fill"></i></div>
+    </div>
+    <div class="popup-content-firefox p-3">
+        <div class="row">
+            <div class="col-md-3 pr-0 col-3"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" class="popup-logo"></div>
+            <div class="col-md-9 col-9">
+              <p class="popup-title"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+              <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+              <p class="text-gray-600 font-size-14 mb-3">Une seconde fenêtre va s'ouvrir vous invitant à autoriser les notifications</p>
+              <div class="popup-footer text-right"><button class="btn btn-outline-primary rounded-pill btn-sm me-3 deny">Refuser</button><button class="btn btn-primary rounded-pill btn-sm me-3 accept">Autoriser</button></div>
+            </div>
+        </div>
+    </div>
+</div><script type="didomi/javascript" data-purposes="select_basic_ads" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4984827051088801"
+     crossorigin="anonymous"></script></body></html>

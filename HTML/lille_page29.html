@@ -1,0 +1,643 @@
+<!DOCTYPE html><html lang="fr"><head><script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+      else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+        var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+        if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e,tgt){
+        var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+tgt;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("9d946103-8843-4a4e-ab0b-8e61ea84e891","Qr7JnTUV")})();</script>
+
+<script> 
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(function (Didomi) { 
+        // Call other functions on the SDK
+
+        // Refresh de la page en cas de changement du consentement
+        window.didomiEventListeners = window.didomiEventListeners || [];
+        window.didomiEventListeners.push({
+            event: 'consent.changed',
+            listener: function (context) {
+                gp_maj();
+            }
+        });
+
+        // Google advertising products
+        Didomi.getObservableOnUserConsentStatusForVendor('google')
+        .filter(function (status) { return status !== undefined })
+        .subscribe(function (consentStatus) {
+            if (consentStatus === undefined || consentStatus === false) {
+                // on masque les encarts pubs vides
+                (function() {     
+                    var div_regies = document.getElementsByClassName('wrapper_gp_div');
+                    
+                    setTimeout(function() { // on fait un settimeout sinon le length n'est pas juste...                   
+                        for (let i = 0; i < div_regies.length; i++) {                  
+                            if (div_regies[i].innerHTML.indexOf('regie_') > -1) {                           
+                              div_regies[i].style.display="none";
+                            }
+                        }
+                        
+                    },400);
+                    
+                    
+                })();
+            }
+        }); 
+        
+     
+
+    });
+    </script> 
+<meta charset="UTF-8" />
+<title>Lille - L&#039;agenda des spectacles, manifestations, concerts - Page 29</title>
+<meta name="description" content="Lille - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 29" />
+<link rel="canonical" href="https://www.jds.fr/lille/agenda/?page=29" />
+<meta name="p:domain_verify" content="9efecdd4eddf0844d5703f41d2dc7ca7"/>
+<meta property="fb:app_id" content="638077278167784" />
+<meta property="fb:pages" content="50813882504">
+<meta property="og:title" content="Lille - L&#039;agenda des spectacles, manifestations, concerts - Page 29" />
+<meta property="og:description" content="Lille - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 29" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.jds.fr/lille/agenda/?page=29" />
+<meta property="og:site_name" content="jds.fr" />
+<meta property="og:image" content="https://www.jds.fr/images/header_logo_120.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="364" />
+<meta property="og:image:height" content="364" />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https:\/\/www.jds.fr\/","name":"Accueil"},{"@type":"ListItem","position":2,"item":"https:\/\/www.jds.fr\/lille\/","name":"Lille"},{"@type":"ListItem","position":3,"name":"Agenda"}]}</script>
+
+<meta name="robots" content="noindex,follow" />
+<link rel="prev" href="https://www.jds.fr/lille/agenda/?&amp;page=28" /><link rel="next" href="https://www.jds.fr/lille/agenda/?&amp;page=30" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+<link rel="stylesheet" href="/css/custom.css?v=131">
+<link rel="preload" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131"></noscript>
+<link rel="preload" href="/libs/lightbox2/css/lightbox.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/lightbox2/css/lightbox.min.css?v=131"></noscript>
+<link rel="preload" href="/css/slick-theme.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick-theme.css?v=131"></noscript>
+<link rel="preload" href="/css/slick.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick.css?v=131"></noscript>
+<link rel="preload" href="/libs/choices/styles/choices.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/choices/styles/choices.min.css?v=131"></noscript>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#e50b47">
+<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e50b47">
+<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><link rel="manifest" href="/manifest.json"></head><body class="version_a  "><script async src="https://www.googletagmanager.com/gtag/js?id=G-6WVELE5WG9"></script>
+<script type="didomi/javascript" data-vendor="c:googleana-4TXnJigR">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+        dataLayer.push(arguments);
+        if (arguments[0] === 'js') {
+            setTimeout(function() {
+            window.dispatchEvent(new Event('gtag_loaded'));
+        }, 1000);
+        }
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6WVELE5WG9', {
+          'cookie_expires': 33696000,
+          'transport_type': 'beacon',
+          'dimension1': '0','dimension2': '59','dimension3': '2','dimension4': '0','dimension5': '0','dimension6': '0','dimension7': '','dimension8': 'a','dimension9': '0',     
+    });
+</script><script src="/libs/jquery-3.7.1.min.js"></script><script defer src="/libs/bootstrap/js/popper.min.js"></script><script defer src="/libs/bootstrap/js/bootstrap.min.js"></script><script defer src="/libs/jquery/js/jquery.cookie.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.date.js"></script><script defer src="/libs/jquery/pickadate.js/lib/translations/fr_FR.js"></script><script src="/libs/vue.global.prod.js"></script><script src="/libs/axios.min.js"></script><script src="/ads-checker.js"></script><script defer src="/scripts/functions.js?v=131"></script><script>var gp_maj_done=false;
+var param_gp=[];param_gp['id_newsletter']='0';param_gp['type']='0';param_gp['sousrub']='0';param_gp['rub']='2';param_gp['rub_rub']='2';param_gp['page']='29';param_gp['mobile_version']='0';param_gp['detail_type']='';param_gp['detail_id']='0';param_gp['web_push_site']='';param_gp['web_push_id']='';param_gp['current_departement']='59';$(document).ready(function() {
+    if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) gp_maj();});</script><div class="gp_div_affiche" data-id="0" data-id-format="24"></div>
+<div id="global" class="p-0"><div id="header" class="bg-white header"><div class="d-flex justify-content-between align-items-center px-2rem header-inner-wrapper text-primary container"><div class="header-logo mb-1"><a class="d-block" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a></div><div class="header-city-inline-selector d-flex me-auto font-size-22 ms-4 align-items-center lh-1"><a href="https://www.jds.fr/lille/" class="">Lille</a><span class="ms-auto ms-md-0 d-block ps-2 cursor-pointer" onclick="toggleCityMenu();"><i class="bi bi-chevron-down"></i></span></div><div class="header-publish ms-md-auto me-md-5"><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=header&utm_campaign=link_publier_info" class="btn btn-outline-primary rounded-pill d-none d-md-inline shadow-sm"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><div class="header-menu font-size-36 cursor-pointer ps-3" onclick="toggleMenu()"><i class="bi bi-list"></i></div></div></div>
+<!-- NAVBAR -->
+<div id="header-navbar" class="bg-light-primary header-navbar navbar-v2">
+    <div class="px-2rem header-navbar-inner-wrapper container font-size-14">
+        <div class="navbar-v2-item d-flex">
+            <div class="flex-fill">
+                <span onclick="toggleSearchMenu();" class="bg-primary text-white d-block px-3"><span class="search-btn cursor-pointer"><span><i class="bi bi-search me-2"></i> Rechercher</span></span>
+            </div>
+            <div class="flex-fill"><a href="https://www.jds.fr/lille/agenda/agenda-du-jour/-aujourdhui_JPJ" class="" data-event-label="Aujourd'hui"><span><i class="cf icon-aujourdhui">&#xe80f;</i> Aujourd'hui</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/lille/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="" data-event-label="Spectacles"><span><i class="cf icon-spectacles">&#xe80c;</i> Spectacles</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/lille/agenda/musique-et-concerts-96_B" class="" data-event-label="Concerts"><span><i class="cf icon-concert">&#xe801;</i> Concerts</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/lille/agenda/manifestations-fetes-festivals-137_B" class="" data-event-label="Animations"><span><i class="cf icon-manifestations">&#xe807;</i> Animations</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/lille/agenda/foire-salon-puces-bourses-468_B" class="" data-event-label="Salons / Puces"><span><i class="cf icon-foires">&#xe805;</i> Salons / Puces</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/lille/agenda/sports-145_B" class="" data-event-label="Sports"><span><i class="cf icon-sport">&#xe810;</i> Sports</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/lille/agenda/expositions-471_B" class="" data-event-label="Expos"><span><i class="cf icon-expos">&#xe802;</i> Expos</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/lille/agenda/enfants-94_B" class="" data-event-label="Famille"><span><i class="cf icon-famille">&#xe813;</i> Famille</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/lille/agenda/soirees-469_B" class="" data-event-label="Soirées"><span><i class="cf icon-soirees">&#xe80b;</i> Soirées</span></a></div>        </div>
+    </div>
+</div>
+<div id="menu" class="menu bg-white px-2rem py-5 hidden"><div class="text-center"><button class="btn btn-primary btn-lg rounded-pill d-block w-100 menu-link" onclick="toggleSearchMenu();" data-event-label="open-search-menu"><i class="bi bi-search me-2"></i> Rechercher</button><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=menu&utm_campaign=link_publier_info" class="btn btn-outline-primary my-4 btn-lg rounded-pill d-block w-100" data-event-label="Espace pro"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/lille/agenda/agenda-du-jour/-aujourdhui_JPJ" class="text-dark hover-text-primary cursor-pointer" data-event-label="Aujourd'hui">Aujourd'hui à Lille</a></li><li><a href="https://www.jds.fr/lille/agenda/evenements/" class="text-dark hover-text-primary" data-event-label="Evénements">Evénements</a></li><li><a href="https://www.jds.fr/lille/agenda/manifestations-fetes-festivals-137_B" class="text-dark hover-text-primary" data-event-label="Manifestations">Manifestations</a></li><li><a href="https://www.jds.fr/lille/agenda/foire-salon-puces-bourses-468_B" class="text-dark hover-text-primary" data-event-label="Foires & salons">Foires & salons</a></li><li><a href="https://www.jds.fr/lille/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="text-dark hover-text-primary" data-event-label="Spectacles">Spectacles</a></li><li><a href="https://www.jds.fr/lille/agenda/musique-et-concerts-96_B" class="text-dark hover-text-primary" data-event-label="Concerts">Concerts</a></li><li><a href="https://www.jds.fr/lille/agenda/sports-145_B" class="text-dark hover-text-primary" data-event-label="Sports">Sports</a></li><li><a href="https://www.jds.fr/lille/agenda/soirees-469_B" class="text-dark hover-text-primary" data-event-label="Soirées">Soirées</a></li><li><a href="https://www.jds.fr/lille/agenda/enfants-94_B" class="text-dark hover-text-primary" data-event-label="Sorties famille">Sorties famille</a></li><li><a href="https://www.jds.fr/lille/agenda/expositions-471_B" class="text-dark hover-text-primary" data-event-label="Expos">Expos</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/lille/magazine/" class="text-dark hover-text-primary" data-event-label="Actus">Actus à Lille</a></li><li><a href="https://www.jds.fr/lille/annuaire/" class="text-dark hover-text-primary" data-event-label="Annuaire">Annuaire tourisme & loisirs</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/newsletter-archives/toutes-les-newsletter-jds-fr" class="text-dark hover-text-primary" data-event-label="Newsletters">Newsletter des sorties</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/blog/" class="text-dark hover-text-primary" data-event-label="Annonceurs">Annonceurs</a></li></ul></div><div id="header-city-dropdown" class="header-city-dropdown bg-secondary py-2 text-white px-2rem font-size-16 hidden"><div class="container"><div class="py-2 cursor-pointer text-uppercase" onclick="$('#header-city-dropdown-modal').modal('show'); $('#ville-selector-modal').focus(); $('input[name=&quot;ville-selector-mode&quot;]').val('default')"><i class="bi bi-building-add me-1"></i> Une autre ville</div><div class="py-1"><a href="https://www.jds.fr/bordeaux/" class="text-white text-uppercase">Bordeaux</a></div><div class="py-1"><a href="https://www.jds.fr/colmar/" class="text-white text-uppercase">Colmar</a></div><div class="py-1"><a href="https://www.jds.fr/dijon/" class="text-white text-uppercase">Dijon</a></div><div class="py-1"><a href="https://www.jds.fr/lille/" class="text-white text-uppercase">Lille</a></div><div class="py-1"><a href="https://www.jds.fr/lyon/" class="text-white text-uppercase">Lyon</a></div><div class="py-1"><a href="https://www.jds.fr/marseille/" class="text-white text-uppercase">Marseille</a></div><div class="py-1"><a href="https://www.jds.fr/metz/" class="text-white text-uppercase">Metz</a></div><div class="py-1"><a href="https://www.jds.fr/montpellier/" class="text-white text-uppercase">Montpellier</a></div><div class="py-1"><a href="https://www.jds.fr/mulhouse/" class="text-white text-uppercase">Mulhouse</a></div><div class="py-1"><a href="https://www.jds.fr/nancy/" class="text-white text-uppercase">Nancy</a></div><div class="py-1"><a href="https://www.jds.fr/nantes/" class="text-white text-uppercase">Nantes</a></div><div class="py-1"><a href="https://www.jds.fr/nice/" class="text-white text-uppercase">Nice</a></div><div class="py-1"><a href="https://www.jds.fr/paris/" class="text-white text-uppercase">Paris</a></div><div class="py-1"><a href="https://www.jds.fr/reims/" class="text-white text-uppercase">Reims</a></div><div class="py-1"><a href="https://www.jds.fr/rennes/" class="text-white text-uppercase">Rennes</a></div><div class="py-1"><a href="https://www.jds.fr/strasbourg/" class="text-white text-uppercase">Strasbourg</a></div><div class="py-1"><a href="https://www.jds.fr/toulouse/" class="text-white text-uppercase">Toulouse</a></div><div class="mt-5 py-1 cursor-pointer" onclick="toggleCityMenu()"><u><i class="bi bi-x-circle me-1"></i> Fermer le menu</u></div></div></div><div id="global-container"><div id="global-container-inner-wrapper" class="container"><!--[if lte IE 9]>
+<div class="alert alert-warning" role="alert">
+<p class="mb-0">Vous utilisez une très ancienne version de navigateur Internet, ce qui impacte négativement votre expérience de navigation sur le site du JDS et sur Internet en général. Nous vous recommandons de mettre à jour votre navigateur ou d'en installer un autre en <a href="https://browsehappy.com/?locale=fr" target="_blank">cliquant ici</a>.</p>
+</div>
+<![endif]--><div class="text-center mb-5 mx-auto leaderboard"><div class="wrapper_gp_div nobg"><div class="regie_2">
+<!-- Leaderboard 1000 x 300 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:1000px;height:300px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="4079211116"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="3348" data-id-format="2"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3348', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '2', 'non_interaction': true }); } });</script>
+</div>
+</div></div><div id="content_container" class="d-md-flex justify-content-between"><div id="content_left"><div id="chemin" class="ariane mb-3"><a href="https://www.jds.fr/">Accueil</a><a href="https://www.jds.fr/lille/">Lille</a></div><div class="header-ville no-form is_page_ville ville_59 agglo_1160 "><h1>Lille&nbsp;: Agenda et événements</h1><button onclick="toggleSearchMenu()" class="btn btn-primary btn-lg mx-auto d-block rounded-pill shadow-lg my-4" data-position="page-resultats-modifier-recherche-top"><i class="bi bi-search me-2"></i> Rechercher</button></div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/lille/agenda/?&amp;page=28"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/lille/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/lille/agenda/?&amp;page=28">28</a><span class="page d-inline-block mx-1 active mx-1">29</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/lille/agenda/?&amp;page=30">30</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/lille/agenda/?&amp;page=40">40</a></div>
+<a class="lien_next" href="https://www.jds.fr/lille/agenda/?&amp;page=30"><i class="bi bi-chevron-right"></i></a></div>
+<div class="mt-5"><ul class="mt-3 list-unstyled list-articles-v2">
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1164393" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/hip-hop-rap-190_B" class="lh-sm">Rap à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/rap/piche-tournee-1164393_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Piche - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 14/03/2026</span><a href="https://www.jds.fr/lille/salle-de-concert/le-splendid-15047_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Splendid - Lille</a><span class="d-block description font-size-14 lh-sm">Piche - Tournée en concert à Lille (Le Splendid ), le 14 mars 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert sont à retrouver sur [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42397275201&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/rap/piche-tournee-1164393_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fe8%2F6c%2Fche20-tickets_287109_2495483_222x222.jpg&feedId=23455&k=b01a3cbe14b8ba3fd506c05045b7e520b2686497" width="180" height="180" alt="Piche - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="950177" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/spectacles/pat-patrouille-le-spectacle-le-retour-des-heros-tournee-950177_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Pat' Patrouille, le Spectacle&nbsp;: le Retour des Héros&nbsp;! - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/03/2026</span><a href="https://www.jds.fr/lille/salles-spectacle/zenith-de-lille-15040_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Lille</a><span class="d-block description font-size-14 lh-sm">Pat' Patrouille, le Spectacle&nbsp;: le Retour des Héros&nbsp;! - Tournée, un spectacle à voir à Lille (Zénith de Lille ), le 15 mars 2026. Toutes les informations pratiques [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41114792065&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/spectacles/pat-patrouille-le-spectacle-le-retour-des-heros-tournee-950177_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F6e%2F0c%2Fpat--patrouille-tournee-2026-tickets_384708_3221071_222x222.jpg&feedId=23455&k=6b6cbcb8304a7f77021d995ebb0b32f9bcc07482" width="180" height="180" alt="Pat&#039; Patrouille, le Spectacle : le Retour des Héros ! - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1150708" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/chanson-francaise/yannick-noah-un-p-tit-tour-a-deux-1150708_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Yannick Noah - Un P'Tit Tour à Deux</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/03/2026</span><a href="https://www.jds.fr/lille/casino/casino-barriere-15036_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Casino Barrière - Lille</a><span class="d-block description font-size-14 lh-sm">Yannick Noah - Un P'Tit Tour à Deux en concert à Lille (Casino Barrière ), le 15 mars 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42311078427&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/chanson-francaise/yannick-noah-un-p-tit-tour-a-deux-1150708_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fb8%2F3b%2Fyannick-noah-tickets_434007_3528831_222x222.jpg&feedId=23455&k=6c3e8f986a1c4b77103216259c07c1465fbe487e" width="180" height="180" alt="Yannick Noah - Un P&#039;Tit Tour à Deux" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1031385" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/pop-folk-479_B" class="lh-sm">Pop / folk à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/pop-folk/the-australian-pink-floyd-show-the-happiest-days-of-our-lives-greatest-hits-1031385_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">The Australian Pink Floyd Show - The Happiest Days Of Our Lives, Greatest Hits</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 17/03/2026</span><a href="https://www.jds.fr/lille/salles-spectacle/zenith-de-lille-15040_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Lille</a><span class="d-block description font-size-14 lh-sm">The Australian Pink Floyd Show - The Happiest Days Of Our Lives, Greatest Hits en concert à Lille (Zénith de Lille ), le 17 mars 2026. Toutes les informations pratiques (tarifs, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41577316684&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/pop-folk/the-australian-pink-floyd-show-the-happiest-days-of-our-lives-greatest-hits-1031385_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F52%2Ffd%2Ftapfs-tickets_402086_3331051_222x222.jpg&feedId=23455&k=c0a92360d71f9f96e9ea9ee684d40fc43d1ec75b" width="180" height="180" alt="The Australian Pink Floyd Show - The Happiest Days Of Our Lives, Greatest Hits" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="950150" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/chanson-francaise/jimmy-sax-toi-et-moi-tournee-950150_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Jimmy Sax - Toi & Moi - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 17/03/2026</span><a href="https://www.jds.fr/lille/salles-spectacle/theatre-sebastopol-15184_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre Sébastopol - Lille</a><span class="d-block description font-size-14 lh-sm">Jimmy Sax - Toi & Moi - Tournée en concert à Lille (Théâtre Sébastopol ), le 17 mars 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41114792643&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/chanson-francaise/jimmy-sax-toi-et-moi-tournee-950150_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fe5%2F77%2Fjimmy-sax-tickets_376548_3169280_222x222.jpg&feedId=23455&k=46dbf8de936423525ecfa1e43ce0ccda9fc3b037" width="180" height="180" alt="Jimmy Sax - Toi &amp; Moi - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1071402" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/humour-comedie-22_B" class="lh-sm">Humour à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/spectacles/humour/lily-et-lily-tournee-1071402_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Lily et Lily - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 17/03/2026</span><a href="https://www.jds.fr/lille/parc-expo/lille-grand-palais-15041_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Lille Grand Palais</a><span class="d-block description font-size-14 lh-sm">Lily et Lily - Tournée, un spectacle à voir à Lille (Lille Grand Palais ), le 17 mars 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41744472082&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/spectacles/humour/lily-et-lily-tournee-1071402_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F7d%2F52%2Flily-et-lily-tickets_322295_2733037_222x222.jpg&feedId=23455&k=935bb4783582c2a253c98a819905cb2015f18eaa" width="180" height="180" alt="Lily et Lily - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1166987" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/pop-folk-479_B" class="lh-sm">Pop / folk à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/pop-folk/suzanne-vega-flying-with-angels-1166987_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Suzanne Vega - Flying With Angels</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 17/03/2026</span><a href="https://www.jds.fr/lille/roubaix/salles-spectacle/colisee-roubaix-15046_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Colisée Roubaix</a><span class="d-block description font-size-14 lh-sm">Suzanne Vega - Flying With Angels en concert à Lille (Colisée Roubaix Roubaix), le 17 mars 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42408775532&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/pop-folk/suzanne-vega-flying-with-angels-1166987_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fb3%2F83%2Fsuzanne-vega-flying-with-angels-tickets_390691_3261170_222x222.jpg&feedId=23455&k=557bcea15f1b4e2ffbc5b490f4b7976e041f875d" width="180" height="180" alt="Suzanne Vega - Flying With Angels" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1206643" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/pop-folk-479_B" class="lh-sm">Pop / folk à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/pop-folk/monkeys-on-mars-mars-red-sky-monkey3-1206643_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Monkeys On Mars (mars Red Sky + Monkey3)</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 17/03/2026</span><a href="https://www.jds.fr/lille/wasquehal/salle-de-concert/the-black-lab-15511_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> The Black Lab - Wasquehal</a><span class="d-block description font-size-14 lh-sm">
+
+Le projet collaboratif Monkeys on Mars investira la scène de The Black Lab à Wasquehal le mardi 17 mars 2026 à 20h. Cette fusion exceptionnelle entre Mars Red Sky et Monkey3 [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42726260005&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/pop-folk/monkeys-on-mars-mars-red-sky-monkey3-1206643_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F72%2Fea%2Fmonkeys-on-mars--mars-red-sky---monkey3--tickets_447844_3615746_222x222.jpg&feedId=23455&k=d7282a948792446f7517d37c55a36f3b9b40d7e3" width="180" height="180" alt="Monkeys On Mars (mars Red Sky + Monkey3)" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1235989" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/humour-comedie-22_B" class="lh-sm">Humour à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/spectacles/humour/cine-comedy-club-1235989_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Ciné Comedy Club</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 18/03/2026</span><a href="https://www.jds.fr/lille/lomme/cinema-sorties-films-horaires/cinema-kinepolis-lille-22882_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Cinéma Kinepolis Lille - Lomme</a><span class="d-block description font-size-14 lh-sm">
+
+Le Ciné Comedy Club s'installe au Cinéma Kinepolis Lille à Lomme le mercredi 18 mars 2026 à 20h30 pour une soirée dédiée à l'humour émergent. Ce spectacle présente six [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43035771849&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/spectacles/humour/cine-comedy-club-1235989_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fcb%2Ffd%2Fcine-comedy-club-tickets_389488_3260221_222x222.jpg&feedId=23455&k=fd820bfa9b973ddd0203ddb28b19fdc69f237648" width="180" height="180" alt="Ciné Comedy Club" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1206612" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/spectacles/le-lac-des-cygnes-1206612_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Le Lac des Cygnes</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 18/03/2026</span><a href="https://www.jds.fr/lille/salles-spectacle/theatre-sebastopol-15184_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre Sébastopol - Lille</a><span class="d-block description font-size-14 lh-sm">
+
+Le célèbre ballet Le Lac des Cygnes investit la scène du Théâtre Sébastopol à Lille le mercredi 18 mars 2026 à 20h. Cette représentation exceptionnelle, présentée par [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42722808330&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/spectacles/le-lac-des-cygnes-1206612_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fb8%2F92%2Fle-lac-des-cygnes-tickets_450614_3632963_222x222.jpg&feedId=23455&k=4ee66318798a7e48dbf1dda0ac86c9a3d13a0e47" width="180" height="180" alt="Le Lac des Cygnes" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="991600" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/humour-comedie-22_B" class="lh-sm">Humour à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/spectacles/humour/pierre-thevenoux-life-coach-991600_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Pierre Thevenoux - Life Coach</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 18/03/2026</span><a href="https://www.jds.fr/lille/parc-expo/lille-grand-palais-15041_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Lille Grand Palais</a><span class="d-block description font-size-14 lh-sm">Pierre Thevenoux - Life Coach, un spectacle à voir à Lille (Lille Grand Palais ), le 18 mars 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41375595656&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/spectacles/humour/pierre-thevenoux-life-coach-991600_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F69%2F25%2Fpierre-thevenoux-tickets_448165_3615688_222x222.jpg&feedId=23455&k=636cca3d0021d4f1c948270f8466e39501dacd6c" width="180" height="180" alt="Pierre Thevenoux - Life Coach" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1247957" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/hip-hop-rap-190_B" class="lh-sm">Rap à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/rap/ekloz-1247957_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Ekloz</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 18/03/2026</span><a href="https://www.jds.fr/lille/salle-de-concert/la-bulle-cafe-15208_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Bulle-Café - Lille</a><span class="d-block description font-size-14 lh-sm">
+
+La rappeuse marseillaise Ekloz investit la scène de La Bulle-Café à Lille le mercredi 18 mars 2026 à 20h30. Reconnue pour son style hybride mêlant rap, électro et techno, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43121204389&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/rap/ekloz-1247957_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F04%2F8c%2Fekloz-tickets_462820_3715309_222x222.jpg&feedId=23455&k=86f52de0f8394db7bf76c61c3fa9040765c28d80" width="180" height="180" alt="Ekloz" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1220156" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/musique-et-concerts-96_B" class="lh-sm">Concerts à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/laurent-voulzy-1220156_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Laurent Voulzy</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 18/03/2026 au 19/03/2026</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Roubaix</span><span class="d-block description font-size-14 lh-sm">Laurent Voulzy, l’un des grands poètes mélodiques de la chanson française, fera escale à Roubaix pour deux soirées d’exception. Après avoir illuminé les cathédrales et [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/laurent-voulzy-1220156_A"><img loading="lazy" src="https://www.jds.fr/medias/image/musique-et-concerts-127063-180-180.webp" width="180" height="180" alt="Laurent Voulzy" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="716777" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/spectacle-comedie-musical-33_B" class="lh-sm">Spectacle musical à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/spectacles/spectacle-musical/le-roi-soleil-tournee-716777_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Le Roi Soleil - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 19/03/2026 au 22/03/2026</span><a href="https://www.jds.fr/lille/salles-spectacle/zenith-de-lille-15040_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Lille</a><span class="d-block description font-size-14 lh-sm">Le Roi Soleil - Tournée, un spectacle à voir à Lille (Zénith de Lille ), du 19 mars 2026 au 22 mars 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=40109194849&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/spectacles/spectacle-musical/le-roi-soleil-tournee-716777_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F9f%2F5c%2Fle-roi-soleil-tickets_316796_2634573_222x222.jpg&feedId=23455&k=7b7cf02421623375e47ac77e0679165828cbbd69" width="180" height="180" alt="Le Roi Soleil - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1226600" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/chanson-francaise/laurent-voulzy-en-concert-1226600_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Laurent Voulzy En Concert</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 19/03/2026</span><a href="https://www.jds.fr/lille/roubaix/salles-spectacle/colisee-roubaix-15046_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Colisée Roubaix</a><span class="d-block description font-size-14 lh-sm">COLISÉE ROUBAIX - TR. PUBLIC PRÉSENTE&nbsp;: LAURENT VOULZY EN CONCERT
+L’un des grands poètes mélodiques de la chanson française fait escale à Roubaix pour deux soirées [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://ticketmaster-fr.tm7516.net/c/3318096/427761/7516?u=https%3A%2F%2Fwww.ticketmaster.fr%2Ffr%2Fmanifestation%2Flaurent-voulzy-en-concert-billet%2Fidmanif%2F635271%2Fidtier%2F18864121&utm_medium=affiliate" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/chanson-francaise/laurent-voulzy-en-concert-1226600_A"><img loading="lazy" src="https://www.jds.fr/medias/image/laurent-voulzy-en-concert-754550-180-180.webp" width="180" height="180" alt="Laurent Voulzy En Concert" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1189607" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/pop-folk-479_B" class="lh-sm">Pop / folk à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/pop-folk/mpl-1189607_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Mpl</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 19/03/2026</span><a href="https://www.jds.fr/lille/salles-spectacle/theatre-sebastopol-15184_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre Sébastopol - Lille</a><span class="d-block description font-size-14 lh-sm">Mpl en concert à Lille (Théâtre Sébastopol ), le 19 mars 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert sont à retrouver sur [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42551132624&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/pop-folk/mpl-1189607_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F59%2Ffa%2Fmpl-tickets_437153_3548489_222x222.jpg&feedId=23455&k=46f0ac8c5d85a17efbcb327c00df27b45387aa4b" width="180" height="180" alt="Mpl" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1103235" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/rock-111_B" class="lh-sm">Rock / metal à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/rock/high-parasite-the-old-dead-tree-1103235_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">High Parasite + The Old Dead Tree</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 19/03/2026</span><a href="https://www.jds.fr/lille/wasquehal/salle-de-concert/the-black-lab-15511_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> The Black Lab - Wasquehal</a><span class="d-block description font-size-14 lh-sm">High Parasite + The Old Dead Tree en concert à Lille (The Black Lab Wasquehal), le 19 mars 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41889390918&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/rock/high-parasite-the-old-dead-tree-1103235_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F92%2Fce%2F-high-parasite---the-old-dead-tree-tickets_419974_3445086_222x222.jpg&feedId=23455&k=ec739895bcef3c858c58d9f4098e40becb0d17ea" width="180" height="180" alt="High Parasite + The Old Dead Tree" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1209864" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/pop-folk-479_B" class="lh-sm">Pop / folk à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/pop-folk/imany-1209864_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Imany</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 19/03/2026</span><a href="https://www.jds.fr/lille/roubaix/centres-de-loisirs-et-de-culture/la-condition-publique-16599_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Condition Publique - Roubaix</a><span class="d-block description font-size-14 lh-sm">
+
+Imany investira la scène de La Condition Publique à Roubaix le jeudi 19 mars 2026 à 20h. La chanteuse française aux influences soul et folk présentera son spectacle dans ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42747387368&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/pop-folk/imany-1209864_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fef%2Fee%2Fimany-tournee-2026-tickets_451930_3640861_222x222.jpg&feedId=23455&k=3fb114fce82a4d5671c3699bc9d4d0795a32dbcb" width="180" height="180" alt="Imany" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1112301" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/musique-classique-89_B" class="lh-sm">Musique classique à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/musique-classique/orchestre-national-de-lille-1112301_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Orchestre National de Lille </span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 19/03/2026</span><a href="https://www.jds.fr/lille/hem/salle-de-concert/le-zephyr-a-hem-15049_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Zéphyr à Hem</a><span class="d-block description font-size-14 lh-sm">Orchestre National de Lille&nbsp;
+Joyeux anniversaire &agrave; l&rsquo;ONL&nbsp;!
+Fond&eacute; en 1976, l&rsquo;Orchestre National de Lille et son directeur musical Joshua [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41737293536&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/musique-classique/orchestre-national-de-lille-1112301_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-61455100-1753970710-686375-180-180.webp" width="180" height="180" alt="Orchestre National de Lille " class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1243498" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/musique-et-concerts-96_B" class="lh-sm">Concerts à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/sans-lactose-1243498_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Sans Lactose</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 19/03/2026</span><a href="https://www.jds.fr/lille/salle-de-concert/la-bulle-cafe-15208_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Bulle-Café - Lille</a><span class="d-block description font-size-14 lh-sm">Sans Lactose, c’est un duo de frères qui, depuis 2019, raconte le passage de la jeunesse à l’âge adulte à travers son histoire, dans un univers mêlant pop nostalgique et [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://pfd.seetickets.com/?P5136B952C75917S1UC413989027764V4" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/sans-lactose-1243498_A"><img loading="lazy" src="https://statics.digitick.com/commun/images/upload/events/6c/6a/SansLactosePhotoTour2526cStudioBagarreCarrA1_300.jpg" width="180" height="180" alt="Sans Lactose" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1148386" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/hip-hop-rap-190_B" class="lh-sm">Rap à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/rap/rawww-thahomey-x-baby-neelou-1148386_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">RAWWW: Thahomey X Baby Neelou</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 19/03/2026</span><a href="https://www.jds.fr/lille/centre-socio-culturel/le-flow-16749_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Flow - Lille</a><span class="d-block description font-size-14 lh-sm">Rendez-vous jeudi 19 mars 2026 au FLOW (1 Rue de Fontenoy, Lille) pour une soir&eacute;e exclusive avec THAHOMEY et BABY NEELOU.</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/rap/rawww-thahomey-x-baby-neelou-1148386_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-98180400-1760024131-744366-180-180.webp" width="180" height="180" alt="RAWWW: Thahomey X Baby Neelou" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="179735" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/manifestations/series-mania-179735_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Festival Séries Mania 2026 à Lille</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 20/03/2026 au 27/03/2026</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Lille</span><span class="d-block description font-size-14 lh-sm">Le plus grand festival europ&eacute;en d&eacute;di&eacute; aux s&eacute;ries fait son retour &agrave; Lille&nbsp;! Du 20 au 27 mars 2026, S&eacute;ries Mania transformera la [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/manifestations/series-mania-179735_A"><img loading="lazy" src="https://www.jds.fr/medias/image/series-mania-3-535865-180-180.webp" width="180" height="180" alt="Festival Séries Mania 2026 à Lille" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="755984" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/humour-comedie-22_B" class="lh-sm">Humour à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/spectacles/humour/julien-santini-tournee-755984_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Julien Santini - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 20/03/2026</span><a href="https://www.jds.fr/lille/salles-spectacle/theatre-sebastopol-15184_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre Sébastopol - Lille</a><span class="d-block description font-size-14 lh-sm">Julien Santini - Tournée, un spectacle à voir à Lille (Théâtre Sébastopol ), le 20 mars 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=39821863743&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/spectacles/humour/julien-santini-tournee-755984_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F36%2F93%2Fjulien-santini-tickets_218880_1971308_222x222.jpg&feedId=23455&k=9af87d47924bb40d38b39087682251192a35da21" width="180" height="180" alt="Julien Santini - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1068827" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/pop-folk-479_B" class="lh-sm">Pop / folk à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/pop-folk/malik-djoudi-tournee-1068827_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Malik Djoudi - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 20/03/2026</span><a href="https://www.jds.fr/lille/oignies/salle-de-concert/le-metaphone-16777_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Métaphone - Oignies</a><span class="d-block description font-size-14 lh-sm">Malik Djoudi - Tournée en concert à Lille (Le Métaphone Oignies), le 20 mars 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert sont à [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41736135142&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/pop-folk/malik-djoudi-tournee-1068827_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F03%2F2c%2Fmalik-djoudi-tickets_253850_2284473_222x222.jpg&feedId=23455&k=e7ef479129fca72fac7597a24e8e73c261f4c120" width="180" height="180" alt="Malik Djoudi - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1206473" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/lille/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Lille</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/lille/concerts/chanson-francaise/charles-dore-tournee-1206473_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Charles Doré - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 20/03/2026</span><a href="https://www.jds.fr/lille/salle-de-concert/la-bulle-cafe-15208_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Bulle-Café - Lille</a><span class="d-block description font-size-14 lh-sm">
+
+Révélé par la Star Academy, Charles Doré présente sa tournée 2026 à Lille dans l'intimité de La Bulle-Café. Le jeune artiste breton se produira le vendredi 20 mars 2026 [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42720404577&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/lille/concerts/chanson-francaise/charles-dore-tournee-1206473_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Ff3%2F73%2Fcharles-dore-tournee-2026-tickets_450291_3630107_222x222.jpg&feedId=23455&k=ff709543cde6d50df94015af5c3a07d5821a873e" width="180" height="180" alt="Charles Doré - Tournée" /></a></div></div></li>
+</ul>
+</div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/lille/agenda/?&amp;page=28"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/lille/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/lille/agenda/?&amp;page=28">28</a><span class="page d-inline-block mx-1 active mx-1">29</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/lille/agenda/?&amp;page=30">30</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/lille/agenda/?&amp;page=40">40</a></div>
+<a class="lien_next" href="https://www.jds.fr/lille/agenda/?&amp;page=30"><i class="bi bi-chevron-right"></i></a></div>
+<div class="gp_div_affiche" data-id="0" data-id-format="69"></div>
+</div><div id="content_right" class=""><hr class="d-md-none my-5"><div class="wrapper_gp_div mb-4"><div class="regie_18"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 - HAUT -->
+<ins id="pub_1635" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="7598382131"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1635" data-id-format="18"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1635', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '18', 'non_interaction': true }); } });</script>
+</div>
+</div><div class="encart-newsletter d-none d-md-block p-4 bg-light my-5"><p class="mt-0 mb-3 h2">Newsletter JDS Lille</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p><form id="form_newsletter_6915eab0c5e70" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="691603b29322f" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915eab0c5e70_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" selected>59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915eab0c5e70_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915eab0c5e70_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915eab0c5e70_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915eab0c5e70_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915eab0c5e70 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915eab0c5e70_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915eab0c5e70 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915eab0c5e70_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915eab0c5e70 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915eab0c5e70_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915eab0c5e70_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915eab0c5e70 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915eab0c5e70',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915eab0c5e70").serialize();
+        $('form#form_newsletter_6915eab0c5e70 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915eab0c5e70 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915eab0c5e70 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915eab0c5e70 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter sidebar',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915eab0c5e70 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915eab0c5e70 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script></div><div class="wrapper_gp_div mb-2 sticky"><div class="regie_29"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 BAS -->
+<ins id="pub_1636" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="9513867524"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1636" data-id-format="29"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1636', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '29', 'non_interaction': true }); } });</script>
+</div>
+</div></div></div></div></div><footer id="footer" class="mt-5 px-3">    
+    <div class="container">     
+    <div class="row">
+        
+        <div class="col-md-6 col-lg-4 order-md-6 offset-lg-1">
+            <div id="footer_newsletter" class="p-4 bg-light full-width-sm mb-5">                                  
+                <p class="mt-0 mb-3 h2">Newsletter JDS Lille</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p>                         
+                <form id="form_newsletter_6915eab0c5ee3" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="691603b29322f" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915eab0c5ee3_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" selected>59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915eab0c5ee3_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915eab0c5ee3_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915eab0c5ee3_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915eab0c5ee3_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915eab0c5ee3 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915eab0c5ee3_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915eab0c5ee3 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915eab0c5ee3_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915eab0c5ee3 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915eab0c5ee3_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915eab0c5ee3_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915eab0c5ee3 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915eab0c5ee3',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915eab0c5ee3").serialize();
+        $('form#form_newsletter_6915eab0c5ee3 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915eab0c5ee3 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915eab0c5ee3 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915eab0c5ee3 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter footer',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915eab0c5ee3 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915eab0c5ee3 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script>         
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 order-md-first">
+            <a class="logo d-block mx-auto mx-lg-0" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a>
+
+            
+            <p class="my-4 fw-bold text-center text-md-start">Le JDS Lille, c’est des sorties (concerts, humour…) et des bons plans en tous genres (resto, shopping, événements locaux…) au plus près de chez vous.</p>
+            
+                
+                
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <span class="font-size-14">Téléchargez l'appli JDS : </span>
+                <a href="https://market.android.com/details?id=fr.jds.app" class="mx-1" target="_blank"><i class="bi bi-android2"></i></a><a href="https://itunes.apple.com/fr/app/jds-les-sorties-en-alsace/id467323730?mt=8" class="mx-1" target="_blank"><i class="bi bi-apple"></i></a>   
+                </p>
+                
+            <hr class="my-5 d-md-none">
+        </div>
+        <div class="col-md-12 col-lg-3 order-md-11 offset-lg-1">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Organisateurs</p>
+                    <p class="fw-bold">Publiez votre événement sur le site jds.fr</p>                
+                    <ul class="text-gray-700 mt-2">
+                        <li>Publiez gratuitement votre événement dans l’agenda via notre <a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=footer&utm_campaign=link_publier_info_text">espace organisateur</a></li>
+                        <li>Bénéficiez d'une visibilité auprès de nos 3&nbsp;000&nbsp;000 visiteurs mensuels !</li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://pro.jds.fr" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je publie mon événement</a></p>
+
+                    <hr class="my-5 d-md-none d-lg-block">
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Annonceurs</p>
+                    <p class="fw-bold">Discutons ensemble de votre communication</p>          
+                    <ul class="text-gray-700 mt-2">
+                        <li>Promouvoir au mieux votre événement ou votre offre</li>
+                        <li>3&nbsp;000&nbsp;000 visiteurs mensuels <a href="https://www.jds.fr/magazine/actu-magazine/audience-jds-169974_A">(tout savoir sur l'audience du JDS)</a></li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://www.jds.fr/blog/" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je découvre les solutions</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 order-md-12">
+            <hr class="my-5">
+
+            <ul class="list-unstyled font-size-14 d-lg-flex justify-content-between">
+            <li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/journal-des-spectacles-magazine-mulhouse-colmar-haut-rhin-alsace-837_A">Qui sommes-nous ?</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/mentions-legales/">Infos légales / Affiliation</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/cookies/">Cookies</a></li><li class="mb-1 me-2"><a href="javascript:Didomi.preferences.show()">Modifier mes choix de cookies</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/comment-vous-desabonner-des-notifications-jds-340946_A">Se désabonner des notifications</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/contact/">Nous contacter</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/offres-emploi-mulhouse-alsace/">Emploi : nous rejoindre</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/">Blog</a></li>  
+            </ul>
+
+            <p class="font-size-14">Copyright 2008-2025 jds.fr</p>
+        </div>
+    </div> <!-- fin row -->        
+    </div> <!-- fin container -->
+</footer><div id="search-form-menu-container" class="search-form-menu-container shadow-lg bg-light hidden text-center py-3 py-lg-5">
+    <div class="container px-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-bold font-size-26">Rechercher</span>
+            <span class="cursor-pointer d-block search-form-menu-close text-primary" onclick="toggleSearchMenu();"><i class="bi bi-x-circle me-1"></i> Fermer</span>
+        </div>
+        <div
+            id="search-app"
+            data-endpoint="/ajax/search.php"
+            data-placeholder-text="ex. : concert demain à ..."
+            data-index-event="jds_event"
+            data-index-city="jds_city"
+            data-index-venue="jds_venue"
+            data-index-article="jds_article"
+            data-index-artist="jds_artist"
+            data-current-city-id="1160" data-current-city-name="Lille"         ></div>
+    </div>
+</div>
+
+<div id="header-city-dropdown-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <p class="modal-title m-0">Choisissez une ville spécifique</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="ville-selector-mode" value="default" id="ville-selector-mode" />
+                <input type="text" class="form-control form-control-lg shadow-lg rounded-3" id="ville-selector-modal" placeholder="Entrez le nom de votre ville">
+                <div id="ville-selector-container-modal"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer>
+$(document).ready(function() {
+    $('#ville-selector-modal').keyup(function() {
+        if($(this).val().length==0) { $("#ville-selector-container-modal").html(""); return; }
+        if($(this).val().length<2) { return; }
+
+        $.post("/ajax/recherche_ville_fonction.php", { term: $(this).val(), mode:$('input[name="ville-selector-mode"]').val() })
+        .done(function(data) {
+
+            $("#ville-selector-container-modal").html('<p class="mt-4">Cliquez sur votre ville :</p><ul class="list-unstyled font-size-16"></ul>');
+            obj=JSON.parse(data);
+            obj.forEach(function(item){
+            $("#ville-selector-container-modal").find("ul").append('<li class="p-3 border-bottom"><a href="'+item.url+'" class="text-dark"><i class="bi bi-geo-fill text-primary me-1"></i> '+item.label+'</a></li>');
+        });
+        });
+    }); 
+});
+</script>
+
+</div><script defer src="/libs/jquery/magnific-popup/jquery.magnific-popup.min.js?v=131"></script><script defer src="/scripts/slick.min.js?v=131"></script><script defer src="/libs/choices/scripts/choices.js?v=131"></script><script defer src="/libs/lightbox2/js/lightbox.min.js?v=131"></script><script defer src="/scripts/functions_footer.js?v=131"></script><script>const { createApp, ref, computed, watch, onMounted, onBeforeUnmount, nextTick, reactive } = Vue;</script><script src="/scripts/search.app.js?v=131"></script><script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-messaging-compat.js"></script>
+<script>
+const firebaseConfig = {
+    apiKey: "AIzaSyBjBC01qlzGVLYWWE8D0rrOzL2cSfIf7MQ",
+    authDomain: "journal-des-spectacles-dd5d0.firebaseapp.com",
+    databaseURL: "https://journal-des-spectacles-dd5d0.firebaseio.com",
+    projectId: "journal-des-spectacles-dd5d0",
+    storageBucket: "journal-des-spectacles-dd5d0.appspot.com",
+    messagingSenderId: "37707045198",
+    appId: "1:37707045198:web:e58879e2e7f9adf0"
+  };
+const vapidKey = "BB2gRQtko-8CqzZbrzzlGBwMim_ThaPkNdzqi780Y7ku5VmG_E_DwFJnrJXB7_pNJKn9UTbIchVKfijBHNteuu8";
+  
+firebase.initializeApp(firebaseConfig);
+const messaging = firebase.messaging();
+
+var browserName = (function (agent) {        
+    switch (true) {
+        case agent.indexOf("edge") > -1: return "Edge"; // ms
+        case agent.indexOf("edg/") > -1: return "Edge"; // (chromium based)
+        case agent.indexOf("chrome") > -1 && !!window.chrome: return "Chrome";
+        case agent.indexOf("firefox") > -1: return "Firefox";
+        case agent.indexOf("safari") > -1: return "Safari";
+        default: return "other";
+    }
+})(window.navigator.userAgent.toLowerCase());
+    
+function fcm_resetUI() { 
+    if(!isTokenSentToServer()) {
+        if(window.navigator.userAgent.toLowerCase().indexOf('iphone')!==-1) { return; } // fix bug safari iphone    
+        if(browserName=='Chrome') { $('#web_push_dialog').addClass('chrome'); }
+        if(browserName=='Edge') { $('#web_push_dialog').addClass('edge'); }
+        if(browserName=='Firefox') { $('#web_push_dialog').addClass('firefox'); }
+        if(Notification.permission=='default') {
+            if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+        }
+        else if(Notification.permission=='granted') {
+            messaging.getToken({ vapidKey:vapidKey }).then((currentToken) => {   
+                                if (currentToken) {
+                    sendTokenToServer(currentToken);
+                } else {
+                  setTokenSentToServer(false);
+                  if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+                }
+            }).catch((err) => {
+                
+                setTokenSentToServer(false);
+            });
+        }    
+    }
+}
+//window.fcm_resetUI = fcm_resetUI;
+function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+        setTokenSentToServer(true);
+        $.post( "/ajax/firebase_register_v2.php",  { token: currentToken, dpt:'59' });      
+        if(typeof gtag=="function") {
+            gtag("event", "subscription", {
+                "event_category" : "Firebase",
+                "event_label" : "Web push",
+                "non_interaction": true
+            });            
+        }
+    } 
+}
+function isTokenSentToServer() {
+    var web_push_cookie = $.cookie('web_push');       
+    if(typeof web_push_cookie === 'undefined' || web_push_cookie===false) return false;
+    return true;
+}
+function setTokenSentToServer(sent) {
+    if(sent) $.cookie('web_push',true, {path: '/',domain:'.jds.fr'}); 
+    else $.cookie('web_push',false, {path: '/',domain:'.jds.fr'}); 
+}
+function requestPushDialog() {
+    $.magnificPopup.open({
+        items: {
+            src: '#web_push_dialog', // can be a HTML string, jQuery object, or CSS selector
+            type: 'inline'
+          },
+        alignTop : true,
+        showCloseBtn : true,
+        //closeOnBgClick: ((browserName!='Firefox' &&  && !$('#web_push_dialog').hasClass('mobile'))?false:true),
+        callbacks: {
+            open: function() {                 
+                $('.mfp-bg').css('position','fixed');      
+                if(browserName!='Firefox') {
+                    if(!$('#web_push_dialog').hasClass('mobile')) {
+                        $('.mfp-bg').css('opacity',.0).css('width','auto').css('height','auto');
+                        $('html').css('overflow','auto');  
+                        $('.mfp-wrap').css('width','auto').css('height','auto');
+                    }
+                    else {
+                        $('html').css('overflow','hidden');  
+                    }
+                }
+                else {
+                    $('.mfp-bg').css('opacity',.75).css('background','#fff');
+                }
+
+            },
+            close: function() {
+                $('html').css('overflow','auto'); 
+            }
+        }    
+    }); 
+    if(browserName!='Firefox') { requestPermission(); } // sur firefox, l'ouverture de permission automatique ne marche pas alors on remet les boutons
+}
+function requestPermission() {   
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+            fcm_resetUI();
+            $.magnificPopup.close();
+      } else {
+            $.magnificPopup.close();
+      }
+    });
+}
+$(document).on('click','#web_push_dialog button',function() {
+    //firefox
+    if($(this).hasClass('accept')) requestPermission();
+    if($(this).hasClass('deny')) setTokenSentToServer(true);    
+    
+    $.magnificPopup.close();       
+});
+</script>
+
+<div id="web_push_dialog" class="mfp-hide desktop">
+    <div class="popup-content p-3">
+        <img class="logo-mobile" loading="lazy" src="/images/new/logo-jds.svg?v=131" width="40" height="40" alt="jds.fr">
+        <p class="popup-title mb-3"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+        <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+        <p class="text-gray-600 font-size-14 mb-0">Autoriser les notifications pour continuer.</p>
+        <hr class="hide-mobile">
+        <div class="p-3 hide-mobile text-center bg-primary"><img loading="lazy" src="/images/new/logo-jds-white.svg?v=131" width="100" height="100" alt="jds.fr"></div>
+        <div class="arrow text-gray-800"><i class="bi bi-arrow-down-circle-fill"></i></div>
+    </div>
+    <div class="popup-content-firefox p-3">
+        <div class="row">
+            <div class="col-md-3 pr-0 col-3"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" class="popup-logo"></div>
+            <div class="col-md-9 col-9">
+              <p class="popup-title"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+              <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+              <p class="text-gray-600 font-size-14 mb-3">Une seconde fenêtre va s'ouvrir vous invitant à autoriser les notifications</p>
+              <div class="popup-footer text-right"><button class="btn btn-outline-primary rounded-pill btn-sm me-3 deny">Refuser</button><button class="btn btn-primary rounded-pill btn-sm me-3 accept">Autoriser</button></div>
+            </div>
+        </div>
+    </div>
+</div><script type="didomi/javascript" data-purposes="select_basic_ads" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4984827051088801"
+     crossorigin="anonymous"></script></body></html>

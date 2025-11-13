@@ -1,0 +1,652 @@
+<!DOCTYPE html><html lang="fr"><head><script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+      else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+        var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+        if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e,tgt){
+        var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+tgt;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("9d946103-8843-4a4e-ab0b-8e61ea84e891","Qr7JnTUV")})();</script>
+
+<script> 
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(function (Didomi) { 
+        // Call other functions on the SDK
+
+        // Refresh de la page en cas de changement du consentement
+        window.didomiEventListeners = window.didomiEventListeners || [];
+        window.didomiEventListeners.push({
+            event: 'consent.changed',
+            listener: function (context) {
+                gp_maj();
+            }
+        });
+
+        // Google advertising products
+        Didomi.getObservableOnUserConsentStatusForVendor('google')
+        .filter(function (status) { return status !== undefined })
+        .subscribe(function (consentStatus) {
+            if (consentStatus === undefined || consentStatus === false) {
+                // on masque les encarts pubs vides
+                (function() {     
+                    var div_regies = document.getElementsByClassName('wrapper_gp_div');
+                    
+                    setTimeout(function() { // on fait un settimeout sinon le length n'est pas juste...                   
+                        for (let i = 0; i < div_regies.length; i++) {                  
+                            if (div_regies[i].innerHTML.indexOf('regie_') > -1) {                           
+                              div_regies[i].style.display="none";
+                            }
+                        }
+                        
+                    },400);
+                    
+                    
+                })();
+            }
+        }); 
+        
+     
+
+    });
+    </script> 
+<meta charset="UTF-8" />
+<title>Bordeaux - L&#039;agenda des spectacles, manifestations, concerts - Page 26</title>
+<meta name="description" content="Bordeaux - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 26" />
+<link rel="canonical" href="https://www.jds.fr/bordeaux/agenda/?page=26" />
+<meta name="p:domain_verify" content="9efecdd4eddf0844d5703f41d2dc7ca7"/>
+<meta property="fb:app_id" content="638077278167784" />
+<meta property="fb:pages" content="50813882504">
+<meta property="og:title" content="Bordeaux - L&#039;agenda des spectacles, manifestations, concerts - Page 26" />
+<meta property="og:description" content="Bordeaux - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 26" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.jds.fr/bordeaux/agenda/?page=26" />
+<meta property="og:site_name" content="jds.fr" />
+<meta property="og:image" content="https://www.jds.fr/images/header_logo_120.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="364" />
+<meta property="og:image:height" content="364" />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https:\/\/www.jds.fr\/","name":"Accueil"},{"@type":"ListItem","position":2,"item":"https:\/\/www.jds.fr\/bordeaux\/","name":"Bordeaux"},{"@type":"ListItem","position":3,"name":"Agenda"}]}</script>
+
+<meta name="robots" content="noindex,follow" />
+<link rel="prev" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=25" /><link rel="next" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=27" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+<link rel="stylesheet" href="/css/custom.css?v=131">
+<link rel="preload" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131"></noscript>
+<link rel="preload" href="/libs/lightbox2/css/lightbox.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/lightbox2/css/lightbox.min.css?v=131"></noscript>
+<link rel="preload" href="/css/slick-theme.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick-theme.css?v=131"></noscript>
+<link rel="preload" href="/css/slick.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick.css?v=131"></noscript>
+<link rel="preload" href="/libs/choices/styles/choices.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/choices/styles/choices.min.css?v=131"></noscript>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#e50b47">
+<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e50b47">
+<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><link rel="manifest" href="/manifest.json"></head><body class="version_a  "><script async src="https://www.googletagmanager.com/gtag/js?id=G-6WVELE5WG9"></script>
+<script type="didomi/javascript" data-vendor="c:googleana-4TXnJigR">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+        dataLayer.push(arguments);
+        if (arguments[0] === 'js') {
+            setTimeout(function() {
+            window.dispatchEvent(new Event('gtag_loaded'));
+        }, 1000);
+        }
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6WVELE5WG9', {
+          'cookie_expires': 33696000,
+          'transport_type': 'beacon',
+          'dimension1': '0','dimension2': '33','dimension3': '2','dimension4': '0','dimension5': '0','dimension6': '0','dimension7': '','dimension8': 'a','dimension9': '0',     
+    });
+</script><script src="/libs/jquery-3.7.1.min.js"></script><script defer src="/libs/bootstrap/js/popper.min.js"></script><script defer src="/libs/bootstrap/js/bootstrap.min.js"></script><script defer src="/libs/jquery/js/jquery.cookie.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.date.js"></script><script defer src="/libs/jquery/pickadate.js/lib/translations/fr_FR.js"></script><script src="/libs/vue.global.prod.js"></script><script src="/libs/axios.min.js"></script><script src="/ads-checker.js"></script><script defer src="/scripts/functions.js?v=131"></script><script>var gp_maj_done=false;
+var param_gp=[];param_gp['id_newsletter']='0';param_gp['type']='0';param_gp['sousrub']='0';param_gp['rub']='2';param_gp['rub_rub']='2';param_gp['page']='26';param_gp['mobile_version']='0';param_gp['detail_type']='';param_gp['detail_id']='0';param_gp['web_push_site']='';param_gp['web_push_id']='';param_gp['current_departement']='33';$(document).ready(function() {
+    if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) gp_maj();});</script><div class="gp_div_affiche" data-id="0" data-id-format="24"></div>
+<div id="global" class="p-0"><div id="header" class="bg-white header"><div class="d-flex justify-content-between align-items-center px-2rem header-inner-wrapper text-primary container"><div class="header-logo mb-1"><a class="d-block" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a></div><div class="header-city-inline-selector d-flex me-auto font-size-22 ms-4 align-items-center lh-1"><a href="https://www.jds.fr/bordeaux/" class="">Bordeaux</a><span class="ms-auto ms-md-0 d-block ps-2 cursor-pointer" onclick="toggleCityMenu();"><i class="bi bi-chevron-down"></i></span></div><div class="header-publish ms-md-auto me-md-5"><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=header&utm_campaign=link_publier_info" class="btn btn-outline-primary rounded-pill d-none d-md-inline shadow-sm"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><div class="header-menu font-size-36 cursor-pointer ps-3" onclick="toggleMenu()"><i class="bi bi-list"></i></div></div></div>
+<!-- NAVBAR -->
+<div id="header-navbar" class="bg-light-primary header-navbar navbar-v2">
+    <div class="px-2rem header-navbar-inner-wrapper container font-size-14">
+        <div class="navbar-v2-item d-flex">
+            <div class="flex-fill">
+                <span onclick="toggleSearchMenu();" class="bg-primary text-white d-block px-3"><span class="search-btn cursor-pointer"><span><i class="bi bi-search me-2"></i> Rechercher</span></span>
+            </div>
+            <div class="flex-fill"><a href="https://www.jds.fr/bordeaux/agenda/agenda-du-jour/-aujourdhui_JPJ" class="" data-event-label="Aujourd'hui"><span><i class="cf icon-aujourdhui">&#xe80f;</i> Aujourd'hui</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/bordeaux/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="" data-event-label="Spectacles"><span><i class="cf icon-spectacles">&#xe80c;</i> Spectacles</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/bordeaux/agenda/musique-et-concerts-96_B" class="" data-event-label="Concerts"><span><i class="cf icon-concert">&#xe801;</i> Concerts</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/bordeaux/agenda/manifestations-fetes-festivals-137_B" class="" data-event-label="Animations"><span><i class="cf icon-manifestations">&#xe807;</i> Animations</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/bordeaux/agenda/foire-salon-puces-bourses-468_B" class="" data-event-label="Salons / Puces"><span><i class="cf icon-foires">&#xe805;</i> Salons / Puces</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/bordeaux/agenda/sports-145_B" class="" data-event-label="Sports"><span><i class="cf icon-sport">&#xe810;</i> Sports</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/bordeaux/agenda/expositions-471_B" class="" data-event-label="Expos"><span><i class="cf icon-expos">&#xe802;</i> Expos</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/bordeaux/agenda/enfants-94_B" class="" data-event-label="Famille"><span><i class="cf icon-famille">&#xe813;</i> Famille</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/bordeaux/agenda/soirees-469_B" class="" data-event-label="Soirées"><span><i class="cf icon-soirees">&#xe80b;</i> Soirées</span></a></div>        </div>
+    </div>
+</div>
+<div id="menu" class="menu bg-white px-2rem py-5 hidden"><div class="text-center"><button class="btn btn-primary btn-lg rounded-pill d-block w-100 menu-link" onclick="toggleSearchMenu();" data-event-label="open-search-menu"><i class="bi bi-search me-2"></i> Rechercher</button><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=menu&utm_campaign=link_publier_info" class="btn btn-outline-primary my-4 btn-lg rounded-pill d-block w-100" data-event-label="Espace pro"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/bordeaux/agenda/agenda-du-jour/-aujourdhui_JPJ" class="text-dark hover-text-primary cursor-pointer" data-event-label="Aujourd'hui">Aujourd'hui à Bordeaux</a></li><li><a href="https://www.jds.fr/bordeaux/agenda/evenements/" class="text-dark hover-text-primary" data-event-label="Evénements">Evénements</a></li><li><a href="https://www.jds.fr/bordeaux/agenda/manifestations-fetes-festivals-137_B" class="text-dark hover-text-primary" data-event-label="Manifestations">Manifestations</a></li><li><a href="https://www.jds.fr/bordeaux/agenda/foire-salon-puces-bourses-468_B" class="text-dark hover-text-primary" data-event-label="Foires & salons">Foires & salons</a></li><li><a href="https://www.jds.fr/bordeaux/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="text-dark hover-text-primary" data-event-label="Spectacles">Spectacles</a></li><li><a href="https://www.jds.fr/bordeaux/agenda/musique-et-concerts-96_B" class="text-dark hover-text-primary" data-event-label="Concerts">Concerts</a></li><li><a href="https://www.jds.fr/bordeaux/agenda/sports-145_B" class="text-dark hover-text-primary" data-event-label="Sports">Sports</a></li><li><a href="https://www.jds.fr/bordeaux/agenda/soirees-469_B" class="text-dark hover-text-primary" data-event-label="Soirées">Soirées</a></li><li><a href="https://www.jds.fr/bordeaux/agenda/enfants-94_B" class="text-dark hover-text-primary" data-event-label="Sorties famille">Sorties famille</a></li><li><a href="https://www.jds.fr/bordeaux/agenda/expositions-471_B" class="text-dark hover-text-primary" data-event-label="Expos">Expos</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/bordeaux/magazine/" class="text-dark hover-text-primary" data-event-label="Actus">Actus à Bordeaux</a></li><li><a href="https://www.jds.fr/bordeaux/annuaire/" class="text-dark hover-text-primary" data-event-label="Annuaire">Annuaire tourisme & loisirs</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/newsletter-archives/toutes-les-newsletter-jds-fr" class="text-dark hover-text-primary" data-event-label="Newsletters">Newsletter des sorties</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/blog/" class="text-dark hover-text-primary" data-event-label="Annonceurs">Annonceurs</a></li></ul></div><div id="header-city-dropdown" class="header-city-dropdown bg-secondary py-2 text-white px-2rem font-size-16 hidden"><div class="container"><div class="py-2 cursor-pointer text-uppercase" onclick="$('#header-city-dropdown-modal').modal('show'); $('#ville-selector-modal').focus(); $('input[name=&quot;ville-selector-mode&quot;]').val('default')"><i class="bi bi-building-add me-1"></i> Une autre ville</div><div class="py-1"><a href="https://www.jds.fr/bordeaux/" class="text-white text-uppercase">Bordeaux</a></div><div class="py-1"><a href="https://www.jds.fr/colmar/" class="text-white text-uppercase">Colmar</a></div><div class="py-1"><a href="https://www.jds.fr/dijon/" class="text-white text-uppercase">Dijon</a></div><div class="py-1"><a href="https://www.jds.fr/lille/" class="text-white text-uppercase">Lille</a></div><div class="py-1"><a href="https://www.jds.fr/lyon/" class="text-white text-uppercase">Lyon</a></div><div class="py-1"><a href="https://www.jds.fr/marseille/" class="text-white text-uppercase">Marseille</a></div><div class="py-1"><a href="https://www.jds.fr/metz/" class="text-white text-uppercase">Metz</a></div><div class="py-1"><a href="https://www.jds.fr/montpellier/" class="text-white text-uppercase">Montpellier</a></div><div class="py-1"><a href="https://www.jds.fr/mulhouse/" class="text-white text-uppercase">Mulhouse</a></div><div class="py-1"><a href="https://www.jds.fr/nancy/" class="text-white text-uppercase">Nancy</a></div><div class="py-1"><a href="https://www.jds.fr/nantes/" class="text-white text-uppercase">Nantes</a></div><div class="py-1"><a href="https://www.jds.fr/nice/" class="text-white text-uppercase">Nice</a></div><div class="py-1"><a href="https://www.jds.fr/paris/" class="text-white text-uppercase">Paris</a></div><div class="py-1"><a href="https://www.jds.fr/reims/" class="text-white text-uppercase">Reims</a></div><div class="py-1"><a href="https://www.jds.fr/rennes/" class="text-white text-uppercase">Rennes</a></div><div class="py-1"><a href="https://www.jds.fr/strasbourg/" class="text-white text-uppercase">Strasbourg</a></div><div class="py-1"><a href="https://www.jds.fr/toulouse/" class="text-white text-uppercase">Toulouse</a></div><div class="mt-5 py-1 cursor-pointer" onclick="toggleCityMenu()"><u><i class="bi bi-x-circle me-1"></i> Fermer le menu</u></div></div></div><div id="global-container"><div id="global-container-inner-wrapper" class="container"><!--[if lte IE 9]>
+<div class="alert alert-warning" role="alert">
+<p class="mb-0">Vous utilisez une très ancienne version de navigateur Internet, ce qui impacte négativement votre expérience de navigation sur le site du JDS et sur Internet en général. Nous vous recommandons de mettre à jour votre navigateur ou d'en installer un autre en <a href="https://browsehappy.com/?locale=fr" target="_blank">cliquant ici</a>.</p>
+</div>
+<![endif]--><div class="text-center mb-5 mx-auto leaderboard"><div class="wrapper_gp_div nobg"><div class="regie_2">
+<!-- Leaderboard 1000 x 300 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:1000px;height:300px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="4079211116"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="3348" data-id-format="2"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3348', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '2', 'non_interaction': true }); } });</script>
+</div>
+</div></div><div id="content_container" class="d-md-flex justify-content-between"><div id="content_left"><div id="chemin" class="ariane mb-3"><a href="https://www.jds.fr/">Accueil</a><a href="https://www.jds.fr/bordeaux/">Bordeaux</a></div><div class="header-ville no-form is_page_ville ville_33 agglo_1096 "><h1>Bordeaux&nbsp;: Agenda et événements</h1><button onclick="toggleSearchMenu()" class="btn btn-primary btn-lg mx-auto d-block rounded-pill shadow-lg my-4" data-position="page-resultats-modifier-recherche-top"><i class="bi bi-search me-2"></i> Rechercher</button></div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=25"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/bordeaux/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=25">25</a><span class="page d-inline-block mx-1 active mx-1">26</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=27">27</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=58">58</a></div>
+<a class="lien_next" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=27"><i class="bi bi-chevron-right"></i></a></div>
+<div class="mt-5"><ul class="mt-3 list-unstyled list-articles-v2">
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="862244" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/concerts/chanson-francaise/vincent-delerm-tournee-862244_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Vincent Delerm - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 12/12/2025</span><a href="https://www.jds.fr/bordeaux/salles-spectacle/theatre-femina-15084_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre Femina - Bordeaux</a><span class="d-block description font-size-14 lh-sm">Vincent Delerm - Tournée en concert à Bordeaux (Théâtre Femina ), le 12 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41798600550&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/concerts/chanson-francaise/vincent-delerm-tournee-862244_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F43%2F7a%2Fvincent-delerm-tickets_364462_3090274_222x222.jpg&feedId=23455&k=c036af210484bc33fc45e85cd7429b1753f25181" width="180" height="180" alt="Vincent Delerm - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1117349" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/pop-folk-479_B" class="lh-sm">Pop / folk à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/concerts/pop-folk/animaux-totem-1117349_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Animaux Totem</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 12/12/2025</span><a href="https://www.jds.fr/bordeaux/saint-denis-de-pile/salle-de-concert-et-de-spectacle/l-accordeur-16665_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> L'accordeur - Saint-Denis-de-Pile</a><span class="d-block description font-size-14 lh-sm">Animaux Totem en concert à Bordeaux (L'accordeur Saint-Denis-de-Pile), le 12 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42002736407&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/concerts/pop-folk/animaux-totem-1117349_A"><img loading="lazy" src="https://www.jds.fr/medias/image/pop-folk-pop-rock-230485-180-180.webp" width="180" height="180" alt="Animaux Totem" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1144792" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/reggae-108_B" class="lh-sm">Reggae à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/concerts/reggae/tairo-tournee-des-25-ans-1144792_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Taïro - Tournée des 25 Ans</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 12/12/2025</span><a href="https://www.jds.fr/bordeaux/salle-de-concert/bordeaux-rock-school-barbey-15085_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Bordeaux Rock School Barbey</a><span class="d-block description font-size-14 lh-sm">Taïro - Tournée des 25 Ans en concert à Bordeaux (Bordeaux Rock School Barbey ), le 12 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=40956629477&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/concerts/reggae/tairo-tournee-des-25-ans-1144792_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F65%2F99%2Ftairo-tickets_431015_3511343_222x222.jpg&feedId=23455&k=04678773e6f3197a566b6e34111beb174d9d9f4b" width="180" height="180" alt="Taïro - Tournée des 25 Ans" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1152061" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/theatre-23_B" class="lh-sm">Théâtre à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/spectacles/theatre/blanche-1152061_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Blanche</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 12/12/2025</span><a href="https://www.jds.fr/bordeaux/marcheprime/centres-de-loisirs-et-de-culture/la-caravelle-16578_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Caravelle - Marcheprime</a><span class="d-block description font-size-14 lh-sm">Une odyss&eacute;e humaine et culinaire, vivifiante, tendre et joyeuse. Une de ces rares p&eacute;pites qui nous prouve que la vie est belle&nbsp;!
+Aujourd&rsquo;hui elle [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://ticketmaster-fr.tm7516.net/c/3318096/427761/7516?u=https%3A%2F%2Fwww.ticketmaster.fr%2Ffr%2Fmanifestation%2Fblanche-billet%2Fidmanif%2F627454%2Fidtier%2F18864121&utm_medium=affiliate" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/spectacles/theatre/blanche-1152061_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-17272500-1756992731-709710-180-180.webp" width="180" height="180" alt="Blanche" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1173788" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/manifestations/loto-de-noel-1173788_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Loto de Noël</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 12/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Cussac-Fort-Médoc</span><span class="d-block description font-size-14 lh-sm">
+Événement organisé par le Comité des Fêtes de Cussac-Fort-Médoc
+Programme à venir
+Contact&nbsp;:.  
+em: comitefetescussac@gmail.com.  
+Tel: 06 71 12 08 05
+</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/manifestations/loto-de-noel-1173788_A"><img loading="lazy" src="https://www.jds.fr/medias/image/loto-de-noel-721100-180-180.webp" width="180" height="180" alt="Loto de Noël" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1245404" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/manifestations/nocturnes-et-apres-midi-de-noel-au-chateau-de-vayres-1245404_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Nocturnes et après-midi de Noël au Château de Vayres</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 12/12/2025 au 13/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Vayres</span><span class="d-block description font-size-14 lh-sm">Nous ouvrons, pour la première fois, nos portes en hiver à l’occasion d’un week-end de nocturnes et d’un après-midi en famille.
+Redécouvrez la magie du château à la [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/manifestations/nocturnes-et-apres-midi-de-noel-au-chateau-de-vayres-1245404_A"><img loading="lazy" src="https://www.jds.fr/medias/image/nocturnes-et-apres-midi-de-noel-au-chateau-de-vayr-767386-180-180.webp" width="180" height="180" alt="Nocturnes et après-midi de Noël au Château de Vayres" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1246884" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/manifestations/soiree-afterwork-au-chateau-du-puy-faure-1246884_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Soirée Afterwork au Chateau du Puy Faure</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 12/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Val de Virvée</span><span class="d-block description font-size-14 lh-sm">On vous invite à participer à notre Afterwork pour passer un moment convivial et festif, entre collègues, avec vos amis ou votre famille, ou simplement seul, pour rencontrer vos [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/manifestations/soiree-afterwork-au-chateau-du-puy-faure-1246884_A"><img loading="lazy" src="https://www.jds.fr/medias/image/soiree-afterwork-au-chateau-du-puy-faure-768292-180-180.webp" width="180" height="180" alt="Soirée Afterwork au Chateau du Puy Faure" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1246787" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/cine-concert-200_B" class="lh-sm">Cinéma à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/spectacles/cinema/un-ballet-intemporel-une-soiree-d-exception-1246787_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Un ballet intemporel, une soirée d’exception&nbsp;!</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 12/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Cadaujac</span><span class="d-block description font-size-14 lh-sm">L’Opéra national de Paris et Micro-Folie vous proposent une projection unique du ballet&nbsp;« Le Parc&nbsp;», chorégraphié par Angelin Preljocaj sur la musique de Mozart, [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/spectacles/cinema/un-ballet-intemporel-une-soiree-d-exception-1246787_A"><img loading="lazy" src="https://www.jds.fr/medias/image/un-ballet-intemporel-une-soiree-d-exception-768199-180-180.webp" width="180" height="180" alt="Un ballet intemporel, une soirée d’exception !" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="176733" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/foires-et-salons-140_B" class="lh-sm">Foires à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/foires-et-salons/foires/bordeaux-tasting-176733_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Bordeaux Tasting</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 13/12/2025 au 14/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Bordeaux</span><span class="d-block description font-size-14 lh-sm">Si Bordeaux est c&eacute;l&egrave;bre pour &ecirc;tre la capitale des vins, le salon Bordeaux Tasting rend hommage &agrave; ce titre en rassemblant chaque ann&eacute;e les [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/foires-et-salons/foires/bordeaux-tasting-176733_A"><img loading="lazy" src="https://www.jds.fr/medias/image/bordeaux-tasting-4-456635-180-180.webp" width="180" height="180" alt="Bordeaux Tasting" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="734375" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/concerts/chanson-francaise/m-pokora-adrenaline-tour-734375_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">M.pokora - Adrenaline Tour</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><a href="https://www.jds.fr/bordeaux/floirac/salle-de-concert/arkea-arena-14990_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Arkéa Arena - Floirac</a><span class="d-block description font-size-14 lh-sm">M.pokora - Adrenaline Tour en concert à Bordeaux (Arkéa Arena Floirac), le 13 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=39470767013&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/concerts/chanson-francaise/m-pokora-adrenaline-tour-734375_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F4b%2Fcd%2Fm-pokoroa-tickets_443601_3587197_222x222.jpg&feedId=23455&k=636acee880f8a1bd4343cbcdca435e9b1886dd57" width="180" height="180" alt="M.pokora - Adrenaline Tour" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1039937" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/theatre-23_B" class="lh-sm">Théâtre à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/spectacles/theatre/lynn-un-noel-viking-1039937_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Lynn - Un Noël Viking</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><a href="https://www.jds.fr/bordeaux/merignac/salles-spectacle/le-pin-galant-14984_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Pin Galant - Mérignac</a><span class="d-block description font-size-14 lh-sm">Lynn - Un Noël Viking, un spectacle à voir à Bordeaux (Le Pin Galant Mérignac), le 13 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41610732235&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/spectacles/theatre/lynn-un-noel-viking-1039937_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F52%2F80%2Fmglyn-tickets_402001_3330628_222x222.jpg&feedId=23455&k=299abfef0c8aa485d94ac943953ee6ddef3aa329" width="180" height="180" alt="Lynn - Un Noël Viking" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1184336" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/musique-et-concerts-96_B" class="lh-sm">Concerts à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/concerts/berywam-1184336_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Berywam</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><a href="https://www.jds.fr/bordeaux/salle-de-concert/bordeaux-rock-school-barbey-15085_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Bordeaux Rock School Barbey</a><span class="d-block description font-size-14 lh-sm">Beatness, Rythmind, Wawad et Beasty ont une ambition simple&nbsp;: donner un nouvel élan de démocratisation au HumanBeatbox. Performeurs multi-récompensés, ils font de leur [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/concerts/berywam-1184336_A"><img loading="lazy" src="https://statics.digitick.com/commun/images/upload/events/fa/10/CapturedaeIcran20250922aI125450copie_300.jpg" width="180" height="180" alt="Berywam" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1242380" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/musique-classique-89_B" class="lh-sm">Musique classique à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/concerts/musique-classique/concert-de-noel-1242380_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Concert de Noël</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><a href="https://www.jds.fr/bordeaux/cenon/patrimoine-religieux/eglise-saint-romain-20161_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Eglise Saint-Romain - Cenon</a><span class="d-block description font-size-14 lh-sm">
+
+L'Eglise Saint-Romain de Cenon accueille un Concert de Noël exceptionnel le samedi 13 décembre 2025 à 20h30. Présenté par Polifonia Eliane Lavail, ce spectacle musical [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43082369557&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/concerts/musique-classique/concert-de-noel-1242380_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F48%2Fd2%2Fconcert-de-no-l---bordeaux-tickets_463745_3722784_222x222.jpg&feedId=23455&k=ea19e5963235b78e2e8a51b87f2bc6ee73910526" width="180" height="180" alt="Concert de Noël" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1160986" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/rock-111_B" class="lh-sm">Rock / metal à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/concerts/rock/dagoba-1160986_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Dagoba</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><a href="https://www.jds.fr/bordeaux/bar-et-cafe/iboat-16557_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Iboat - Bordeaux</a><span class="d-block description font-size-14 lh-sm">Dagoba en concert à Bordeaux (Iboat ), le 13 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert sont à retrouver sur cette [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42371712375&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/concerts/rock/dagoba-1160986_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F5b%2Fe7%2Fdagoba-tickets_266321_2382117_222x222.jpg&feedId=23455&k=b6553abc9ec9d6a7fa1a155f12deebab8f53d71a" width="180" height="180" alt="Dagoba" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1117312" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/hip-hop-rap-190_B" class="lh-sm">Rap à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/concerts/rap/hippocampe-fou-tournee-1117312_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Hippocampe Fou ( Tournée&nbsp;)</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><a href="https://www.jds.fr/bordeaux/saint-denis-de-pile/salle-de-concert-et-de-spectacle/l-accordeur-16665_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> L'accordeur - Saint-Denis-de-Pile</a><span class="d-block description font-size-14 lh-sm">Hippocampe Fou ( Tournée ) en concert à Bordeaux (L'accordeur Saint-Denis-de-Pile), le 13 décembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42002736408&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/concerts/rap/hippocampe-fou-tournee-1117312_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F8b%2Fb8%2Fhippo-tickets_389741_3254983_222x222.jpg&feedId=23455&k=4c7b8debdc64f7fe01f81cff1ddab5996c51e857" width="180" height="180" alt="Hippocampe Fou ( Tournée )" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1124006" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/festival-269_B" class="lh-sm">Festival à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/manifestations/festival/le-festival-bordeaux-tasting-1124006_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Le Festival Bordeaux Tasting</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 13/12/2025 au 14/12/2025</span><a href="https://www.jds.fr/bordeaux/place/place-de-la-bourse-miroir-d-eau-14983_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Place de la Bourse - Miroir d'eau - Bordeaux</a><span class="d-block description font-size-14 lh-sm">Bordeaux Tasting 2025&nbsp;: Cr&eacute;ez votre palette de saveurs et d'&eacute;motions&nbsp;!. &nbsp;
+Pr&eacute;parez-vous &agrave; vivre une exp&eacute;rience inoubliable&nbsp;! [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/manifestations/festival/le-festival-bordeaux-tasting-1124006_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-26781500-1755010539-692620-180-180.webp" width="180" height="180" alt="Le Festival Bordeaux Tasting" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="909967" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/concerts/chanson-francaise/natasha-st-pier-mon-histoire-d-amour-c-est-vous-909967_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Natasha St-Pier - Mon Histoire d'Amour c'Est Vous</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><a href="https://www.jds.fr/bordeaux/casino/casino-barriere-de-bordeaux-14970_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Casino Barrière de Bordeaux</a><span class="d-block description font-size-14 lh-sm">Natasha St-Pier - Mon Histoire d'Amour c'Est Vous en concert à Bordeaux (Casino Barrière de Bordeaux ), le 13 décembre 2025. Toutes les informations pratiques (tarifs, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=40893762791&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/concerts/chanson-francaise/natasha-st-pier-mon-histoire-d-amour-c-est-vous-909967_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fda%2Fb1%2Fnatasha-st-pier-tickets_426643_3484490_222x222.jpg&feedId=23455&k=2d82b1ce66151bae3ad0041727507a083e412b25" width="180" height="180" alt="Natasha St-Pier - Mon Histoire d&#039;Amour c&#039;Est Vous" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1240914" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/concert-de-l-avent-et-de-noel-270_B" class="lh-sm">Concerts de Noël à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/concerts/concerts-de-noel/50-ans-noels-en-ch-ur-1240914_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">50 ans, … noëls en chœur ...!</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Audenge</span><span class="d-block description font-size-14 lh-sm">Un concert de No&euml;l, en ouverture de l'anniversaire des 50 ans du Groupe Vocal Arcana.
+Chants traditionnels, fran&ccedil;ais, ukrainien, bolivien,&nbsp;.... Berlioz, [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/concerts/concerts-de-noel/50-ans-noels-en-ch-ur-1240914_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-03438100-1762275948-764409-180-180.webp" width="180" height="180" alt="50 ans, … noëls en chœur ...!" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1203155" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/conferences-472_B" class="lh-sm">Conférences à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/manifestations/conferences/atelier-d-immersion-bachelor-systemes-aeronautiques-1203155_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Atelier d'immersion Bachelor Systèmes Aéronautiques</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><a href="https://www.jds.fr/bordeaux/grande-ecole/ecole-speciale-de-mecanique-et-d-electricite-de-bordeaux-esme-bordeaux-21894_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> École spéciale de mécanique et d'électricité de Bordeaux (ESME Bordeaux)</a><span class="d-block description font-size-14 lh-sm">Plonge dans l&rsquo;univers de l'a&eacute;ronautique et du spatial avec l&rsquo;ESME Bordeaux gr&acirc;ce &agrave; nos ateliers d&rsquo;immersion&nbsp;! Au programme&nbsp;: atelier [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/manifestations/conferences/atelier-d-immersion-bachelor-systemes-aeronautiques-1203155_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-82290100-1759594332-738909-180-180.webp" width="180" height="180" alt="Atelier d&#039;immersion Bachelor Systèmes Aéronautiques" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1223403" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/manifestations/bebe-zen-1223403_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Bébé Zen</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Arès</span><span class="d-block description font-size-14 lh-sm">De 10 h 30 à 11 h 30.
+Un doux moment de détente et de partage avec votre enfant&nbsp;: comptines, histoires et jeux de mains.
+Pour les enfants de 6 mois à 3 ans. Gratuit. [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/manifestations/bebe-zen-1223403_A"><img loading="lazy" src="https://www.jds.fr/medias/image/bebe-zen-751723-180-180.webp" width="180" height="180" alt="Bébé Zen" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1134861" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/musique-et-concerts-96_B" class="lh-sm">Concerts à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/concerts/bulle-musicale-ona-mae-1134861_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Bulle musicale – ONA MAE</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Léognan</span><span class="d-block description font-size-14 lh-sm">
+Concert petite enfance
+
+    Deux sessions&nbsp;: 10h et 11h
+    Durée&nbsp;: 30 minutes chacune
+    Âge&nbsp;: 3 mois&nbsp;– 6 ans
+
+Voyage musical à la découverte du [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/concerts/bulle-musicale-ona-mae-1134861_A"><img loading="lazy" src="https://www.jds.fr/medias/image/bulle-musicale-ona-mae-699463-180-180.webp" width="180" height="180" alt="Bulle musicale – ONA MAE" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1241238" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/conferences-472_B" class="lh-sm">Conférences à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/manifestations/conferences/cafe-histoire-les-batisseurs-de-la-presqu-ile-du-cap-ferret-1241238_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Café Histoire&nbsp;: Les bâtisseurs de la presqu’île du Cap Ferret</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Andernos-les-Bains</span><span class="d-block description font-size-14 lh-sm">Les bâtisseurs de la presqu’île du Cap Ferret&nbsp;: visionnaires d’un rivage autrefois désertique.
+Au XIXe siècle, la presqu’île du Cap Ferret n’était qu’un espace [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/manifestations/conferences/cafe-histoire-les-batisseurs-de-la-presqu-ile-du-cap-ferret-1241238_A"><img loading="lazy" src="https://www.jds.fr/medias/image/cafe-histoire-les-batisseurs-de-la-presqu-ile-du-c-764586-180-180.webp" width="180" height="180" alt="Café Histoire : Les bâtisseurs de la presqu’île du Cap Ferret" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1210576" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/manifestations/cafe-signes-1210576_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Café signes</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Marcheprime</span><span class="d-block description font-size-14 lh-sm">Envie d’apprendre la langue des signes ou de vous perfectionner&nbsp;? Découvrez, rencontrez, échangez et partagez un moment entre petits et grands, autour d’activités [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/manifestations/cafe-signes-1210576_A"><img loading="lazy" src="https://www.jds.fr/medias/image/cafe-signes-743888-180-180.webp" width="180" height="180" alt="Café signes" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1237261" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/conferences-472_B" class="lh-sm">Conférences à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/manifestations/conferences/conference-1237261_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Conférence</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Gujan-Mestras</span><span class="d-block description font-size-14 lh-sm">« Les Fleurs de Bach&nbsp;»
+Animé par Bruno Schmucki, formateur et conseiller agréé en Fleurs de Bach.</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/manifestations/conferences/conference-1237261_A"><img loading="lazy" src="https://www.jds.fr/medias/image/conference-762048-180-180.webp" width="180" height="180" alt="Conférence" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1212223" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/bordeaux/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Bordeaux</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/bordeaux/manifestations/evenement-au-chateau-citran-noel-1212223_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Evènement au château Citran - Noël</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Avensan</span><span class="d-block description font-size-14 lh-sm">Venez vivre une expérience enrichissante et ludique en seulement 1h30, où la découverte des animaux et le divertissement se rencontrent&nbsp;!
+Début de la visite avec le [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/bordeaux/manifestations/evenement-au-chateau-citran-noel-1212223_A"><img loading="lazy" src="https://www.jds.fr/medias/image/manifestations-image-d-illustration-ia-canva-453562-180-180.webp" width="180" height="180" alt="Evènement au château Citran - Noël" class="border" /></a></div></div></li>
+</ul>
+</div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=25"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/bordeaux/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=25">25</a><span class="page d-inline-block mx-1 active mx-1">26</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=27">27</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=58">58</a></div>
+<a class="lien_next" href="https://www.jds.fr/bordeaux/agenda/?&amp;page=27"><i class="bi bi-chevron-right"></i></a></div>
+<div class="gp_div_affiche" data-id="0" data-id-format="69"></div>
+</div><div id="content_right" class=""><hr class="d-md-none my-5"><div class="wrapper_gp_div mb-4"><div class="regie_18"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 - HAUT -->
+<ins id="pub_1635" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="7598382131"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1635" data-id-format="18"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1635', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '18', 'non_interaction': true }); } });</script>
+</div>
+</div><div class="encart-newsletter d-none d-md-block p-4 bg-light my-5"><p class="mt-0 mb-3 h2">Newsletter JDS Bordeaux</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p><form id="form_newsletter_6915eb8d193e9" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="69160129a8d1d" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915eb8d193e9_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" selected>33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915eb8d193e9_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915eb8d193e9_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915eb8d193e9_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915eb8d193e9_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915eb8d193e9 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915eb8d193e9_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915eb8d193e9 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915eb8d193e9_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915eb8d193e9 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915eb8d193e9_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915eb8d193e9_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915eb8d193e9 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915eb8d193e9',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915eb8d193e9").serialize();
+        $('form#form_newsletter_6915eb8d193e9 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915eb8d193e9 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915eb8d193e9 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915eb8d193e9 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter sidebar',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915eb8d193e9 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915eb8d193e9 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script></div><div class="wrapper_gp_div mb-2 sticky"><div class="regie_29"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 BAS -->
+<ins id="pub_1636" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="9513867524"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1636" data-id-format="29"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1636', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '29', 'non_interaction': true }); } });</script>
+</div>
+</div></div></div></div></div><footer id="footer" class="mt-5 px-3">    
+    <div class="container">     
+    <div class="row">
+        
+        <div class="col-md-6 col-lg-4 order-md-6 offset-lg-1">
+            <div id="footer_newsletter" class="p-4 bg-light full-width-sm mb-5">                                  
+                <p class="mt-0 mb-3 h2">Newsletter JDS Bordeaux</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p>                         
+                <form id="form_newsletter_6915eb8d1945d" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="69160129a8d1d" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915eb8d1945d_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" selected>33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915eb8d1945d_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915eb8d1945d_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915eb8d1945d_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915eb8d1945d_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915eb8d1945d input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915eb8d1945d_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915eb8d1945d input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915eb8d1945d_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915eb8d1945d input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915eb8d1945d_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915eb8d1945d_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915eb8d1945d input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915eb8d1945d',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915eb8d1945d").serialize();
+        $('form#form_newsletter_6915eb8d1945d .submit_2').attr('disabled','');
+        $('#form_newsletter_6915eb8d1945d .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915eb8d1945d .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915eb8d1945d .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter footer',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915eb8d1945d .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915eb8d1945d .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script>         
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 order-md-first">
+            <a class="logo d-block mx-auto mx-lg-0" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a>
+
+            
+            <p class="my-4 fw-bold text-center text-md-start">Le JDS Bordeaux, c’est des sorties (concerts, humour…) et des bons plans en tous genres (resto, shopping, événements locaux…) au plus près de chez vous.</p>
+            
+                
+                
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <span class="font-size-14">Téléchargez l'appli JDS : </span>
+                <a href="https://market.android.com/details?id=fr.jds.app" class="mx-1" target="_blank"><i class="bi bi-android2"></i></a><a href="https://itunes.apple.com/fr/app/jds-les-sorties-en-alsace/id467323730?mt=8" class="mx-1" target="_blank"><i class="bi bi-apple"></i></a>   
+                </p>
+                
+            <hr class="my-5 d-md-none">
+        </div>
+        <div class="col-md-12 col-lg-3 order-md-11 offset-lg-1">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Organisateurs</p>
+                    <p class="fw-bold">Publiez votre événement sur le site jds.fr</p>                
+                    <ul class="text-gray-700 mt-2">
+                        <li>Publiez gratuitement votre événement dans l’agenda via notre <a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=footer&utm_campaign=link_publier_info_text">espace organisateur</a></li>
+                        <li>Bénéficiez d'une visibilité auprès de nos 3&nbsp;000&nbsp;000 visiteurs mensuels !</li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://pro.jds.fr" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je publie mon événement</a></p>
+
+                    <hr class="my-5 d-md-none d-lg-block">
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Annonceurs</p>
+                    <p class="fw-bold">Discutons ensemble de votre communication</p>          
+                    <ul class="text-gray-700 mt-2">
+                        <li>Promouvoir au mieux votre événement ou votre offre</li>
+                        <li>3&nbsp;000&nbsp;000 visiteurs mensuels <a href="https://www.jds.fr/magazine/actu-magazine/audience-jds-169974_A">(tout savoir sur l'audience du JDS)</a></li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://www.jds.fr/blog/" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je découvre les solutions</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 order-md-12">
+            <hr class="my-5">
+
+            <ul class="list-unstyled font-size-14 d-lg-flex justify-content-between">
+            <li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/journal-des-spectacles-magazine-mulhouse-colmar-haut-rhin-alsace-837_A">Qui sommes-nous ?</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/mentions-legales/">Infos légales / Affiliation</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/cookies/">Cookies</a></li><li class="mb-1 me-2"><a href="javascript:Didomi.preferences.show()">Modifier mes choix de cookies</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/comment-vous-desabonner-des-notifications-jds-340946_A">Se désabonner des notifications</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/contact/">Nous contacter</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/offres-emploi-mulhouse-alsace/">Emploi : nous rejoindre</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/">Blog</a></li>  
+            </ul>
+
+            <p class="font-size-14">Copyright 2008-2025 jds.fr</p>
+        </div>
+    </div> <!-- fin row -->        
+    </div> <!-- fin container -->
+</footer><div id="search-form-menu-container" class="search-form-menu-container shadow-lg bg-light hidden text-center py-3 py-lg-5">
+    <div class="container px-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-bold font-size-26">Rechercher</span>
+            <span class="cursor-pointer d-block search-form-menu-close text-primary" onclick="toggleSearchMenu();"><i class="bi bi-x-circle me-1"></i> Fermer</span>
+        </div>
+        <div
+            id="search-app"
+            data-endpoint="/ajax/search.php"
+            data-placeholder-text="ex. : concert demain à ..."
+            data-index-event="jds_event"
+            data-index-city="jds_city"
+            data-index-venue="jds_venue"
+            data-index-article="jds_article"
+            data-index-artist="jds_artist"
+            data-current-city-id="1096" data-current-city-name="Bordeaux"         ></div>
+    </div>
+</div>
+
+<div id="header-city-dropdown-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <p class="modal-title m-0">Choisissez une ville spécifique</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="ville-selector-mode" value="default" id="ville-selector-mode" />
+                <input type="text" class="form-control form-control-lg shadow-lg rounded-3" id="ville-selector-modal" placeholder="Entrez le nom de votre ville">
+                <div id="ville-selector-container-modal"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer>
+$(document).ready(function() {
+    $('#ville-selector-modal').keyup(function() {
+        if($(this).val().length==0) { $("#ville-selector-container-modal").html(""); return; }
+        if($(this).val().length<2) { return; }
+
+        $.post("/ajax/recherche_ville_fonction.php", { term: $(this).val(), mode:$('input[name="ville-selector-mode"]').val() })
+        .done(function(data) {
+
+            $("#ville-selector-container-modal").html('<p class="mt-4">Cliquez sur votre ville :</p><ul class="list-unstyled font-size-16"></ul>');
+            obj=JSON.parse(data);
+            obj.forEach(function(item){
+            $("#ville-selector-container-modal").find("ul").append('<li class="p-3 border-bottom"><a href="'+item.url+'" class="text-dark"><i class="bi bi-geo-fill text-primary me-1"></i> '+item.label+'</a></li>');
+        });
+        });
+    }); 
+});
+</script>
+
+</div><script defer src="/libs/jquery/magnific-popup/jquery.magnific-popup.min.js?v=131"></script><script defer src="/scripts/slick.min.js?v=131"></script><script defer src="/libs/choices/scripts/choices.js?v=131"></script><script defer src="/libs/lightbox2/js/lightbox.min.js?v=131"></script><script defer src="/scripts/functions_footer.js?v=131"></script><script>const { createApp, ref, computed, watch, onMounted, onBeforeUnmount, nextTick, reactive } = Vue;</script><script src="/scripts/search.app.js?v=131"></script><script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-messaging-compat.js"></script>
+<script>
+const firebaseConfig = {
+    apiKey: "AIzaSyBjBC01qlzGVLYWWE8D0rrOzL2cSfIf7MQ",
+    authDomain: "journal-des-spectacles-dd5d0.firebaseapp.com",
+    databaseURL: "https://journal-des-spectacles-dd5d0.firebaseio.com",
+    projectId: "journal-des-spectacles-dd5d0",
+    storageBucket: "journal-des-spectacles-dd5d0.appspot.com",
+    messagingSenderId: "37707045198",
+    appId: "1:37707045198:web:e58879e2e7f9adf0"
+  };
+const vapidKey = "BB2gRQtko-8CqzZbrzzlGBwMim_ThaPkNdzqi780Y7ku5VmG_E_DwFJnrJXB7_pNJKn9UTbIchVKfijBHNteuu8";
+  
+firebase.initializeApp(firebaseConfig);
+const messaging = firebase.messaging();
+
+var browserName = (function (agent) {        
+    switch (true) {
+        case agent.indexOf("edge") > -1: return "Edge"; // ms
+        case agent.indexOf("edg/") > -1: return "Edge"; // (chromium based)
+        case agent.indexOf("chrome") > -1 && !!window.chrome: return "Chrome";
+        case agent.indexOf("firefox") > -1: return "Firefox";
+        case agent.indexOf("safari") > -1: return "Safari";
+        default: return "other";
+    }
+})(window.navigator.userAgent.toLowerCase());
+    
+function fcm_resetUI() { 
+    if(!isTokenSentToServer()) {
+        if(window.navigator.userAgent.toLowerCase().indexOf('iphone')!==-1) { return; } // fix bug safari iphone    
+        if(browserName=='Chrome') { $('#web_push_dialog').addClass('chrome'); }
+        if(browserName=='Edge') { $('#web_push_dialog').addClass('edge'); }
+        if(browserName=='Firefox') { $('#web_push_dialog').addClass('firefox'); }
+        if(Notification.permission=='default') {
+            if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+        }
+        else if(Notification.permission=='granted') {
+            messaging.getToken({ vapidKey:vapidKey }).then((currentToken) => {   
+                                if (currentToken) {
+                    sendTokenToServer(currentToken);
+                } else {
+                  setTokenSentToServer(false);
+                  if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+                }
+            }).catch((err) => {
+                
+                setTokenSentToServer(false);
+            });
+        }    
+    }
+}
+//window.fcm_resetUI = fcm_resetUI;
+function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+        setTokenSentToServer(true);
+        $.post( "/ajax/firebase_register_v2.php",  { token: currentToken, dpt:'33' });      
+        if(typeof gtag=="function") {
+            gtag("event", "subscription", {
+                "event_category" : "Firebase",
+                "event_label" : "Web push",
+                "non_interaction": true
+            });            
+        }
+    } 
+}
+function isTokenSentToServer() {
+    var web_push_cookie = $.cookie('web_push');       
+    if(typeof web_push_cookie === 'undefined' || web_push_cookie===false) return false;
+    return true;
+}
+function setTokenSentToServer(sent) {
+    if(sent) $.cookie('web_push',true, {path: '/',domain:'.jds.fr'}); 
+    else $.cookie('web_push',false, {path: '/',domain:'.jds.fr'}); 
+}
+function requestPushDialog() {
+    $.magnificPopup.open({
+        items: {
+            src: '#web_push_dialog', // can be a HTML string, jQuery object, or CSS selector
+            type: 'inline'
+          },
+        alignTop : true,
+        showCloseBtn : true,
+        //closeOnBgClick: ((browserName!='Firefox' &&  && !$('#web_push_dialog').hasClass('mobile'))?false:true),
+        callbacks: {
+            open: function() {                 
+                $('.mfp-bg').css('position','fixed');      
+                if(browserName!='Firefox') {
+                    if(!$('#web_push_dialog').hasClass('mobile')) {
+                        $('.mfp-bg').css('opacity',.0).css('width','auto').css('height','auto');
+                        $('html').css('overflow','auto');  
+                        $('.mfp-wrap').css('width','auto').css('height','auto');
+                    }
+                    else {
+                        $('html').css('overflow','hidden');  
+                    }
+                }
+                else {
+                    $('.mfp-bg').css('opacity',.75).css('background','#fff');
+                }
+
+            },
+            close: function() {
+                $('html').css('overflow','auto'); 
+            }
+        }    
+    }); 
+    if(browserName!='Firefox') { requestPermission(); } // sur firefox, l'ouverture de permission automatique ne marche pas alors on remet les boutons
+}
+function requestPermission() {   
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+            fcm_resetUI();
+            $.magnificPopup.close();
+      } else {
+            $.magnificPopup.close();
+      }
+    });
+}
+$(document).on('click','#web_push_dialog button',function() {
+    //firefox
+    if($(this).hasClass('accept')) requestPermission();
+    if($(this).hasClass('deny')) setTokenSentToServer(true);    
+    
+    $.magnificPopup.close();       
+});
+</script>
+
+<div id="web_push_dialog" class="mfp-hide desktop">
+    <div class="popup-content p-3">
+        <img class="logo-mobile" loading="lazy" src="/images/new/logo-jds.svg?v=131" width="40" height="40" alt="jds.fr">
+        <p class="popup-title mb-3"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+        <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+        <p class="text-gray-600 font-size-14 mb-0">Autoriser les notifications pour continuer.</p>
+        <hr class="hide-mobile">
+        <div class="p-3 hide-mobile text-center bg-primary"><img loading="lazy" src="/images/new/logo-jds-white.svg?v=131" width="100" height="100" alt="jds.fr"></div>
+        <div class="arrow text-gray-800"><i class="bi bi-arrow-down-circle-fill"></i></div>
+    </div>
+    <div class="popup-content-firefox p-3">
+        <div class="row">
+            <div class="col-md-3 pr-0 col-3"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" class="popup-logo"></div>
+            <div class="col-md-9 col-9">
+              <p class="popup-title"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+              <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+              <p class="text-gray-600 font-size-14 mb-3">Une seconde fenêtre va s'ouvrir vous invitant à autoriser les notifications</p>
+              <div class="popup-footer text-right"><button class="btn btn-outline-primary rounded-pill btn-sm me-3 deny">Refuser</button><button class="btn btn-primary rounded-pill btn-sm me-3 accept">Autoriser</button></div>
+            </div>
+        </div>
+    </div>
+</div><script type="didomi/javascript" data-purposes="select_basic_ads" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4984827051088801"
+     crossorigin="anonymous"></script></body></html>

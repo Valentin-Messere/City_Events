@@ -1,0 +1,658 @@
+<!DOCTYPE html><html lang="fr"><head><script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+      else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+        var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+        if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e,tgt){
+        var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+tgt;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("9d946103-8843-4a4e-ab0b-8e61ea84e891","Qr7JnTUV")})();</script>
+
+<script> 
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(function (Didomi) { 
+        // Call other functions on the SDK
+
+        // Refresh de la page en cas de changement du consentement
+        window.didomiEventListeners = window.didomiEventListeners || [];
+        window.didomiEventListeners.push({
+            event: 'consent.changed',
+            listener: function (context) {
+                gp_maj();
+            }
+        });
+
+        // Google advertising products
+        Didomi.getObservableOnUserConsentStatusForVendor('google')
+        .filter(function (status) { return status !== undefined })
+        .subscribe(function (consentStatus) {
+            if (consentStatus === undefined || consentStatus === false) {
+                // on masque les encarts pubs vides
+                (function() {     
+                    var div_regies = document.getElementsByClassName('wrapper_gp_div');
+                    
+                    setTimeout(function() { // on fait un settimeout sinon le length n'est pas juste...                   
+                        for (let i = 0; i < div_regies.length; i++) {                  
+                            if (div_regies[i].innerHTML.indexOf('regie_') > -1) {                           
+                              div_regies[i].style.display="none";
+                            }
+                        }
+                        
+                    },400);
+                    
+                    
+                })();
+            }
+        }); 
+        
+     
+
+    });
+    </script> 
+<meta charset="UTF-8" />
+<title>Nantes - L&#039;agenda des spectacles, manifestations, concerts - Page 9</title>
+<meta name="description" content="Nantes - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 9" />
+<link rel="canonical" href="https://www.jds.fr/nantes/agenda/?page=9" />
+<meta name="p:domain_verify" content="9efecdd4eddf0844d5703f41d2dc7ca7"/>
+<meta property="fb:app_id" content="638077278167784" />
+<meta property="fb:pages" content="50813882504">
+<meta property="og:title" content="Nantes - L&#039;agenda des spectacles, manifestations, concerts - Page 9" />
+<meta property="og:description" content="Nantes - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 9" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.jds.fr/nantes/agenda/?page=9" />
+<meta property="og:site_name" content="jds.fr" />
+<meta property="og:image" content="https://www.jds.fr/images/header_logo_120.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="364" />
+<meta property="og:image:height" content="364" />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https:\/\/www.jds.fr\/","name":"Accueil"},{"@type":"ListItem","position":2,"item":"https:\/\/www.jds.fr\/nantes\/","name":"Nantes"},{"@type":"ListItem","position":3,"name":"Agenda"}]}</script>
+
+<meta name="robots" content="noindex,follow" />
+<link rel="prev" href="https://www.jds.fr/nantes/agenda/?&amp;page=8" /><link rel="next" href="https://www.jds.fr/nantes/agenda/?&amp;page=10" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+<link rel="stylesheet" href="/css/custom.css?v=131">
+<link rel="preload" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131"></noscript>
+<link rel="preload" href="/libs/lightbox2/css/lightbox.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/lightbox2/css/lightbox.min.css?v=131"></noscript>
+<link rel="preload" href="/css/slick-theme.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick-theme.css?v=131"></noscript>
+<link rel="preload" href="/css/slick.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick.css?v=131"></noscript>
+<link rel="preload" href="/libs/choices/styles/choices.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/choices/styles/choices.min.css?v=131"></noscript>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#e50b47">
+<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e50b47">
+<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><link rel="manifest" href="/manifest.json"></head><body class="version_a  "><script async src="https://www.googletagmanager.com/gtag/js?id=G-6WVELE5WG9"></script>
+<script type="didomi/javascript" data-vendor="c:googleana-4TXnJigR">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+        dataLayer.push(arguments);
+        if (arguments[0] === 'js') {
+            setTimeout(function() {
+            window.dispatchEvent(new Event('gtag_loaded'));
+        }, 1000);
+        }
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6WVELE5WG9', {
+          'cookie_expires': 33696000,
+          'transport_type': 'beacon',
+          'dimension1': '0','dimension2': '44','dimension3': '2','dimension4': '0','dimension5': '0','dimension6': '0','dimension7': '','dimension8': 'a','dimension9': '0',     
+    });
+</script><script src="/libs/jquery-3.7.1.min.js"></script><script defer src="/libs/bootstrap/js/popper.min.js"></script><script defer src="/libs/bootstrap/js/bootstrap.min.js"></script><script defer src="/libs/jquery/js/jquery.cookie.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.date.js"></script><script defer src="/libs/jquery/pickadate.js/lib/translations/fr_FR.js"></script><script src="/libs/vue.global.prod.js"></script><script src="/libs/axios.min.js"></script><script src="/ads-checker.js"></script><script defer src="/scripts/functions.js?v=131"></script><script>var gp_maj_done=false;
+var param_gp=[];param_gp['id_newsletter']='0';param_gp['type']='0';param_gp['sousrub']='0';param_gp['rub']='2';param_gp['rub_rub']='2';param_gp['page']='9';param_gp['mobile_version']='0';param_gp['detail_type']='';param_gp['detail_id']='0';param_gp['web_push_site']='';param_gp['web_push_id']='';param_gp['current_departement']='44';$(document).ready(function() {
+    if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) gp_maj();});</script><div class="gp_div_affiche" data-id="0" data-id-format="24"></div>
+<div id="global" class="p-0"><div id="header" class="bg-white header"><div class="d-flex justify-content-between align-items-center px-2rem header-inner-wrapper text-primary container"><div class="header-logo mb-1"><a class="d-block" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a></div><div class="header-city-inline-selector d-flex me-auto font-size-22 ms-4 align-items-center lh-1"><a href="https://www.jds.fr/nantes/" class="">Nantes</a><span class="ms-auto ms-md-0 d-block ps-2 cursor-pointer" onclick="toggleCityMenu();"><i class="bi bi-chevron-down"></i></span></div><div class="header-publish ms-md-auto me-md-5"><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=header&utm_campaign=link_publier_info" class="btn btn-outline-primary rounded-pill d-none d-md-inline shadow-sm"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><div class="header-menu font-size-36 cursor-pointer ps-3" onclick="toggleMenu()"><i class="bi bi-list"></i></div></div></div>
+<!-- NAVBAR -->
+<div id="header-navbar" class="bg-light-primary header-navbar navbar-v2">
+    <div class="px-2rem header-navbar-inner-wrapper container font-size-14">
+        <div class="navbar-v2-item d-flex">
+            <div class="flex-fill">
+                <span onclick="toggleSearchMenu();" class="bg-primary text-white d-block px-3"><span class="search-btn cursor-pointer"><span><i class="bi bi-search me-2"></i> Rechercher</span></span>
+            </div>
+            <div class="flex-fill"><a href="https://www.jds.fr/nantes/agenda/agenda-du-jour/-aujourdhui_JPJ" class="" data-event-label="Aujourd'hui"><span><i class="cf icon-aujourdhui">&#xe80f;</i> Aujourd'hui</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/nantes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="" data-event-label="Spectacles"><span><i class="cf icon-spectacles">&#xe80c;</i> Spectacles</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/nantes/agenda/musique-et-concerts-96_B" class="" data-event-label="Concerts"><span><i class="cf icon-concert">&#xe801;</i> Concerts</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/nantes/agenda/manifestations-fetes-festivals-137_B" class="" data-event-label="Animations"><span><i class="cf icon-manifestations">&#xe807;</i> Animations</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/nantes/agenda/foire-salon-puces-bourses-468_B" class="" data-event-label="Salons / Puces"><span><i class="cf icon-foires">&#xe805;</i> Salons / Puces</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/nantes/agenda/sports-145_B" class="" data-event-label="Sports"><span><i class="cf icon-sport">&#xe810;</i> Sports</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/nantes/agenda/expositions-471_B" class="" data-event-label="Expos"><span><i class="cf icon-expos">&#xe802;</i> Expos</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/nantes/agenda/enfants-94_B" class="" data-event-label="Famille"><span><i class="cf icon-famille">&#xe813;</i> Famille</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/nantes/agenda/soirees-469_B" class="" data-event-label="Soirées"><span><i class="cf icon-soirees">&#xe80b;</i> Soirées</span></a></div>        </div>
+    </div>
+</div>
+<div id="menu" class="menu bg-white px-2rem py-5 hidden"><div class="text-center"><button class="btn btn-primary btn-lg rounded-pill d-block w-100 menu-link" onclick="toggleSearchMenu();" data-event-label="open-search-menu"><i class="bi bi-search me-2"></i> Rechercher</button><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=menu&utm_campaign=link_publier_info" class="btn btn-outline-primary my-4 btn-lg rounded-pill d-block w-100" data-event-label="Espace pro"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/nantes/agenda/agenda-du-jour/-aujourdhui_JPJ" class="text-dark hover-text-primary cursor-pointer" data-event-label="Aujourd'hui">Aujourd'hui à Nantes</a></li><li><a href="https://www.jds.fr/nantes/agenda/evenements/" class="text-dark hover-text-primary" data-event-label="Evénements">Evénements</a></li><li><a href="https://www.jds.fr/nantes/agenda/manifestations-fetes-festivals-137_B" class="text-dark hover-text-primary" data-event-label="Manifestations">Manifestations</a></li><li><a href="https://www.jds.fr/nantes/agenda/foire-salon-puces-bourses-468_B" class="text-dark hover-text-primary" data-event-label="Foires & salons">Foires & salons</a></li><li><a href="https://www.jds.fr/nantes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="text-dark hover-text-primary" data-event-label="Spectacles">Spectacles</a></li><li><a href="https://www.jds.fr/nantes/agenda/musique-et-concerts-96_B" class="text-dark hover-text-primary" data-event-label="Concerts">Concerts</a></li><li><a href="https://www.jds.fr/nantes/agenda/sports-145_B" class="text-dark hover-text-primary" data-event-label="Sports">Sports</a></li><li><a href="https://www.jds.fr/nantes/agenda/soirees-469_B" class="text-dark hover-text-primary" data-event-label="Soirées">Soirées</a></li><li><a href="https://www.jds.fr/nantes/agenda/enfants-94_B" class="text-dark hover-text-primary" data-event-label="Sorties famille">Sorties famille</a></li><li><a href="https://www.jds.fr/nantes/agenda/expositions-471_B" class="text-dark hover-text-primary" data-event-label="Expos">Expos</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/nantes/magazine/" class="text-dark hover-text-primary" data-event-label="Actus">Actus à Nantes</a></li><li><a href="https://www.jds.fr/nantes/annuaire/" class="text-dark hover-text-primary" data-event-label="Annuaire">Annuaire tourisme & loisirs</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/newsletter-archives/toutes-les-newsletter-jds-fr" class="text-dark hover-text-primary" data-event-label="Newsletters">Newsletter des sorties</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/blog/" class="text-dark hover-text-primary" data-event-label="Annonceurs">Annonceurs</a></li></ul></div><div id="header-city-dropdown" class="header-city-dropdown bg-secondary py-2 text-white px-2rem font-size-16 hidden"><div class="container"><div class="py-2 cursor-pointer text-uppercase" onclick="$('#header-city-dropdown-modal').modal('show'); $('#ville-selector-modal').focus(); $('input[name=&quot;ville-selector-mode&quot;]').val('default')"><i class="bi bi-building-add me-1"></i> Une autre ville</div><div class="py-1"><a href="https://www.jds.fr/bordeaux/" class="text-white text-uppercase">Bordeaux</a></div><div class="py-1"><a href="https://www.jds.fr/colmar/" class="text-white text-uppercase">Colmar</a></div><div class="py-1"><a href="https://www.jds.fr/dijon/" class="text-white text-uppercase">Dijon</a></div><div class="py-1"><a href="https://www.jds.fr/lille/" class="text-white text-uppercase">Lille</a></div><div class="py-1"><a href="https://www.jds.fr/lyon/" class="text-white text-uppercase">Lyon</a></div><div class="py-1"><a href="https://www.jds.fr/marseille/" class="text-white text-uppercase">Marseille</a></div><div class="py-1"><a href="https://www.jds.fr/metz/" class="text-white text-uppercase">Metz</a></div><div class="py-1"><a href="https://www.jds.fr/montpellier/" class="text-white text-uppercase">Montpellier</a></div><div class="py-1"><a href="https://www.jds.fr/mulhouse/" class="text-white text-uppercase">Mulhouse</a></div><div class="py-1"><a href="https://www.jds.fr/nancy/" class="text-white text-uppercase">Nancy</a></div><div class="py-1"><a href="https://www.jds.fr/nantes/" class="text-white text-uppercase">Nantes</a></div><div class="py-1"><a href="https://www.jds.fr/nice/" class="text-white text-uppercase">Nice</a></div><div class="py-1"><a href="https://www.jds.fr/paris/" class="text-white text-uppercase">Paris</a></div><div class="py-1"><a href="https://www.jds.fr/reims/" class="text-white text-uppercase">Reims</a></div><div class="py-1"><a href="https://www.jds.fr/rennes/" class="text-white text-uppercase">Rennes</a></div><div class="py-1"><a href="https://www.jds.fr/strasbourg/" class="text-white text-uppercase">Strasbourg</a></div><div class="py-1"><a href="https://www.jds.fr/toulouse/" class="text-white text-uppercase">Toulouse</a></div><div class="mt-5 py-1 cursor-pointer" onclick="toggleCityMenu()"><u><i class="bi bi-x-circle me-1"></i> Fermer le menu</u></div></div></div><div id="global-container"><div id="global-container-inner-wrapper" class="container"><!--[if lte IE 9]>
+<div class="alert alert-warning" role="alert">
+<p class="mb-0">Vous utilisez une très ancienne version de navigateur Internet, ce qui impacte négativement votre expérience de navigation sur le site du JDS et sur Internet en général. Nous vous recommandons de mettre à jour votre navigateur ou d'en installer un autre en <a href="https://browsehappy.com/?locale=fr" target="_blank">cliquant ici</a>.</p>
+</div>
+<![endif]--><div class="text-center mb-5 mx-auto leaderboard"><div class="wrapper_gp_div nobg"><div class="regie_2">
+<!-- Leaderboard 1000 x 300 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:1000px;height:300px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="4079211116"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="3348" data-id-format="2"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3348', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '2', 'non_interaction': true }); } });</script>
+</div>
+</div></div><div id="content_container" class="d-md-flex justify-content-between"><div id="content_left"><div id="chemin" class="ariane mb-3"><a href="https://www.jds.fr/">Accueil</a><a href="https://www.jds.fr/nantes/">Nantes</a></div><div class="header-ville no-form is_page_ville ville_44 agglo_1187 "><h1>Nantes&nbsp;: Agenda et événements</h1><button onclick="toggleSearchMenu()" class="btn btn-primary btn-lg mx-auto d-block rounded-pill shadow-lg my-4" data-position="page-resultats-modifier-recherche-top"><i class="bi bi-search me-2"></i> Rechercher</button></div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/nantes/agenda/?&amp;page=8"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/nantes/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/nantes/agenda/?&amp;page=8">8</a><span class="page d-inline-block mx-1 active mx-1">9</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/nantes/agenda/?&amp;page=10">10</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/nantes/agenda/?&amp;page=43">43</a></div>
+<a class="lien_next" href="https://www.jds.fr/nantes/agenda/?&amp;page=10"><i class="bi bi-chevron-right"></i></a></div>
+<div class="mt-5"><ul class="mt-3 list-unstyled list-articles-v2">
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1184899" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/spectacles/lectures-animees-pour-les-tout-petits-1184899_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Lectures animées pour les tout-petits</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 20/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Chaumes-en-Retz</span><span class="d-block description font-size-14 lh-sm">
+
+    Pratique&nbsp;:
+    Gratuit sur réservation pour les tout-petits jusqu'à 3 ans
+    Rendez-vous à la bibliothèque de l'Aqueduc d'Arthon le 20 novembre
+    À partir du 15 [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/spectacles/lectures-animees-pour-les-tout-petits-1184899_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="Lectures animées pour les tout-petits" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1229127" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/spectacles/soiree-danse-rock-n-roll-sofa-1229127_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Soirée danse Rock'N'Roll - SOFA</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 20/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Cellier</span><span class="d-block description font-size-14 lh-sm">Initiation d'une heure, suivie d'une pratique libre.
+Participation au chapeau.</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/spectacles/soiree-danse-rock-n-roll-sofa-1229127_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="Soirée danse Rock&#039;N&#039;Roll - SOFA" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1239061" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/soirees-469_B" class="lh-sm">Soirées à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/soirees/soiree-poker-gratuit-1239061_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Soirée Poker gratuit</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 20/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Nozay</span><span class="d-block description font-size-14 lh-sm">Poker gratuit dans votre restaurant Factory &agrave; Nozay&nbsp;,12 route de Nantes, tous les jeudis &agrave; 19h30.. Z&eacute;ro mise, juste du fun, de la convivialit&eacute; et [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/soirees/soiree-poker-gratuit-1239061_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-18993800-1761997268-762916-180-180.webp" width="180" height="180" alt="Soirée Poker gratuit" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="732094" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/humour-comedie-22_B" class="lh-sm">Humour à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/spectacles/humour/manu-payet-emmanuel-2-tournee-732094_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Manu Payet - Emmanuel 2 - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><a href="https://www.jds.fr/nantes/saint-herblain/salles-spectacle/zenith-de-nantes-14931_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Nantes - Saint-Herblain</a><span class="d-block description font-size-14 lh-sm">Manu Payet - Emmanuel 2 - Tournée, un spectacle à voir à Nantes (Zénith de Nantes Saint-Herblain), le 21 novembre 2025. Toutes les informations pratiques (tarifs, billetterie, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=39419016145&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/spectacles/humour/manu-payet-emmanuel-2-tournee-732094_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fcc%2F91%2Fmanu-payet---nouveau-spectacle-2022-2023-tickets_213398_1923112_222x222.jpg&feedId=23455&k=3e4576dfc7facbbe58addd3242e6ad1bfce6f1b7" width="180" height="180" alt="Manu Payet - Emmanuel 2 - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1226575" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/electro-335_B" class="lh-sm">Electro à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/concerts/electro/impact-rave-nantes-w-carv-majes-and-more-1226575_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Impact Rave Nantes W Carv Majes And More</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><a href="https://www.jds.fr/nantes/salle-de-concert/warehouse-14927_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Warehouse - Nantes</a><span class="d-block description font-size-14 lh-sm">Impact Rave débarque à Nantes le vendredi 21 novembre 2025 pour une édition monumentale au Warehouse.
+Après avoir enflammé l’arène emblématique d’Antarès au Mans, ou [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://ticketmaster-fr.tm7516.net/c/3318096/427761/7516?u=https%3A%2F%2Fwww.ticketmaster.fr%2Ffr%2Fmanifestation%2Fimpact-rave-nantes-w-carv-majes-and-more-billet%2Fidmanif%2F637126%2Fidtier%2F18864121&utm_medium=affiliate" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/concerts/electro/impact-rave-nantes-w-carv-majes-and-more-1226575_A"><img loading="lazy" src="https://www.jds.fr/medias/image/impact-rave-nantes-w-carv-majes-and-more-754525-180-180.webp" width="180" height="180" alt="Impact Rave Nantes W Carv Majes And More" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1096167" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/hip-hop-rap-190_B" class="lh-sm">Rap à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/concerts/rap/l2b-nes-pour-briller-tour-1096167_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">L2b - Nés Pour Briller Tour</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><a href="https://www.jds.fr/nantes/saint-herblain/salle-de-concert/la-carriere-15136_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Carrière - Saint-Herblain</a><span class="d-block description font-size-14 lh-sm">L2b - Nés Pour Briller Tour en concert à Nantes (La Carrière Saint-Herblain), le 21 novembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41853002705&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/concerts/rap/l2b-nes-pour-briller-tour-1096167_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F20%2F32%2Fl2b-tickets_417921_3431731_222x222.jpg&feedId=23455&k=29be0cb0ab73cafc0b8b858cf10216b17e6793cc" width="180" height="180" alt="L2b - Nés Pour Briller Tour" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="718165" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/pop-folk-479_B" class="lh-sm">Pop / folk à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/concerts/pop-folk/the-symphonic-pop-rock-show-revivez-40-ans-de-tubes-718165_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">The Symphonic Pop-Rock Show - Revivez 40 Ans de Tubes&nbsp;!</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><a href="https://www.jds.fr/nantes/salles-spectacle/cite-des-congres-de-nantes-14926_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Cité des congrès de Nantes</a><span class="d-block description font-size-14 lh-sm">The Symphonic Pop-Rock Show - Revivez 40 Ans de Tubes&nbsp;! en concert à Nantes (Cité des congrès de Nantes ), le 21 novembre 2025. Toutes les informations pratiques (tarifs, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=40565218798&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/concerts/pop-folk/the-symphonic-pop-rock-show-revivez-40-ans-de-tubes-718165_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F5d%2Fca%2Ftsp30-tickets_315897_2631118_222x222.jpg&feedId=23455&k=04225bf2aa511f117ab613af10376d50cbc3dd13" width="180" height="180" alt="The Symphonic Pop-Rock Show - Revivez 40 Ans de Tubes !" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1169020" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/musique-et-concerts-96_B" class="lh-sm">Concerts à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/concerts/deportivo-1169020_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Deportivo</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><a href="https://www.jds.fr/nantes/salle-de-concert/le-ferrailleur-15126_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Ferrailleur - Nantes</a><span class="d-block description font-size-14 lh-sm">DEPORTIVO (Rock)&nbsp;:
+
+Après 7 ans de pause, Deportivo a surpris son monde en remontant sur scène le 14 octobre 2022, à l'occasion d'un concert à La Cigale de Paris. La date [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/concerts/deportivo-1169020_A"><img loading="lazy" src="https://statics.digitick.com/commun/images/upload/events/c7/98/DAportivoweb_300.jpg" width="180" height="180" alt="Deportivo" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1240273" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/humour-comedie-22_B" class="lh-sm">Humour à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/spectacles/humour/le-triangle-des-bernes-de-pascal-daumer-theatre-du-sphinx-espace-g-philippe-a-nantes-1240273_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Le Triangle des Bernes de Pascal Daumer - Théâtre du Sphinx- Espace G.philippe à Nantes</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 21/11/2025 au 31/12/2025</span><a href="https://www.jds.fr/nantes/theatres-programmes/theatre-du-sphinx-20860_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre du Sphinx - Nantes</a><span class="d-block description font-size-14 lh-sm">
+
+Pascal Daumer présente sa nouvelle création&nbsp;"Le Triangle des Bernes" au Théâtre du Sphinx - Espace G.philippe à Nantes. Cette comédie déjantée met en scène un trio [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43057874585&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/spectacles/humour/le-triangle-des-bernes-de-pascal-daumer-theatre-du-sphinx-espace-g-philippe-a-nantes-1240273_A"><img loading="lazy" src="https://www.jds.fr/medias/image/humour-16557-180-180.webp" width="180" height="180" alt="Le Triangle des Bernes de Pascal Daumer - Théâtre du Sphinx- Espace G.philippe à Nantes" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1215108" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/soirees-469_B" class="lh-sm">Soirées à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/soirees/mamans-et-ses-copines-soiree-100-femmes-1215108_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Mamans & ses copines - Soirée 100 % femmes </span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Saint-Herblain</span><span class="d-block description font-size-14 lh-sm">SAINT-HERBLAIN&nbsp;: 2ᵉ &eacute;dition de &ldquo;Mamans &amp; ses Copines&rdquo; sign&eacute;e Mamma Mia&nbsp;!
+Une soir&eacute;e pens&eacute;e pour les mamans, mais ouverte [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/soirees/mamans-et-ses-copines-soiree-100-femmes-1215108_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-53535300-1760351591-746655-180-180.webp" width="180" height="180" alt="Mamans &amp; ses copines - Soirée 100 % femmes " class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1245005" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/expositions-471_B" class="lh-sm">Expos à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/expos/sous-nos-yeux-embrumes-projet-documentaire-de-gael-forcet-moreau-1245005_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Sous nos yeux embrumés - Projet documentaire de Gaël Forcet-Moreau</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 21/11/2025 au 29/11/2025</span><a href="https://www.jds.fr/nantes/sortie-culturelle/le-grand-huit-20290_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> le Grand Huit - Nantes</a><span class="d-block description font-size-14 lh-sm">Sous nos yeux embrum&eacute;s est un projet documentaire entam&eacute; &agrave; l&rsquo;&eacute;t&eacute; 2024 par Ga&euml;l Forcet-Moreau. Au travers de ce projet Ga&euml;l est [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/expos/sous-nos-yeux-embrumes-projet-documentaire-de-gael-forcet-moreau-1245005_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-30890700-1762531946-767208-180-180.webp" width="180" height="180" alt="Sous nos yeux embrumés - Projet documentaire de Gaël Forcet-Moreau" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1207578" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/manifestations/ateliers/animation-numerique-1207578_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Animation Numérique</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Sucé-sur-Erdre</span><span class="d-block description font-size-14 lh-sm">
+À partir de 7 ans
+</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/manifestations/ateliers/animation-numerique-1207578_A"><img loading="lazy" src="https://www.jds.fr/medias/image/ateliers-artistiques-peinture-pinceau-technique-ar-127061-180-180.webp" width="180" height="180" alt="Animation Numérique" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1080019" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/spectacles/ce-qui-nous-noue-1080019_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Ce qui nous noue</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Ligné</span><span class="d-block description font-size-14 lh-sm">Tout a été dit sur le couple. Au théâtre, au cinéma, en chanson, en littérature, néanmoins rien n’est résolu et il demeure une grande question..  Alors reparlons-en [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/spectacles/ce-qui-nous-noue-1080019_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="Ce qui nous noue" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="913321" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/spectacles/la-merveilleuse-histoire-du-pere-noel-913321_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">La Merveilleuse Histoire du Père Noël</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 21/11/2025 au 23/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Haute-Goulaine</span><span class="d-block description font-size-14 lh-sm">Découvrez un spectacle familial exceptionnel qui vous plonge au cœur de la véritable histoire du Père Noël.
+Suivez Yule, un jeune aventurier, dans un monde féerique peuplé [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/spectacles/la-merveilleuse-histoire-du-pere-noel-913321_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="La Merveilleuse Histoire du Père Noël" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1133847" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/spectacles/les-petitpatapons-biblio-fil-1133847_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Les Petitpatapons - Biblio'fil</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Couffé</span><span class="d-block description font-size-14 lh-sm">Interprété en langue des signes par Christina Potier</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/spectacles/les-petitpatapons-biblio-fil-1133847_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="Les Petitpatapons - Biblio&#039;fil" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1205607" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/spectacles/maaaar-la-criee-1205607_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Maaaar - La Criée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Sucé-sur-Erdre</span><span class="d-block description font-size-14 lh-sm">
+Elsa Corre, Rebecca Roger Cruz et Charlotte Espieussas ont mis en commun leurs talents pour une brillante création musicale sur le thème de l’eau. 
+Du chant des sardinières [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/spectacles/maaaar-la-criee-1205607_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="Maaaar - La Criée" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1243213" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/braderie-3_B" class="lh-sm">Marchés à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/foires-et-salons/marches/marche-de-noel-du-prieure-1243213_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Marché de Noël du Prieuré</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Cordemais</span><span class="d-block description font-size-14 lh-sm">La Résidence Le Prieuré propose un marché de Noël.
+
+Vente d’objets faits main par les résidents et les bénévoles
+Exposition de photos « Les résidents en [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/foires-et-salons/marches/marche-de-noel-du-prieure-1243213_A"><img loading="lazy" src="https://www.jds.fr/medias/image/braderie-16470-180-180.webp" width="180" height="180" alt="Marché de Noël du Prieuré" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1238623" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/sports-145_B" class="lh-sm">Sports à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/sports/soiree-karaoke-sofa-1238623_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Soirée karaoké - SOFA</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Cellier</span><span class="d-block description font-size-14 lh-sm">Food truck sur place.</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/sports/soiree-karaoke-sofa-1238623_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sports-animations-sportifs-faire-du-sport-alsace-127409-180-180.webp" width="180" height="180" alt="Soirée karaoké - SOFA" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1238576" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/braderie-3_B" class="lh-sm">Marchés à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/foires-et-salons/marches/soiree-zen-1238576_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Soirée Zen</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Grandchamp-des-Fontaines</span><span class="d-block description font-size-14 lh-sm">
+Différents massages&nbsp;: crânien, du dos, du visage, bien-être…
+Réflexologie plantaire
+Soins énergétiques
+Ateliers de Pilates
+Séances d’hypnose
+Et bien d’autres [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/foires-et-salons/marches/soiree-zen-1238576_A"><img loading="lazy" src="https://www.jds.fr/medias/image/braderie-16470-180-180.webp" width="180" height="180" alt="Soirée Zen" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1107178" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/spectacles/spectacle-ne-m-attends-pas-cie-la-neige-sur-les-cils-1107178_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">SPECTACLE "NE M'ATTENDS PAS " // CIE La neige sur les cils</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Petit-Mars</span><span class="d-block description font-size-14 lh-sm">Bienvenue dans un monde onirique où les maisons ont des jambes pour voyager. Dans cette quête initiatique, Vera Rozanova évoque de manière universelle nos peurs, nos attaches [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/spectacles/spectacle-ne-m-attends-pas-cie-la-neige-sur-les-cils-1107178_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="SPECTACLE NE M&#039;ATTENDS PAS  // CIE La neige sur les cils" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1138305" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/spectacles/spectacle-le-bal-des-monstres-biblio-fil-1138305_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Spectacle Le Bal des Monstres - Biblio'fil</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 21/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Mouzeil</span><span class="d-block description font-size-14 lh-sm">
+Laissez-vous conter la monstruosité des personnages&nbsp;: affreux, captivants, attendrissants. Le monstre prend ici plusieurs visages. Par Noémie Truffaut. (dès 6 ans)
+À la [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/spectacles/spectacle-le-bal-des-monstres-biblio-fil-1138305_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="Spectacle Le Bal des Monstres - Biblio&#039;fil" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1214051" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/spectacles/spectacle-musical-allegrias-10-ans-deja-1214051_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Spectacle Musical "Allégrias 10 Ans Déjà"</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 21/11/2025 au 23/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Bouvron</span><span class="d-block description font-size-14 lh-sm">
+Revivez les meilleurs moments de la troupe au travers de leurs plus beaux spectacles.
+Allegrias, c’est déjà 10 ans de folie et de partage grâce à vous, public&nbsp;! Vous [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/spectacles/spectacle-musical-allegrias-10-ans-deja-1214051_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="Spectacle Musical Allégrias 10 Ans Déjà" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1129572" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/musique-et-concerts-96_B" class="lh-sm">Concerts à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/concerts/candlelight-hommage-a-adele-1129572_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Candlelight&nbsp;: Hommage à Adele</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 22/11/2025</span><a href="https://www.jds.fr/nantes/salles-spectacle/salle-josephine-b-20862_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Salle Joséphine B. - Nantes</a><span class="d-block description font-size-14 lh-sm">Candlelight, c'est une expérience musicale magique dans de magnifiques lieux éclairés à la bougie. Achète tes billets dès maintenant pour ce concert Candlelight&nbsp;: [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://pdt.tradedoubler.com/click?a(3419081)p(354825)product(103801-407241)ttid(3)url(https%3A%2F%2Ffeverup.com%2Fm%2F407241)" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/concerts/candlelight-hommage-a-adele-1129572_A"><img loading="lazy" src="https://www.jds.fr/medias/image/candlelight-hommage-a-adele-695824-180-180.webp" width="180" height="180" alt="Candlelight : Hommage à Adele" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1129191" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/musique-classique-89_B" class="lh-sm">Musique classique à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/concerts/musique-classique/candlelight-les-4-saisons-de-vivaldi-1129191_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Candlelight&nbsp;: Les 4 Saisons de Vivaldi</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 22/11/2025</span><a href="https://www.jds.fr/nantes/salles-spectacle/salle-josephine-b-20862_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Salle Joséphine B. - Nantes</a><span class="d-block description font-size-14 lh-sm">Candlelight, c'est une expérience musicale magique dans de magnifiques lieux éclairés à la bougie à Nantes. Achète tes billets dès maintenant et redécouvre Les 4 Saisons de [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://pdt.tradedoubler.com/click?a(3419081)p(354825)product(103801-120496)ttid(3)url(https%3A%2F%2Ffeverup.com%2Fm%2F120496)" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/concerts/musique-classique/candlelight-les-4-saisons-de-vivaldi-1129191_A"><img loading="lazy" src="https://www.jds.fr/medias/image/candlelight-les-4-saisons-de-vivaldi-695626-180-180.webp" width="180" height="180" alt="Candlelight : Les 4 Saisons de Vivaldi" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="740218" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/nantes/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Nantes</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/nantes/concerts/chanson-francaise/helldebert-enfantillages-666-tournee-740218_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Helldebert - Enfantillages 666 - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 22/11/2025</span><a href="https://www.jds.fr/nantes/saint-herblain/salles-spectacle/zenith-de-nantes-14931_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Nantes - Saint-Herblain</a><span class="d-block description font-size-14 lh-sm">Helldebert - Enfantillages 666 - Tournée en concert à Nantes (Zénith de Nantes Saint-Herblain), le 22 novembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=39592238288&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/nantes/concerts/chanson-francaise/helldebert-enfantillages-666-tournee-740218_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F66%2F19%2Fhelldebert---enfantillages-666-tickets_220827_1989188_222x222.jpg&feedId=23455&k=f3f978b085458a8a140813434c847c53e1ec473b" width="180" height="180" alt="Helldebert - Enfantillages 666 - Tournée" /></a></div></div></li>
+</ul>
+</div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/nantes/agenda/?&amp;page=8"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/nantes/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/nantes/agenda/?&amp;page=8">8</a><span class="page d-inline-block mx-1 active mx-1">9</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/nantes/agenda/?&amp;page=10">10</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/nantes/agenda/?&amp;page=43">43</a></div>
+<a class="lien_next" href="https://www.jds.fr/nantes/agenda/?&amp;page=10"><i class="bi bi-chevron-right"></i></a></div>
+<div class="gp_div_affiche" data-id="0" data-id-format="69"></div>
+</div><div id="content_right" class=""><hr class="d-md-none my-5"><div class="wrapper_gp_div mb-4"><div class="regie_18"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 - HAUT -->
+<ins id="pub_1635" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="7598382131"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1635" data-id-format="18"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1635', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '18', 'non_interaction': true }); } });</script>
+</div>
+</div><div class="encart-newsletter d-none d-md-block p-4 bg-light my-5"><p class="mt-0 mb-3 h2">Newsletter JDS Nantes</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p><form id="form_newsletter_6915ea226d6a5" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="69160187034d8" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915ea226d6a5_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" selected>44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915ea226d6a5_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915ea226d6a5_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915ea226d6a5_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915ea226d6a5_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915ea226d6a5 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915ea226d6a5_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915ea226d6a5 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915ea226d6a5_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915ea226d6a5 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915ea226d6a5_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915ea226d6a5_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915ea226d6a5 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915ea226d6a5',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915ea226d6a5").serialize();
+        $('form#form_newsletter_6915ea226d6a5 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915ea226d6a5 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915ea226d6a5 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915ea226d6a5 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter sidebar',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915ea226d6a5 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915ea226d6a5 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script></div><div class="wrapper_gp_div mb-2 sticky"><div class="regie_29"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 BAS -->
+<ins id="pub_1636" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="9513867524"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1636" data-id-format="29"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1636', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '29', 'non_interaction': true }); } });</script>
+</div>
+</div></div></div></div></div><footer id="footer" class="mt-5 px-3">    
+    <div class="container">     
+    <div class="row">
+        
+        <div class="col-md-6 col-lg-4 order-md-6 offset-lg-1">
+            <div id="footer_newsletter" class="p-4 bg-light full-width-sm mb-5">                                  
+                <p class="mt-0 mb-3 h2">Newsletter JDS Nantes</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p>                         
+                <form id="form_newsletter_6915ea226d717" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="69160187034d8" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915ea226d717_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" selected>44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915ea226d717_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915ea226d717_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915ea226d717_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915ea226d717_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915ea226d717 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915ea226d717_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915ea226d717 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915ea226d717_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915ea226d717 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915ea226d717_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915ea226d717_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915ea226d717 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915ea226d717',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915ea226d717").serialize();
+        $('form#form_newsletter_6915ea226d717 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915ea226d717 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915ea226d717 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915ea226d717 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter footer',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915ea226d717 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915ea226d717 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script>         
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 order-md-first">
+            <a class="logo d-block mx-auto mx-lg-0" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a>
+
+            
+            <p class="my-4 fw-bold text-center text-md-start">Le JDS Nantes, c’est des sorties (concerts, humour…) et des bons plans en tous genres (resto, shopping, événements locaux…) au plus près de chez vous.</p>
+            
+                
+                
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <span class="font-size-14">Téléchargez l'appli JDS : </span>
+                <a href="https://market.android.com/details?id=fr.jds.app" class="mx-1" target="_blank"><i class="bi bi-android2"></i></a><a href="https://itunes.apple.com/fr/app/jds-les-sorties-en-alsace/id467323730?mt=8" class="mx-1" target="_blank"><i class="bi bi-apple"></i></a>   
+                </p>
+                
+            <hr class="my-5 d-md-none">
+        </div>
+        <div class="col-md-12 col-lg-3 order-md-11 offset-lg-1">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Organisateurs</p>
+                    <p class="fw-bold">Publiez votre événement sur le site jds.fr</p>                
+                    <ul class="text-gray-700 mt-2">
+                        <li>Publiez gratuitement votre événement dans l’agenda via notre <a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=footer&utm_campaign=link_publier_info_text">espace organisateur</a></li>
+                        <li>Bénéficiez d'une visibilité auprès de nos 3&nbsp;000&nbsp;000 visiteurs mensuels !</li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://pro.jds.fr" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je publie mon événement</a></p>
+
+                    <hr class="my-5 d-md-none d-lg-block">
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Annonceurs</p>
+                    <p class="fw-bold">Discutons ensemble de votre communication</p>          
+                    <ul class="text-gray-700 mt-2">
+                        <li>Promouvoir au mieux votre événement ou votre offre</li>
+                        <li>3&nbsp;000&nbsp;000 visiteurs mensuels <a href="https://www.jds.fr/magazine/actu-magazine/audience-jds-169974_A">(tout savoir sur l'audience du JDS)</a></li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://www.jds.fr/blog/" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je découvre les solutions</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 order-md-12">
+            <hr class="my-5">
+
+            <ul class="list-unstyled font-size-14 d-lg-flex justify-content-between">
+            <li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/journal-des-spectacles-magazine-mulhouse-colmar-haut-rhin-alsace-837_A">Qui sommes-nous ?</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/mentions-legales/">Infos légales / Affiliation</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/cookies/">Cookies</a></li><li class="mb-1 me-2"><a href="javascript:Didomi.preferences.show()">Modifier mes choix de cookies</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/comment-vous-desabonner-des-notifications-jds-340946_A">Se désabonner des notifications</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/contact/">Nous contacter</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/offres-emploi-mulhouse-alsace/">Emploi : nous rejoindre</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/">Blog</a></li>  
+            </ul>
+
+            <p class="font-size-14">Copyright 2008-2025 jds.fr</p>
+        </div>
+    </div> <!-- fin row -->        
+    </div> <!-- fin container -->
+</footer><div id="search-form-menu-container" class="search-form-menu-container shadow-lg bg-light hidden text-center py-3 py-lg-5">
+    <div class="container px-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-bold font-size-26">Rechercher</span>
+            <span class="cursor-pointer d-block search-form-menu-close text-primary" onclick="toggleSearchMenu();"><i class="bi bi-x-circle me-1"></i> Fermer</span>
+        </div>
+        <div
+            id="search-app"
+            data-endpoint="/ajax/search.php"
+            data-placeholder-text="ex. : concert demain à ..."
+            data-index-event="jds_event"
+            data-index-city="jds_city"
+            data-index-venue="jds_venue"
+            data-index-article="jds_article"
+            data-index-artist="jds_artist"
+            data-current-city-id="1187" data-current-city-name="Nantes"         ></div>
+    </div>
+</div>
+
+<div id="header-city-dropdown-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <p class="modal-title m-0">Choisissez une ville spécifique</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="ville-selector-mode" value="default" id="ville-selector-mode" />
+                <input type="text" class="form-control form-control-lg shadow-lg rounded-3" id="ville-selector-modal" placeholder="Entrez le nom de votre ville">
+                <div id="ville-selector-container-modal"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer>
+$(document).ready(function() {
+    $('#ville-selector-modal').keyup(function() {
+        if($(this).val().length==0) { $("#ville-selector-container-modal").html(""); return; }
+        if($(this).val().length<2) { return; }
+
+        $.post("/ajax/recherche_ville_fonction.php", { term: $(this).val(), mode:$('input[name="ville-selector-mode"]').val() })
+        .done(function(data) {
+
+            $("#ville-selector-container-modal").html('<p class="mt-4">Cliquez sur votre ville :</p><ul class="list-unstyled font-size-16"></ul>');
+            obj=JSON.parse(data);
+            obj.forEach(function(item){
+            $("#ville-selector-container-modal").find("ul").append('<li class="p-3 border-bottom"><a href="'+item.url+'" class="text-dark"><i class="bi bi-geo-fill text-primary me-1"></i> '+item.label+'</a></li>');
+        });
+        });
+    }); 
+});
+</script>
+
+</div><script defer src="/libs/jquery/magnific-popup/jquery.magnific-popup.min.js?v=131"></script><script defer src="/scripts/slick.min.js?v=131"></script><script defer src="/libs/choices/scripts/choices.js?v=131"></script><script defer src="/libs/lightbox2/js/lightbox.min.js?v=131"></script><script defer src="/scripts/functions_footer.js?v=131"></script><script>const { createApp, ref, computed, watch, onMounted, onBeforeUnmount, nextTick, reactive } = Vue;</script><script src="/scripts/search.app.js?v=131"></script><script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-messaging-compat.js"></script>
+<script>
+const firebaseConfig = {
+    apiKey: "AIzaSyBjBC01qlzGVLYWWE8D0rrOzL2cSfIf7MQ",
+    authDomain: "journal-des-spectacles-dd5d0.firebaseapp.com",
+    databaseURL: "https://journal-des-spectacles-dd5d0.firebaseio.com",
+    projectId: "journal-des-spectacles-dd5d0",
+    storageBucket: "journal-des-spectacles-dd5d0.appspot.com",
+    messagingSenderId: "37707045198",
+    appId: "1:37707045198:web:e58879e2e7f9adf0"
+  };
+const vapidKey = "BB2gRQtko-8CqzZbrzzlGBwMim_ThaPkNdzqi780Y7ku5VmG_E_DwFJnrJXB7_pNJKn9UTbIchVKfijBHNteuu8";
+  
+firebase.initializeApp(firebaseConfig);
+const messaging = firebase.messaging();
+
+var browserName = (function (agent) {        
+    switch (true) {
+        case agent.indexOf("edge") > -1: return "Edge"; // ms
+        case agent.indexOf("edg/") > -1: return "Edge"; // (chromium based)
+        case agent.indexOf("chrome") > -1 && !!window.chrome: return "Chrome";
+        case agent.indexOf("firefox") > -1: return "Firefox";
+        case agent.indexOf("safari") > -1: return "Safari";
+        default: return "other";
+    }
+})(window.navigator.userAgent.toLowerCase());
+    
+function fcm_resetUI() { 
+    if(!isTokenSentToServer()) {
+        if(window.navigator.userAgent.toLowerCase().indexOf('iphone')!==-1) { return; } // fix bug safari iphone    
+        if(browserName=='Chrome') { $('#web_push_dialog').addClass('chrome'); }
+        if(browserName=='Edge') { $('#web_push_dialog').addClass('edge'); }
+        if(browserName=='Firefox') { $('#web_push_dialog').addClass('firefox'); }
+        if(Notification.permission=='default') {
+            if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+        }
+        else if(Notification.permission=='granted') {
+            messaging.getToken({ vapidKey:vapidKey }).then((currentToken) => {   
+                                if (currentToken) {
+                    sendTokenToServer(currentToken);
+                } else {
+                  setTokenSentToServer(false);
+                  if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+                }
+            }).catch((err) => {
+                
+                setTokenSentToServer(false);
+            });
+        }    
+    }
+}
+//window.fcm_resetUI = fcm_resetUI;
+function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+        setTokenSentToServer(true);
+        $.post( "/ajax/firebase_register_v2.php",  { token: currentToken, dpt:'44' });      
+        if(typeof gtag=="function") {
+            gtag("event", "subscription", {
+                "event_category" : "Firebase",
+                "event_label" : "Web push",
+                "non_interaction": true
+            });            
+        }
+    } 
+}
+function isTokenSentToServer() {
+    var web_push_cookie = $.cookie('web_push');       
+    if(typeof web_push_cookie === 'undefined' || web_push_cookie===false) return false;
+    return true;
+}
+function setTokenSentToServer(sent) {
+    if(sent) $.cookie('web_push',true, {path: '/',domain:'.jds.fr'}); 
+    else $.cookie('web_push',false, {path: '/',domain:'.jds.fr'}); 
+}
+function requestPushDialog() {
+    $.magnificPopup.open({
+        items: {
+            src: '#web_push_dialog', // can be a HTML string, jQuery object, or CSS selector
+            type: 'inline'
+          },
+        alignTop : true,
+        showCloseBtn : true,
+        //closeOnBgClick: ((browserName!='Firefox' &&  && !$('#web_push_dialog').hasClass('mobile'))?false:true),
+        callbacks: {
+            open: function() {                 
+                $('.mfp-bg').css('position','fixed');      
+                if(browserName!='Firefox') {
+                    if(!$('#web_push_dialog').hasClass('mobile')) {
+                        $('.mfp-bg').css('opacity',.0).css('width','auto').css('height','auto');
+                        $('html').css('overflow','auto');  
+                        $('.mfp-wrap').css('width','auto').css('height','auto');
+                    }
+                    else {
+                        $('html').css('overflow','hidden');  
+                    }
+                }
+                else {
+                    $('.mfp-bg').css('opacity',.75).css('background','#fff');
+                }
+
+            },
+            close: function() {
+                $('html').css('overflow','auto'); 
+            }
+        }    
+    }); 
+    if(browserName!='Firefox') { requestPermission(); } // sur firefox, l'ouverture de permission automatique ne marche pas alors on remet les boutons
+}
+function requestPermission() {   
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+            fcm_resetUI();
+            $.magnificPopup.close();
+      } else {
+            $.magnificPopup.close();
+      }
+    });
+}
+$(document).on('click','#web_push_dialog button',function() {
+    //firefox
+    if($(this).hasClass('accept')) requestPermission();
+    if($(this).hasClass('deny')) setTokenSentToServer(true);    
+    
+    $.magnificPopup.close();       
+});
+</script>
+
+<div id="web_push_dialog" class="mfp-hide desktop">
+    <div class="popup-content p-3">
+        <img class="logo-mobile" loading="lazy" src="/images/new/logo-jds.svg?v=131" width="40" height="40" alt="jds.fr">
+        <p class="popup-title mb-3"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+        <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+        <p class="text-gray-600 font-size-14 mb-0">Autoriser les notifications pour continuer.</p>
+        <hr class="hide-mobile">
+        <div class="p-3 hide-mobile text-center bg-primary"><img loading="lazy" src="/images/new/logo-jds-white.svg?v=131" width="100" height="100" alt="jds.fr"></div>
+        <div class="arrow text-gray-800"><i class="bi bi-arrow-down-circle-fill"></i></div>
+    </div>
+    <div class="popup-content-firefox p-3">
+        <div class="row">
+            <div class="col-md-3 pr-0 col-3"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" class="popup-logo"></div>
+            <div class="col-md-9 col-9">
+              <p class="popup-title"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+              <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+              <p class="text-gray-600 font-size-14 mb-3">Une seconde fenêtre va s'ouvrir vous invitant à autoriser les notifications</p>
+              <div class="popup-footer text-right"><button class="btn btn-outline-primary rounded-pill btn-sm me-3 deny">Refuser</button><button class="btn btn-primary rounded-pill btn-sm me-3 accept">Autoriser</button></div>
+            </div>
+        </div>
+    </div>
+</div><script type="didomi/javascript" data-purposes="select_basic_ads" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4984827051088801"
+     crossorigin="anonymous"></script></body></html>

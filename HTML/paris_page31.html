@@ -1,0 +1,642 @@
+<!DOCTYPE html><html lang="fr"><head><script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+      else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+        var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+        if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e,tgt){
+        var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+tgt;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("9d946103-8843-4a4e-ab0b-8e61ea84e891","Qr7JnTUV")})();</script>
+
+<script> 
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(function (Didomi) { 
+        // Call other functions on the SDK
+
+        // Refresh de la page en cas de changement du consentement
+        window.didomiEventListeners = window.didomiEventListeners || [];
+        window.didomiEventListeners.push({
+            event: 'consent.changed',
+            listener: function (context) {
+                gp_maj();
+            }
+        });
+
+        // Google advertising products
+        Didomi.getObservableOnUserConsentStatusForVendor('google')
+        .filter(function (status) { return status !== undefined })
+        .subscribe(function (consentStatus) {
+            if (consentStatus === undefined || consentStatus === false) {
+                // on masque les encarts pubs vides
+                (function() {     
+                    var div_regies = document.getElementsByClassName('wrapper_gp_div');
+                    
+                    setTimeout(function() { // on fait un settimeout sinon le length n'est pas juste...                   
+                        for (let i = 0; i < div_regies.length; i++) {                  
+                            if (div_regies[i].innerHTML.indexOf('regie_') > -1) {                           
+                              div_regies[i].style.display="none";
+                            }
+                        }
+                        
+                    },400);
+                    
+                    
+                })();
+            }
+        }); 
+        
+     
+
+    });
+    </script> 
+<meta charset="UTF-8" />
+<title>Paris - L&#039;agenda des spectacles, manifestations, concerts - Page 31</title>
+<meta name="description" content="Paris - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 31" />
+<link rel="canonical" href="https://www.jds.fr/paris/agenda/?page=31" />
+<meta name="p:domain_verify" content="9efecdd4eddf0844d5703f41d2dc7ca7"/>
+<meta property="fb:app_id" content="638077278167784" />
+<meta property="fb:pages" content="50813882504">
+<meta property="og:title" content="Paris - L&#039;agenda des spectacles, manifestations, concerts - Page 31" />
+<meta property="og:description" content="Paris - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 31" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.jds.fr/paris/agenda/?page=31" />
+<meta property="og:site_name" content="jds.fr" />
+<meta property="og:image" content="https://www.jds.fr/images/header_logo_120.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="364" />
+<meta property="og:image:height" content="364" />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https:\/\/www.jds.fr\/","name":"Accueil"},{"@type":"ListItem","position":2,"item":"https:\/\/www.jds.fr\/paris\/","name":"Paris"},{"@type":"ListItem","position":3,"name":"Agenda"}]}</script>
+
+<meta name="robots" content="noindex,follow" />
+<link rel="prev" href="https://www.jds.fr/paris/agenda/?&amp;page=30" /><link rel="next" href="https://www.jds.fr/paris/agenda/?&amp;page=32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+<link rel="stylesheet" href="/css/custom.css?v=131">
+<link rel="preload" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131"></noscript>
+<link rel="preload" href="/libs/lightbox2/css/lightbox.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/lightbox2/css/lightbox.min.css?v=131"></noscript>
+<link rel="preload" href="/css/slick-theme.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick-theme.css?v=131"></noscript>
+<link rel="preload" href="/css/slick.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick.css?v=131"></noscript>
+<link rel="preload" href="/libs/choices/styles/choices.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/choices/styles/choices.min.css?v=131"></noscript>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#e50b47">
+<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e50b47">
+<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><link rel="manifest" href="/manifest.json"></head><body class="version_a  "><script async src="https://www.googletagmanager.com/gtag/js?id=G-6WVELE5WG9"></script>
+<script type="didomi/javascript" data-vendor="c:googleana-4TXnJigR">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+        dataLayer.push(arguments);
+        if (arguments[0] === 'js') {
+            setTimeout(function() {
+            window.dispatchEvent(new Event('gtag_loaded'));
+        }, 1000);
+        }
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6WVELE5WG9', {
+          'cookie_expires': 33696000,
+          'transport_type': 'beacon',
+          'dimension1': '0','dimension2': '75','dimension3': '2','dimension4': '0','dimension5': '0','dimension6': '0','dimension7': '','dimension8': 'a','dimension9': '0',     
+    });
+</script><script src="/libs/jquery-3.7.1.min.js"></script><script defer src="/libs/bootstrap/js/popper.min.js"></script><script defer src="/libs/bootstrap/js/bootstrap.min.js"></script><script defer src="/libs/jquery/js/jquery.cookie.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.date.js"></script><script defer src="/libs/jquery/pickadate.js/lib/translations/fr_FR.js"></script><script src="/libs/vue.global.prod.js"></script><script src="/libs/axios.min.js"></script><script src="/ads-checker.js"></script><script defer src="/scripts/functions.js?v=131"></script><script>var gp_maj_done=false;
+var param_gp=[];param_gp['id_newsletter']='0';param_gp['type']='0';param_gp['sousrub']='0';param_gp['rub']='2';param_gp['rub_rub']='2';param_gp['page']='31';param_gp['mobile_version']='0';param_gp['detail_type']='';param_gp['detail_id']='0';param_gp['web_push_site']='';param_gp['web_push_id']='';param_gp['current_departement']='75';$(document).ready(function() {
+    if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) gp_maj();});</script><div class="gp_div_affiche" data-id="0" data-id-format="24"></div>
+<div id="global" class="p-0"><div id="header" class="bg-white header"><div class="d-flex justify-content-between align-items-center px-2rem header-inner-wrapper text-primary container"><div class="header-logo mb-1"><a class="d-block" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a></div><div class="header-city-inline-selector d-flex me-auto font-size-22 ms-4 align-items-center lh-1"><a href="https://www.jds.fr/paris/" class="">Paris</a><span class="ms-auto ms-md-0 d-block ps-2 cursor-pointer" onclick="toggleCityMenu();"><i class="bi bi-chevron-down"></i></span></div><div class="header-publish ms-md-auto me-md-5"><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=header&utm_campaign=link_publier_info" class="btn btn-outline-primary rounded-pill d-none d-md-inline shadow-sm"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><div class="header-menu font-size-36 cursor-pointer ps-3" onclick="toggleMenu()"><i class="bi bi-list"></i></div></div></div>
+<!-- NAVBAR -->
+<div id="header-navbar" class="bg-light-primary header-navbar navbar-v2">
+    <div class="px-2rem header-navbar-inner-wrapper container font-size-14">
+        <div class="navbar-v2-item d-flex">
+            <div class="flex-fill">
+                <span onclick="toggleSearchMenu();" class="bg-primary text-white d-block px-3"><span class="search-btn cursor-pointer"><span><i class="bi bi-search me-2"></i> Rechercher</span></span>
+            </div>
+            <div class="flex-fill"><a href="https://www.jds.fr/paris/agenda/agenda-du-jour/-aujourdhui_JPJ" class="" data-event-label="Aujourd'hui"><span><i class="cf icon-aujourdhui">&#xe80f;</i> Aujourd'hui</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/paris/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="" data-event-label="Spectacles"><span><i class="cf icon-spectacles">&#xe80c;</i> Spectacles</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/paris/agenda/musique-et-concerts-96_B" class="" data-event-label="Concerts"><span><i class="cf icon-concert">&#xe801;</i> Concerts</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/paris/agenda/manifestations-fetes-festivals-137_B" class="" data-event-label="Animations"><span><i class="cf icon-manifestations">&#xe807;</i> Animations</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/paris/agenda/foire-salon-puces-bourses-468_B" class="" data-event-label="Salons / Puces"><span><i class="cf icon-foires">&#xe805;</i> Salons / Puces</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/paris/agenda/sports-145_B" class="" data-event-label="Sports"><span><i class="cf icon-sport">&#xe810;</i> Sports</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/paris/agenda/expositions-471_B" class="" data-event-label="Expos"><span><i class="cf icon-expos">&#xe802;</i> Expos</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/paris/agenda/enfants-94_B" class="" data-event-label="Famille"><span><i class="cf icon-famille">&#xe813;</i> Famille</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/paris/agenda/soirees-469_B" class="" data-event-label="Soirées"><span><i class="cf icon-soirees">&#xe80b;</i> Soirées</span></a></div>        </div>
+    </div>
+</div>
+<div id="menu" class="menu bg-white px-2rem py-5 hidden"><div class="text-center"><button class="btn btn-primary btn-lg rounded-pill d-block w-100 menu-link" onclick="toggleSearchMenu();" data-event-label="open-search-menu"><i class="bi bi-search me-2"></i> Rechercher</button><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=menu&utm_campaign=link_publier_info" class="btn btn-outline-primary my-4 btn-lg rounded-pill d-block w-100" data-event-label="Espace pro"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/paris/agenda/agenda-du-jour/-aujourdhui_JPJ" class="text-dark hover-text-primary cursor-pointer" data-event-label="Aujourd'hui">Aujourd'hui à Paris</a></li><li><a href="https://www.jds.fr/paris/agenda/evenements/" class="text-dark hover-text-primary" data-event-label="Evénements">Evénements</a></li><li><a href="https://www.jds.fr/paris/agenda/manifestations-fetes-festivals-137_B" class="text-dark hover-text-primary" data-event-label="Manifestations">Manifestations</a></li><li><a href="https://www.jds.fr/paris/agenda/foire-salon-puces-bourses-468_B" class="text-dark hover-text-primary" data-event-label="Foires & salons">Foires & salons</a></li><li><a href="https://www.jds.fr/paris/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="text-dark hover-text-primary" data-event-label="Spectacles">Spectacles</a></li><li><a href="https://www.jds.fr/paris/agenda/musique-et-concerts-96_B" class="text-dark hover-text-primary" data-event-label="Concerts">Concerts</a></li><li><a href="https://www.jds.fr/paris/agenda/sports-145_B" class="text-dark hover-text-primary" data-event-label="Sports">Sports</a></li><li><a href="https://www.jds.fr/paris/agenda/soirees-469_B" class="text-dark hover-text-primary" data-event-label="Soirées">Soirées</a></li><li><a href="https://www.jds.fr/paris/agenda/enfants-94_B" class="text-dark hover-text-primary" data-event-label="Sorties famille">Sorties famille</a></li><li><a href="https://www.jds.fr/paris/agenda/expositions-471_B" class="text-dark hover-text-primary" data-event-label="Expos">Expos</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/paris/magazine/" class="text-dark hover-text-primary" data-event-label="Actus">Actus à Paris</a></li><li><a href="https://www.jds.fr/paris/annuaire/" class="text-dark hover-text-primary" data-event-label="Annuaire">Annuaire tourisme & loisirs</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/newsletter-archives/toutes-les-newsletter-jds-fr" class="text-dark hover-text-primary" data-event-label="Newsletters">Newsletter des sorties</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/blog/" class="text-dark hover-text-primary" data-event-label="Annonceurs">Annonceurs</a></li></ul></div><div id="header-city-dropdown" class="header-city-dropdown bg-secondary py-2 text-white px-2rem font-size-16 hidden"><div class="container"><div class="py-2 cursor-pointer text-uppercase" onclick="$('#header-city-dropdown-modal').modal('show'); $('#ville-selector-modal').focus(); $('input[name=&quot;ville-selector-mode&quot;]').val('default')"><i class="bi bi-building-add me-1"></i> Une autre ville</div><div class="py-1"><a href="https://www.jds.fr/bordeaux/" class="text-white text-uppercase">Bordeaux</a></div><div class="py-1"><a href="https://www.jds.fr/colmar/" class="text-white text-uppercase">Colmar</a></div><div class="py-1"><a href="https://www.jds.fr/dijon/" class="text-white text-uppercase">Dijon</a></div><div class="py-1"><a href="https://www.jds.fr/lille/" class="text-white text-uppercase">Lille</a></div><div class="py-1"><a href="https://www.jds.fr/lyon/" class="text-white text-uppercase">Lyon</a></div><div class="py-1"><a href="https://www.jds.fr/marseille/" class="text-white text-uppercase">Marseille</a></div><div class="py-1"><a href="https://www.jds.fr/metz/" class="text-white text-uppercase">Metz</a></div><div class="py-1"><a href="https://www.jds.fr/montpellier/" class="text-white text-uppercase">Montpellier</a></div><div class="py-1"><a href="https://www.jds.fr/mulhouse/" class="text-white text-uppercase">Mulhouse</a></div><div class="py-1"><a href="https://www.jds.fr/nancy/" class="text-white text-uppercase">Nancy</a></div><div class="py-1"><a href="https://www.jds.fr/nantes/" class="text-white text-uppercase">Nantes</a></div><div class="py-1"><a href="https://www.jds.fr/nice/" class="text-white text-uppercase">Nice</a></div><div class="py-1"><a href="https://www.jds.fr/paris/" class="text-white text-uppercase">Paris</a></div><div class="py-1"><a href="https://www.jds.fr/reims/" class="text-white text-uppercase">Reims</a></div><div class="py-1"><a href="https://www.jds.fr/rennes/" class="text-white text-uppercase">Rennes</a></div><div class="py-1"><a href="https://www.jds.fr/strasbourg/" class="text-white text-uppercase">Strasbourg</a></div><div class="py-1"><a href="https://www.jds.fr/toulouse/" class="text-white text-uppercase">Toulouse</a></div><div class="mt-5 py-1 cursor-pointer" onclick="toggleCityMenu()"><u><i class="bi bi-x-circle me-1"></i> Fermer le menu</u></div></div></div><div id="global-container"><div id="global-container-inner-wrapper" class="container"><!--[if lte IE 9]>
+<div class="alert alert-warning" role="alert">
+<p class="mb-0">Vous utilisez une très ancienne version de navigateur Internet, ce qui impacte négativement votre expérience de navigation sur le site du JDS et sur Internet en général. Nous vous recommandons de mettre à jour votre navigateur ou d'en installer un autre en <a href="https://browsehappy.com/?locale=fr" target="_blank">cliquant ici</a>.</p>
+</div>
+<![endif]--><div class="text-center mb-5 mx-auto leaderboard"><div class="wrapper_gp_div nobg"><div class="regie_2">
+<!-- Leaderboard 1000 x 300 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:1000px;height:300px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="4079211116"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="3348" data-id-format="2"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3348', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '2', 'non_interaction': true }); } });</script>
+</div>
+</div></div><div id="content_container" class="d-md-flex justify-content-between"><div id="content_left"><div id="chemin" class="ariane mb-3"><a href="https://www.jds.fr/">Accueil</a><a href="https://www.jds.fr/paris/">Paris</a></div><div class="header-ville no-form is_page_ville ville_75 agglo_481 "><h1>Paris&nbsp;: Agenda et événements</h1><button onclick="toggleSearchMenu()" class="btn btn-primary btn-lg mx-auto d-block rounded-pill shadow-lg my-4" data-position="page-resultats-modifier-recherche-top"><i class="bi bi-search me-2"></i> Rechercher</button></div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/paris/agenda/?&amp;page=30"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/paris/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/paris/agenda/?&amp;page=30">30</a><span class="page d-inline-block mx-1 active mx-1">31</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/paris/agenda/?&amp;page=32">32</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/paris/agenda/?&amp;page=355">355</a></div>
+<a class="lien_next" href="https://www.jds.fr/paris/agenda/?&amp;page=32"><i class="bi bi-chevron-right"></i></a></div>
+<div class="mt-5"><ul class="mt-3 list-unstyled list-articles-v2">
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1074051" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/parc-asterix-peur-sur-le-parc-1074051_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Parc Astérix: Peur sur le Parc&nbsp;!</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Jusqu'au 16/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Plailly</span><span class="d-block description font-size-14 lh-sm">
+Ici, il n’y a pas que les attractions qui font crier&nbsp;!. 
+Comme nos Gaulois sont de petits plaisantins, ils vous réservent bien des sursauts avec Peur sur le Parc du 4 [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/parc-asterix-peur-sur-le-parc-1074051_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="Parc Astérix: Peur sur le Parc !" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1151205" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/manifestations/ateliers/premier-pas-en-ecriture-1151205_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Premier pas en écriture</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2025</span><a href="https://www.jds.fr/paris/association-culturelle-et-de-loisirs/la-maison-de-la-conversation-20667_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Maison de la Conversation - Paris</a><span class="d-block description font-size-14 lh-sm">« Premier pas en écriture&nbsp;» est un atelier d'écriture réservé aux femmes.
+
+« Premier pas en écriture&nbsp;» est un atelier pensé comme une bulle de liberté où [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/manifestations/ateliers/premier-pas-en-ecriture-1151205_A"><img loading="lazy" src="https://www.jds.fr/medias/image/premier-pas-en-ecriture-709078-180-180.webp" width="180" height="180" alt="Premier pas en écriture" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="870225" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/manifestations/scavenger-hunt-crime-at-the-palais-royal-870225_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Scavenger Hunt : Crime At The Palais-Royal</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 15/11/2025 au 13/12/2025</span><a href="https://www.jds.fr/paris/parc-square-et-jardin/square-montholon-22446_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Square Montholon - Paris</a><span class="d-block description font-size-14 lh-sm">Discover the hidden passages of Paris through a surprising criminal investigation!
+
+Do you love adventure? Do you love exploring the city? Discover Paris like you haven’t before [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://pdt.tradedoubler.com/click?a(3419081)p(354825)product(103801-481827)ttid(3)url(https%3A%2F%2Ffeverup.com%2Fm%2F481827)" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/manifestations/scavenger-hunt-crime-at-the-palais-royal-870225_A"><img loading="lazy" src="https://www.jds.fr/medias/image/scavenger-hunt-crime-at-the-palais-royal-557355-180-180.webp" width="180" height="180" alt="Scavenger Hunt : Crime At The Palais-Royal" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1151210" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/danse-35_B" class="lh-sm">Danse à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/danse/thes-dansants-saison-2025-2026-1151210_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Thés dansants saison 2025-2026</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 15/11/2025 au 30/05/2026</span><a href="https://www.jds.fr/paris/centre-socio-culturel/centre-paris-anim-maurice-ravel-22691_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Centre Paris Anim' Maurice Ravel</a><span class="d-block description font-size-14 lh-sm">
+Tout au long de l'année, le Centre Paris Anim' Maurice Ravel vous accueille pour des après-midi thés dansants ! Des moments conviviaux ouverts à toutes et à tous.
+
+Pour [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/danse/thes-dansants-saison-2025-2026-1151210_A"><img loading="lazy" src="https://www.jds.fr/medias/image/thes-dansants-saison-2025-2026-709083-180-180.webp" width="180" height="180" alt="Thés dansants saison 2025-2026" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1097393" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/theatre-23_B" class="lh-sm">Théâtre à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/theatre/un-spectacle-d-impro-hilarant-et-bluffant-a-deux-pas-d-odeon-1097393_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Un spectacle d'impro hilarant et bluffant à deux pas d'Odéon !</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 15/11/2025 au 13/06/2026</span><a href="https://www.jds.fr/paris/salles-spectacle/theatre-de-nesle-17943_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre de Nesle - Paris</a><span class="d-block description font-size-14 lh-sm">
+Accompagné·es de musique live, les comédien·nes improvisent sur vos propositions !. 
+Une question, une réponse et les impros démarrent à la vitesse de l'éclair : le [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://ticketmaster-fr.tm7516.net/c/3318096/427761/7516?u=https%3A%2F%2Fwww.ticketmaster.fr%2Ffr%2Fmanifestation%2Fimpro-billet%2Fidmanif%2F631184%2Fidtier%2F18864121&utm_medium=affiliate" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/theatre/un-spectacle-d-impro-hilarant-et-bluffant-a-deux-pas-d-odeon-1097393_A"><img loading="lazy" src="https://www.jds.fr/medias/image/un-spectacle-d-impro-hilarant-et-bluffant-a-deux-p-678067-180-180.webp" width="180" height="180" alt="Un spectacle d&#039;impro hilarant et bluffant à deux pas d&#039;Odéon !" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1166707" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/expositions-471_B" class="lh-sm">Expos à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/expos/visitez-la-bibliotheque-sainte-genevieve-sous-l-angle-de-l-astronomie-1166707_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Visitez la bibliothèque Sainte-Geneviève sous l'angle de l'astronomie</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 22/11/2025 au 20/12/2025</span><a href="https://www.jds.fr/paris/bibliotheque-et-mediatheque/bibliotheque-sainte-genevieve-22419_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Bibliothèque Sainte-Geneviève - Paris</a><span class="d-block description font-size-14 lh-sm">
+Dans le cadre de son année thématique Espace 2025, la bibliothèque Sainte-Geneviève vous propose des visites avec pour fil conducteur l'astronomie.
+Dans le cadre de l'année [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/expos/visitez-la-bibliotheque-sainte-genevieve-sous-l-angle-de-l-astronomie-1166707_A"><img loading="lazy" src="https://www.jds.fr/medias/image/visitez-la-bibliotheque-sainte-genevieve-sous-l-an-716887-180-180.webp" width="180" height="180" alt="Visitez la bibliothèque Sainte-Geneviève sous l&#039;angle de l&#039;astronomie" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1129569" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/musique-et-concerts-96_B" class="lh-sm">Concerts à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/concerts/candlelight-le-meilleur-du-metal-1129569_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Candlelight: Le meilleur du métal</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 27/02/2026 au 29/05/2026</span><a href="https://www.jds.fr/paris/sortie-culturelle/maison-de-l-ocean-22992_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Maison de l'Océan - Paris</a><span class="d-block description font-size-14 lh-sm">Candlelight est une expérience musicale magique dans de magnifiques lieux éclairés à la bougie. Achète tes billets dès maintenant pour ce concert Candlelight&nbsp;: Le [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://pdt.tradedoubler.com/click?a(3419081)p(354825)product(103801-407003)ttid(3)url(https%3A%2F%2Ffeverup.com%2Fm%2F407003)" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/concerts/candlelight-le-meilleur-du-metal-1129569_A"><img loading="lazy" src="https://www.jds.fr/medias/image/candlelight-le-meilleur-du-metal-695821-180-180.webp" width="180" height="180" alt="Candlelight: Le meilleur du métal" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1081776" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/musique-classique-89_B" class="lh-sm">Musique classique à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/concerts/musique-classique/bebe-concerts-salle-gaveau-paris-1081776_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Bébé Concerts - Salle Gaveau, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 30/11/2025 au 31/05/2026</span><a href="https://www.jds.fr/paris/salle-de-concert/salle-gaveau-15247_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Salle Gaveau - Paris</a><span class="d-block description font-size-14 lh-sm">Bébé Concerts - Salle Gaveau, Paris en concert à Paris (Salle Gaveau ), du 30 novembre 2025 au 31 mai 2026. Toutes les informations pratiques (tarifs, billetterie, plan de [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42568815943&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/concerts/musique-classique/bebe-concerts-salle-gaveau-paris-1081776_A"><img loading="lazy" src="https://www.jds.fr/medias/image/musique-classique-16582-180-180.webp" width="180" height="180" alt="Bébé Concerts - Salle Gaveau, Paris" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1175010" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/sports-145_B" class="lh-sm">Sports à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/sports/apc-catch-1175010_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Apc Catch</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 07/12/2025 au 05/07/2026</span><a href="https://www.jds.fr/paris/nanterre/location-de-salle/studio-jenny-17261_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Studio Jenny - Nanterre</a><span class="d-block description font-size-14 lh-sm">Apc Catch, un événement à voir à Paris (Studio Jenny Nanterre), du 7 décembre 2025 au 5 juillet 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42469581947&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/sports/apc-catch-1175010_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fe9%2F2d%2Fapc-catch-25-26-tickets_441446_3575215_222x222.jpg&feedId=23455&k=472f31f701793b3b9a7e8a62acc5bb73a395c711" width="180" height="180" alt="Apc Catch" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1094256" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/arlequine-magicienne-et-ventriloque-la-comedie-saint-michel-paris-1094256_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Arlequine, Magicienne et Ventriloque - la Comédie Saint-Michel, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 16/11/2025 au 04/01/2026</span><a href="https://www.jds.fr/paris/salle-de-concert-et-de-spectacle/la-comedie-st-michel-16594_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Comédie St-Michel - Paris</a><span class="d-block description font-size-14 lh-sm">Arlequine, Magicienne et Ventriloque - la Comédie Saint-Michel, Paris, un spectacle à voir à Paris (La Comédie St-Michel ), du 16 novembre 2025 au 4 janvier 2026. Toutes les [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42598986541&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/arlequine-magicienne-et-ventriloque-la-comedie-saint-michel-paris-1094256_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F33%2F4d%2Farlequine--magicienne-et-ventriloqu-tickets_384338_3219346_222x222.jpg&feedId=23455&k=daaf1a7c71b4670992254328403534f2b935547c" width="180" height="180" alt="Arlequine, Magicienne et Ventriloque - la Comédie Saint-Michel, Paris" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1086637" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/au-secours-le-prince-aubert-a-disparu-theatre-le-bout-paris-1086637_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Au Secours, le Prince Aubert A Disparu&nbsp;! - Théâtre le Bout, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 22/12/2025 au 11/04/2026</span><a href="https://www.jds.fr/paris/salle-de-concert-et-de-spectacle/theatre-le-bout-17402_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre le Bout - Paris</a><span class="d-block description font-size-14 lh-sm">Au Secours, le Prince Aubert A Disparu&nbsp;! - Théâtre le Bout, Paris, un spectacle à voir à Paris (Théâtre le Bout ), du 22 décembre 2025 au 11 avril 2026. Toutes les [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42598986563&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/au-secours-le-prince-aubert-a-disparu-theatre-le-bout-paris-1086637_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F70%2F89%2Fau-secours---le-prince-aubert-a-disparu---tickets_297395_2538937_222x222.jpg&feedId=23455&k=a27d2fd8e97e0d9605629e3bb5b55cda19462b51" width="180" height="180" alt="Au Secours, le Prince Aubert A Disparu ! - Théâtre le Bout, Paris" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1178998" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/humour-comedie-22_B" class="lh-sm">Humour à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/humour/black-out-comedie-montorgueil-paris-1178998_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Black-Out - Comédie Montorgueil, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 16/11/2025 au 25/01/2026</span><a href="https://www.jds.fr/paris/salles-spectacle/comedie-montorgueil-21568_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Comédie Montorgueil - Paris</a><span class="d-block description font-size-14 lh-sm">Black-Out - Comédie Montorgueil, Paris, un spectacle à voir à Paris (Comédie Montorgueil ), du 16 novembre 2025 au 25 janvier 2026. Toutes les informations pratiques (tarifs, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42487006686&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/humour/black-out-comedie-montorgueil-paris-1178998_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F52%2Fdb%2Fblack-out-tickets_442887_3583169_222x222.jpg&feedId=23455&k=70d126eeb1a9186e64ed3d65b6062f4ec5d5d168" width="180" height="180" alt="Black-Out - Comédie Montorgueil, Paris" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1152161" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/humour-comedie-22_B" class="lh-sm">Humour à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/humour/broder-theatre-bo-saint-martin-paris-1152161_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Broder - Théâtre Bo Saint-Martin, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 23/11/2025 au 07/12/2025</span><a href="https://www.jds.fr/paris/salle-de-concert-et-de-spectacle/theatre-bo-saint-martin-17291_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre BO Saint-Martin - Paris</a><span class="d-block description font-size-14 lh-sm">Broder - Théâtre Bo Saint-Martin, Paris, un spectacle à voir à Paris (Théâtre BO Saint-Martin ), les 23 novembre 2025 et 7 décembre 2025. Toutes les informations pratiques [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42606554374&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/humour/broder-theatre-bo-saint-martin-paris-1152161_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Ff9%2Fb9%2Fbroder-tickets_435828_3541032_222x222.jpg&feedId=23455&k=78a33a9b445f5c68fadde6ce68fc910b15c12b75" width="180" height="180" alt="Broder - Théâtre Bo Saint-Martin, Paris" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1143221" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/humour-comedie-22_B" class="lh-sm">Humour à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/humour/chez-prince-comedy-club-le-meilleur-du-stand-up-1143221_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Chez Prince Comedy Club&nbsp;: Le meilleur du stand-up</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 13/11/2025 au 31/12/2025</span><a href="https://www.jds.fr/paris/diner-spectacle-et-cabaret/chez-prince-comedy-club-23133_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Chez Prince Comedy Club - Paris</a><span class="d-block description font-size-14 lh-sm">
+Le Chez Prince Comedy Club est le nouveau temple de l'humour parisien. Situé en plein cœur du quartier de l'Odéon, il t'invite à découvrir chaque soir les étoiles montantes [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://pdt.tradedoubler.com/click?a(3419081)p(354825)product(103801-108313)ttid(3)url(https%3A%2F%2Ffeverup.com%2Fm%2F108313)" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/humour/chez-prince-comedy-club-le-meilleur-du-stand-up-1143221_A"><img loading="lazy" src="https://www.jds.fr/medias/image/chez-prince-comedy-club-le-meilleur-du-stand-up-704159-180-180.webp" width="180" height="180" alt="Chez Prince Comedy Club : Le meilleur du stand-up" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1047739" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/musique-classique-89_B" class="lh-sm">Musique classique à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/concerts/musique-classique/jeremy-hababou-unorthodox-pianist-1047739_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Jeremy Hababou - Unorthodox Pianist</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 26/11/2025 au 07/01/2026</span><a href="https://www.jds.fr/paris/salles-spectacle/palais-des-glaces-paris-15281_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Palais des glaces - Paris</a><span class="d-block description font-size-14 lh-sm">Jeremy Hababou - Unorthodox Pianist en concert à Paris (Palais des glaces - Paris ), du 26 novembre 2025 au 7 janvier 2026. Toutes les informations pratiques (tarifs, billetterie, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42598985365&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/concerts/musique-classique/jeremy-hababou-unorthodox-pianist-1047739_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fef%2Fb2%2Fjeremy-hababou-tickets_409230_3378451_222x222.jpg&feedId=23455&k=80aa080338cd423bd510e4f1175892e07a19694b" width="180" height="180" alt="Jeremy Hababou - Unorthodox Pianist" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1111007" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/jazz-184_B" class="lh-sm">Jazz à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/concerts/jazz/kristin-marion-french-ment-jazz-1111007_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Kristin Marion - French'Ment Jazz</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 14/12/2025 au 15/12/2025</span><a href="https://www.jds.fr/paris/sortir-en-boite/le-caveau-de-la-huchette-16724_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Caveau de la Huchette - Paris</a><span class="d-block description font-size-14 lh-sm">Kristin Marion - French'Ment Jazz en concert à Paris (Le Caveau de la Huchette ), les 14 décembre 2025 et 15 décembre 2025. Toutes les informations pratiques (tarifs, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42535368925&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/concerts/jazz/kristin-marion-french-ment-jazz-1111007_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F6d%2F6b%2Fkristin-marion-tickets_356265_3033340_222x222.jpg&feedId=23455&k=47d16dceb69ca22075d240447e28477e34e89126" width="180" height="180" alt="Kristin Marion - French&#039;Ment Jazz" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="816752" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/visite-guidee-143_B" class="lh-sm">Visites à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/manifestations/visites/l-enquete-du-pere-lachaise-visite-enquete-816752_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">L'Enquête du Père-Lachaise - Visite-Enquête</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 23/11/2025 au 21/12/2025</span><a href="https://www.jds.fr/paris/cimetiere/cimetiere-du-pere-lachaise-16238_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Cimetière du Père-Lachaise - Paris</a><span class="d-block description font-size-14 lh-sm">L'Enquête du Père-Lachaise - Visite-Enquête, un événement à voir à Paris (Cimetière du Père-Lachaise ), les 23 novembre 2025 et 21 décembre 2025. Toutes les informations [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42568816002&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/manifestations/visites/l-enquete-du-pere-lachaise-visite-enquete-816752_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fbd%2Fa8%2Fl-enqu-te-du-p-re-lachaise---visites-spectacles-tickets_354489_3022896_222x222.jpg&feedId=23455&k=42ce061b18249a1f3ed963df93599bd5d9f5521b" width="180" height="180" alt="L&#039;Enquête du Père-Lachaise - Visite-Enquête" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1112172" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/enfants-94_B" class="lh-sm">Sorties famille à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/sorties-famille/la-coccinelle-voyage-voyage-la-comedie-st-michel-paris-1112172_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">La Coccinelle Voyage Voyage - la Comédie St-Michel, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 16/11/2025 au 04/01/2026</span><a href="https://www.jds.fr/paris/salle-de-concert-et-de-spectacle/la-comedie-st-michel-16594_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Comédie St-Michel - Paris</a><span class="d-block description font-size-14 lh-sm">La Coccinelle Voyage Voyage - la Comédie St-Michel, Paris, un événement à voir à Paris (La Comédie St-Michel ), du 16 novembre 2025 au 4 janvier 2026. Toutes les informations [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42598986537&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/sorties-famille/la-coccinelle-voyage-voyage-la-comedie-st-michel-paris-1112172_A"><img loading="lazy" src="https://www.jds.fr/medias/image/enfants-17548-180-180.webp" width="180" height="180" alt="La Coccinelle Voyage Voyage - la Comédie St-Michel, Paris" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1111006" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/la-folle-experience-d-igor-la-comedie-sait-michel-paris-1111006_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">La Folle Expérience d'Igor - la  Comédie Sait-Michel, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 16/11/2025 au 04/01/2026</span><a href="https://www.jds.fr/paris/salle-de-concert-et-de-spectacle/la-comedie-st-michel-16594_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Comédie St-Michel - Paris</a><span class="d-block description font-size-14 lh-sm">La Folle Expérience d'Igor - la  Comédie Sait-Michel, Paris, un spectacle à voir à Paris (La Comédie St-Michel ), du 16 novembre 2025 au 4 janvier 2026. Toutes les [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42662985508&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/la-folle-experience-d-igor-la-comedie-sait-michel-paris-1111006_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="La Folle Expérience d&#039;Igor - la  Comédie Sait-Michel, Paris" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1047741" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/theatre-23_B" class="lh-sm">Théâtre à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/theatre/le-joueur-d-echecs-theatre-du-nord-ouest-paris-1047741_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Le Joueur d'échecs - Théâtre du Nord-Ouest, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 28/11/2025 au 18/01/2026</span><a href="https://www.jds.fr/paris/theatres-programmes/theatre-du-nord-ouest-20872_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre du Nord-Ouest - Paris</a><span class="d-block description font-size-14 lh-sm">Le Joueur d'échecs - Théâtre du Nord-Ouest, Paris, un spectacle à voir à Paris (Théâtre du Nord-Ouest ), du 28 novembre 2025 au 18 janvier 2026. Toutes les informations [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42612789214&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/theatre/le-joueur-d-echecs-theatre-du-nord-ouest-paris-1047741_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F73%2F7b%2Fle-joueur-d--checs-tickets_373215_3152960_222x222.jpg&feedId=23455&k=499fa97641838dac53d41f20d5faba7f335ac7ac" width="180" height="180" alt="Le Joueur d&#039;échecs - Théâtre du Nord-Ouest, Paris" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1130474" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/le-plus-grand-des-petits-garcons-lilian-wagner-le-double-fond-paris-1130474_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Le Plus Grand des Petits Garçons - Lilian Wagner - le Double Fond, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 16/11/2025 au 28/06/2026</span><a href="https://www.jds.fr/paris/centre-socio-culturel/le-double-fond-16744_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Double Fond - Paris</a><span class="d-block description font-size-14 lh-sm">Le Plus Grand des Petits Garçons - Lilian Wagner - le Double Fond, Paris, un spectacle à voir à Paris (Le Double Fond ), du 16 novembre 2025 au 28 juin 2026. Toutes les [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42124691163&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/le-plus-grand-des-petits-garcons-lilian-wagner-le-double-fond-paris-1130474_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fd7%2F68%2Fle-plus-grand-des-petits-gar-ons--tickets_429494_3503044_222x222.jpg&feedId=23455&k=ef690fd9ba0ef7fc3963f4cbdaa385659f0d83fc" width="180" height="180" alt="Le Plus Grand des Petits Garçons - Lilian Wagner - le Double Fond, Paris" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="768077" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/theatre-23_B" class="lh-sm">Théâtre à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/theatre/les-gros-patinent-bien-pepiniere-theatre-paris-768077_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Les Gros Patinent Bien - Pépinière Théâtre, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 14/11/2025 au 04/01/2026</span><a href="https://www.jds.fr/paris/theatres-programmes/la-pepiniere-theatre-16641_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Pepiniere Théâtre - Paris</a><span class="d-block description font-size-14 lh-sm">Les Gros Patinent Bien - Pépinière Théâtre, Paris, un spectacle à voir à Paris (La Pepiniere Théâtre ), du 14 novembre 2025 au 4 janvier 2026. Toutes les informations [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41578829175&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/theatre/les-gros-patinent-bien-pepiniere-theatre-paris-768077_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fe2%2Fb9%2Fles-gros-patinent-bien-tickets_339745_2905469_222x222.jpg&feedId=23455&k=81e5f18401704db8f62319a786cb3cd649a7402d" width="180" height="180" alt="Les Gros Patinent Bien - Pépinière Théâtre, Paris" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1148231" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/les-petits-mythos-thesee-et-le-minotaure-la-comedie-tour-eiffel-paris-1148231_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Les Petits Mythos: Thésée et le Minotaure - la Comédie Tour Eiffel, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 16/11/2025 au 21/12/2025</span><a href="https://www.jds.fr/paris/theatres-programmes/comedie-tour-eiffel-16284_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Comédie Tour Eiffel - Paris</a><span class="d-block description font-size-14 lh-sm">Les Petits Mythos: Thésée et le Minotaure - la Comédie Tour Eiffel, Paris, un spectacle à voir à Paris (Comédie Tour Eiffel ), du 16 novembre 2025 au 21 décembre 2025. [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42602255344&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/les-petits-mythos-thesee-et-le-minotaure-la-comedie-tour-eiffel-paris-1148231_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F5b%2F9b%2Fth-s-e-et-le-minotaure---les-petits-mythos-tickets_291061_2511610_222x222.jpg&feedId=23455&k=6aedee841d09d56f5943debc3eccbcf6900f709d" width="180" height="180" alt="Les Petits Mythos: Thésée et le Minotaure - la Comédie Tour Eiffel, Paris" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1123656" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/ma-chere-fille-la-comedie-st-michel-paris-1123656_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Ma Chère Fille - la Comédie St-Michel, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 16/11/2025 au 14/12/2025</span><a href="https://www.jds.fr/paris/salle-de-concert-et-de-spectacle/la-comedie-st-michel-16594_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Comédie St-Michel - Paris</a><span class="d-block description font-size-14 lh-sm">Ma Chère Fille - la Comédie St-Michel, Paris, un spectacle à voir à Paris (La Comédie St-Michel ), du 16 novembre 2025 au 14 décembre 2025. Toutes les informations pratiques [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42055865017&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/ma-chere-fille-la-comedie-st-michel-paris-1123656_A"><img loading="lazy" src="https://www.jds.fr/medias/image/sorties-culturelles-spectacles-expos-cine-127414-180-180.webp" width="180" height="180" alt="Ma Chère Fille - la Comédie St-Michel, Paris" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1176797" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/paris/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Paris</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/paris/spectacles/mahe-s-installe-le-point-virgule-paris-1176797_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Mahé s'Installe - le Point Virgule, Paris</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 16/11/2025 au 28/12/2025</span><a href="https://www.jds.fr/paris/salles-spectacle/theatre-point-virgule-15274_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Point Virgule - Paris</a><span class="d-block description font-size-14 lh-sm">Mahé s'Installe - le Point Virgule, Paris, un spectacle à voir à Paris (Le Point Virgule ), du 16 novembre 2025 au 28 décembre 2025. Toutes les informations pratiques (tarifs, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42478315955&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/paris/spectacles/mahe-s-installe-le-point-virgule-paris-1176797_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fb2%2F8b%2Fmah--tickets_442000_3578559_222x222.jpg&feedId=23455&k=41c82adb2d3293ff9555425323ab4c4c17cf8670" width="180" height="180" alt="Mahé s&#039;Installe - le Point Virgule, Paris" /></a></div></div></li>
+</ul>
+</div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/paris/agenda/?&amp;page=30"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/paris/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/paris/agenda/?&amp;page=30">30</a><span class="page d-inline-block mx-1 active mx-1">31</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/paris/agenda/?&amp;page=32">32</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/paris/agenda/?&amp;page=355">355</a></div>
+<a class="lien_next" href="https://www.jds.fr/paris/agenda/?&amp;page=32"><i class="bi bi-chevron-right"></i></a></div>
+<div class="gp_div_affiche" data-id="0" data-id-format="69"></div>
+</div><div id="content_right" class=""><hr class="d-md-none my-5"><div class="wrapper_gp_div mb-4"><div class="regie_18"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 - HAUT -->
+<ins id="pub_1635" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="7598382131"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1635" data-id-format="18"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1635', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '18', 'non_interaction': true }); } });</script>
+</div>
+</div><div class="encart-newsletter d-none d-md-block p-4 bg-light my-5"><p class="mt-0 mb-3 h2">Newsletter JDS Paris</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p><form id="form_newsletter_6916026716627" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="691602671d13d" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6916026716627_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" selected>75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6916026716627_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6916026716627_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6916026716627_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6916026716627_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6916026716627 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6916026716627_dpt_list").val().length > 0) {
+                $('#form_newsletter_6916026716627 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6916026716627_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6916026716627 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6916026716627_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6916026716627_dpt_list").val().length == 0) {
+                $('#form_newsletter_6916026716627 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6916026716627',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6916026716627").serialize();
+        $('form#form_newsletter_6916026716627 .submit_2').attr('disabled','');
+        $('#form_newsletter_6916026716627 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6916026716627 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6916026716627 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter sidebar',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6916026716627 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6916026716627 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script></div><div class="wrapper_gp_div mb-2 sticky"><div class="regie_29"><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300 X 600 BAS -->
+<ins id="pub_1636" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="9513867524"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1636" data-id-format="29"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1636', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '29', 'non_interaction': true }); } });</script>
+</div>
+</div></div></div></div></div><footer id="footer" class="mt-5 px-3">    
+    <div class="container">     
+    <div class="row">
+        
+        <div class="col-md-6 col-lg-4 order-md-6 offset-lg-1">
+            <div id="footer_newsletter" class="p-4 bg-light full-width-sm mb-5">                                  
+                <p class="mt-0 mb-3 h2">Newsletter JDS Paris</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p>                         
+                <form id="form_newsletter_6916026716694" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="691602671d13d" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6916026716694_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" >67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" selected>75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6916026716694_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6916026716694_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6916026716694_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6916026716694_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6916026716694 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6916026716694_dpt_list").val().length > 0) {
+                $('#form_newsletter_6916026716694 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6916026716694_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6916026716694 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6916026716694_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6916026716694_dpt_list").val().length == 0) {
+                $('#form_newsletter_6916026716694 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6916026716694',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6916026716694").serialize();
+        $('form#form_newsletter_6916026716694 .submit_2').attr('disabled','');
+        $('#form_newsletter_6916026716694 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6916026716694 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6916026716694 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter footer',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6916026716694 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6916026716694 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script>         
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 order-md-first">
+            <a class="logo d-block mx-auto mx-lg-0" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a>
+
+            
+            <p class="my-4 fw-bold text-center text-md-start">Le JDS Paris, c’est des sorties (concerts, humour…) et des bons plans en tous genres (resto, shopping, événements locaux…) au plus près de chez vous.</p>
+            
+                
+                
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <span class="font-size-14">Téléchargez l'appli JDS : </span>
+                <a href="https://market.android.com/details?id=fr.jds.app" class="mx-1" target="_blank"><i class="bi bi-android2"></i></a><a href="https://itunes.apple.com/fr/app/jds-les-sorties-en-alsace/id467323730?mt=8" class="mx-1" target="_blank"><i class="bi bi-apple"></i></a>   
+                </p>
+                
+            <hr class="my-5 d-md-none">
+        </div>
+        <div class="col-md-12 col-lg-3 order-md-11 offset-lg-1">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Organisateurs</p>
+                    <p class="fw-bold">Publiez votre événement sur le site jds.fr</p>                
+                    <ul class="text-gray-700 mt-2">
+                        <li>Publiez gratuitement votre événement dans l’agenda via notre <a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=footer&utm_campaign=link_publier_info_text">espace organisateur</a></li>
+                        <li>Bénéficiez d'une visibilité auprès de nos 3&nbsp;000&nbsp;000 visiteurs mensuels !</li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://pro.jds.fr" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je publie mon événement</a></p>
+
+                    <hr class="my-5 d-md-none d-lg-block">
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Annonceurs</p>
+                    <p class="fw-bold">Discutons ensemble de votre communication</p>          
+                    <ul class="text-gray-700 mt-2">
+                        <li>Promouvoir au mieux votre événement ou votre offre</li>
+                        <li>3&nbsp;000&nbsp;000 visiteurs mensuels <a href="https://www.jds.fr/magazine/actu-magazine/audience-jds-169974_A">(tout savoir sur l'audience du JDS)</a></li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://www.jds.fr/blog/" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je découvre les solutions</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 order-md-12">
+            <hr class="my-5">
+
+            <ul class="list-unstyled font-size-14 d-lg-flex justify-content-between">
+            <li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/journal-des-spectacles-magazine-mulhouse-colmar-haut-rhin-alsace-837_A">Qui sommes-nous ?</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/mentions-legales/">Infos légales / Affiliation</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/cookies/">Cookies</a></li><li class="mb-1 me-2"><a href="javascript:Didomi.preferences.show()">Modifier mes choix de cookies</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/comment-vous-desabonner-des-notifications-jds-340946_A">Se désabonner des notifications</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/contact/">Nous contacter</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/offres-emploi-mulhouse-alsace/">Emploi : nous rejoindre</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/">Blog</a></li>  
+            </ul>
+
+            <p class="font-size-14">Copyright 2008-2025 jds.fr</p>
+        </div>
+    </div> <!-- fin row -->        
+    </div> <!-- fin container -->
+</footer><div id="search-form-menu-container" class="search-form-menu-container shadow-lg bg-light hidden text-center py-3 py-lg-5">
+    <div class="container px-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-bold font-size-26">Rechercher</span>
+            <span class="cursor-pointer d-block search-form-menu-close text-primary" onclick="toggleSearchMenu();"><i class="bi bi-x-circle me-1"></i> Fermer</span>
+        </div>
+        <div
+            id="search-app"
+            data-endpoint="/ajax/search.php"
+            data-placeholder-text="ex. : concert demain à ..."
+            data-index-event="jds_event"
+            data-index-city="jds_city"
+            data-index-venue="jds_venue"
+            data-index-article="jds_article"
+            data-index-artist="jds_artist"
+            data-current-city-id="481" data-current-city-name="Paris"         ></div>
+    </div>
+</div>
+
+<div id="header-city-dropdown-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <p class="modal-title m-0">Choisissez une ville spécifique</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="ville-selector-mode" value="default" id="ville-selector-mode" />
+                <input type="text" class="form-control form-control-lg shadow-lg rounded-3" id="ville-selector-modal" placeholder="Entrez le nom de votre ville">
+                <div id="ville-selector-container-modal"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer>
+$(document).ready(function() {
+    $('#ville-selector-modal').keyup(function() {
+        if($(this).val().length==0) { $("#ville-selector-container-modal").html(""); return; }
+        if($(this).val().length<2) { return; }
+
+        $.post("/ajax/recherche_ville_fonction.php", { term: $(this).val(), mode:$('input[name="ville-selector-mode"]').val() })
+        .done(function(data) {
+
+            $("#ville-selector-container-modal").html('<p class="mt-4">Cliquez sur votre ville :</p><ul class="list-unstyled font-size-16"></ul>');
+            obj=JSON.parse(data);
+            obj.forEach(function(item){
+            $("#ville-selector-container-modal").find("ul").append('<li class="p-3 border-bottom"><a href="'+item.url+'" class="text-dark"><i class="bi bi-geo-fill text-primary me-1"></i> '+item.label+'</a></li>');
+        });
+        });
+    }); 
+});
+</script>
+
+</div><script defer src="/libs/jquery/magnific-popup/jquery.magnific-popup.min.js?v=131"></script><script defer src="/scripts/slick.min.js?v=131"></script><script defer src="/libs/choices/scripts/choices.js?v=131"></script><script defer src="/libs/lightbox2/js/lightbox.min.js?v=131"></script><script defer src="/scripts/functions_footer.js?v=131"></script><script>const { createApp, ref, computed, watch, onMounted, onBeforeUnmount, nextTick, reactive } = Vue;</script><script src="/scripts/search.app.js?v=131"></script><script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-messaging-compat.js"></script>
+<script>
+const firebaseConfig = {
+    apiKey: "AIzaSyBjBC01qlzGVLYWWE8D0rrOzL2cSfIf7MQ",
+    authDomain: "journal-des-spectacles-dd5d0.firebaseapp.com",
+    databaseURL: "https://journal-des-spectacles-dd5d0.firebaseio.com",
+    projectId: "journal-des-spectacles-dd5d0",
+    storageBucket: "journal-des-spectacles-dd5d0.appspot.com",
+    messagingSenderId: "37707045198",
+    appId: "1:37707045198:web:e58879e2e7f9adf0"
+  };
+const vapidKey = "BB2gRQtko-8CqzZbrzzlGBwMim_ThaPkNdzqi780Y7ku5VmG_E_DwFJnrJXB7_pNJKn9UTbIchVKfijBHNteuu8";
+  
+firebase.initializeApp(firebaseConfig);
+const messaging = firebase.messaging();
+
+var browserName = (function (agent) {        
+    switch (true) {
+        case agent.indexOf("edge") > -1: return "Edge"; // ms
+        case agent.indexOf("edg/") > -1: return "Edge"; // (chromium based)
+        case agent.indexOf("chrome") > -1 && !!window.chrome: return "Chrome";
+        case agent.indexOf("firefox") > -1: return "Firefox";
+        case agent.indexOf("safari") > -1: return "Safari";
+        default: return "other";
+    }
+})(window.navigator.userAgent.toLowerCase());
+    
+function fcm_resetUI() { 
+    if(!isTokenSentToServer()) {
+        if(window.navigator.userAgent.toLowerCase().indexOf('iphone')!==-1) { return; } // fix bug safari iphone    
+        if(browserName=='Chrome') { $('#web_push_dialog').addClass('chrome'); }
+        if(browserName=='Edge') { $('#web_push_dialog').addClass('edge'); }
+        if(browserName=='Firefox') { $('#web_push_dialog').addClass('firefox'); }
+        if(Notification.permission=='default') {
+            if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+        }
+        else if(Notification.permission=='granted') {
+            messaging.getToken({ vapidKey:vapidKey }).then((currentToken) => {   
+                                if (currentToken) {
+                    sendTokenToServer(currentToken);
+                } else {
+                  setTokenSentToServer(false);
+                  if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+                }
+            }).catch((err) => {
+                
+                setTokenSentToServer(false);
+            });
+        }    
+    }
+}
+//window.fcm_resetUI = fcm_resetUI;
+function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+        setTokenSentToServer(true);
+        $.post( "/ajax/firebase_register_v2.php",  { token: currentToken, dpt:'75' });      
+        if(typeof gtag=="function") {
+            gtag("event", "subscription", {
+                "event_category" : "Firebase",
+                "event_label" : "Web push",
+                "non_interaction": true
+            });            
+        }
+    } 
+}
+function isTokenSentToServer() {
+    var web_push_cookie = $.cookie('web_push');       
+    if(typeof web_push_cookie === 'undefined' || web_push_cookie===false) return false;
+    return true;
+}
+function setTokenSentToServer(sent) {
+    if(sent) $.cookie('web_push',true, {path: '/',domain:'.jds.fr'}); 
+    else $.cookie('web_push',false, {path: '/',domain:'.jds.fr'}); 
+}
+function requestPushDialog() {
+    $.magnificPopup.open({
+        items: {
+            src: '#web_push_dialog', // can be a HTML string, jQuery object, or CSS selector
+            type: 'inline'
+          },
+        alignTop : true,
+        showCloseBtn : true,
+        //closeOnBgClick: ((browserName!='Firefox' &&  && !$('#web_push_dialog').hasClass('mobile'))?false:true),
+        callbacks: {
+            open: function() {                 
+                $('.mfp-bg').css('position','fixed');      
+                if(browserName!='Firefox') {
+                    if(!$('#web_push_dialog').hasClass('mobile')) {
+                        $('.mfp-bg').css('opacity',.0).css('width','auto').css('height','auto');
+                        $('html').css('overflow','auto');  
+                        $('.mfp-wrap').css('width','auto').css('height','auto');
+                    }
+                    else {
+                        $('html').css('overflow','hidden');  
+                    }
+                }
+                else {
+                    $('.mfp-bg').css('opacity',.75).css('background','#fff');
+                }
+
+            },
+            close: function() {
+                $('html').css('overflow','auto'); 
+            }
+        }    
+    }); 
+    if(browserName!='Firefox') { requestPermission(); } // sur firefox, l'ouverture de permission automatique ne marche pas alors on remet les boutons
+}
+function requestPermission() {   
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+            fcm_resetUI();
+            $.magnificPopup.close();
+      } else {
+            $.magnificPopup.close();
+      }
+    });
+}
+$(document).on('click','#web_push_dialog button',function() {
+    //firefox
+    if($(this).hasClass('accept')) requestPermission();
+    if($(this).hasClass('deny')) setTokenSentToServer(true);    
+    
+    $.magnificPopup.close();       
+});
+</script>
+
+<div id="web_push_dialog" class="mfp-hide desktop">
+    <div class="popup-content p-3">
+        <img class="logo-mobile" loading="lazy" src="/images/new/logo-jds.svg?v=131" width="40" height="40" alt="jds.fr">
+        <p class="popup-title mb-3"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+        <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+        <p class="text-gray-600 font-size-14 mb-0">Autoriser les notifications pour continuer.</p>
+        <hr class="hide-mobile">
+        <div class="p-3 hide-mobile text-center bg-primary"><img loading="lazy" src="/images/new/logo-jds-white.svg?v=131" width="100" height="100" alt="jds.fr"></div>
+        <div class="arrow text-gray-800"><i class="bi bi-arrow-down-circle-fill"></i></div>
+    </div>
+    <div class="popup-content-firefox p-3">
+        <div class="row">
+            <div class="col-md-3 pr-0 col-3"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" class="popup-logo"></div>
+            <div class="col-md-9 col-9">
+              <p class="popup-title"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+              <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+              <p class="text-gray-600 font-size-14 mb-3">Une seconde fenêtre va s'ouvrir vous invitant à autoriser les notifications</p>
+              <div class="popup-footer text-right"><button class="btn btn-outline-primary rounded-pill btn-sm me-3 deny">Refuser</button><button class="btn btn-primary rounded-pill btn-sm me-3 accept">Autoriser</button></div>
+            </div>
+        </div>
+    </div>
+</div><script type="didomi/javascript" data-purposes="select_basic_ads" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4984827051088801"
+     crossorigin="anonymous"></script></body></html>

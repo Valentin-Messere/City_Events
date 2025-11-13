@@ -1,0 +1,649 @@
+<!DOCTYPE html><html lang="fr"><head><script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+      else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+        var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+        if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e,tgt){
+        var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+tgt;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("9d946103-8843-4a4e-ab0b-8e61ea84e891","Qr7JnTUV")})();</script>
+
+<script> 
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(function (Didomi) { 
+        // Call other functions on the SDK
+
+        // Refresh de la page en cas de changement du consentement
+        window.didomiEventListeners = window.didomiEventListeners || [];
+        window.didomiEventListeners.push({
+            event: 'consent.changed',
+            listener: function (context) {
+                gp_maj();
+            }
+        });
+
+        // Google advertising products
+        Didomi.getObservableOnUserConsentStatusForVendor('google')
+        .filter(function (status) { return status !== undefined })
+        .subscribe(function (consentStatus) {
+            if (consentStatus === undefined || consentStatus === false) {
+                // on masque les encarts pubs vides
+                (function() {     
+                    var div_regies = document.getElementsByClassName('wrapper_gp_div');
+                    
+                    setTimeout(function() { // on fait un settimeout sinon le length n'est pas juste...                   
+                        for (let i = 0; i < div_regies.length; i++) {                  
+                            if (div_regies[i].innerHTML.indexOf('regie_') > -1) {                           
+                              div_regies[i].style.display="none";
+                            }
+                        }
+                        
+                    },400);
+                    
+                    
+                })();
+            }
+        }); 
+        
+     
+
+    });
+    </script> 
+<meta charset="UTF-8" />
+<title>Strasbourg - L&#039;agenda des spectacles, manifestations, concerts - Page 8</title>
+<meta name="description" content="Strasbourg - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 8" />
+<link rel="canonical" href="https://www.jds.fr/strasbourg/agenda/?page=8" />
+<meta name="p:domain_verify" content="9efecdd4eddf0844d5703f41d2dc7ca7"/>
+<meta property="fb:app_id" content="638077278167784" />
+<meta property="fb:pages" content="50813882504">
+<meta property="og:title" content="Strasbourg - L&#039;agenda des spectacles, manifestations, concerts - Page 8" />
+<meta property="og:description" content="Strasbourg - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 8" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.jds.fr/strasbourg/agenda/?page=8" />
+<meta property="og:site_name" content="jds.fr" />
+<meta property="og:image" content="https://www.jds.fr/images/header_logo_120.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="364" />
+<meta property="og:image:height" content="364" />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https:\/\/www.jds.fr\/","name":"Accueil"},{"@type":"ListItem","position":2,"item":"https:\/\/www.jds.fr\/strasbourg\/","name":"Strasbourg"},{"@type":"ListItem","position":3,"name":"Agenda"}]}</script>
+
+<meta name="robots" content="noindex,follow" />
+<link rel="prev" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=7" /><link rel="next" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=9" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+<link rel="stylesheet" href="/css/custom.css?v=131">
+<link rel="preload" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131"></noscript>
+<link rel="preload" href="/libs/lightbox2/css/lightbox.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/lightbox2/css/lightbox.min.css?v=131"></noscript>
+<link rel="preload" href="/css/slick-theme.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick-theme.css?v=131"></noscript>
+<link rel="preload" href="/css/slick.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick.css?v=131"></noscript>
+<link rel="preload" href="/libs/choices/styles/choices.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/choices/styles/choices.min.css?v=131"></noscript>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#e50b47">
+<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e50b47">
+<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><link rel="manifest" href="/manifest.json"></head><body class="version_a  "><script async src="https://www.googletagmanager.com/gtag/js?id=G-6WVELE5WG9"></script>
+<script type="didomi/javascript" data-vendor="c:googleana-4TXnJigR">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+        dataLayer.push(arguments);
+        if (arguments[0] === 'js') {
+            setTimeout(function() {
+            window.dispatchEvent(new Event('gtag_loaded'));
+        }, 1000);
+        }
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6WVELE5WG9', {
+          'cookie_expires': 33696000,
+          'transport_type': 'beacon',
+          'dimension1': '0','dimension2': '67','dimension3': '2','dimension4': '0','dimension5': '0','dimension6': '0','dimension7': '','dimension8': 'a','dimension9': '0',     
+    });
+</script><script src="/libs/jquery-3.7.1.min.js"></script><script defer src="/libs/bootstrap/js/popper.min.js"></script><script defer src="/libs/bootstrap/js/bootstrap.min.js"></script><script defer src="/libs/jquery/js/jquery.cookie.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.date.js"></script><script defer src="/libs/jquery/pickadate.js/lib/translations/fr_FR.js"></script><script src="/libs/vue.global.prod.js"></script><script src="/libs/axios.min.js"></script><script src="/ads-checker.js"></script><script defer src="/scripts/functions.js?v=131"></script><script>var gp_maj_done=false;
+var param_gp=[];param_gp['id_newsletter']='0';param_gp['type']='0';param_gp['sousrub']='0';param_gp['rub']='2';param_gp['rub_rub']='2';param_gp['page']='8';param_gp['mobile_version']='0';param_gp['detail_type']='';param_gp['detail_id']='0';param_gp['web_push_site']='';param_gp['web_push_id']='';param_gp['current_departement']='67';$(document).ready(function() {
+    if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) gp_maj();});</script><div class="gp_div_affiche" data-id="0" data-id-format="24"></div>
+<div id="global" class="p-0"><div id="header" class="bg-white header"><div class="d-flex justify-content-between align-items-center px-2rem header-inner-wrapper text-primary container"><div class="header-logo mb-1"><a class="d-block" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a></div><div class="header-city-inline-selector d-flex me-auto font-size-22 ms-4 align-items-center lh-1"><a href="https://www.jds.fr/strasbourg/" class="">Strasbourg</a><span class="ms-auto ms-md-0 d-block ps-2 cursor-pointer" onclick="toggleCityMenu();"><i class="bi bi-chevron-down"></i></span></div><div class="header-publish ms-md-auto me-md-5"><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=header&utm_campaign=link_publier_info" class="btn btn-outline-primary rounded-pill d-none d-md-inline shadow-sm"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><div class="header-menu font-size-36 cursor-pointer ps-3" onclick="toggleMenu()"><i class="bi bi-list"></i></div></div></div>
+<!-- NAVBAR -->
+<div id="header-navbar" class="bg-light-primary header-navbar navbar-v2">
+    <div class="px-2rem header-navbar-inner-wrapper container font-size-14">
+        <div class="navbar-v2-item d-flex">
+            <div class="flex-fill">
+                <span onclick="toggleSearchMenu();" class="bg-primary text-white d-block px-3"><span class="search-btn cursor-pointer"><span><i class="bi bi-search me-2"></i> Rechercher</span></span>
+            </div>
+            <div class="flex-fill"><a href="https://www.jds.fr/strasbourg/agenda/agenda-du-jour/-aujourdhui_JPJ" class="" data-event-label="Aujourd'hui"><span><i class="cf icon-aujourdhui">&#xe80f;</i> Aujourd'hui</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="" data-event-label="Spectacles"><span><i class="cf icon-spectacles">&#xe80c;</i> Spectacles</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/musique-et-concerts-96_B" class="" data-event-label="Concerts"><span><i class="cf icon-concert">&#xe801;</i> Concerts</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/manifestations-fetes-festivals-137_B" class="" data-event-label="Animations"><span><i class="cf icon-manifestations">&#xe807;</i> Animations</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/foire-salon-puces-bourses-468_B" class="" data-event-label="Salons / Puces"><span><i class="cf icon-foires">&#xe805;</i> Salons / Puces</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/sports-145_B" class="" data-event-label="Sports"><span><i class="cf icon-sport">&#xe810;</i> Sports</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/expositions-471_B" class="" data-event-label="Expos"><span><i class="cf icon-expos">&#xe802;</i> Expos</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/enfants-94_B" class="" data-event-label="Famille"><span><i class="cf icon-famille">&#xe813;</i> Famille</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/soirees-469_B" class="" data-event-label="Soirées"><span><i class="cf icon-soirees">&#xe80b;</i> Soirées</span></a></div>        </div>
+    </div>
+</div>
+<div id="menu" class="menu bg-white px-2rem py-5 hidden"><div class="text-center"><button class="btn btn-primary btn-lg rounded-pill d-block w-100 menu-link" onclick="toggleSearchMenu();" data-event-label="open-search-menu"><i class="bi bi-search me-2"></i> Rechercher</button><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=menu&utm_campaign=link_publier_info" class="btn btn-outline-primary my-4 btn-lg rounded-pill d-block w-100" data-event-label="Espace pro"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/strasbourg/agenda/agenda-du-jour/-aujourdhui_JPJ" class="text-dark hover-text-primary cursor-pointer" data-event-label="Aujourd'hui">Aujourd'hui à Strasbourg</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/evenements/" class="text-dark hover-text-primary" data-event-label="Evénements">Evénements</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/manifestations-fetes-festivals-137_B" class="text-dark hover-text-primary" data-event-label="Manifestations">Manifestations</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/foire-salon-puces-bourses-468_B" class="text-dark hover-text-primary" data-event-label="Foires & salons">Foires & salons</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="text-dark hover-text-primary" data-event-label="Spectacles">Spectacles</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/musique-et-concerts-96_B" class="text-dark hover-text-primary" data-event-label="Concerts">Concerts</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/sports-145_B" class="text-dark hover-text-primary" data-event-label="Sports">Sports</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/soirees-469_B" class="text-dark hover-text-primary" data-event-label="Soirées">Soirées</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/enfants-94_B" class="text-dark hover-text-primary" data-event-label="Sorties famille">Sorties famille</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/expositions-471_B" class="text-dark hover-text-primary" data-event-label="Expos">Expos</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/strasbourg/magazine/" class="text-dark hover-text-primary" data-event-label="Actus">Actus à Strasbourg</a></li><li><a href="https://www.jds.fr/strasbourg/annuaire/" class="text-dark hover-text-primary" data-event-label="Annuaire">Annuaire tourisme & loisirs</a></li><li><a href="https://www.jds.fr/restaurants-308_T" class="text-dark hover-text-primary" data-event-label="Restaurants">Restaurants</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/jeux/" class="text-dark hover-text-primary" data-event-label="Jeux">Jeux concours</a></li><li><a href="https://www.jds.fr/newsletter-archives/toutes-les-newsletter-jds-fr" class="text-dark hover-text-primary" data-event-label="Newsletters">Newsletter des sorties</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/blog/" class="text-dark hover-text-primary" data-event-label="Annonceurs">Annonceurs</a></li></ul></div><div id="header-city-dropdown" class="header-city-dropdown bg-secondary py-2 text-white px-2rem font-size-16 hidden"><div class="container"><div class="py-2 cursor-pointer text-uppercase" onclick="$('#header-city-dropdown-modal').modal('show'); $('#ville-selector-modal').focus(); $('input[name=&quot;ville-selector-mode&quot;]').val('default')"><i class="bi bi-building-add me-1"></i> Une autre ville</div><div class="py-1"><a href="https://www.jds.fr/bordeaux/" class="text-white text-uppercase">Bordeaux</a></div><div class="py-1"><a href="https://www.jds.fr/colmar/" class="text-white text-uppercase">Colmar</a></div><div class="py-1"><a href="https://www.jds.fr/dijon/" class="text-white text-uppercase">Dijon</a></div><div class="py-1"><a href="https://www.jds.fr/lille/" class="text-white text-uppercase">Lille</a></div><div class="py-1"><a href="https://www.jds.fr/lyon/" class="text-white text-uppercase">Lyon</a></div><div class="py-1"><a href="https://www.jds.fr/marseille/" class="text-white text-uppercase">Marseille</a></div><div class="py-1"><a href="https://www.jds.fr/metz/" class="text-white text-uppercase">Metz</a></div><div class="py-1"><a href="https://www.jds.fr/montpellier/" class="text-white text-uppercase">Montpellier</a></div><div class="py-1"><a href="https://www.jds.fr/mulhouse/" class="text-white text-uppercase">Mulhouse</a></div><div class="py-1"><a href="https://www.jds.fr/nancy/" class="text-white text-uppercase">Nancy</a></div><div class="py-1"><a href="https://www.jds.fr/nantes/" class="text-white text-uppercase">Nantes</a></div><div class="py-1"><a href="https://www.jds.fr/nice/" class="text-white text-uppercase">Nice</a></div><div class="py-1"><a href="https://www.jds.fr/paris/" class="text-white text-uppercase">Paris</a></div><div class="py-1"><a href="https://www.jds.fr/reims/" class="text-white text-uppercase">Reims</a></div><div class="py-1"><a href="https://www.jds.fr/rennes/" class="text-white text-uppercase">Rennes</a></div><div class="py-1"><a href="https://www.jds.fr/strasbourg/" class="text-white text-uppercase">Strasbourg</a></div><div class="py-1"><a href="https://www.jds.fr/toulouse/" class="text-white text-uppercase">Toulouse</a></div><div class="mt-5 py-1 cursor-pointer" onclick="toggleCityMenu()"><u><i class="bi bi-x-circle me-1"></i> Fermer le menu</u></div></div></div><div id="global-container"><div id="global-container-inner-wrapper" class="container"><!--[if lte IE 9]>
+<div class="alert alert-warning" role="alert">
+<p class="mb-0">Vous utilisez une très ancienne version de navigateur Internet, ce qui impacte négativement votre expérience de navigation sur le site du JDS et sur Internet en général. Nous vous recommandons de mettre à jour votre navigateur ou d'en installer un autre en <a href="https://browsehappy.com/?locale=fr" target="_blank">cliquant ici</a>.</p>
+</div>
+<![endif]--><div class="text-center mb-5 mx-auto leaderboard"><div class="wrapper_gp_div nobg"><div class="regie_2">
+<!-- Leaderboard 1000 x 300 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:1000px;height:300px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="4079211116"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="3348" data-id-format="2"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3348', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '2', 'non_interaction': true }); } });</script>
+</div>
+</div></div><div id="content_container" class="d-md-flex justify-content-between"><div id="content_left"><div id="chemin" class="ariane mb-3"><a href="https://www.jds.fr/">Accueil</a><a href="https://www.jds.fr/strasbourg/">Strasbourg</a></div><div class="header-ville no-form is_page_ville ville_67 agglo_390 "><h1>Strasbourg&nbsp;: Agenda et événements</h1><button onclick="toggleSearchMenu()" class="btn btn-primary btn-lg mx-auto d-block rounded-pill shadow-lg my-4" data-position="page-resultats-modifier-recherche-top"><i class="bi bi-search me-2"></i> Rechercher</button></div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=7"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=7">7</a><span class="page d-inline-block mx-1 active mx-1">8</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=9">9</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=57">57</a></div>
+<a class="lien_next" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=9"><i class="bi bi-chevron-right"></i></a></div>
+<div class="mt-5"><ul class="mt-3 list-unstyled list-articles-v2">
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="355685" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/soirees-469_B" class="lh-sm">Soirées à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/soirees/soiree-dansante-avec-repas-355685_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Soirée dansante avec repas</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><a href="https://www.jds.fr/strasbourg/fegersheim/location-de-salle/centre-sportif-et-culturel-6566_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Centre sportif et culturel - Fegersheim</a><span class="d-block description font-size-14 lh-sm">Soir&eacute;e dansante avec repas &agrave; partir de 19h - samedi 18 novembre au centre sportif de Fegersheim - soir&eacute;e r&eacute;serv&eacute;e aux + de 16 [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/soirees/soiree-dansante-avec-repas-355685_A"><img loading="lazy" src="https://www.jds.fr/medias/image/soirees-boules-a-facette-que-faire-ce-soir-127069-180-180.webp" width="180" height="180" alt="Soirée dansante avec repas" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1244858" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/soirees-469_B" class="lh-sm">Soirées à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/soirees/soiree-flashback-annees-80-2000-1244858_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Soirée Flashback Années 80-2000</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><a href="https://www.jds.fr/strasbourg/vendenheim/salles-spectacle/le-diapason-13734_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Diapason - Vendenheim</a><span class="d-block description font-size-14 lh-sm">SOIR&Eacute;E FLASHBACK ANN&Eacute;ES 80-2000 - SAMEDI 15 NOVEMBRE&nbsp;!
+Le Football Club de Vendenheim vous donne rendez-vous pour une soir&eacute;e festive et pleine de [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/soirees/soiree-flashback-annees-80-2000-1244858_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-22056900-1762504253-766932-180-180.webp" width="180" height="180" alt="Soirée Flashback Années 80-2000" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1234693" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/soirees-469_B" class="lh-sm">Soirées à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/soirees/soiree-tropical-love-1234693_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Soirée Tropical Love</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><a href="https://www.jds.fr/strasbourg/achenheim/location-de-salle/salle-polyvalente-5858_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Salle polyvalente - Achenheim</a><span class="d-block description font-size-14 lh-sm">---- Soir&eacute;e Tropical Love ----. Organis&eacute;e par l'association" Les Amis des Antilles&nbsp;"dans un esprit de convivialit&eacute; pour l&acirc;cher prise avec repas, [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/soirees/soiree-tropical-love-1234693_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-14433300-1761845712-760461-180-180.webp" width="180" height="180" alt="Soirée Tropical Love" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1224167" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/soirees-469_B" class="lh-sm">Soirées à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/soirees/the-geant-party-1224167_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">The Géant Party </span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><a href="https://www.jds.fr/strasbourg/souffelweyersheim/salles-spectacle/espace-culturel-des-sept-arpents-7792_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Espace Culturel des Sept Arpents - Souffelweyersheim</a><span class="d-block description font-size-14 lh-sm">Notre d&eacute;sormais traditionnelle soir&eacute;e dansante se d&eacute;roulera le 15 novembre 2025.
+Viens danser sur les plus grand tubes des 40 derniers ann&eacute;es sous les [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/soirees/the-geant-party-1224167_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-69807800-1760877736-752044-180-180.webp" width="180" height="180" alt="The Géant Party " class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1149189" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/humour-comedie-22_B" class="lh-sm">Humour à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/humour/y-a-t-il-une-femme-pour-sauver-le-monde-1149189_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Y a-t-il une femme pour sauver le monde&nbsp;?</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><a href="https://www.jds.fr/strasbourg/mutzig/salles-spectacle/salle-le-rohan-11533_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Scène Le Rohan - Mutzig</a><span class="d-block description font-size-14 lh-sm">Les hommes ont &eacute;chou&eacute;. Place aux femmes.
+Apr&egrave;s le succ&egrave;s de&nbsp;"Massacre &agrave; la Princesse", pr&eacute;parez-vous &agrave; une nouvelle aventure [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/humour/y-a-t-il-une-femme-pour-sauver-le-monde-1149189_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-52745000-1756798687-707436-180-180.webp" width="180" height="180" alt="Y a-t-il une femme pour sauver le monde ?" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1247807" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/manifestations/quittons-les-bellicistes-liberticides-de-l-otan-et-de-l-u-e-1247807_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2"> Quittons les bellicistes liberticides de l'OTAN et de l'U.E </span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><a href="https://www.jds.fr/strasbourg/place/place-d-austerlitz-10824_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Place d'Austerlitz - Strasbourg</a><span class="d-block description font-size-14 lh-sm">Rassemblement 3R &agrave; Strasbourg&nbsp;: Pour la Paix, la Souverainet&eacute; et contre la Guerre de Macron&nbsp;!
+&laquo; Quittons les bellicistes liberticides de l'OTAN et de [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/manifestations/quittons-les-bellicistes-liberticides-de-l-otan-et-de-l-u-e-1247807_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-97192100-1762743505-768760-180-180.webp" width="180" height="180" alt=" Quittons les bellicistes liberticides de l&#039;OTAN et de l&#039;U.E " class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1117243" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/manifestations/ateliers/atelier-d-initiation-et-de-creation-en-resine-1117243_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Atelier d'initiation et de création en résine</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 15/11/2025 au 06/12/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Behlenheim</span><span class="d-block description font-size-14 lh-sm">Cr&eacute;atrice et touche &agrave; tout depuis fort longtemps, c'est la r&eacute;sine qui est devenue depuis quelques ann&eacute;es le mat&eacute;riau id&eacute;al pour [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/manifestations/ateliers/atelier-d-initiation-et-de-creation-en-resine-1117243_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-81726500-1761402908-757231-180-180.webp" width="180" height="180" alt="Atelier d&#039;initiation et de création en résine" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="926944" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/manifestations/ateliers/atelier-de-noel-fabrication-de-decors-de-sapin-en-metal-repousse-enfants-926944_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Atelier de Noël&nbsp;: Fabrication de décors de sapin en métal repoussé (enfants)</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><a href="https://www.jds.fr/strasbourg/pfaffenhoffen/musee/musee-de-l-image-populaire-4823_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Musée de l'Image Populaire - Pfaffenhoffen</a><span class="d-block description font-size-14 lh-sm">Atelier de No&euml;l&nbsp;: Fabrication de d&eacute;cors de sapin en m&eacute;tal repouss&eacute; (&agrave; partir de 8 ans)
+Venez d&eacute;couvrir l'art du m&eacute;tal [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/manifestations/ateliers/atelier-de-noel-fabrication-de-decors-de-sapin-en-metal-repousse-enfants-926944_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-48307700-1744305831-587073-180-180.webp" width="180" height="180" alt="Atelier de Noël : Fabrication de décors de sapin en métal repoussé (enfants)" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="922855" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/manifestations/ateliers/atelier-lettre-fleurie-par-en-joie-922855_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Atelier lettre fleurie</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><a href="https://www.jds.fr/strasbourg/the-cafe/les-compotes-15838_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Les Compotes - Strasbourg</a><span class="d-block description font-size-14 lh-sm">Fleurissons ensemble ta lettre en fleurs s&eacute;ch&eacute;es&nbsp;!
+LE D&Eacute;ROUL&Eacute;
+Un travail minutieux qui n&rsquo;a d&rsquo;&eacute;gal que la satisfaction [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/manifestations/ateliers/atelier-lettre-fleurie-par-en-joie-922855_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-38318400-1753361823-682147-180-180.webp" width="180" height="180" alt="Atelier lettre fleurie" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1101990" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/manifestations/ateliers/atelier-terrarium-1101990_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Atelier terrarium</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Strasbourg</span><span class="d-block description font-size-14 lh-sm">Cr&eacute;ons ensemble ton terrarium ferm&eacute;&nbsp;!
+LE D&Eacute;ROUL&Eacute;
+Tu n&rsquo;as pas la main verte et tu voudrais quand m&ecirc;me adopter quelques [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/manifestations/ateliers/atelier-terrarium-1101990_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-18314400-1753189922-680580-180-180.webp" width="180" height="180" alt="Atelier terrarium" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1193826" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/manifestations/ateliers/ateliers-creatifs-de-noel-1193826_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Ateliers créatifs de Noël </span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 15/11/2025 au 29/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Behlenheim</span><span class="d-block description font-size-14 lh-sm">Cr&eacute;atrice et touche &agrave; tout depuis fort longtemps, c'est la r&eacute;sine qui est devenue depuis quelques ann&eacute;es le mat&eacute;riau id&eacute;al pour [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/manifestations/ateliers/ateliers-creatifs-de-noel-1193826_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-25336500-1761403076-757233-180-180.webp" width="180" height="180" alt="Ateliers créatifs de Noël " class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1232620" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/conferences-472_B" class="lh-sm">Conférences à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/manifestations/conferences/business-school-de-l-alternance-pigier-journee-portes-ouvertes-1232620_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Business School de l'alternance Pigier&nbsp;: Journée Portes Ouvertes</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Strasbourg</span><span class="d-block description font-size-14 lh-sm">JOURN&Eacute;E PORTES OUVERTES. Samedi 15 novembre. 
+Trouvez votre formation chez Pigier Strasbourg&nbsp;!&nbsp;. Lyc&eacute;en ou &eacute;tudiant, cette journ&eacute;e vous [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/manifestations/conferences/business-school-de-l-alternance-pigier-journee-portes-ouvertes-1232620_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-04523600-1761664533-758711-180-180.webp" width="180" height="180" alt="Business School de l&#039;alternance Pigier : Journée Portes Ouvertes" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1242266" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/theatre-23_B" class="lh-sm">Théâtre à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/theatre/fantaisies-shakespeariennes-1242266_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Fantaisies Shakespeariennes</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 15/11/2025 au 23/11/2025</span><a href="https://www.jds.fr/strasbourg/theatres-programmes/cube-noir-11014_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Théâtre du Cube Noir - Strasbourg</a><span class="d-block description font-size-14 lh-sm">7 troupes du collectif Trois14 qui g&egrave;re la programmation du Th&eacute;&acirc;tre du Cube nOir pr&eacute;sentent des extraits de l'oeuvre de William Shakespeare dans une mise [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/theatre/fantaisies-shakespeariennes-1242266_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-63872400-1762356690-765319-180-180.webp" width="180" height="180" alt="Fantaisies Shakespeariennes" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1225198" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/cine-concert-200_B" class="lh-sm">Cinéma à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/cinema/festival-augenblick-cicadas-1225198_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Festival Augenblick&nbsp;: Cicadas</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><a href="https://www.jds.fr/strasbourg/benfeld/cinema-sorties-films-horaires/cinema-le-rex-4898_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Cinéma Le Rex - Benfeld</a><span class="d-block description font-size-14 lh-sm">Festival Augenblick&nbsp;: Cicadas
+Avant-Premi&egrave;re&nbsp;
+Drame de Ina Weisse
+La vie d&rsquo;Isabelle est boulevers&eacute;e alors qu&rsquo;elle jongle entre [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/cinema/festival-augenblick-cicadas-1225198_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-17436100-1761049643-753402-180-180.webp" width="180" height="180" alt="Festival Augenblick : Cicadas" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1234652" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/manifestations-fetes-festivals-137_B" class="lh-sm">Manifestations à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/manifestations/graffica-et-20-ans-de-point-bar-bd-1234652_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Graffica et 20 ans de point bar bd</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 15/11/2025 au 22/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Strasbourg</span><span class="d-block description font-size-14 lh-sm">R&eacute;servez la semaine du 15 novembre 2025 au 22 novembre 2025&nbsp;! On f&ecirc;te les 20 ans de POINT BAR BD avec le vernissage de l'expo de GRAFFICA le samedi 15 novembre [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/manifestations/graffica-et-20-ans-de-point-bar-bd-1234652_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-96603100-1761831560-760351-180-180.webp" width="180" height="180" alt="Graffica et 20 ans de point bar bd" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1200957" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/loto-433_B" class="lh-sm">Lotos à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/manifestations/lotos/le-bingo-de-la-double-journee-1200957_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Le BINGO de la double journée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 15/11/2025 au 21/02/2026</span><a href="https://www.jds.fr/strasbourg/musee-et-collection-d-art/ceaac-strasbourg-3182_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> CEAAC - Strasbourg</a><span class="d-block description font-size-14 lh-sm">&Agrave; la mani&egrave;re des Hackney Flashers, Julie Luzoir s&rsquo;amuse &agrave; d&eacute;tourner un incontournable jeu de hasard&nbsp;: le bingo&nbsp;! Ici, aucun [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/manifestations/lotos/le-bingo-de-la-double-journee-1200957_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-48742300-1759486508-737702-180-180.webp" width="180" height="180" alt="Le BINGO de la double journée" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1232533" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/loisirs-stages-et-ateliers-434_B" class="lh-sm">Ateliers à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/manifestations/ateliers/portes-ouvertes-studio-m-ecole-audiovisuel-et-son-1232533_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Portes Ouvertes - Studio M École audiovisuel & son</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Strasbourg</span><span class="d-block description font-size-14 lh-sm">Vous &ecirc;tes passionn&eacute; par le cin&eacute;ma, la vid&eacute;o, le divertissement en ligne ou les m&eacute;tiers du son&nbsp;? . Vous souhaitez vous formez ou [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/manifestations/ateliers/portes-ouvertes-studio-m-ecole-audiovisuel-et-son-1232533_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-35075900-1758803344-758606-180-180.webp" width="180" height="180" alt="Portes Ouvertes - Studio M École audiovisuel &amp; son" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1242384" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/soirees-469_B" class="lh-sm">Soirées à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/soirees/quiz-blindtest-back-to-90-s-part-ii-1242384_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Quiz blindtest&nbsp;: Back to 90's Part II</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Strasbourg</span><span class="d-block description font-size-14 lh-sm">! NOUVEAU QUIZ EXCLUSIF&nbsp;!. Les Ann&eacute;es 90 Partie 2&nbsp;!. Nous organisons au IBIS STYLES, pour la toute premi&egrave;re fois, la grande suite au quiz/blindtest autour [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/soirees/quiz-blindtest-back-to-90-s-part-ii-1242384_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-19385900-1762388706-765415-180-180.webp" width="180" height="180" alt="Quiz blindtest : Back to 90&#039;s Part II" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1240163" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/braderie-3_B" class="lh-sm">Marchés à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/foires-et-salons/marches/vente-annuelle-au-club-1240163_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Vente annuelle au club</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Strasbourg</span><span class="d-block description font-size-14 lh-sm">&Agrave; l&rsquo;occasion de cette vente exceptionnelle, plongez dans l&rsquo;univers cr&eacute;atif de nos adh&eacute;rents&nbsp;! Laissez-vous s&eacute;duire par leurs [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/foires-et-salons/marches/vente-annuelle-au-club-1240163_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-52546300-1762160193-763584-180-180.webp" width="180" height="180" alt="Vente annuelle au club" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="746916" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/braderie-3_B" class="lh-sm">Marchés à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/foires-et-salons/marches/vernissage-voyage-au-japon-par-amypiou-746916_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Vernissage - Voyage au Japon par Amypiou</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2025</span><a href="https://www.jds.fr/strasbourg/the-cafe/les-compotes-15838_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Les Compotes - Strasbourg</a><span class="d-block description font-size-14 lh-sm">Voyage au Japon
+Lors de cette exposition, Am&eacute;lie vous pr&eacute;sente les derni&egrave;res risographies pour rendre hommage au pays du soleil levant. Son dernier voyage de [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/foires-et-salons/marches/vernissage-voyage-au-japon-par-amypiou-746916_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-00935700-1733303139-487083-180-180.webp" width="180" height="180" alt="Vernissage - Voyage au Japon par Amypiou" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1243790" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/marches-aux-puces-393_B" class="lh-sm">Brocantes à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/foires-et-salons/brocantes/vide-maison-1243790_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Vide maison</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 15/11/2025 au 16/11/2025</span><span class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Dorlisheim</span><span class="d-block description font-size-14 lh-sm">Vente d'objets de d&eacute;coration, de meubles, de vaisselle, de livres, d'articles de mercerie, de bricolage (peinture sur soie, peinture sur porcelaine, cartonnage...) outils [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/foires-et-salons/brocantes/vide-maison-1243790_A"><img loading="lazy" src="https://www.jds.fr/medias/image/marche-aux-puces-16565-180-180.webp" width="180" height="180" alt="Vide maison" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1200962" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/expositions-471_B" class="lh-sm">Expos à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/expos/visites-commentees-avec-la-commissaire-1200962_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Visites commentées avec la commissaire</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Du 15/11/2025 au 07/03/2026</span><a href="https://www.jds.fr/strasbourg/musee-et-collection-d-art/ceaac-strasbourg-3182_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> CEAAC - Strasbourg</a><span class="d-block description font-size-14 lh-sm">Accompagn&eacute;&middot;es de la commissaire Camille Richert, plongez au c&oelig;ur de l&rsquo;exposition Hope for change le temps d&rsquo;une visite comment&eacute;e au CEAAC. [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/expos/visites-commentees-avec-la-commissaire-1200962_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-44622600-1759486895-737709-180-180.webp" width="180" height="180" alt="Visites commentées avec la commissaire" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1208130" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/enfants-94_B" class="lh-sm">Sorties famille à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/sorties-famille/a-la-rescousse-du-pere-noel-1208130_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">A la Rescousse du Père Noël&nbsp;!</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 16/11/2025</span><a href="https://www.jds.fr/strasbourg/mutzig/salles-spectacle/le-dome-4691_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Dôme - Mutzig</a><span class="d-block description font-size-14 lh-sm">
+
+Le dimanche 16 novembre 2025, Le Dôme de Mutzig ouvre ses portes pour un spectacle familial extraordinaire&nbsp;:&nbsp;"À la Rescousse du Père Noël&nbsp;!". Cette aventure [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42733789429&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/sorties-famille/a-la-rescousse-du-pere-noel-1208130_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F07%2Fa9%2Fa-la-rescousse-du-p-re-no-l---tickets_393590_3279277_222x222.jpg&feedId=23455&k=212625a759756c447dfa5981285a7ad309fff3f6" width="180" height="180" alt="A la Rescousse du Père Noël !" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1082703" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/musique-classique-89_B" class="lh-sm">Musique classique à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/musique-classique/hugo-meder-violon-arthur-hinnewinkel-piano-1082703_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Hugo Meder - violon | Arthur Hinnewinkel - piano </span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 16/11/2025</span><a href="https://www.jds.fr/strasbourg/bischwiller/eglise/eglise-protestante-de-bischwiller-9783_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Eglise Protestante de Bischwiller</a><span class="d-block description font-size-14 lh-sm">Programme&nbsp;:&nbsp;
+Robert Schumann, Sonate no 3 en la mineur, WoW027
+Franz Schubert, Sonate en la majeur, op. 162
+Robert Schumann, Sonate no 2 en r&eacute; mineur, op. [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/musique-classique/hugo-meder-violon-arthur-hinnewinkel-piano-1082703_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-65376700-1752169548-672979-180-180.webp" width="180" height="180" alt="Hugo Meder - violon | Arthur Hinnewinkel - piano " class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1154416" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/humour-comedie-22_B" class="lh-sm">Humour à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/humour/le-diner-de-cons-tournee-1154416_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Le Dîner de Cons (tournée)</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 16/11/2025</span><a href="https://www.jds.fr/strasbourg/mutzig/salles-spectacle/le-dome-4691_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Dôme - Mutzig</a><span class="d-block description font-size-14 lh-sm">Le Dîner de Cons (tournée), un spectacle à voir à Strasbourg (Le Dôme Mutzig), le 16 novembre 2025. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42326499497&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/humour/le-diner-de-cons-tournee-1154416_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F51%2Fd8%2Fle-d-ner-de-cons-tickets_433437_3526067_222x222.jpg&feedId=23455&k=e3cbcfbc9d09eef38a3493aae41340613dbb135d" width="180" height="180" alt="Le Dîner de Cons (tournée)" /></a></div></div></li>
+</ul>
+</div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=7"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=7">7</a><span class="page d-inline-block mx-1 active mx-1">8</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=9">9</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=57">57</a></div>
+<a class="lien_next" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=9"><i class="bi bi-chevron-right"></i></a></div>
+</div><div id="content_right" class=""><hr class="d-md-none my-5"><div class="wrapper_gp_div mb-4"><div class="direct_18"><a class="gp_div_clic_event" data-id="3939" rel="nofollow" href="https://www.jds.fr/scripts/gp_div_clic.php?redirection&id=3939&format=18"  target="_blank"><img loading="lazy" src="https://medias.jds.fr/medias/direct/3939/formats-cfai-300x600.jpg" alt="Publicité" border="0" width="300" /></a><div class="gp_div_affiche" data-id="3939" data-id-format="18"></div>
+<script>window.addEventListener('gtag_loaded', function() {  if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3939', 'non_interaction': true }); } });</script>
+<script>window.addEventListener('gtag_loaded', function() {  if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '18', 'non_interaction': true }); } });</script>
+</div>
+</div><div class="encart-newsletter d-none d-md-block p-4 bg-light my-5"><p class="mt-0 mb-3 h2">Newsletter JDS Strasbourg</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p><form id="form_newsletter_6915ebaf9a0a3" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="6916035a8fdee" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915ebaf9a0a3_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" selected>67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915ebaf9a0a3_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915ebaf9a0a3_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915ebaf9a0a3_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915ebaf9a0a3_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915ebaf9a0a3 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915ebaf9a0a3_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915ebaf9a0a3 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915ebaf9a0a3_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915ebaf9a0a3 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915ebaf9a0a3_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915ebaf9a0a3_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915ebaf9a0a3 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915ebaf9a0a3',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915ebaf9a0a3").serialize();
+        $('form#form_newsletter_6915ebaf9a0a3 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915ebaf9a0a3 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915ebaf9a0a3 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915ebaf9a0a3 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter sidebar',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915ebaf9a0a3 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915ebaf9a0a3 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script></div><div class="pdf my-5"><div class="fw-bold font-size-28 mt-0 mb-3">Le magazine JDS</div>
+            <p><a class="btn btn-primary rounded-pill btn-lg shadow-lg d-block" href="https://medias.jds.fr/pdf/390/Spectacles-390-68.pdf">Lire le JDS Novembre 2025</a></p>
+            <div class="row mt-4">
+                <div class="col-7">     
+                    <ul>
+                        <li><a href="https://www.jds.fr/points-de-distribution-jds/">Où trouver le magazine JDS ?</a></li>
+                        <li><a href="https://www.jds.fr/spectacles-68/magazine-spectacles-mulhouse-colmar-haut-rhin">Toutes les éditions</a></li><li><a href="https://www.jds.fr/supplement-formation/">Tous les suppléments formation</a></li></ul>
+                </div>
+                
+                <div class="col-5">
+                    <a class="image" href="https://medias.jds.fr/pdf/390/Spectacles-390-68.pdf"><img class="border" loading="lazy" src="https://www.jds.fr/medias/image/couverture-spectacle-755405-110-0.webp" alt="couverture magazine JDS 390" width="110" /></a></div>
+            </div></div><div class="wrapper_gp_div mb-2 sticky"><div class="direct_29"><a class="gp_div_clic_event" data-id="3951" rel="nofollow" href="https://www.jds.fr/scripts/gp_div_clic.php?redirection&id=3951&format=29"  target="_blank"><img loading="lazy" src="https://medias.jds.fr/medias/direct/3951/jds-bannieres-300x600-brad25-v2.jpg" alt="Publicité" border="0" width="300" /></a><div class="gp_div_affiche" data-id="3951" data-id-format="29"></div>
+<script>window.addEventListener('gtag_loaded', function() {  if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3951', 'non_interaction': true }); } });</script>
+<script>window.addEventListener('gtag_loaded', function() {  if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '29', 'non_interaction': true }); } });</script>
+</div>
+</div></div></div></div></div><footer id="footer" class="mt-5 px-3">    
+    <div class="container">     
+    <div class="row">
+        
+        <div class="col-md-6 col-lg-4 order-md-6 offset-lg-1">
+            <div id="footer_newsletter" class="p-4 bg-light full-width-sm mb-5">                                  
+                <p class="mt-0 mb-3 h2">Newsletter JDS Strasbourg</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p>                         
+                <form id="form_newsletter_6915ebaf9a120" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="6916035a8fdee" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915ebaf9a120_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" selected>67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915ebaf9a120_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915ebaf9a120_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915ebaf9a120_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915ebaf9a120_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915ebaf9a120 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915ebaf9a120_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915ebaf9a120 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915ebaf9a120_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915ebaf9a120 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915ebaf9a120_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915ebaf9a120_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915ebaf9a120 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915ebaf9a120',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915ebaf9a120").serialize();
+        $('form#form_newsletter_6915ebaf9a120 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915ebaf9a120 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915ebaf9a120 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915ebaf9a120 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter footer',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915ebaf9a120 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915ebaf9a120 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script>         
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 order-md-first">
+            <a class="logo d-block mx-auto mx-lg-0" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a>
+
+            
+            <p class="my-4 fw-bold text-center text-md-start">Le JDS Strasbourg, c’est des sorties (concerts, humour…) et des bons plans en tous genres (resto, shopping, événements locaux…) au plus près de chez vous.</p>
+            
+                
+                
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <a href="https://www.facebook.com/jds.fr/" class="mx-1" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/jds_actu/" class="mx-1" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@jdsmulhouse" class="mx-1" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.youtube.com/channel/UCEcNj-n3vLsQ2IUrD8FL-5g" class="mx-1" target="_blank"><i class="bi bi-youtube"></i></a>
+                    <a href="https://fr.linkedin.com/company/media-jds" class="mx-1" target="_blank"><i class="bi bi-linkedin"></i></a>       
+                </p>
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <span class="font-size-14">Téléchargez l'appli JDS : </span>
+                <a href="https://market.android.com/details?id=fr.jds.app" class="mx-1" target="_blank"><i class="bi bi-android2"></i></a><a href="https://itunes.apple.com/fr/app/jds-les-sorties-en-alsace/id467323730?mt=8" class="mx-1" target="_blank"><i class="bi bi-apple"></i></a>   
+                </p>
+                
+            <hr class="my-5 d-md-none">
+        </div>
+        <div class="col-md-12 col-lg-3 order-md-11 offset-lg-1">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Organisateurs</p>
+                    <p class="fw-bold">Publiez votre événement sur le site jds.fr</p>                
+                    <ul class="text-gray-700 mt-2">
+                        <li>Publiez gratuitement votre événement dans l’agenda via notre <a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=footer&utm_campaign=link_publier_info_text">espace organisateur</a></li>
+                        <li>Bénéficiez d'une visibilité auprès de nos 3&nbsp;000&nbsp;000 visiteurs mensuels !</li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://pro.jds.fr" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je publie mon événement</a></p>
+
+                    <hr class="my-5 d-md-none d-lg-block">
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Annonceurs</p>
+                    <p class="fw-bold">Discutons ensemble de votre communication</p>          
+                    <ul class="text-gray-700 mt-2">
+                        <li>Promouvoir au mieux votre événement ou votre offre</li>
+                        <li>3&nbsp;000&nbsp;000 visiteurs mensuels <a href="https://www.jds.fr/magazine/actu-magazine/audience-jds-169974_A">(tout savoir sur l'audience du JDS)</a></li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://www.jds.fr/blog/" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je découvre les solutions</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 order-md-12">
+            <hr class="my-5">
+
+            <ul class="list-unstyled font-size-14 d-lg-flex justify-content-between">
+            <li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/journal-des-spectacles-magazine-mulhouse-colmar-haut-rhin-alsace-837_A">Qui sommes-nous ?</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/mentions-legales/">Infos légales / Affiliation</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/cookies/">Cookies</a></li><li class="mb-1 me-2"><a href="javascript:Didomi.preferences.show()">Modifier mes choix de cookies</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/comment-vous-desabonner-des-notifications-jds-340946_A">Se désabonner des notifications</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/contact/">Nous contacter</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/offres-emploi-mulhouse-alsace/">Emploi : nous rejoindre</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/">Blog</a></li>  
+            </ul>
+
+            <p class="font-size-14">Copyright 2008-2025 jds.fr</p>
+        </div>
+    </div> <!-- fin row -->        
+    </div> <!-- fin container -->
+</footer><div id="search-form-menu-container" class="search-form-menu-container shadow-lg bg-light hidden text-center py-3 py-lg-5">
+    <div class="container px-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-bold font-size-26">Rechercher</span>
+            <span class="cursor-pointer d-block search-form-menu-close text-primary" onclick="toggleSearchMenu();"><i class="bi bi-x-circle me-1"></i> Fermer</span>
+        </div>
+        <div
+            id="search-app"
+            data-endpoint="/ajax/search.php"
+            data-placeholder-text="ex. : concert demain à ..."
+            data-index-event="jds_event"
+            data-index-city="jds_city"
+            data-index-venue="jds_venue"
+            data-index-article="jds_article"
+            data-index-artist="jds_artist"
+            data-current-city-id="390" data-current-city-name="Strasbourg"         ></div>
+    </div>
+</div>
+
+<div id="header-city-dropdown-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <p class="modal-title m-0">Choisissez une ville spécifique</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="ville-selector-mode" value="default" id="ville-selector-mode" />
+                <input type="text" class="form-control form-control-lg shadow-lg rounded-3" id="ville-selector-modal" placeholder="Entrez le nom de votre ville">
+                <div id="ville-selector-container-modal"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer>
+$(document).ready(function() {
+    $('#ville-selector-modal').keyup(function() {
+        if($(this).val().length==0) { $("#ville-selector-container-modal").html(""); return; }
+        if($(this).val().length<2) { return; }
+
+        $.post("/ajax/recherche_ville_fonction.php", { term: $(this).val(), mode:$('input[name="ville-selector-mode"]').val() })
+        .done(function(data) {
+
+            $("#ville-selector-container-modal").html('<p class="mt-4">Cliquez sur votre ville :</p><ul class="list-unstyled font-size-16"></ul>');
+            obj=JSON.parse(data);
+            obj.forEach(function(item){
+            $("#ville-selector-container-modal").find("ul").append('<li class="p-3 border-bottom"><a href="'+item.url+'" class="text-dark"><i class="bi bi-geo-fill text-primary me-1"></i> '+item.label+'</a></li>');
+        });
+        });
+    }); 
+});
+</script>
+
+</div><script defer src="/libs/jquery/magnific-popup/jquery.magnific-popup.min.js?v=131"></script><script defer src="/scripts/slick.min.js?v=131"></script><script defer src="/libs/choices/scripts/choices.js?v=131"></script><script defer src="/libs/lightbox2/js/lightbox.min.js?v=131"></script><script defer src="/scripts/functions_footer.js?v=131"></script><script>const { createApp, ref, computed, watch, onMounted, onBeforeUnmount, nextTick, reactive } = Vue;</script><script src="/scripts/search.app.js?v=131"></script><script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-messaging-compat.js"></script>
+<script>
+const firebaseConfig = {
+    apiKey: "AIzaSyBjBC01qlzGVLYWWE8D0rrOzL2cSfIf7MQ",
+    authDomain: "journal-des-spectacles-dd5d0.firebaseapp.com",
+    databaseURL: "https://journal-des-spectacles-dd5d0.firebaseio.com",
+    projectId: "journal-des-spectacles-dd5d0",
+    storageBucket: "journal-des-spectacles-dd5d0.appspot.com",
+    messagingSenderId: "37707045198",
+    appId: "1:37707045198:web:e58879e2e7f9adf0"
+  };
+const vapidKey = "BB2gRQtko-8CqzZbrzzlGBwMim_ThaPkNdzqi780Y7ku5VmG_E_DwFJnrJXB7_pNJKn9UTbIchVKfijBHNteuu8";
+  
+firebase.initializeApp(firebaseConfig);
+const messaging = firebase.messaging();
+
+var browserName = (function (agent) {        
+    switch (true) {
+        case agent.indexOf("edge") > -1: return "Edge"; // ms
+        case agent.indexOf("edg/") > -1: return "Edge"; // (chromium based)
+        case agent.indexOf("chrome") > -1 && !!window.chrome: return "Chrome";
+        case agent.indexOf("firefox") > -1: return "Firefox";
+        case agent.indexOf("safari") > -1: return "Safari";
+        default: return "other";
+    }
+})(window.navigator.userAgent.toLowerCase());
+    
+function fcm_resetUI() { 
+    if(!isTokenSentToServer()) {
+        if(window.navigator.userAgent.toLowerCase().indexOf('iphone')!==-1) { return; } // fix bug safari iphone    
+        if(browserName=='Chrome') { $('#web_push_dialog').addClass('chrome'); }
+        if(browserName=='Edge') { $('#web_push_dialog').addClass('edge'); }
+        if(browserName=='Firefox') { $('#web_push_dialog').addClass('firefox'); }
+        if(Notification.permission=='default') {
+            if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+        }
+        else if(Notification.permission=='granted') {
+            messaging.getToken({ vapidKey:vapidKey }).then((currentToken) => {   
+                                if (currentToken) {
+                    sendTokenToServer(currentToken);
+                } else {
+                  setTokenSentToServer(false);
+                  if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+                }
+            }).catch((err) => {
+                
+                setTokenSentToServer(false);
+            });
+        }    
+    }
+}
+//window.fcm_resetUI = fcm_resetUI;
+function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+        setTokenSentToServer(true);
+        $.post( "/ajax/firebase_register_v2.php",  { token: currentToken, dpt:'67' });      
+        if(typeof gtag=="function") {
+            gtag("event", "subscription", {
+                "event_category" : "Firebase",
+                "event_label" : "Web push",
+                "non_interaction": true
+            });            
+        }
+    } 
+}
+function isTokenSentToServer() {
+    var web_push_cookie = $.cookie('web_push');       
+    if(typeof web_push_cookie === 'undefined' || web_push_cookie===false) return false;
+    return true;
+}
+function setTokenSentToServer(sent) {
+    if(sent) $.cookie('web_push',true, {path: '/',domain:'.jds.fr'}); 
+    else $.cookie('web_push',false, {path: '/',domain:'.jds.fr'}); 
+}
+function requestPushDialog() {
+    $.magnificPopup.open({
+        items: {
+            src: '#web_push_dialog', // can be a HTML string, jQuery object, or CSS selector
+            type: 'inline'
+          },
+        alignTop : true,
+        showCloseBtn : true,
+        //closeOnBgClick: ((browserName!='Firefox' &&  && !$('#web_push_dialog').hasClass('mobile'))?false:true),
+        callbacks: {
+            open: function() {                 
+                $('.mfp-bg').css('position','fixed');      
+                if(browserName!='Firefox') {
+                    if(!$('#web_push_dialog').hasClass('mobile')) {
+                        $('.mfp-bg').css('opacity',.0).css('width','auto').css('height','auto');
+                        $('html').css('overflow','auto');  
+                        $('.mfp-wrap').css('width','auto').css('height','auto');
+                    }
+                    else {
+                        $('html').css('overflow','hidden');  
+                    }
+                }
+                else {
+                    $('.mfp-bg').css('opacity',.75).css('background','#fff');
+                }
+
+            },
+            close: function() {
+                $('html').css('overflow','auto'); 
+            }
+        }    
+    }); 
+    if(browserName!='Firefox') { requestPermission(); } // sur firefox, l'ouverture de permission automatique ne marche pas alors on remet les boutons
+}
+function requestPermission() {   
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+            fcm_resetUI();
+            $.magnificPopup.close();
+      } else {
+            $.magnificPopup.close();
+      }
+    });
+}
+$(document).on('click','#web_push_dialog button',function() {
+    //firefox
+    if($(this).hasClass('accept')) requestPermission();
+    if($(this).hasClass('deny')) setTokenSentToServer(true);    
+    
+    $.magnificPopup.close();       
+});
+</script>
+
+<div id="web_push_dialog" class="mfp-hide desktop">
+    <div class="popup-content p-3">
+        <img class="logo-mobile" loading="lazy" src="/images/new/logo-jds.svg?v=131" width="40" height="40" alt="jds.fr">
+        <p class="popup-title mb-3"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+        <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+        <p class="text-gray-600 font-size-14 mb-0">Autoriser les notifications pour continuer.</p>
+        <hr class="hide-mobile">
+        <div class="p-3 hide-mobile text-center bg-primary"><img loading="lazy" src="/images/new/logo-jds-white.svg?v=131" width="100" height="100" alt="jds.fr"></div>
+        <div class="arrow text-gray-800"><i class="bi bi-arrow-down-circle-fill"></i></div>
+    </div>
+    <div class="popup-content-firefox p-3">
+        <div class="row">
+            <div class="col-md-3 pr-0 col-3"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" class="popup-logo"></div>
+            <div class="col-md-9 col-9">
+              <p class="popup-title"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+              <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+              <p class="text-gray-600 font-size-14 mb-3">Une seconde fenêtre va s'ouvrir vous invitant à autoriser les notifications</p>
+              <div class="popup-footer text-right"><button class="btn btn-outline-primary rounded-pill btn-sm me-3 deny">Refuser</button><button class="btn btn-primary rounded-pill btn-sm me-3 accept">Autoriser</button></div>
+            </div>
+        </div>
+    </div>
+</div><script type="didomi/javascript" data-purposes="select_basic_ads" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4984827051088801"
+     crossorigin="anonymous"></script></body></html>

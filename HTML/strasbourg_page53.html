@@ -1,0 +1,661 @@
+<!DOCTYPE html><html lang="fr"><head><script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+      else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+        var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+        if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e,tgt){
+        var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+tgt;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("9d946103-8843-4a4e-ab0b-8e61ea84e891","Qr7JnTUV")})();</script>
+
+<script> 
+    window.didomiOnReady = window.didomiOnReady || [];
+    window.didomiOnReady.push(function (Didomi) { 
+        // Call other functions on the SDK
+
+        // Refresh de la page en cas de changement du consentement
+        window.didomiEventListeners = window.didomiEventListeners || [];
+        window.didomiEventListeners.push({
+            event: 'consent.changed',
+            listener: function (context) {
+                gp_maj();
+            }
+        });
+
+        // Google advertising products
+        Didomi.getObservableOnUserConsentStatusForVendor('google')
+        .filter(function (status) { return status !== undefined })
+        .subscribe(function (consentStatus) {
+            if (consentStatus === undefined || consentStatus === false) {
+                // on masque les encarts pubs vides
+                (function() {     
+                    var div_regies = document.getElementsByClassName('wrapper_gp_div');
+                    
+                    setTimeout(function() { // on fait un settimeout sinon le length n'est pas juste...                   
+                        for (let i = 0; i < div_regies.length; i++) {                  
+                            if (div_regies[i].innerHTML.indexOf('regie_') > -1) {                           
+                              div_regies[i].style.display="none";
+                            }
+                        }
+                        
+                    },400);
+                    
+                    
+                })();
+            }
+        }); 
+        
+     
+
+    });
+    </script> 
+<meta charset="UTF-8" />
+<title>Strasbourg - L&#039;agenda des spectacles, manifestations, concerts - Page 53</title>
+<meta name="description" content="Strasbourg - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 53" />
+<link rel="canonical" href="https://www.jds.fr/strasbourg/agenda/?page=53" />
+<meta name="p:domain_verify" content="9efecdd4eddf0844d5703f41d2dc7ca7"/>
+<meta property="fb:app_id" content="638077278167784" />
+<meta property="fb:pages" content="50813882504">
+<meta property="og:title" content="Strasbourg - L&#039;agenda des spectacles, manifestations, concerts - Page 53" />
+<meta property="og:description" content="Strasbourg - L&#039;agenda des spectacles, manifestations, concerts, sorties, expositions - Page 53" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.jds.fr/strasbourg/agenda/?page=53" />
+<meta property="og:site_name" content="jds.fr" />
+<meta property="og:image" content="https://www.jds.fr/images/header_logo_120.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="364" />
+<meta property="og:image:height" content="364" />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https:\/\/www.jds.fr\/","name":"Accueil"},{"@type":"ListItem","position":2,"item":"https:\/\/www.jds.fr\/strasbourg\/","name":"Strasbourg"},{"@type":"ListItem","position":3,"name":"Agenda"}]}</script>
+
+<meta name="robots" content="noindex,follow" />
+<link rel="prev" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=52" /><link rel="next" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=54" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+<link rel="stylesheet" href="/css/custom.css?v=131">
+<link rel="preload" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/magnific-popup/magnific-popup.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.css?v=131"></noscript>
+<link rel="preload" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/jquery/pickadate.js/lib/themes/default.date.css?v=131"></noscript>
+<link rel="preload" href="/libs/lightbox2/css/lightbox.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/lightbox2/css/lightbox.min.css?v=131"></noscript>
+<link rel="preload" href="/css/slick-theme.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick-theme.css?v=131"></noscript>
+<link rel="preload" href="/css/slick.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/slick.css?v=131"></noscript>
+<link rel="preload" href="/libs/choices/styles/choices.min.css?v=131" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/libs/choices/styles/choices.min.css?v=131"></noscript>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#e50b47">
+<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e50b47">
+<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><link rel="manifest" href="/manifest.json"></head><body class="version_b  "><script async src="https://www.googletagmanager.com/gtag/js?id=G-6WVELE5WG9"></script>
+<script type="didomi/javascript" data-vendor="c:googleana-4TXnJigR">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+        dataLayer.push(arguments);
+        if (arguments[0] === 'js') {
+            setTimeout(function() {
+            window.dispatchEvent(new Event('gtag_loaded'));
+        }, 1000);
+        }
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6WVELE5WG9', {
+          'cookie_expires': 33696000,
+          'transport_type': 'beacon',
+          'dimension1': '0','dimension2': '67','dimension3': '2','dimension4': '0','dimension5': '0','dimension6': '0','dimension7': '','dimension8': 'b','dimension9': '0',     
+    });
+</script><script src="/libs/jquery-3.7.1.min.js"></script><script defer src="/libs/bootstrap/js/popper.min.js"></script><script defer src="/libs/bootstrap/js/bootstrap.min.js"></script><script defer src="/libs/jquery/js/jquery.cookie.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.js"></script><script defer src="/libs/jquery/pickadate.js/lib/picker.date.js"></script><script defer src="/libs/jquery/pickadate.js/lib/translations/fr_FR.js"></script><script src="/libs/vue.global.prod.js"></script><script src="/libs/axios.min.js"></script><script src="/ads-checker.js"></script><script defer src="/scripts/functions.js?v=131"></script><script>var gp_maj_done=false;
+var param_gp=[];param_gp['id_newsletter']='0';param_gp['type']='0';param_gp['sousrub']='0';param_gp['rub']='2';param_gp['rub_rub']='2';param_gp['page']='53';param_gp['mobile_version']='0';param_gp['detail_type']='';param_gp['detail_id']='0';param_gp['web_push_site']='';param_gp['web_push_id']='';param_gp['current_departement']='67';$(document).ready(function() {
+    if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) gp_maj();});</script><div class="gp_div_affiche" data-id="0" data-id-format="24"></div>
+<div id="global" class="p-0"><div id="header" class="bg-white header"><div class="d-flex justify-content-between align-items-center px-2rem header-inner-wrapper text-primary container"><div class="header-logo mb-1"><a class="d-block" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a></div><div class="header-city-inline-selector d-flex me-auto font-size-22 ms-4 align-items-center lh-1"><a href="https://www.jds.fr/strasbourg/" class="">Strasbourg</a><span class="ms-auto ms-md-0 d-block ps-2 cursor-pointer" onclick="toggleCityMenu();"><i class="bi bi-chevron-down"></i></span></div><div class="header-publish ms-md-auto me-md-5"><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=header&utm_campaign=link_publier_info" class="btn btn-outline-primary rounded-pill d-none d-md-inline shadow-sm"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><div class="header-menu font-size-36 cursor-pointer ps-3" onclick="toggleMenu()"><i class="bi bi-list"></i></div></div></div>
+<!-- NAVBAR -->
+<div id="header-navbar" class="bg-light-primary header-navbar navbar-v2">
+    <div class="px-2rem header-navbar-inner-wrapper container font-size-14">
+        <div class="navbar-v2-item d-flex">
+            <div class="flex-fill">
+                <span onclick="toggleSearchMenu();" class="bg-primary text-white d-block px-3"><span class="search-btn cursor-pointer"><span><i class="bi bi-search me-2"></i> Rechercher</span></span>
+            </div>
+            <div class="flex-fill"><a href="https://www.jds.fr/strasbourg/agenda/agenda-du-jour/-aujourdhui_JPJ" class="" data-event-label="Aujourd'hui"><span><i class="cf icon-aujourdhui">&#xe80f;</i> Aujourd'hui</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="" data-event-label="Spectacles"><span><i class="cf icon-spectacles">&#xe80c;</i> Spectacles</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/musique-et-concerts-96_B" class="" data-event-label="Concerts"><span><i class="cf icon-concert">&#xe801;</i> Concerts</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/manifestations-fetes-festivals-137_B" class="" data-event-label="Animations"><span><i class="cf icon-manifestations">&#xe807;</i> Animations</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/foire-salon-puces-bourses-468_B" class="" data-event-label="Salons / Puces"><span><i class="cf icon-foires">&#xe805;</i> Salons / Puces</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/sports-145_B" class="" data-event-label="Sports"><span><i class="cf icon-sport">&#xe810;</i> Sports</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/expositions-471_B" class="" data-event-label="Expos"><span><i class="cf icon-expos">&#xe802;</i> Expos</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/enfants-94_B" class="" data-event-label="Famille"><span><i class="cf icon-famille">&#xe813;</i> Famille</span></a></div><div class="flex-fill d-none d-lg-block"><a href="https://www.jds.fr/strasbourg/agenda/soirees-469_B" class="" data-event-label="Soirées"><span><i class="cf icon-soirees">&#xe80b;</i> Soirées</span></a></div>        </div>
+    </div>
+</div>
+<div id="menu" class="menu bg-white px-2rem py-5 hidden"><div class="text-center"><button class="btn btn-primary btn-lg rounded-pill d-block w-100 menu-link" onclick="toggleSearchMenu();" data-event-label="open-search-menu"><i class="bi bi-search me-2"></i> Rechercher</button><a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=menu&utm_campaign=link_publier_info" class="btn btn-outline-primary my-4 btn-lg rounded-pill d-block w-100" data-event-label="Espace pro"><i class="bi bi-plus-circle me-1"></i> Publier un événement</a></div><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/strasbourg/agenda/agenda-du-jour/-aujourdhui_JPJ" class="text-dark hover-text-primary cursor-pointer" data-event-label="Aujourd'hui">Aujourd'hui à Strasbourg</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/evenements/" class="text-dark hover-text-primary" data-event-label="Evénements">Evénements</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/manifestations-fetes-festivals-137_B" class="text-dark hover-text-primary" data-event-label="Manifestations">Manifestations</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/foire-salon-puces-bourses-468_B" class="text-dark hover-text-primary" data-event-label="Foires & salons">Foires & salons</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="text-dark hover-text-primary" data-event-label="Spectacles">Spectacles</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/musique-et-concerts-96_B" class="text-dark hover-text-primary" data-event-label="Concerts">Concerts</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/sports-145_B" class="text-dark hover-text-primary" data-event-label="Sports">Sports</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/soirees-469_B" class="text-dark hover-text-primary" data-event-label="Soirées">Soirées</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/enfants-94_B" class="text-dark hover-text-primary" data-event-label="Sorties famille">Sorties famille</a></li><li><a href="https://www.jds.fr/strasbourg/agenda/expositions-471_B" class="text-dark hover-text-primary" data-event-label="Expos">Expos</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/strasbourg/magazine/" class="text-dark hover-text-primary" data-event-label="Actus">Actus à Strasbourg</a></li><li><a href="https://www.jds.fr/strasbourg/annuaire/" class="text-dark hover-text-primary" data-event-label="Annuaire">Annuaire tourisme & loisirs</a></li><li><a href="https://www.jds.fr/restaurants-308_T" class="text-dark hover-text-primary" data-event-label="Restaurants">Restaurants</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/jeux/" class="text-dark hover-text-primary" data-event-label="Jeux">Jeux concours</a></li><li><a href="https://www.jds.fr/newsletter-archives/toutes-les-newsletter-jds-fr" class="text-dark hover-text-primary" data-event-label="Newsletters">Newsletter des sorties</a></li></ul><hr><ul class="list-unstyled menu-navigation font-size-18 fw-bold"><li><a href="https://www.jds.fr/blog/" class="text-dark hover-text-primary" data-event-label="Annonceurs">Annonceurs</a></li></ul></div><div id="header-city-dropdown" class="header-city-dropdown bg-secondary py-2 text-white px-2rem font-size-16 hidden"><div class="container"><div class="py-2 cursor-pointer text-uppercase" onclick="$('#header-city-dropdown-modal').modal('show'); $('#ville-selector-modal').focus(); $('input[name=&quot;ville-selector-mode&quot;]').val('default')"><i class="bi bi-building-add me-1"></i> Une autre ville</div><div class="py-1"><a href="https://www.jds.fr/bordeaux/" class="text-white text-uppercase">Bordeaux</a></div><div class="py-1"><a href="https://www.jds.fr/colmar/" class="text-white text-uppercase">Colmar</a></div><div class="py-1"><a href="https://www.jds.fr/dijon/" class="text-white text-uppercase">Dijon</a></div><div class="py-1"><a href="https://www.jds.fr/lille/" class="text-white text-uppercase">Lille</a></div><div class="py-1"><a href="https://www.jds.fr/lyon/" class="text-white text-uppercase">Lyon</a></div><div class="py-1"><a href="https://www.jds.fr/marseille/" class="text-white text-uppercase">Marseille</a></div><div class="py-1"><a href="https://www.jds.fr/metz/" class="text-white text-uppercase">Metz</a></div><div class="py-1"><a href="https://www.jds.fr/montpellier/" class="text-white text-uppercase">Montpellier</a></div><div class="py-1"><a href="https://www.jds.fr/mulhouse/" class="text-white text-uppercase">Mulhouse</a></div><div class="py-1"><a href="https://www.jds.fr/nancy/" class="text-white text-uppercase">Nancy</a></div><div class="py-1"><a href="https://www.jds.fr/nantes/" class="text-white text-uppercase">Nantes</a></div><div class="py-1"><a href="https://www.jds.fr/nice/" class="text-white text-uppercase">Nice</a></div><div class="py-1"><a href="https://www.jds.fr/paris/" class="text-white text-uppercase">Paris</a></div><div class="py-1"><a href="https://www.jds.fr/reims/" class="text-white text-uppercase">Reims</a></div><div class="py-1"><a href="https://www.jds.fr/rennes/" class="text-white text-uppercase">Rennes</a></div><div class="py-1"><a href="https://www.jds.fr/strasbourg/" class="text-white text-uppercase">Strasbourg</a></div><div class="py-1"><a href="https://www.jds.fr/toulouse/" class="text-white text-uppercase">Toulouse</a></div><div class="mt-5 py-1 cursor-pointer" onclick="toggleCityMenu()"><u><i class="bi bi-x-circle me-1"></i> Fermer le menu</u></div></div></div><div id="global-container"><div id="global-container-inner-wrapper" class="container"><!--[if lte IE 9]>
+<div class="alert alert-warning" role="alert">
+<p class="mb-0">Vous utilisez une très ancienne version de navigateur Internet, ce qui impacte négativement votre expérience de navigation sur le site du JDS et sur Internet en général. Nous vous recommandons de mettre à jour votre navigateur ou d'en installer un autre en <a href="https://browsehappy.com/?locale=fr" target="_blank">cliquant ici</a>.</p>
+</div>
+<![endif]--><div class="text-center mb-5 mx-auto leaderboard"><div class="wrapper_gp_div nobg"><div class="direct_2"><a class="gp_div_clic_event" data-id="3874" rel="nofollow" href="https://www.jds.fr/scripts/gp_div_clic.php?redirection&id=3874&format=2"  target="_blank"><img loading="lazy" src="https://medias.jds.fr/medias/direct/3874/leaderboard.jpg" alt="Publicité" border="0" width="1000" /></a><div class="gp_div_affiche" data-id="3874" data-id-format="2"></div>
+<script>window.addEventListener('gtag_loaded', function() {  if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '3874', 'non_interaction': true }); } });</script>
+<script>window.addEventListener('gtag_loaded', function() {  if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '2', 'non_interaction': true }); } });</script>
+</div>
+</div></div><div id="content_container" class="d-md-flex justify-content-between"><div id="content_left"><div id="chemin" class="ariane mb-3"><a href="https://www.jds.fr/">Accueil</a><a href="https://www.jds.fr/strasbourg/">Strasbourg</a></div><div class="header-ville no-form is_page_ville ville_67 agglo_390 "><h1>Strasbourg&nbsp;: Agenda et événements</h1><button onclick="toggleSearchMenu()" class="btn btn-primary btn-lg mx-auto d-block rounded-pill shadow-lg my-4" data-position="page-resultats-modifier-recherche-top"><i class="bi bi-search me-2"></i> Rechercher</button></div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=52"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=52">52</a><span class="page d-inline-block mx-1 active mx-1">53</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=54">54</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=57">57</a></div>
+<a class="lien_next" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=54"><i class="bi bi-chevron-right"></i></a></div>
+<div class="mt-5"><ul class="mt-3 list-unstyled list-articles-v2">
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1224163" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/matchs-sportifs-466_B" class="lh-sm">Matchs à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/sports/matchs/ares-strasbourg-mma-1224163_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Ares Strasbourg - Mma</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 25/10/2026</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">ARES Strasbourg - MMA Zénith Europe - Strasbourg
+Le show continue à Strasbourg. Après un premier événement historique, le rendez-vous est pris&nbsp;: ARES Strasbourg, le [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://ticketmaster-fr.tm7516.net/c/3318096/427761/7516?u=https%3A%2F%2Fwww.ticketmaster.fr%2Ffr%2Fmanifestation%2Fares-strasbourg-mma-billet%2Fidmanif%2F638668%2Fidtier%2F18864121&utm_medium=affiliate" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/sports/matchs/ares-strasbourg-mma-1224163_A"><img loading="lazy" src="https://www.jds.fr/medias/image/ares-strasbourg-mma-752852-180-180.webp" width="180" height="180" alt="Ares Strasbourg - Mma" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1229623" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/humour-comedie-22_B" class="lh-sm">Humour à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/humour/timothee-curado-present-tournee-1229623_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Timothée Curado - Présent&nbsp;! Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 28/10/2026</span><a href="https://www.jds.fr/strasbourg/ostwald/salles-spectacle/espace-culturel-le-point-d-eau-4696_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Point d'Eau - Ostwald</a><span class="d-block description font-size-14 lh-sm">
+
+Timothée Curado investit la scène du Point d'Eau à Ostwald le mercredi 28 octobre 2026 à 20h avec son spectacle&nbsp;"Présent&nbsp;!". L'humoriste et professeur de [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42961312453&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/humour/timothee-curado-present-tournee-1229623_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F38%2Fb8%2Ftimothee-curado-tickets_277041_2451575_222x222.jpg&feedId=23455&k=ad5d5eae2281857d0b42540d2fb719b508cfd099" width="180" height="180" alt="Timothée Curado - Présent ! Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1162733" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/chanson-francaise/sinclair-tour-2025-1162733_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Sinclair - Tour 2025</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/11/2026</span><a href="https://www.jds.fr/strasbourg/salle-de-concert/la-laiterie-strasbourg-419_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Laiterie - Strasbourg</a><span class="d-block description font-size-14 lh-sm">Sinclair - Tour 2025 en concert à Strasbourg (La Laiterie ), le 5 novembre 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour ce concert sont à [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42384780595&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/chanson-francaise/sinclair-tour-2025-1162733_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F24%2Fa3%2Fsinclair-tickets_331774_2857603_222x222.jpg&feedId=23455&k=3472acbce5a9b3f3d14a36a868e2f8a9669d95f0" width="180" height="180" alt="Sinclair - Tour 2025" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1224705" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/danse-35_B" class="lh-sm">Danse à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/danse/barbara-par-pietragalla-tournee-1224705_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Barbara par Pietragalla - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 07/11/2026</span><a href="https://www.jds.fr/strasbourg/salles-spectacle/palais-de-la-musique-et-des-congres-strasbourg-434_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Palais de la Musique et des Congrès (PMC) - Strasbourg</a><span class="d-block description font-size-14 lh-sm">
+
+Marie-Claude Pietragalla investit la scène du Palais de la Musique et des Congrès (PMC) de Strasbourg le samedi 7 novembre 2026 à 20h30 pour présenter son spectacle Barbara [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42890436183&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/danse/barbara-par-pietragalla-tournee-1224705_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F25%2F89%2Fpietragalla---barbara---olympia--paris-tickets_325408_2819940_222x222.jpg&feedId=23455&k=0cfac80e7a280ac51e5c19db00faafa127e4a33f" width="180" height="180" alt="Barbara par Pietragalla - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="676623" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/humour-comedie-22_B" class="lh-sm">Humour à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/humour/haroun-bonjour-quand-meme-tournee-676623_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Haroun - Bonjour Quand Même - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 07/11/2026</span><a href="https://www.jds.fr/strasbourg/salles-spectacle/palais-de-la-musique-et-des-congres-strasbourg-434_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Palais de la Musique et des Congrès (PMC) - Strasbourg</a><span class="d-block description font-size-14 lh-sm">Haroun - Bonjour Quand Même - Tournée, un spectacle à voir à Strasbourg (Palais de la Musique et des Congrès (PMC) ), le 7 novembre 2026. Toutes les informations pratiques [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=38964281164&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/humour/haroun-bonjour-quand-meme-tournee-676623_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F5c%2F40%2Fharoun-visuel-tournee-bonjour-....-tickets_304725_2574475_222x222.jpg&feedId=23455&k=e7b82e79ba296b3cf9bc0934cae2bae255642b86" width="180" height="180" alt="Haroun - Bonjour Quand Même - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="880300" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/musique-classique-89_B" class="lh-sm">Musique classique à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/musique-classique/the-world-of-hans-zimmer-a-new-dimension-880300_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">The World of Hans Zimmer "A New Dimension"</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 09/11/2026</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">En 2026, les fans fran&ccedil;ais pourront d&eacute;couvrir la musique incomparable de Hans Zimmer avec deux tourn&eacute;es exceptionnelles.&nbsp;
+Hans Zimmer, laur&eacute;at de [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=40776746464&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/musique-classique/the-world-of-hans-zimmer-a-new-dimension-880300_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-70188800-1742210031-562681-180-180.webp" width="180" height="180" alt="The World of Hans Zimmer A New Dimension" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1220919" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/hip-hop-rap-190_B" class="lh-sm">Rap à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/rap/nej-irreel-tour-1220919_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">NEJ "Irréel Tour"</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 11/11/2026</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">NEJ' d&eacute;voile son IRREEL TOUR et promet un show &agrave; son image&nbsp;: intense, envo&ucirc;tant et inoubliable. Apr&egrave;s la sortie de son dernier album SOS IV, ne [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/cread.php?awinmid=12494&awinaffid=634278&platform=dl&ued=https%3A%2F%2Fwww.fnacspectacles.com%2Fartist%2Fnej%2F&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/rap/nej-irreel-tour-1220919_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-15799100-1739545586-750337-180-180.webp" width="180" height="180" alt="NEJ Irréel Tour" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1178740" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/humour-comedie-22_B" class="lh-sm">Humour à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/humour/malik-bentalha-nouveau-monde-1178740_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Malik Bentalha "Nouveau Monde"</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 12/11/2026</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">NOUVEAU MONDE&nbsp;?
+Avec Nouveau Monde, Malik Bentalha signe son retour sur sc&egrave;ne dans un one-man-show &agrave; la fois dr&ocirc;le, touchant et engag&eacute;.. Dans ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42485749745&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/humour/malik-bentalha-nouveau-monde-1178740_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-64483600-1758276510-724008-180-180.webp" width="180" height="180" alt="Malik Bentalha Nouveau Monde" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1207970" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/reggae-108_B" class="lh-sm">Reggae à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/reggae/dub-inc-1207970_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Dub Inc</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 13/11/2026</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">Dub inc. est devenu sans conteste, le groupe le plus embl&eacute;matique du reggae made in France. C'est avant tout par la sc&egrave;ne que ses musiciens et chanteurs se sont [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42726259573&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/reggae/dub-inc-1207970_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-24732000-1759928106-742048-180-180.webp" width="180" height="180" alt="Dub Inc" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="886199" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/theatre-23_B" class="lh-sm">Théâtre à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/theatre/michele-laroque-et-kad-merad-l-age-bete-886199_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Michèle Laroque & Kad Merad "L'Âge Bête"</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2026</span><a href="https://www.jds.fr/strasbourg/salles-spectacle/palais-de-la-musique-et-des-congres-strasbourg-434_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Palais de la Musique et des Congrès (PMC) - Strasbourg</a><span class="d-block description font-size-14 lh-sm">Benoit et Claire viennent de se rencontrer, ils veulent vivre leur nouvelle histoire &agrave; fond, sans limites. Rebelles et libres, ils revendiquent leur amour pour le sexe, [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=40785264908&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/theatre/michele-laroque-et-kad-merad-l-age-bete-886199_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-83498800-1742547802-566483-180-180.webp" width="180" height="180" alt="Michèle Laroque &amp; Kad Merad L&#039;Âge Bête" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1095959" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/sorties-culturelles-spectacles-expositions-cinema-470_B" class="lh-sm">Spectacles à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/michele-laroque-et-kad-merad-1095959_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Michele Laroque Et Kad Merad</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 15/11/2026</span><a href="https://www.jds.fr/strasbourg/hotel-3-etoiles-luxe-charme-tourisme/hotel-mercure-palais-des-congres-8017_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Hôtel Mercure (Palais des Congrès) - Strasbourg</a><span class="d-block description font-size-14 lh-sm">Benoit et Claire viennent de se rencontrer, ils veulent vivre leur nouvelle histoire à fond, sans limites. Rebelles et libres, ils revendiquent leur amour pour le sexe, l'alcool [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/michele-laroque-et-kad-merad-1095959_A"><img loading="lazy" src="https://statics.digitick.com/commun/images/upload/events/64/0c/MichAleLaroqueKadMerad40x60originaleaveclogos_300.jpg" width="180" height="180" alt="Michele Laroque Et Kad Merad" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1235924" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/humour-comedie-22_B" class="lh-sm">Humour à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/humour/paul-de-saint-sernin-tournee-1235924_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Paul de Saint Sernin - Tournée</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 18/11/2026</span><a href="https://www.jds.fr/strasbourg/ostwald/salles-spectacle/espace-culturel-le-point-d-eau-4696_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Point d'Eau - Ostwald</a><span class="d-block description font-size-14 lh-sm">
+
+Paul de Saint Sernin présente son premier one-man-show au Point d'Eau d'Ostwald le mercredi 18 novembre 2026 à 20h. Le chroniqueur de&nbsp;"Quelle époque&nbsp;!" sur France 2 [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43035770776&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/humour/paul-de-saint-sernin-tournee-1235924_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F22%2F23%2Fpaul-de-saint-sernin---tourn-e-tickets_442455_3580633_222x222.jpg&feedId=23455&k=52736b401175e045c86b72b246b661e8cbb93589" width="180" height="180" alt="Paul de Saint Sernin - Tournée" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1236034" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/danse-35_B" class="lh-sm">Danse à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/danse/casse-noisette-ballet-et-orchestre-paris-et-tournee-2026-2027-1236034_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Casse-Noisette - Ballet & Orchestre - Paris & Tournée 2026/2027</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 20/11/2026</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">
+
+Le ballet classique Casse-Noisette investit la scène du Zénith de Strasbourg le vendredi 20 novembre 2026 à 20h. Cette production originale Franceconcert présente le [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43035770709&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/danse/casse-noisette-ballet-et-orchestre-paris-et-tournee-2026-2027-1236034_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F06%2F55%2Fcasse-noisette-tickets_460226_3697349_222x222.jpg&feedId=23455&k=9d9f0fa07be41522392900aece31512826d9906f" width="180" height="180" alt="Casse-Noisette - Ballet &amp; Orchestre - Paris &amp; Tournée 2026/2027" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1229316" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/pop-folk-479_B" class="lh-sm">Pop / folk à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/pop-folk/suzane-1229316_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Suzane</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 20/11/2026</span><a href="https://www.jds.fr/strasbourg/salle-de-concert/la-laiterie-strasbourg-419_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Laiterie - Strasbourg</a><span class="d-block description font-size-14 lh-sm">Chanson pop électro
+
+Ouverture des portes&nbsp;: 19h30
+Début&nbsp;: 1re partie
+
+Suzane a conquis le public avec son énergie débordante, ses performances scéniques remarquées [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://pfd.seetickets.com/?P5136B952C75917S1UC413989026823V4" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/pop-folk/suzane-1229316_A"><img loading="lazy" src="https://www.jds.fr/medias/image/suzane-756369-180-180.webp" width="180" height="180" alt="Suzane" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1171914" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/humour-comedie-22_B" class="lh-sm">Humour à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/humour/sellig-episode-6-1171914_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Sellig "Episode 6"</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 22/11/2026</span><a href="https://www.jds.fr/strasbourg/salles-spectacle/palais-de-la-musique-et-des-congres-strasbourg-434_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Palais de la Musique et des Congrès (PMC) - Strasbourg</a><span class="d-block description font-size-14 lh-sm">Dans le nouveau spectacle &eacute;crit et mis en sc&egrave;ne par Sellig, l'humoriste va encore plus loin dans l'exploration de notre quotidien. Pour notre plus grand plaisir il [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42469581950&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/humour/sellig-episode-6-1171914_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-01912400-1738918340-719749-180-180.webp" width="180" height="180" alt="Sellig Episode 6" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1243812" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/electro-335_B" class="lh-sm">Electro à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/electro/stand-high-patrol-marina-p-et-the-radiators-1243812_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Stand High Patrol + Marina P & The Radiators</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 27/11/2026</span><a href="https://www.jds.fr/strasbourg/salle-de-concert/la-laiterie-strasbourg-419_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Laiterie - Strasbourg</a><span class="d-block description font-size-14 lh-sm">
+
+Les Dubadub Musketeerz de Stand High Patrol s'apprêtent à enflammer la scène strasbourgeoise avec leur sound system unique. Le groupe breton donnera un concert à La Laiterie [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43090325473&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/electro/stand-high-patrol-marina-p-et-the-radiators-1243812_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fd3%2F0c%2Fstand-high-patrol---marina-p--tickets_464231_3725120_222x222.jpg&feedId=23455&k=1cd08fb0b363adc5f61b11c6e7f4e4b7dd6b7eae" width="180" height="180" alt="Stand High Patrol + Marina P &amp; The Radiators" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1233667" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave "><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/chanson-francaise/cloclo-forever-1233667_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Cloclo Forever</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 27/11/2026</span><a href="https://www.jds.fr/strasbourg/mutzig/salles-spectacle/le-dome-4691_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Le Dôme - Mutzig</a><span class="d-block description font-size-14 lh-sm">Venez revivre un concert de Claude Fran&ccedil;ois plus vrai que nature&nbsp;! Une reproduction du show Claude Fran&ccedil;ois de l&rsquo;&eacute;poque o&ugrave; l&rsquo;ambiance [&hellip;]</span></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/chanson-francaise/cloclo-forever-1233667_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-48537600-1761754475-759746-180-180.webp" width="180" height="180" alt="Cloclo Forever" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1109397" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/chanson-francaise/l-heritage-goldman-2-1109397_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">L'Héritage Goldman&nbsp;2</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 27/11/2026</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">L'Héritage Goldman 2 en concert à Strasbourg (Zénith de Strasbourg Eckbolsheim), le 27 novembre 2026. Toutes les informations pratiques (tarifs, billetterie, plan de salle) pour [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42028694035&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/chanson-francaise/l-heritage-goldman-2-1109397_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-62425600-1753717604-684704-180-180.webp" width="180" height="180" alt="L&#039;Héritage Goldman 2" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1232497" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/hip-hop-rap-190_B" class="lh-sm">Rap à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/rap/plk-tour-2026-1232497_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">PLK "Tour 2026"</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 28/11/2026</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">Artiste fran&ccedil;ais parmi les plus &eacute;cout&eacute;s au monde et performance sc&eacute;nique unique lors de sa derni&egrave;re tourn&eacute;e des z&eacute;niths &agrave; [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42987760504&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/rap/plk-tour-2026-1232497_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-00733900-1761641234-758527-180-180.webp" width="180" height="180" alt="PLK Tour 2026" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="724368" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/humour-comedie-22_B" class="lh-sm">Humour à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/humour/arnaud-tsamere-nouveau-spectacle-724368_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Arnaud Tsamère "Nouveau Spectacle"</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 28/11/2026</span><a href="https://www.jds.fr/strasbourg/salles-spectacle/palais-de-la-musique-et-des-congres-strasbourg-434_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Palais de la Musique et des Congrès (PMC) - Strasbourg</a><span class="d-block description font-size-14 lh-sm">Apr&egrave;s le succ&egrave;s de son pr&eacute;c&eacute;dent spectacle &laquo; 2 mariages et 1 enterrement &raquo; jou&eacute; en France, Belgique, Suisse, Luxembourg et [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=39325776720&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/humour/arnaud-tsamere-nouveau-spectacle-724368_A"><img loading="lazy" src="https://www.jds.fr/medias/image/0-45639800-1731424703-473892-180-180.webp" width="180" height="180" alt="Arnaud Tsamère Nouveau Spectacle" class="border" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1208073" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/rock-111_B" class="lh-sm">Rock / metal à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/rock/lebanon-hanover-1208073_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Lebanon Hanover</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 05/12/2026</span><a href="https://www.jds.fr/strasbourg/salle-de-concert/la-laiterie-strasbourg-419_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> La Laiterie - Strasbourg</a><span class="d-block description font-size-14 lh-sm">
+
+Le duo post-punk Lebanon Hanover se produira à La Laiterie de Strasbourg le samedi 5 décembre 2026 à 19h. Cette soirée musicale présentée par Persona Grata promet d'offrir [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42732595846&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/rock/lebanon-hanover-1208073_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2Fba%2Fb7%2Flebanon-hanover--tickets_450888_3633990_222x222.jpg&feedId=23455&k=c350602be15584ec34201775b2500fdc5516dd19" width="180" height="180" alt="Lebanon Hanover" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1215903" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/humour-comedie-22_B" class="lh-sm">Humour à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/humour/redouane-bougheraba-mon-premier-spectacle-tournee-des-zenith-1215903_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Redouane Bougheraba - Mon Premier Spectacle - Tournée des Zénith</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 06/12/2026</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">
+
+Redouane Bougheraba présente son nouveau spectacle&nbsp;"Mon Premier Spectacle" au Zénith de Strasbourg le dimanche 6 décembre 2026 à 20h. L'humoriste marseillais, devenu [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=42805296871&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/humour/redouane-bougheraba-mon-premier-spectacle-tournee-des-zenith-1215903_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F40%2F42%2Fredouane-tickets_434321_3530729_222x222.jpg&feedId=23455&k=0d50c71b57d845df0bac01a48d63991add4ebc72" width="180" height="180" alt="Redouane Bougheraba - Mon Premier Spectacle - Tournée des Zénith" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1240424" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/cine-concert-200_B" class="lh-sm">Cinéma à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/spectacles/cinema/disney-en-concert-suivez-vos-reves-1240424_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Disney en Concert - Suivez Vos Rêves</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 20/12/2026</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">
+
+Le 20 décembre 2026, Disney en Concert - Suivez Vos Rêves investit le Zénith de Strasbourg pour une soirée magique dédiée aux plus belles mélodies de l'univers Disney. Ce [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=43063656454&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/spectacles/cinema/disney-en-concert-suivez-vos-reves-1240424_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F1d%2F2c%2Fdisney-en-concert-tickets_460960_3702980_222x222.jpg&feedId=23455&k=2de126a4745deffccc9378894a834e0a9a729ba6" width="180" height="180" alt="Disney en Concert - Suivez Vos Rêves" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="1088920" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/festival-269_B" class="lh-sm">Festival à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/manifestations/festival/festival-mondial-de-la-magie-troisieme-edition-1088920_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Festival Mondial de la Magie - Troisième Edition</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 24/01/2027</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">Festival Mondial de la Magie - Troisième Edition, un événement à voir à Strasbourg (Zénith de Strasbourg Eckbolsheim), le 24 janvier 2027. Toutes les informations pratiques [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=41816487057&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/manifestations/festival/festival-mondial-de-la-magie-troisieme-edition-1088920_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F15%2F1e%2Ffestival-mondial-de-la-magie-tickets_257812_2315217_222x222.jpg&feedId=23455&k=9b56109fe7c7d41cf4b08b9929559a0d5cc7b36f" width="180" height="180" alt="Festival Mondial de la Magie - Troisième Edition" /></a></div></div></li>
+<li class="col-12 pt-4" data-view-id-type="1" data-view-id="285974" data-view-bc="0"><div class="d-flex justify-content-between pb-4 border-bottom flex-row-reverse"><div class="pave d-flex flex-column justify-content-between d-md-block"><div class="m-0 mb-1 rubriques font-size-14 text-primary"><a href="https://www.jds.fr/strasbourg/agenda/chanson-francaise-136_B" class="lh-sm">Chanson française à Strasbourg</a></div><a class="d-block titre text-black mb-1 mb-md-2" href="https://www.jds.fr/strasbourg/concerts/chanson-francaise/claudio-capeo-285974_A"><span class="font-size-18 fw-bold lh-1 d-block titre text-black mb-2">Claudio Capéo</span></a><span class="font-size-14 text-gray-700 lh-sm d-block">Le 30/01/2027</span><a href="https://www.jds.fr/strasbourg/eckbolsheim/salle-de-concert/zenith-strasbourg-europe-eckbolsheim-947_L" class="lieu font-size-14 text-gray-700 d-block lh-sm my-1"><i class="me-1 bi bi-geo-alt text-primary"></i> Zénith de Strasbourg - Eckbolsheim</a><span class="d-block description font-size-14 lh-sm">Claudio Cap&eacute;o en concert &agrave; Strasbourg (Z&eacute;nith de Strasbourg Eckbolsheim), le 18 novembre 2023. Toutes les informations pratiques (tarifs, billetterie, plan de [&hellip;]</span><div><a class="btn btn-sm mt-1 mt-md-2 btn-primary fnac_link rounded-pill" data-fnac="liste_article" href="https://www.awin1.com/pclick.php?p=39634965873&a=634278&m=12494&clickref=liste_article-A-desktop" target="_blank" rel="nofollow"><i class="bi bi-ticket-perforated me-1 d-inline-block rotate-n-45"></i> Acheter des billets</a></div></div><div class="pave-image"><a class="image" href="https://www.jds.fr/strasbourg/concerts/chanson-francaise/claudio-capeo-285974_A"><img loading="lazy" src="https://images2.productserve.com/?w=180&h=180&bg=white&trim=5&t=letterbox&url=ssl%3Awww.fnacspectacles.com%2Fobj%2Fmam%2Ffrance%2F86%2F85%2Fclaudio-capeo-tournee-des-zeniths-tickets_326526_2826509_222x222.jpg&feedId=23455&k=5510d170e98bafa8e379438fce06d602195c3179" width="180" height="180" alt="Claudio Capéo" /></a></div></div></li>
+</ul>
+</div><div class="gp_pager font-size-14 d-flex justify-content-center flex-wrap my-5">
+<a class="lien_prev" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=52"><i class="bi bi-chevron-left"></i></a><div class="mr-auto ml-auto">
+<a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/"><<</a><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=52">52</a><span class="page d-inline-block mx-1 active mx-1">53</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=54">54</a><span class="mx-1 d-inline-block">...</span><a class="page mx-1 d-inline-block" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=57">57</a></div>
+<a class="lien_next" href="https://www.jds.fr/strasbourg/agenda/?&amp;page=54"><i class="bi bi-chevron-right"></i></a></div>
+</div><div id="content_right" class=""><hr class="d-md-none my-5"><div class="wrapper_gp_div mb-4"><div class="regie_18">
+<!-- 300 X 600 - HAUT -->
+<ins id="pub_1635" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="7598382131"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1635" data-id-format="18"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1635', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '18', 'non_interaction': true }); } });</script>
+</div>
+</div><div class="encart-newsletter d-none d-md-block p-4 bg-light my-5"><p class="mt-0 mb-3 h2">Newsletter JDS Strasbourg</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p><form id="form_newsletter_6915ebd36e1ee" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="6916037bb153d" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915ebd36e1ee_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" selected>67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915ebd36e1ee_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915ebd36e1ee_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915ebd36e1ee_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915ebd36e1ee_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915ebd36e1ee input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915ebd36e1ee_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915ebd36e1ee input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915ebd36e1ee_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915ebd36e1ee input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915ebd36e1ee_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915ebd36e1ee_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915ebd36e1ee input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915ebd36e1ee',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915ebd36e1ee").serialize();
+        $('form#form_newsletter_6915ebd36e1ee .submit_2').attr('disabled','');
+        $('#form_newsletter_6915ebd36e1ee .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915ebd36e1ee .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915ebd36e1ee .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter sidebar',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915ebd36e1ee .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915ebd36e1ee .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script></div><div class="pdf my-5"><div class="fw-bold font-size-28 mt-0 mb-3">Le magazine JDS</div>
+            <p><a class="btn btn-primary rounded-pill btn-lg shadow-lg d-block" href="https://medias.jds.fr/pdf/390/Spectacles-390-68.pdf">Lire le JDS Novembre 2025</a></p>
+            <div class="row mt-4">
+                <div class="col-7">     
+                    <ul>
+                        <li><a href="https://www.jds.fr/points-de-distribution-jds/">Où trouver le magazine JDS ?</a></li>
+                        <li><a href="https://www.jds.fr/spectacles-68/magazine-spectacles-mulhouse-colmar-haut-rhin">Toutes les éditions</a></li><li><a href="https://www.jds.fr/supplement-formation/">Tous les suppléments formation</a></li></ul>
+                </div>
+                
+                <div class="col-5">
+                    <a class="image" href="https://medias.jds.fr/pdf/390/Spectacles-390-68.pdf"><img class="border" loading="lazy" src="https://www.jds.fr/medias/image/couverture-spectacle-755405-110-0.webp" alt="couverture magazine JDS 390" width="110" /></a></div>
+            </div></div><div class="wrapper_gp_div mb-2 sticky"><div class="regie_29">
+<!-- 300 X 600 BAS -->
+<ins id="pub_1636" class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4984827051088801"
+     data-ad-slot="9513867524"></ins>
+<script type="didomi/javascript" data-purposes="select_basic_ads">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="gp_div_affiche" data-id="1636" data-id-format="29"></div>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display', {'event_category' : 'pub','event_label' : '1636', 'non_interaction': true }); } });</script>
+<script type="didomi/javascript" data-purposes="select_basic_ads">window.addEventListener('gtag_loaded', function() { if(typeof gtag=='function') {gtag('event', 'display_format', {'event_category' : 'pub','event_label' : '29', 'non_interaction': true }); } });</script>
+</div>
+</div></div></div></div></div><footer id="footer" class="mt-5 px-3">    
+    <div class="container">     
+    <div class="row">
+        
+        <div class="col-md-6 col-lg-4 order-md-6 offset-lg-1">
+            <div id="footer_newsletter" class="p-4 bg-light full-width-sm mb-5">                                  
+                <p class="mt-0 mb-3 h2">Newsletter JDS Strasbourg</p><p class="font-size-18 fw-normal lh-sm">Prêt pour un week-end de folie&nbsp;? Chaque jeudi tous les bons plans sorties</p>                         
+                <form id="form_newsletter_6915ebd36e2b0" class="newsletter-form mt-3" autocomplete="off">      
+        <input type="hidden" name="method" value="subscribe" />
+        <input type="hidden" name="newsletter_key" value="6916037bb153d" />
+        <div class="newsletter_texte alert alert-info" style="display: none;" role="alert"></div>
+
+        <div class="row"><div class="col-md-12 mb-3 newsletter_form_wrapper text-dark"><div class="form-floating"><select id="form_newsletter_6915ebd36e2b0_dpt_list" class="multiselect" name="dpt[]" multiple><option value="01" >01 - Ain</option><option value="02" >02 - Aisne</option><option value="03" >03 - Allier</option><option value="04" >04 - Alpes de Hautes-Provence</option><option value="05" >05 - Hautes-Alpes</option><option value="06" >06 - Alpes-Maritimes</option><option value="07" >07 - Ardèche</option><option value="08" >08 - Ardennes</option><option value="09" >09 - Ariège</option><option value="10" >10 - Aube</option><option value="11" >11 - Aude</option><option value="12" >12 - Aveyron</option><option value="13" >13 - Bouches du Rhône</option><option value="14" >14 - Calvados</option><option value="15" >15 - Cantal</option><option value="16" >16 - Charente</option><option value="17" >17 - Charente-Maritime</option><option value="18" >18 - Cher</option><option value="19" >19 - Corrèze</option><option value="21" >21 - Côte d'Or</option><option value="22" >22 - Côtes d'Armor</option><option value="23" >23 - Creuse</option><option value="24" >24 - Dordogne</option><option value="25" >25 - Doubs</option><option value="26" >26 - Drôme</option><option value="27" >27 - Eure</option><option value="28" >28 - Eure-et-Loir</option><option value="29" >29 - Finistère</option><option value="2A" >2A - Corse-du-Sud</option><option value="2B" >2B - Haute-Corse</option><option value="30" >30 - Gard</option><option value="31" >31 - Haute-Garonne</option><option value="32" >32 - Gers</option><option value="33" >33 - Gironde</option><option value="34" >34 - Hérault</option><option value="35" >35 - Ille-et-Vilaine</option><option value="36" >36 - Indre</option><option value="37" >37 - Indre-et-Loire</option><option value="38" >38 - Isère</option><option value="39" >39 - Jura</option><option value="40" >40 - Landes</option><option value="41" >41 - Loir-et-Cher</option><option value="42" >42 - Loire</option><option value="43" >43 - Haute-Loire</option><option value="44" >44 - Loire-Atlantique</option><option value="45" >45 - Loiret</option><option value="46" >46 - Lot</option><option value="47" >47 - Lot-et-Garonne</option><option value="48" >48 - Lozère</option><option value="49" >49 - Maine-et-Loire</option><option value="50" >50 - Manche</option><option value="51" >51 - Marne</option><option value="52" >52 - Haute-Marne</option><option value="53" >53 - Mayenne</option><option value="54" >54 - Meurthe-et-Moselle</option><option value="55" >55 - Meuse</option><option value="56" >56 - Morbihan</option><option value="57" >57 - Moselle</option><option value="58" >58 - Nièvre</option><option value="59" >59 - Nord</option><option value="60" >60 - Oise</option><option value="61" >61 - Orne</option><option value="62" >62 - Pas-de-Calais</option><option value="63" >63 - Puy-de-Dôme</option><option value="64" >64 - Pyrénées-Atlantiques</option><option value="65" >65 - Hautes-Pyrénées</option><option value="66" >66 - Pyrénées-Orientales</option><option value="67" selected>67 - Bas-Rhin</option><option value="68" >68 - Haut-Rhin</option><option value="69" >69 - Rhône</option><option value="70" >70 - Haute-Saône</option><option value="71" >71 - Saône-et-Loire</option><option value="72" >72 - Sarthe</option><option value="73" >73 - Savoie</option><option value="74" >74 - Haute-Savoie</option><option value="75" >75 - Paris</option><option value="76" >76 - Seine-Maritime</option><option value="77" >77 - Seine-et-Marne</option><option value="78" >78 - Yvelines</option><option value="79" >79 - Deux-Sèvres</option><option value="80" >80 - Somme</option><option value="81" >81 - Tarn</option><option value="82" >82 - Tarn-et-Garonne</option><option value="83" >83 - Var</option><option value="84" >84 - Vaucluse</option><option value="85" >85 - Vendée</option><option value="86" >86 - Vienne</option><option value="87" >87 - Haute-Vienne</option><option value="88" >88 - Vosges</option><option value="89" >89 - Yonne</option><option value="90" >90 - Territoire de Belfort</option><option value="91" >91 - Essonne</option><option value="92" >92 - Hauts-de-Seine</option><option value="93" >93 - Seine-Saint-Denis</option><option value="94" >94 - Val-de-Marne</option><option value="95" >95 - Val-d'Oise</option><option value="971" >971 - Guadeloupe</option><option value="972" >972 - Martinique</option><option value="973" >973 - Guyane</option><option value="974" >974 - La Réunion</option><option value="976" >976 - Mayotte</option></select><label class="text-primary floating-label-with-multiselect" for="form_newsletter_6915ebd36e2b0_dpt_list">Choisir mes départements</label></div></div><div class="col-12 mb-3 newsletter_form_wrapper"> 
+                <div class="form-floating">
+                    <input type="email" class="form-control rounded-3 form-control-lg" id="form_newsletter_6915ebd36e2b0_email" name="email" placeholder="Mon email" value="">
+                    <label class="text-primary" for="form_newsletter_6915ebd36e2b0_email">Mon email</label>
+                </div>
+            </div><div class="col-12 newsletter_form_wrapper">               
+                <button class="btn w-100 mt-md-0 rounded-pill btn-lg btn-primary" type="submit">Je m'abonne</button>                    
+            </div>
+        </div>     
+
+    </form>
+    
+    <script> 
+$(document).ready(function() {const choices = new Choices($("#form_newsletter_6915ebd36e2b0_dpt_list")[0], {
+        searchEnabled: false,
+        searchChoices: false,
+        removeItemButton: true,
+        customValue: "Sélectionner",
+        callbackOnInit: function () {
+            $('#form_newsletter_6915ebd36e2b0 input[name="search_terms"]').css("width","100%");
+            if ($("#form_newsletter_6915ebd36e2b0_dpt_list").val().length > 0) {
+                $('#form_newsletter_6915ebd36e2b0 input[name="search_terms"]').val("").css("width","1ch");
+            }
+        }
+        });
+        
+        $("#form_newsletter_6915ebd36e2b0_dpt_list")[0].addEventListener(
+          "addItem",
+          function(event) {            
+            $('#form_newsletter_6915ebd36e2b0 input[name="search_terms"]').val("").css("width","1ch");
+          },
+          false,
+        );
+        
+        $("#form_newsletter_6915ebd36e2b0_dpt_list")[0].addEventListener(
+          "removeItem",
+          function(event) {   
+            if ($("#form_newsletter_6915ebd36e2b0_dpt_list").val().length == 0) {
+                $('#form_newsletter_6915ebd36e2b0 input[name="search_terms"]').css("width","100%").val("Choisir mes départements");
+            }            
+          },
+          false,
+        );
+$(document).on('submit','form#form_newsletter_6915ebd36e2b0',function(e) {
+        e.preventDefault();
+        $('body').css( 'cursor', 'progress' );
+        var datas = $("form#form_newsletter_6915ebd36e2b0").serialize();
+        $('form#form_newsletter_6915ebd36e2b0 .submit_2').attr('disabled','');
+        $('#form_newsletter_6915ebd36e2b0 .newsletter_texte').slideUp().html('').slideDown();
+        console.log(datas);
+        
+        $.ajax({
+            url : '/ajax/newsletter2.php',data:datas,dataType:"text",type:'POST',
+            success: function(data) {
+                var obj = jQuery.parseJSON(data);
+                if(typeof obj.erreur != 'undefined') {
+                    $('#form_newsletter_6915ebd36e2b0 .newsletter_texte').html('<p class="m-0">'+obj.erreur+'</p>');
+                    $('form#form_newsletter_6915ebd36e2b0 .submit_2').removeAttr('disabled');
+                        
+                    if(typeof gtag=='function') gtag('event', 'Send', {
+                             'event_category' : 'Form Newsletter footer',
+                             'event_label' : 'Mail'
+                       });
+                }
+                else if(typeof obj.succes != 'undefined') {
+                    $('#form_newsletter_6915ebd36e2b0 .newsletter_texte').html('<p class="m-0">'+obj.succes+'</p>');
+                    $('form#form_newsletter_6915ebd36e2b0 .newsletter_form_wrapper').remove();
+                } 
+                $('body').css( 'cursor', 'default' );
+            }
+        });
+    });   
+}); 
+</script>         
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 order-md-first">
+            <a class="logo d-block mx-auto mx-lg-0" href="https://www.jds.fr/"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" /></a>
+
+            
+            <p class="my-4 fw-bold text-center text-md-start">Le JDS Strasbourg, c’est des sorties (concerts, humour…) et des bons plans en tous genres (resto, shopping, événements locaux…) au plus près de chez vous.</p>
+            
+                
+                
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <a href="https://www.facebook.com/jds.fr/" class="mx-1" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/jds_actu/" class="mx-1" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@jdsmulhouse" class="mx-1" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.youtube.com/channel/UCEcNj-n3vLsQ2IUrD8FL-5g" class="mx-1" target="_blank"><i class="bi bi-youtube"></i></a>
+                    <a href="https://fr.linkedin.com/company/media-jds" class="mx-1" target="_blank"><i class="bi bi-linkedin"></i></a>       
+                </p>
+                  
+                <p class="text-center text-md-start font-size-32">
+                    <span class="font-size-14">Téléchargez l'appli JDS : </span>
+                <a href="https://market.android.com/details?id=fr.jds.app" class="mx-1" target="_blank"><i class="bi bi-android2"></i></a><a href="https://itunes.apple.com/fr/app/jds-les-sorties-en-alsace/id467323730?mt=8" class="mx-1" target="_blank"><i class="bi bi-apple"></i></a>   
+                </p>
+                
+            <hr class="my-5 d-md-none">
+        </div>
+        <div class="col-md-12 col-lg-3 order-md-11 offset-lg-1">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Organisateurs</p>
+                    <p class="fw-bold">Publiez votre événement sur le site jds.fr</p>                
+                    <ul class="text-gray-700 mt-2">
+                        <li>Publiez gratuitement votre événement dans l’agenda via notre <a href="https://pro.jds.fr?utm_source=jds.fr&utm_medium=footer&utm_campaign=link_publier_info_text">espace organisateur</a></li>
+                        <li>Bénéficiez d'une visibilité auprès de nos 3&nbsp;000&nbsp;000 visiteurs mensuels !</li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://pro.jds.fr" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je publie mon événement</a></p>
+
+                    <hr class="my-5 d-md-none d-lg-block">
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <p class="h2 mt-0 mt-md-auto mb-0 mt-lg-0">Annonceurs</p>
+                    <p class="fw-bold">Discutons ensemble de votre communication</p>          
+                    <ul class="text-gray-700 mt-2">
+                        <li>Promouvoir au mieux votre événement ou votre offre</li>
+                        <li>3&nbsp;000&nbsp;000 visiteurs mensuels <a href="https://www.jds.fr/magazine/actu-magazine/audience-jds-169974_A">(tout savoir sur l'audience du JDS)</a></li>
+                    </ul>
+                    <p class="text-center text-md-left"><a href="https://www.jds.fr/blog/" class="btn btn-primary btn-lg rounded-pill shadow-lg">Je découvre les solutions</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 order-md-12">
+            <hr class="my-5">
+
+            <ul class="list-unstyled font-size-14 d-lg-flex justify-content-between">
+            <li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/journal-des-spectacles-magazine-mulhouse-colmar-haut-rhin-alsace-837_A">Qui sommes-nous ?</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/mentions-legales/">Infos légales / Affiliation</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/cookies/">Cookies</a></li><li class="mb-1 me-2"><a href="javascript:Didomi.preferences.show()">Modifier mes choix de cookies</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/magazine/actu-magazine/comment-vous-desabonner-des-notifications-jds-340946_A">Se désabonner des notifications</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/contact/">Nous contacter</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/offres-emploi-mulhouse-alsace/">Emploi : nous rejoindre</a></li><li class="mb-1 me-2"><a href="https://www.jds.fr/blog/">Blog</a></li>  
+            </ul>
+
+            <p class="font-size-14">Copyright 2008-2025 jds.fr</p>
+        </div>
+    </div> <!-- fin row -->        
+    </div> <!-- fin container -->
+</footer><div id="search-form-menu-container" class="search-form-menu-container shadow-lg bg-light hidden text-center py-3 py-lg-5">
+    <div class="container px-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fw-bold font-size-26">Rechercher</span>
+            <span class="cursor-pointer d-block search-form-menu-close text-primary" onclick="toggleSearchMenu();"><i class="bi bi-x-circle me-1"></i> Fermer</span>
+        </div>
+        <div
+            id="search-app"
+            data-endpoint="/ajax/search.php"
+            data-placeholder-text="ex. : concert demain à ..."
+            data-index-event="jds_event"
+            data-index-city="jds_city"
+            data-index-venue="jds_venue"
+            data-index-article="jds_article"
+            data-index-artist="jds_artist"
+            data-current-city-id="390" data-current-city-name="Strasbourg"         ></div>
+    </div>
+</div>
+
+<div id="header-city-dropdown-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <p class="modal-title m-0">Choisissez une ville spécifique</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="ville-selector-mode" value="default" id="ville-selector-mode" />
+                <input type="text" class="form-control form-control-lg shadow-lg rounded-3" id="ville-selector-modal" placeholder="Entrez le nom de votre ville">
+                <div id="ville-selector-container-modal"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer>
+$(document).ready(function() {
+    $('#ville-selector-modal').keyup(function() {
+        if($(this).val().length==0) { $("#ville-selector-container-modal").html(""); return; }
+        if($(this).val().length<2) { return; }
+
+        $.post("/ajax/recherche_ville_fonction.php", { term: $(this).val(), mode:$('input[name="ville-selector-mode"]').val() })
+        .done(function(data) {
+
+            $("#ville-selector-container-modal").html('<p class="mt-4">Cliquez sur votre ville :</p><ul class="list-unstyled font-size-16"></ul>');
+            obj=JSON.parse(data);
+            obj.forEach(function(item){
+            $("#ville-selector-container-modal").find("ul").append('<li class="p-3 border-bottom"><a href="'+item.url+'" class="text-dark"><i class="bi bi-geo-fill text-primary me-1"></i> '+item.label+'</a></li>');
+        });
+        });
+    }); 
+});
+</script>
+
+</div><script defer src="/libs/jquery/magnific-popup/jquery.magnific-popup.min.js?v=131"></script><script defer src="/scripts/slick.min.js?v=131"></script><script defer src="/libs/choices/scripts/choices.js?v=131"></script><script defer src="/libs/lightbox2/js/lightbox.min.js?v=131"></script><script defer src="/scripts/functions_footer.js?v=131"></script><script>const { createApp, ref, computed, watch, onMounted, onBeforeUnmount, nextTick, reactive } = Vue;</script><script src="/scripts/search.app.js?v=131"></script><script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-messaging-compat.js"></script>
+<script>
+const firebaseConfig = {
+    apiKey: "AIzaSyBjBC01qlzGVLYWWE8D0rrOzL2cSfIf7MQ",
+    authDomain: "journal-des-spectacles-dd5d0.firebaseapp.com",
+    databaseURL: "https://journal-des-spectacles-dd5d0.firebaseio.com",
+    projectId: "journal-des-spectacles-dd5d0",
+    storageBucket: "journal-des-spectacles-dd5d0.appspot.com",
+    messagingSenderId: "37707045198",
+    appId: "1:37707045198:web:e58879e2e7f9adf0"
+  };
+const vapidKey = "BB2gRQtko-8CqzZbrzzlGBwMim_ThaPkNdzqi780Y7ku5VmG_E_DwFJnrJXB7_pNJKn9UTbIchVKfijBHNteuu8";
+  
+firebase.initializeApp(firebaseConfig);
+const messaging = firebase.messaging();
+
+var browserName = (function (agent) {        
+    switch (true) {
+        case agent.indexOf("edge") > -1: return "Edge"; // ms
+        case agent.indexOf("edg/") > -1: return "Edge"; // (chromium based)
+        case agent.indexOf("chrome") > -1 && !!window.chrome: return "Chrome";
+        case agent.indexOf("firefox") > -1: return "Firefox";
+        case agent.indexOf("safari") > -1: return "Safari";
+        default: return "other";
+    }
+})(window.navigator.userAgent.toLowerCase());
+    
+function fcm_resetUI() { 
+    if(!isTokenSentToServer()) {
+        if(window.navigator.userAgent.toLowerCase().indexOf('iphone')!==-1) { return; } // fix bug safari iphone    
+        if(browserName=='Chrome') { $('#web_push_dialog').addClass('chrome'); }
+        if(browserName=='Edge') { $('#web_push_dialog').addClass('edge'); }
+        if(browserName=='Firefox') { $('#web_push_dialog').addClass('firefox'); }
+        if(Notification.permission=='default') {
+            if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+        }
+        else if(Notification.permission=='granted') {
+            messaging.getToken({ vapidKey:vapidKey }).then((currentToken) => {   
+                                if (currentToken) {
+                    sendTokenToServer(currentToken);
+                } else {
+                  setTokenSentToServer(false);
+                  if(localStorage.getItem('euconsent-v2') || document.cookie.match(/^(.*;)?\s*euconsent-v2\s*=\s*[^;]+(.*)?$/)) { requestPushDialog(); }
+                }
+            }).catch((err) => {
+                
+                setTokenSentToServer(false);
+            });
+        }    
+    }
+}
+//window.fcm_resetUI = fcm_resetUI;
+function sendTokenToServer(currentToken) {
+    if (!isTokenSentToServer()) {
+        setTokenSentToServer(true);
+        $.post( "/ajax/firebase_register_v2.php",  { token: currentToken, dpt:'67' });      
+        if(typeof gtag=="function") {
+            gtag("event", "subscription", {
+                "event_category" : "Firebase",
+                "event_label" : "Web push",
+                "non_interaction": true
+            });            
+        }
+    } 
+}
+function isTokenSentToServer() {
+    var web_push_cookie = $.cookie('web_push');       
+    if(typeof web_push_cookie === 'undefined' || web_push_cookie===false) return false;
+    return true;
+}
+function setTokenSentToServer(sent) {
+    if(sent) $.cookie('web_push',true, {path: '/',domain:'.jds.fr'}); 
+    else $.cookie('web_push',false, {path: '/',domain:'.jds.fr'}); 
+}
+function requestPushDialog() {
+    $.magnificPopup.open({
+        items: {
+            src: '#web_push_dialog', // can be a HTML string, jQuery object, or CSS selector
+            type: 'inline'
+          },
+        alignTop : true,
+        showCloseBtn : true,
+        //closeOnBgClick: ((browserName!='Firefox' &&  && !$('#web_push_dialog').hasClass('mobile'))?false:true),
+        callbacks: {
+            open: function() {                 
+                $('.mfp-bg').css('position','fixed');      
+                if(browserName!='Firefox') {
+                    if(!$('#web_push_dialog').hasClass('mobile')) {
+                        $('.mfp-bg').css('opacity',.0).css('width','auto').css('height','auto');
+                        $('html').css('overflow','auto');  
+                        $('.mfp-wrap').css('width','auto').css('height','auto');
+                    }
+                    else {
+                        $('html').css('overflow','hidden');  
+                    }
+                }
+                else {
+                    $('.mfp-bg').css('opacity',.75).css('background','#fff');
+                }
+
+            },
+            close: function() {
+                $('html').css('overflow','auto'); 
+            }
+        }    
+    }); 
+    if(browserName!='Firefox') { requestPermission(); } // sur firefox, l'ouverture de permission automatique ne marche pas alors on remet les boutons
+}
+function requestPermission() {   
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+            fcm_resetUI();
+            $.magnificPopup.close();
+      } else {
+            $.magnificPopup.close();
+      }
+    });
+}
+$(document).on('click','#web_push_dialog button',function() {
+    //firefox
+    if($(this).hasClass('accept')) requestPermission();
+    if($(this).hasClass('deny')) setTokenSentToServer(true);    
+    
+    $.magnificPopup.close();       
+});
+</script>
+
+<div id="web_push_dialog" class="mfp-hide desktop">
+    <div class="popup-content p-3">
+        <img class="logo-mobile" loading="lazy" src="/images/new/logo-jds.svg?v=131" width="40" height="40" alt="jds.fr">
+        <p class="popup-title mb-3"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+        <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+        <p class="text-gray-600 font-size-14 mb-0">Autoriser les notifications pour continuer.</p>
+        <hr class="hide-mobile">
+        <div class="p-3 hide-mobile text-center bg-primary"><img loading="lazy" src="/images/new/logo-jds-white.svg?v=131" width="100" height="100" alt="jds.fr"></div>
+        <div class="arrow text-gray-800"><i class="bi bi-arrow-down-circle-fill"></i></div>
+    </div>
+    <div class="popup-content-firefox p-3">
+        <div class="row">
+            <div class="col-md-3 pr-0 col-3"><img loading="lazy" src="/images/new/logo-jds.svg?v=131" alt="Logo JDS" class="popup-logo"></div>
+            <div class="col-md-9 col-9">
+              <p class="popup-title"><strong>Recevez les meilleures idées sorties par notification web !</strong></p>
+              <p class="text-primary font-weight-bold text-danger font-size-14 mb-2">Aucun email requis.</p>
+              <p class="text-gray-600 font-size-14 mb-3">Une seconde fenêtre va s'ouvrir vous invitant à autoriser les notifications</p>
+              <div class="popup-footer text-right"><button class="btn btn-outline-primary rounded-pill btn-sm me-3 deny">Refuser</button><button class="btn btn-primary rounded-pill btn-sm me-3 accept">Autoriser</button></div>
+            </div>
+        </div>
+    </div>
+</div><script type="didomi/javascript" data-purposes="select_basic_ads" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body></html>
